@@ -1,0 +1,38 @@
+
+[
+    {
+        "q_title":"使用递归",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"testBinaryDepthByRecursion",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"使用栈+DFS",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"testBinaryDepthByDFS",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"使用队列+BFS",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"testBinaryDepthByBFS",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    }]

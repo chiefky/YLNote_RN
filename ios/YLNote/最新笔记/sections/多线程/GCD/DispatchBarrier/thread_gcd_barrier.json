@@ -1,0 +1,21 @@
+[
+    {
+        "q_id":"thread_gcd_barrier_0",
+        "q_title":"dispatch_barrier_async",
+        "q_subtitle":" 当多线程并发读写同一个资源时，使用barrier可以保证资源读写的正确性",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testBarrier_create",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_barrier",
+            "art_url":"/content/Thread/GCD/Thread-GCD_barrier.md",
+            "art_title":"",
+        }
+    },
+    
+]

@@ -1,0 +1,61 @@
+source 'https://github.com/CocoaPods/Specs.git'
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+platform :ios, '11.0'
+install! 'cocoapods', :deterministic_uuids => false
+
+
+target 'YLNote' do
+  
+  config = use_native_modules!
+  
+  # Flags change depending on the env values.
+  flags = get_default_flags()
+  
+  use_react_native!(
+                    :path => config[:reactNativePath],
+                    # to enable hermes on iOS, change `false` to `true` and then install pods
+                    :hermes_enabled => flags[:hermes_enabled],
+                    :fabric_enabled => flags[:fabric_enabled],
+                    # An absolute path to your application root.
+                    :app_path => "#{Pod::Config.instance.installation_root}/.."
+                    )
+                    
+                    
+                    # Enables Flipper.
+                    #
+                    # Note that if you have use_frameworks! enabled, Flipper will not work and
+                    # you should disable the next line.
+#                    use_flipper!()
+                    
+                    # Comment the next line if you don't want to use dynamic frameworks
+                    use_frameworks!
+                    
+                    pod 'SDWebImage'
+                    pod 'JSPatch'
+                    pod 'Masonry'
+                    pod 'MJExtension'
+                    pod 'NullSafe'
+                    pod 'RZRichTextView'
+                    pod 'YYModel'
+                    pod 'YBImageBrowser'
+                    pod 'SnapKit'
+#                    pod "EFMarkdown"
+                    pod 'AFNetworking','~> 3.0' #,'~> 2.4'
+                    pod 'FMDB'
+                    #  pod 'MLeaksFinder'
+                    
+                    
+                    #  pod 'HDWindowLogger'
+                    
+                    target 'YLNoteTests' do
+                      inherit! :search_paths
+                      # Pods for testing
+                    end
+                    
+                    target 'YLNoteUITests' do
+                      # Pods for testing
+                    end
+                    
+end

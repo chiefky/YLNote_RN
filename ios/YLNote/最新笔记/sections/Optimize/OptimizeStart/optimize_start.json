@@ -1,0 +1,49 @@
+
+[
+    {
+        "q_id":"optimize_list_0",
+        "q_title":"pre-main",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOptimize_start",
+        "article": {
+            "art_id":"optimize_list",
+            "art_url":"/content/Optimize/optimize_list.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"optimize_list_1",
+        "q_title":"测试本类分类initialize方法",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"test_initialize",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"optimize_list",
+            "art_url":"/content/Optimize/optimize_list.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"optimize_list_2",
+        "q_title":"main-home",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"",
+        "article": {
+            "art_id":"optimize_list",
+            "art_url":"/content/Optimize/optimize_list.md",
+            "art_title":"",
+        }
+    }
+]

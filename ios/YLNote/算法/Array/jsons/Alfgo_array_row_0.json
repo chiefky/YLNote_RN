@@ -1,0 +1,27 @@
+[
+    {
+        "q_title":"方法1：使用Set集合",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testLookForDumplicateBySet",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"方法2：数组重排",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testLookForDumplicateBySort",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    
+]

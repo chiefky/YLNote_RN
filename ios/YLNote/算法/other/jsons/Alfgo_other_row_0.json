@@ -1,0 +1,40 @@
+[
+    {
+        "q_title":"使用递归",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testFibb1",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"递归+记忆法",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testFibb2",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"动态规划",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testFibb13",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    
+    
+]

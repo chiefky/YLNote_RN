@@ -1,0 +1,22 @@
+[
+    {
+        "q_title":"方法1: 往数组头0位置插入",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testPrintListFromTailToHead1",
+        "demo": {},
+    },
+    {
+        "q_title":"方法2： 递归",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testPrintListFromTailToHead2",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    
+]

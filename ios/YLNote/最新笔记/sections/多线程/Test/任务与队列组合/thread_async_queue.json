@@ -1,0 +1,245 @@
+[
+    {
+        "group_id":0,
+        "group_title":"GCD基本用法",
+        "unfoldStatus":false,
+        "questions": [
+            {
+                "q_id":"100",
+                "q_title":"GCD创建队列&任务",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testGCD_usage",
+            }
+        ]
+    },
+    {
+        "group_id":1,
+        "group_title":"普通场景分析",
+        "unfoldStatus":false,
+        "questions": [
+            {
+                "q_id":"100",
+                "q_title":"串行队列 +【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSerial_sync",
+            },
+            {
+                "q_id":"100",
+                "q_title":"串行队列 +【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSerial_async",
+            },
+            {
+                "q_id":"100",
+                "q_title":"并发队列 +【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testConcurrent_sync",
+            },
+            {
+                "q_id":"100",
+                "q_title":"并发队列 +【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testConcurrent_async",
+            }
+            
+            
+            
+        ]
+    },
+    {
+        "group_id":2,
+        "group_title":"主队列场景",
+        "unfoldStatus":false,
+        "questions": [
+            {
+                "q_id":"100",
+                "q_title":"主队列 +【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSync_main",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"主队列 +【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testAsync_main",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            }
+            
+        ]
+    },
+    {
+        "group_id":3,
+        "group_title":"任务嵌套场景分析",
+        "unfoldStatus":false,
+        "questions": [
+            {
+                "q_id":"100",
+                "q_title":"串行队列【同步】嵌【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSerial_sync_nest_sync",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"串行队列【同步】嵌【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSerial_sync_nest_async",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"串行队列【异步】嵌【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSerial_async_nest_sync",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"串行队列【异步】嵌【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testSerial_async_nest_async",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"并发队列【同步】嵌【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testConcurrent_sync_nest_sync",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"并发队列【同步】嵌【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testConcurrent_sync_nest_async",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"并发队列【异步】嵌【同步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testConcurrent_async_nest_sync",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"100",
+                "q_title":"并发队列【异步】嵌【异步】",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"testConcurrent_async_nest_async",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
+            },
+        ]
+    }
+]
+ 

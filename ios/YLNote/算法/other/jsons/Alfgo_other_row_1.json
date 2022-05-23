@@ -1,0 +1,34 @@
+[
+    {
+        "q_title":"1.使用临时变量",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"swapWithIndex:",
+        "demo": {},
+        "article": {
+            
+        }
+    },
+    {
+        "q_title":"2.使用四则运算",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"swapWithIndex:",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+    },
+    {
+        "q_title":"3.使用异或运算",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"swapWithIndex:",
+        "demo": { },
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+    }]
+

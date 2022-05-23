@@ -1,0 +1,64 @@
+
+[
+    {
+        "q_id":"block_test_0",
+        "q_title":"block类型：copy前后",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testStackBlock_copy",
+        "article": {
+            "art_id":"block_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"block_test_1",
+        "q_title":"2",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":true,
+        "function":"",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"block_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"block_test_2",
+        "q_title":"3",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"",
+        "article": {
+            "art_id":"block_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"block_test_3",
+        "q_title":"4",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"",
+        "article": {
+            "art_id":"block_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+
+    }
+    
+]

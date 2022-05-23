@@ -1,0 +1,28 @@
+[
+    {
+        "q_id":"thread_gcd_IO_0",
+        "q_title":"异步串行读取文件",
+        "q_subtitle":"dispatch_io_read",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_IO_serial",
+        "article": {
+            "art_id":"thread_gcd_group_0",
+            "art_url":"/content/Thread/GCD/Thread-GCD_IO.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"thread_gcd_IO_1",
+        "q_title":"异步并行读取文件",
+        "q_subtitle":"dispatch_io_read + group",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_IO_concurrent",
+        "article": {
+            "art_id":"thread_gcd_group_0",
+            "art_url":"/content/Thread/GCD/Thread-GCD_IO.md",
+            "art_title":"",
+        }
+    },
+]

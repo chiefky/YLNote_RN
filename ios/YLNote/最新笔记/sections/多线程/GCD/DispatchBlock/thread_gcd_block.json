@@ -1,0 +1,105 @@
+[
+    {
+        "q_id":"thread_gcd_block_0",
+        "q_title":"dispatch_block_create",
+        "q_subtitle":"通过 dispatch_block_create方法可以使block创建在堆上",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_block_create",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_block_100",
+            "art_url":"/content/Thread/Thread-GCD-Queue.md",
+        }
+    },
+    {
+        "q_id":"thread_gcd_block_1",
+        "q_title":"dispatch_block_create_with_qos_class",
+        "q_subtitle":"QOS优先级要结合dispatch_block_flags_t标记位规则最终确定任务的优先顺序",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_block_create_qos",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_block_100",
+            "art_url":"/content/Thread/Thread-GCD-Queue.md",
+        }
+    },
+    {
+        "q_id":"thread_gcd_block_2",
+        "q_title":"dispatch_block_notify",
+        "q_subtitle":"等block1执行完后才将block2加入队列",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_block_notify",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_block_100",
+            "art_url":"/content/Thread/Thread-GCD-Queue.md",
+        }
+    },
+    {
+        "q_id":"thread_gcd_block_3",
+        "q_title":"dispatch_block_wait",
+        "q_subtitle":"同步等待，直到指定的 block 执行完成或指定的超时时间结束为止才返回",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_block_wait",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_block_100",
+            "art_url":"/content/Thread/Thread-GCD-Queue.md",
+        }
+    },
+    {
+        "q_id":"thread_gcd_block_4",
+        "q_title":"dispatch_block_cancel",
+        "q_subtitle":"异步取消指定的 block，正在执行的 block 不会被取消。",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_block_cancel",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_block_100",
+            "art_url":"/content/Thread/Thread-GCD-Queue.md",
+        }
+    },
+    {
+        "q_id":"thread_gcd_block_5",
+        "q_title":"dispatch_block_perform",
+        "q_subtitle":"直接执行block，使用这个函数，对block设置优先级是无效的",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_block_perform",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"thread_gcd_block_100",
+            "art_url":"/content/Thread/Thread-GCD-Queue.md",
+        }
+    }
+    
+]

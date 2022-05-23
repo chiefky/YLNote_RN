@@ -1,0 +1,46 @@
+
+[
+    {
+        "q_id":"thread_operation_block_0",
+        "q_title":"NSBlockOperation基本使用",
+        "q_subtitle":"一个blkOperation可以对应多个任务(实现类似dispatch_group)，只有最先执行的block在当前线程，其他block开启新线程",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_block_usage",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"thread_operation_block_1",
+        "q_title":"使用queue管理多个block operation",
+        "q_subtitle":"同invocationOperation一样",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_block_queue",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"thread_operation_block_2",
+        "q_title":"多线程任务同步问题",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_block_sync",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+    },
+
+    
+    
+]
+

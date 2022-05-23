@@ -1,0 +1,46 @@
+[
+    {
+        "q_id":"101",
+        "q_title":"alloc init创建多线程",
+        "q_subtitle":"开启的子线程优先级是(-1)：NSQualityOfServiceDefault = -1,",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testCreate_init",
+        "article": {
+            "art_id":"yn_6002",
+            "art_url":"/content/Thread/Thread-NSThread.md",
+            "art_title":"",
+        }
+
+    },
+    {
+        "q_id":"102",
+        "q_title":"detach创建多线程",
+        "q_subtitle":"开启的子线程优先级是(-1)：NSQualityOfServiceDefault = -1,",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testCreate_detach",
+        "article": {
+            "art_id":"yn_6002",
+            "art_url":"/content/Thread/Thread-NSThread.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"103",
+        "q_title":"performSelectorInBackground创建多线程",
+        "q_subtitle":"开启的子线程优先级是(17)：NSQualityOfServiceUtility = 0x11,",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testCreate_perform",
+        "article": {
+            "art_id":"yn_6002",
+            "art_url":"/content/Thread/Thread-NSThread.md",
+            "art_title":"",
+        }
+
+    },
+    
+    
+]
+ 

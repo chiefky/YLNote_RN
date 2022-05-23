@@ -1,0 +1,340 @@
+[
+    {
+        "group_id":"alfgo_day_test",
+        "unfoldStatus":false,
+        "group_title":"每日回顾",
+        "questions": [
+            {
+                "q_id":"alfgo_day_test_0",
+                "q_title":"所有",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoTestViewController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            }
+        ]
+    },
+
+    {
+        "group_id":"alfgo_sort",
+        "unfoldStatus":false,
+        "group_title":"基础算法",
+        "questions": [
+            {
+                "q_id":"alfgo_sort_0",
+                "q_title":"二分查找",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoPrimaryViewControllerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"alfgo_sort_1",
+                "q_title":"快速排序",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoPrimaryViewControllerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"alfgo_sort_1",
+                "q_title":"归并排序",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoPrimaryViewControllerRow2",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"alfgo_sort_1",
+                "q_title":"堆排序（未完善）",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoPrimaryViewControllerRow3",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            }
+        ]
+    },
+    {
+        "group_id":"alfgo_string",
+        "unfoldStatus":false,
+        "group_title":"字符串",
+        "questions": [
+            {
+                "q_id":"alfgo_string_0",
+                "q_title":"字符串翻转",
+                "q_subtitle":"保证单词顺序正确,空格分割，且去掉两边多余空格",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoStringViewControllerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"alfgo_string_1",
+                "q_title":"判断字符串是否有效闭合",
+                "q_subtitle":"只包括 '('，')'，'{'，'}'，'['，']' 的字符串s,是否闭合",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoStringViewControllerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"alfgo_string_2",
+                "q_title":"无重复字符的最长子串",
+                "q_subtitle":"给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoStringViewControllerRow2",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"alfgo_string_3",
+                "q_title":"两个字符串的最长公共子序列",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoStringViewControllerRow3",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            }
+        ]
+    },
+    {
+        "group_id":"3",
+        "unfoldStatus":false,
+        "group_title":"数组",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"查找数组中的重复元素",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoArrayViewControllerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            }
+        ]
+    },
+    {
+        "group_id":"5",
+        "unfoldStatus":false,
+        "group_title":"链表",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"JZ6 从尾到头打印链表",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoListViewContollerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            },
+            {
+                "q_id":"sub_2_0",
+                "q_title":"JZ24 反转链表",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoListViewContollerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"alfgo_tree",
+        "unfoldStatus":false,
+        "group_title":"树",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"求二叉树深度",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoTreeViewContollerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            },
+            {
+                "q_id":"sub_2_0",
+                "q_title":"判断是否是平衡二叉树",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoTreeViewContollerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id": "alfgo_other",
+        "unfoldStatus": false,
+        "group_title": "other",
+        "questions": [
+            {
+                "q_id":"alfgo_other_0",
+                "q_title":"斐波那契数列",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoOtherViewControllerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            },
+            {
+                "q_id":"alfgo_other_1",
+                "q_title":"数字交换",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlfgoOtherViewControllerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+]

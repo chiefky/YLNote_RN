@@ -1,0 +1,75 @@
+[
+    {
+        "group_id":3001,
+        "unfoldStatus":false,
+        "group_title":"基本语法",
+        "questions": [
+            {
+                "q_title":"泛型",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLSwiftTViewController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"1001_001",
+                    "art_url":"/content/Swift/Swift.md",
+                }
+            },
+            {
+                "q_title":"属性",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLSwiftEmptyViewController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"1001_001",
+                    "art_url":"/content/Swift/Swift.md",
+                }
+            },
+            {
+                "q_title":"闭包",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"",
+                "article": {
+                    "art_id":"1001_001",
+                    "art_url":"/content/Swift/Swift.md",
+                }
+            },
+            {
+                "q_title":"协议",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"",
+                "article": {
+                    "art_id":"1001_001",
+                    "art_url":"/content/Swift/Swift.md",
+                }
+            },
+            {
+                "q_title":"json解析",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"",
+                "article": {
+                    "art_id":"1001_001",
+                    "art_url":"/content/Swift/Swift.md",
+                }
+            }
+
+
+
+        ]
+
+    },
+
+
+]

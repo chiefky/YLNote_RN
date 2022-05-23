@@ -67,11 +67,11 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     UINavigationController *naviSwift = [[UINavigationController alloc] initWithRootViewController:swiftVC];
 
     YLRctNatViewController *flutterVC = [[YLRctNatViewController alloc] init];
-    flutterVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ReactNative" image:[UIImage imageNamed:@"flutter"] tag:4];
+    flutterVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ReactNative" image:[UIImage imageNamed:@"react"] tag:4];
 //    UINavigationController *naviFlutter = [[UINavigationController alloc] initWithRootViewController:flutterVC];
     
     YLHomeViewController *homeVC = [[YLHomeViewController alloc] initWithNibName:@"YLHomeViewController" bundle:nil];
-    homeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:[UIImage imageNamed:@"user"] tag:5];
+    homeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Flutter" image:[UIImage imageNamed:@"flutter"] tag:5];
     UINavigationController *naviUser = [[UINavigationController alloc] initWithRootViewController:homeVC];
 
      UITabBarController *tab = [[UITabBarController alloc] init];

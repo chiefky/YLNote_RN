@@ -46,7 +46,7 @@ class NewsScreen extends React.Component {
                                 this.swiperData.map((item, index) => {
                                     return (
 
-                                        <TouchableOpacity activeOpacity={1} key={index} style={styles.swipeItem} onPress={() => this.props.navigation.push('NewsSearch', { keyword: item })}>
+                                        <TouchableOpacity activeOpacity={1} key={index} style={styles.swipeItem} onPress={() => this.props.navigation.push('NewsSearch', { name: '搜索', keyword: item })}>
                                             <Image source={require("./../../assets/images/i_search.png")} resizeMode={'contain'} style={styles.headerSearchImage} />
                                             <Text style={styles.headerSearchText}>{item}</Text>
                                         </TouchableOpacity>

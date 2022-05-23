@@ -130,7 +130,6 @@ class FilmList extends Component {
         };
     }
     getInfo = () => {
-        let info = this.state.infoList;
         fetch("https://ghibliapi.herokuapp.com/films"
         ).then((res) => res.json())
             .then((res) => {

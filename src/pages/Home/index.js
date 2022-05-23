@@ -6,11 +6,7 @@ import * as React from 'react';
 import { View, Text, Button, SafeAreaView } from 'react-native';
 import RootNav from '../RootNav';
 
-
-
-
 function Index() {
-
     return (
         <RootNav />
     );

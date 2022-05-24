@@ -14,11 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-
-@interface YLScrollView : UIScrollView
-
-@end
-
 @interface YLPictureView : YLView
 @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,assign) CGSize contentSize;

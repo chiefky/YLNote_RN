@@ -12,24 +12,25 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: "row",
         justifyContent: "space-between",
-        // alignItems: "center",
+        alignItems: "center",
         flex: 1,
-        backgroundColor: "#fff",
-        // borderWidth: 1,
+        backgroundColor: "#ffffff",
+        borderWidth: 1,
         borderColor: "#dddddd",
-        margin: 15,
-        marginTop: 0,
+        marginBottom: 10,
         padding: 15
+
     },
     containerLeft: {
-        width: screenWidth - 210,
+        // backgroundColor: "blue",
+        width: screenWidth - 180,
         marginRight: 10,
     },
     containerRight: {
-        backgroundColor: "#f5f5f5",
         width: 140,
         height: 140,
-        padding: 15,
+        padding: 5,
+        backgroundColor: "#B8860B",
     },
     cellTitle: {
         color: "#000",
@@ -67,7 +68,7 @@ class CellContainer extends Component {
             <View style={styles.container}>
                 <View style={styles.containerLeft}>
                     {/* 原始标题 */}
-                    <Text numberOfLines={2} style={styles.cellTitle}>
+                    <Text numberOfLines={1} style={styles.cellTitle}>
                         {original_title}
                     </Text>
                     <Text style={styles.cellSubtitle}>

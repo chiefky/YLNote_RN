@@ -11,7 +11,7 @@ class HeaderView extends React.Component {
         const { tabBarUnderlineStyle, tabItems, tabClickHanldler } = this.props
         const { selTab } = this.state;
         return (<View style={{ justifyContent: 'flex-end' }}>
-            <View style={styles.tabtabItemsContainer}            >
+            <View style={styles.tabsContainer}            >
                 {tabItems.map((item, index) => {
                     console.log("🍇", item);
                     const { tabLabel } = item.props
@@ -26,7 +26,7 @@ class HeaderView extends React.Component {
                     </TouchableOpacity>);
                 })}
             </View>
-            <View style={[styles.tabBarUnderlineDefaultStyle, {
+            <View style={[styles.underlineDefault, {
                 width: screenWidth * .9 / tabItems.length,
                 marginLeft: 5 + selTab * (screenWidth / tabItems.length),
             }]}>
@@ -56,7 +56,7 @@ class ScrollerTabView extends React.Component {
 
         return (<View style={{ flex: 1 }}>
             {/* 标签栏 */}
-            <View style={styles.headerContainer}>
+            <View style={styles.topContainer}>
                 <ScrollView style={{ flex: 1 }}
                     horizontal={true}
                 // showsHorizontalScrollIndicator={false}
@@ -98,15 +98,14 @@ class ScrollerTabView extends React.Component {
 var styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFFAF0',
         position: 'relative',
     },
-    headerContainer: {
+    topContainer: {
         // backgroundColor: 'green',
         width: screenWidth,
         height: 45,
     },
-    tabtabItemsContainer: {
+    tabsContainer: {
         height: 40,
         flexDirection: 'row',
         justifyContent: 'space-around',
@@ -123,15 +122,13 @@ var styles = StyleSheet.create({
         fontSize: 17,
         marginLeft: 1
     },
-    tabBarUnderlineDefaultStyle: {
+    underlineDefault: {
         backgroundColor: '#B22222',
         height: 4,
-        // alignSelf: 'center',
     },
 
     mainContainer: {
         flex: 1,
-        backgroundColor: '#FFFAF0'
     },
 
     mainItem: {

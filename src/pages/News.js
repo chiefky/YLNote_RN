@@ -92,7 +92,7 @@ export default NewsScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#FFFAF0',
+        backgroundColor: '#F8F8FF',
         position: 'relative',
     },
     headerContainer: {

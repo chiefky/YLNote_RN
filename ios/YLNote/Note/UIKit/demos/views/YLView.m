@@ -47,14 +47,6 @@
 
 @end
 
-@implementation YLScrollView
-
-- (void)layoutSubviews {
-    NSLog(@"%s: [%ld]",__func__,self.tag);
-    [super layoutSubviews];
-}
-
-@end
 @interface YLPictureView ()
 @end
 @implementation YLPictureView

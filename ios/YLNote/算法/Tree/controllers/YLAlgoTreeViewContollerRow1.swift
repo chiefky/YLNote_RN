@@ -1,5 +1,5 @@
 //
-//  YLAlfgoTreeViewContollerRow1.swift
+//  YLAlgoTreeViewContollerRow1.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlfgoTreeViewContollerRow1: YLBaseTableViewController {
+class YLAlgoTreeViewContollerRow1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class YLAlfgoTreeViewContollerRow1: YLBaseTableViewController {
 
     //    MARK: override
     override func fileName() -> String {
-        return "Alfgo_tree_row_1"
+        return "Algo_tree_row_1"
     }
 
 

@@ -1,5 +1,5 @@
 //
-//  YLAlfgoTestViewController.swift
+//  YLAlgoTestViewController.swift
 //  YLNote
 //
 //  Created by tangh on 2022/3/10.
@@ -9,7 +9,7 @@
 import UIKit
 
 /// 每日回顾1~2算法
-class YLAlfgoTestViewController: YLBaseGroupTableViewController {
+class YLAlgoTestViewController: YLBaseGroupTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

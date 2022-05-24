@@ -1,5 +1,5 @@
 //
-//  YLAlfgoPrimaryViewControllerRow1.swift
+//  YLAlgoPrimaryViewControllerRow1.swift
 //  YLNote
 //
 //  Created by tangh on 2022/3/2.
@@ -9,7 +9,7 @@
 import UIKit
 var nums = [3,5,9,-1,2,0,12]
 
-class YLAlfgoPrimaryViewControllerRow1: YLBaseTableViewController {
+class YLAlgoPrimaryViewControllerRow1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class YLAlfgoPrimaryViewControllerRow1: YLBaseTableViewController {
 
     //    MARK: override
     override func fileName() -> String {
-        return "Alfgo_primary_row_1"
+        return "Algo_primary_row_1"
     }
 
 }

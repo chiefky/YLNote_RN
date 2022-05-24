@@ -1,18 +1,18 @@
 [
     {
-        "group_id":"alfgo_day_test",
+        "group_id":"algo_day_test",
         "unfoldStatus":false,
         "group_title":"每日回顾",
         "questions": [
             {
-                "q_id":"alfgo_day_test_0",
+                "q_id":"algo_day_test_0",
                 "q_title":"所有",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoTestViewController",
+                    "className":"YLAlgoTestViewController",
                     "style": 1,
                     "useXib": 0
                 },
@@ -26,19 +26,19 @@
     },
 
     {
-        "group_id":"alfgo_sort",
+        "group_id":"algo_sort",
         "unfoldStatus":false,
         "group_title":"基础算法",
         "questions": [
             {
-                "q_id":"alfgo_sort_0",
+                "q_id":"algo_sort_0",
                 "q_title":"二分查找",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoPrimaryViewControllerRow0",
+                    "className":"YLAlgoPrimaryViewControllerRow0",
                     "style": 1,
                     "useXib": 0
                 },
@@ -49,14 +49,14 @@
                 },
             },
             {
-                "q_id":"alfgo_sort_1",
+                "q_id":"algo_sort_1",
                 "q_title":"快速排序",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoPrimaryViewControllerRow1",
+                    "className":"YLAlgoPrimaryViewControllerRow1",
                     "style": 1,
                     "useXib": 0
                 },
@@ -67,14 +67,14 @@
                 },
             },
             {
-                "q_id":"alfgo_sort_1",
+                "q_id":"algo_sort_1",
                 "q_title":"归并排序",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoPrimaryViewControllerRow2",
+                    "className":"YLAlgoPrimaryViewControllerRow2",
                     "style": 1,
                     "useXib": 0
                 },
@@ -85,14 +85,14 @@
                 },
             },
             {
-                "q_id":"alfgo_sort_1",
+                "q_id":"algo_sort_1",
                 "q_title":"堆排序（未完善）",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoPrimaryViewControllerRow3",
+                    "className":"YLAlgoPrimaryViewControllerRow3",
                     "style": 1,
                     "useXib": 0
                 },
@@ -105,19 +105,19 @@
         ]
     },
     {
-        "group_id":"alfgo_string",
+        "group_id":"algo_string",
         "unfoldStatus":false,
         "group_title":"字符串",
         "questions": [
             {
-                "q_id":"alfgo_string_0",
+                "q_id":"algo_string_0",
                 "q_title":"字符串翻转",
                 "q_subtitle":"保证单词顺序正确,空格分割，且去掉两边多余空格",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoStringViewControllerRow0",
+                    "className":"YLAlgoStringViewControllerRow0",
                     "style": 1,
                     "useXib": 0
                 },
@@ -128,14 +128,14 @@
                 },
             },
             {
-                "q_id":"alfgo_string_1",
+                "q_id":"algo_string_1",
                 "q_title":"判断字符串是否有效闭合",
                 "q_subtitle":"只包括 '('，')'，'{'，'}'，'['，']' 的字符串s,是否闭合",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoStringViewControllerRow1",
+                    "className":"YLAlgoStringViewControllerRow1",
                     "style": 1,
                     "useXib": 0
                 },
@@ -146,14 +146,14 @@
                 },
             },
             {
-                "q_id":"alfgo_string_2",
+                "q_id":"algo_string_2",
                 "q_title":"无重复字符的最长子串",
                 "q_subtitle":"给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoStringViewControllerRow2",
+                    "className":"YLAlgoStringViewControllerRow2",
                     "style": 1,
                     "useXib": 0
                 },
@@ -164,14 +164,14 @@
                 },
             },
             {
-                "q_id":"alfgo_string_3",
+                "q_id":"algo_string_3",
                 "q_title":"两个字符串的最长公共子序列",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoStringViewControllerRow3",
+                    "className":"YLAlgoStringViewControllerRow3",
                     "style": 1,
                     "useXib": 0
                 },
@@ -196,7 +196,7 @@
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoArrayViewControllerRow0",
+                    "className":"YLAlgoArrayViewControllerRow0",
                     "style": 1,
                     "useXib": 0
                 },
@@ -221,7 +221,7 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoListViewContollerRow0",
+                    "className":"YLAlgoListViewContollerRow0",
                     "style": 1,
                     "useXib": 0
                 },
@@ -239,7 +239,7 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoListViewContollerRow1",
+                    "className":"YLAlgoListViewContollerRow1",
                     "style": 1,
                     "useXib": 0
                 },
@@ -252,7 +252,7 @@
         ]
     },
     {
-        "group_id":"alfgo_tree",
+        "group_id":"algo_tree",
         "unfoldStatus":false,
         "group_title":"树",
         "questions": [
@@ -264,7 +264,7 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoTreeViewContollerRow0",
+                    "className":"YLAlgoTreeViewContollerRow0",
                     "style": 1,
                     "useXib": 0
                 },
@@ -282,7 +282,7 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoTreeViewContollerRow1",
+                    "className":"YLAlgoTreeViewContollerRow1",
                     "style": 1,
                     "useXib": 0
                 },
@@ -295,19 +295,19 @@
         ]
     },
     {
-        "group_id": "alfgo_other",
+        "group_id": "algo_other",
         "unfoldStatus": false,
         "group_title": "other",
         "questions": [
             {
-                "q_id":"alfgo_other_0",
+                "q_id":"algo_other_0",
                 "q_title":"斐波那契数列",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoOtherViewControllerRow0",
+                    "className":"YLAlgoOtherViewControllerRow0",
                     "style": 1,
                     "useXib": 0
                 },
@@ -318,14 +318,14 @@
                 }
             },
             {
-                "q_id":"alfgo_other_1",
+                "q_id":"algo_other_1",
                 "q_title":"数字交换",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlfgoOtherViewControllerRow1",
+                    "className":"YLAlgoOtherViewControllerRow1",
                     "style": 1,
                     "useXib": 0
                 },

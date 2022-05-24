@@ -1,6 +1,6 @@
 [
     {
-        "group_id":"alfgo_day_test_0",
+        "group_id":"Algo_day_test_0",
         "unfoldStatus":false,
         "group_title":"基础部分",
         "questions": [
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "group_id":"alfgo_day_test_0",
+        "group_id":"Algo_day_test_0",
         "unfoldStatus":false,
         "group_title":"字符串部分",
         "questions": [

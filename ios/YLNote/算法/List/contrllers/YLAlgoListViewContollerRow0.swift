@@ -1,5 +1,5 @@
 //
-//  YLAlfgoListViewContollerRow0.swift
+//  YLAlgoListViewContollerRow0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlfgoListViewContollerRow0: YLBaseTableViewController {
+class YLAlgoListViewContollerRow0: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +66,7 @@ class YLAlfgoListViewContollerRow0: YLBaseTableViewController {
     
     //    MARK: override
     override func fileName() -> String {
-        return "Alfgo_list_row_0"
+        return "Algo_list_row_0"
     }
 
 

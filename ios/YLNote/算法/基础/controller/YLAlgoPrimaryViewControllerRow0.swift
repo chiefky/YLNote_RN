@@ -1,5 +1,5 @@
 //
-//  YLAlfgoPrimaryViewControllerRow0.swift
+//  YLAlgoPrimaryViewControllerRow0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/3/1.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-class YLAlfgoPrimaryViewControllerRow0: YLBaseTableViewController {
+class YLAlgoPrimaryViewControllerRow0: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,5 +1,5 @@
 //
-//  YLAlfgoListDataManger.swift
+//  YLAlgoListDataManger.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/5.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-class YLAlfgoTabQesDataManger: YLQuestionDataManagerBase {
+class YLAlgoTabQesDataManger: YLQuestionDataManagerBase {
     override var jsonFileName: String {
-        return "Alfgo"
+        return "Algo"
     }
     
     override var headerIdentifier: String {

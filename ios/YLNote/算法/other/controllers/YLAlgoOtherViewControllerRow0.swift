@@ -1,5 +1,5 @@
 //
-//  YLAlfgoOtherViewControllerRow0.swift
+//  YLAlgoOtherViewControllerRow0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlfgoOtherViewControllerRow0: YLBaseTableViewController {
+class YLAlgoOtherViewControllerRow0: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class YLAlfgoOtherViewControllerRow0: YLBaseTableViewController {
 
     //    MARK: override
     override func fileName() -> String {
-        return "Alfgo_other_row_0"
+        return "Algo_other_row_0"
     }
 
 

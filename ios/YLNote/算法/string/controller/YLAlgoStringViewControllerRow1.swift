@@ -1,5 +1,5 @@
 //
-//  YLAlfgoStringViewControllerRow0.swift
+//  YLAlgoStringViewControllerRow0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/3/7.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlfgoStringViewControllerRow1: YLBaseTableViewController {
+class YLAlgoStringViewControllerRow1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +37,6 @@ class YLAlfgoStringViewControllerRow1: YLBaseTableViewController {
 
     //MARK: override
     override func fileName() -> String {
-        return "Alfgo_string_row_1"
+        return "Algo_string_row_1"
     }
 }

@@ -44,8 +44,8 @@ class YLAlgoViewController: UIViewController {
         return t
     }()
     
-    lazy var dataManager: YLAlfgoTabQesDataManger = {
-        let manager = YLAlfgoTabQesDataManger()
+    lazy var dataManager: YLAlgoTabQesDataManger = {
+        let manager = YLAlgoTabQesDataManger()
         return manager
     }()
     
@@ -57,7 +57,7 @@ class YLAlgoViewController: UIViewController {
 
 extension YLAlgoViewController: YLQuestionDataProtocol {
     var jsonFileName: String {
-        return "Alfgo"
+        return "Algo"
     }
     
     var headerIdentifier: String {

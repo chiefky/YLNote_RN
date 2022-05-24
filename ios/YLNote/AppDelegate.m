@@ -58,7 +58,7 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     UINavigationController *naviNote = [[UINavigationController alloc] initWithRootViewController:noteVC];
 
     YLAlgoViewController *algoriVC = [[YLAlgoViewController alloc] init];
-    algoriVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"算法" image:[UIImage imageNamed:@"GCD"] tag:2];
+    algoriVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"算法" image:[UIImage imageNamed:@"algorithm"] tag:2];
     UINavigationController *naviAlgori = [[UINavigationController alloc] initWithRootViewController:algoriVC];
 
     

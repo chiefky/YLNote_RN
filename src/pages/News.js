@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import Swiper from '@nart/react-native-swiper'
 import FilmList from './FilmList';
-import { screenWidth } from "../utils/stylesKit";
+import { screenWidth, pxToDp } from "../utils/stylesKit";
 import ScrollerTabView from './../components/ScrollerTabView';
 class NewsScreen extends React.Component {
     tabArr = [
@@ -100,18 +100,19 @@ const styles = StyleSheet.create({
         backgroundColor: '#B22222',
         justifyContent: 'space-around',
         alignItems: 'center',
-        height: 65,
+        height: pxToDp(65),
         // paddingTop: 10,
         // paddingBottom: 5
     },
     headerLogo: {
-        width: 45,
-        height: 45,
+        // backgroundColor: 'blue',
+        width: pxToDp(45),
+        height: pxToDp(45),
     },
     headerSearchContainer: {
-        width: screenWidth * 0.7,
-        height: 33,
-        borderRadius: 18,
+        width: pxToDp(screenWidth * 0.7),
+        height: pxToDp(33),
+        borderRadius: pxToDp(18),
         backgroundColor: 'rgba(255,255,255,.3)'
     },
     swipeItem: {
@@ -121,16 +122,17 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     headerSearchImage: {
-        width: 17,
-        height: 17,
-        marginRight: 5
+        width: pxToDp(17),
+        height: pxToDp(17),
+        marginRight: pxToDp(5)
     },
     headerSearchText: {
         color: '#F8F8F8',
     },
     headerRightImage: {
-        width: 27,
-        height: 27,
+        // backgroundColor: 'blue',
+        width: pxToDp(27),
+        height: pxToDp(27),
     },
     tabViewItemContainer: {
         flex: 1,
@@ -144,7 +146,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         position: 'absolute',
         width: screenWidth * .1,
-        height: 50,
+        height: pxToDp(50),
         top: 0,
         right: 0,
     }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, RefreshControl, Image, TouchableOpacity, SafeAreaView } from "react-native";
 import { RecyclerListView, DataProvider, LayoutProvider } from "recyclerlistview";
-import { screenWidth } from "../utils/stylesKit";
+import { screenWidth, pxToDp } from "../utils/stylesKit";
 
 const ViewTypes = {
     FULL: 0,
@@ -17,36 +17,37 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         borderWidth: 1,
         borderColor: "#dddddd",
-        marginBottom: 10,
-        padding: 15
-
+        marginBottom: pxToDp(10),
+        paddingLeft: pxToDp(15),
+        paddingRight: pxToDp(15)
     },
     containerLeft: {
         // backgroundColor: "blue",
-        width: screenWidth - 180,
-        marginRight: 10,
+        width: pxToDp(screenWidth - 140 - 30 - 5),
+        paddingRight: pxToDp(5),
+        position: 'relative'
     },
     containerRight: {
-        width: 140,
-        height: 140,
-        padding: 5,
+        width: pxToDp(140),
+        height: pxToDp(140),
+        padding: pxToDp(5),
         backgroundColor: "#B8860B",
     },
     cellTitle: {
         color: "#000",
-        fontSize: 16,
+        fontSize: pxToDp(17),
         fontWeight: "700",
-        lineHeight: 28
+        // lineHeight: 28
     },
     cellSubtitle: {
-        fontSize: 14,
-        marginTop: 5
+        fontSize: pxToDp(17),
+        marginTop: pxToDp(5)
     },
     cellContext: {
         color: "#999",
-        fontSize: 12,
-        lineHeight: 18,
-        marginTop: 5
+        fontSize: pxToDp(15),
+        lineHeight: pxToDp(18),
+        marginTop: pxToDp(5)
     },
 
     // containerRightText: {
@@ -62,7 +63,6 @@ class CellContainer extends Component {
         const { id, title, cellSubtitle, original_title, description, image } = this.props
         this.filmId = id;
         this.title = original_title
-        // console.log(data.title);
         return (<TouchableOpacity style={{ flex: 1 }}
             onPress={this.clickHandler}>
             <View style={styles.container}>

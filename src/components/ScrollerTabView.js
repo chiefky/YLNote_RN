@@ -1,6 +1,6 @@
 import React, { createRef } from 'react';
 import { StyleSheet, View, Text, SafeAreaView, ScrollView, StatusBar, TouchableOpacity } from 'react-native';
-import { screenWidth, screenHeight } from './../utils/stylesKit';
+import { screenWidth, screenHeight, pxToDp } from './../utils/stylesKit';
 
 class HeaderView extends React.Component {
     state = {
@@ -22,13 +22,13 @@ class HeaderView extends React.Component {
                             this.setState({ selTab: index })
                             tabClickHanldler(index)
                         }} >
-                        <Text style={{ ...styles.tabText, width: screenWidth / tabItems.length - 10 }}>{tabLabel} </Text>
+                        <Text style={{ ...styles.tabText, width: pxToDp(screenWidth / tabItems.length) }}>{tabLabel} </Text>
                     </TouchableOpacity>);
                 })}
             </View>
             <View style={[styles.underlineDefault, {
-                width: screenWidth * .9 / tabItems.length,
-                marginLeft: 5 + selTab * (screenWidth / tabItems.length),
+                width: pxToDp(screenWidth / tabItems.length - 40),
+                marginLeft: pxToDp(selTab * (screenWidth / tabItems.length) + 20),
             }]}>
             </View>
         </View>);

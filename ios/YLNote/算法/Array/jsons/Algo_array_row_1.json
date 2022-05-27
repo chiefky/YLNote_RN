@@ -1,1 +1,16 @@
 
+[
+    {
+        "q_title":"方法1：利用前后元素差值",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testArrayisContinuous",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    
+]

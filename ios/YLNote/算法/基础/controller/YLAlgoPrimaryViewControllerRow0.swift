@@ -35,7 +35,7 @@ class YLAlgoPrimaryViewControllerRow0: YLBaseTableViewController {
     
     //    MARK: override
     override func fileName() -> String {
-        return "Alfgo_primary_row_0"
+        return "Algo_primary_row_0"
     }
 
 

@@ -16,7 +16,7 @@ class YLAlgoArrayViewControllerRow0: YLBaseTableViewController {
         // Do any additional setup after loading the view.
     }
     
-    func testLookForDumplicateBySet() {
+    @objc func testLookForDumplicateBySet() {
         
         let array = [2,3,1,4,2,5,3] // [2,3,1,0,2,5,3]
         let res = dumplicateWithSet(array);
@@ -53,7 +53,7 @@ class YLAlgoArrayViewControllerRow0: YLBaseTableViewController {
         return -1
     }
 
-    func testLookForDumplicateBySort() {
+    @objc func testLookForDumplicateBySort() {
         var array = [2,3,1,4,2,5,3] // [2,3,1,0,2,5,3]
         let res = dumplicateWithSort(&array);
         print("重复元素是：\(res)")

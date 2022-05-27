@@ -15,6 +15,7 @@
 #import "YLRctNatViewController.h"
 #import "YLUserViewController.h"
 #import "YLPerNoteViewController.h"
+#import "YLNativeNewsViewController.h"
 #import "YLNote-Swift.h"
 
 
@@ -70,7 +71,7 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     flutterVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ReactNative" image:[UIImage imageNamed:@"react"] tag:4];
 //    UINavigationController *naviFlutter = [[UINavigationController alloc] initWithRootViewController:flutterVC];
     
-    YLHomeViewController *homeVC = [[YLHomeViewController alloc] initWithNibName:@"YLHomeViewController" bundle:nil];
+    YLNativeNewsViewController *homeVC = [[YLNativeNewsViewController alloc] initWithNibName:@"YLNativeNewsViewController" bundle:nil];
     homeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Flutter" image:[UIImage imageNamed:@"flutter"] tag:5];
     UINavigationController *naviUser = [[UINavigationController alloc] initWithRootViewController:homeVC];
 

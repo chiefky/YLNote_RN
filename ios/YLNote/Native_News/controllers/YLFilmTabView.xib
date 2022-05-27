@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YLFilmTabView">
+            <rect key="frame" x="0.0" y="0.0" width="211" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTc-Pl-Xdd">
+                    <rect key="frame" x="0.0" y="0.0" width="211" height="46"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.64235204459999995" green="0.19700944419999999" blue="0.17250442499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RTc-Pl-Xdd" secondAttribute="trailing" id="3bC-Ms-8cL"/>
+                <constraint firstItem="RTc-Pl-Xdd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cch-Lp-AFO"/>
+                <constraint firstItem="RTc-Pl-Xdd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WUP-Mf-Hhz"/>
+                <constraint firstAttribute="bottom" secondItem="RTc-Pl-Xdd" secondAttribute="bottom" id="ncp-Mt-tqq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tabLabel" destination="RTc-Pl-Xdd" id="z1T-c0-Nvr"/>
+                <outlet property="tapGesture" destination="CvA-xm-glw" id="NER-ve-c8y"/>
+                <outletCollection property="gestureRecognizers" destination="CvA-xm-glw" appends="YES" id="m1t-Hd-U60"/>
+            </connections>
+            <point key="canvasLocation" x="-68.840579710144937" y="107.8125"/>
+        </view>
+        <tapGestureRecognizer id="CvA-xm-glw">
+            <connections>
+                <action selector="tapClickAction:" destination="iN0-l3-epB" id="0zf-8A-s4s"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

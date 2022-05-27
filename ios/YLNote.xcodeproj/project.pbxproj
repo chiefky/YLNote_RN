@@ -21,6 +21,8 @@
 		540B8F84260CA26300475BC5 /* YLQuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F83260CA26300475BC5 /* YLQuestionDataManager.swift */; };
 		540B8F9D260CB6CD00475BC5 /* UIWindowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F9C260CB6CD00475BC5 /* UIWindowTool.swift */; };
 		541A9C2228390D5600C839A2 /* YLNoteBridgeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A9C2128390D5600C839A2 /* YLNoteBridgeAPI.m */; };
+		5422A094283ED7D70019586F /* YLSearchBarBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5422A093283ED7D70019586F /* YLSearchBarBackView.m */; };
+		5422A099283ED7EE0019586F /* YLSearchBarBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5422A098283ED7EE0019586F /* YLSearchBarBackView.xib */; };
 		542821A32611C5FF0066E070 /* YLQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542821A12611C5FF0066E070 /* YLQuestionTableViewCell.swift */; };
 		542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542821A22611C5FF0066E070 /* YLQuestionTableViewCell.xib */; };
 		542821C7261204950066E070 /* YLDemoSeparatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542821C5261204950066E070 /* YLDemoSeparatorViewController.swift */; };
@@ -214,10 +216,17 @@
 		54B84FEE283CDA7A00294D47 /* RNTSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FED283CDA7A00294D47 /* RNTSwitchView.m */; };
 		54B84FFD283CDF1A00294D47 /* YLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FFC283CDF1A00294D47 /* YLScrollView.m */; };
 		54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B85001283CDF2C00294D47 /* YLScrollView.xib */; };
-		54B85059283CE8D100294D47 /* YLRecyleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B85057283CE8D100294D47 /* YLRecyleListViewController.m */; };
-		54B8505A283CE8D100294D47 /* YLRecyleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B85058283CE8D100294D47 /* YLRecyleListViewController.xib */; };
-		54B85061283CE96200294D47 /* YLFimlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B8505F283CE96200294D47 /* YLFimlTableViewCell.m */; };
-		54B85062283CE96200294D47 /* YLFimlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B85060283CE96200294D47 /* YLFimlTableViewCell.xib */; };
+		54B850A8283D358200294D47 /* YLLifeCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850A7283D358200294D47 /* YLLifeCycleView.m */; };
+		54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */; };
+		54B850B6283D35F800294D47 /* YLLifeCycleViewX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */; };
+		54B850C2283D5FB500294D47 /* YLFimlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */; };
+		54B850C3283D5FB500294D47 /* YLRecyleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BF283D5FB500294D47 /* YLRecyleListViewController.m */; };
+		54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */; };
+		54B850C5283D5FB500294D47 /* YLRecyleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850C1283D5FB500294D47 /* YLRecyleListViewController.xib */; };
+		54B850CE283D602F00294D47 /* YLNativeNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850CC283D602F00294D47 /* YLNativeNewsViewController.m */; };
+		54B850DA283D605700294D47 /* YLNativeNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850D9283D605700294D47 /* YLNativeNewsViewController.xib */; };
+		54B850E0283E2CC900294D47 /* YLFilmTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850DF283E2CC900294D47 /* YLFilmTabView.m */; };
+		54B850E5283E2CE800294D47 /* YLFilmTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850E4283E2CE800294D47 /* YLFilmTabView.xib */; };
 		54BA46A02632C56400665C43 /* YLDemoARCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BA469F2632C56400665C43 /* YLDemoARCViewController.m */; };
 		54BB262E2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB262D2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift */; };
 		54BB26302601E095001A98B4 /* YLMessageHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB262F2601E095001A98B4 /* YLMessageHandlerViewController.swift */; };
@@ -397,6 +406,9 @@
 		540B8F9C260CB6CD00475BC5 /* UIWindowTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowTool.swift; sourceTree = "<group>"; };
 		541A9C2028390D5600C839A2 /* YLNoteBridgeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNoteBridgeAPI.h; sourceTree = "<group>"; };
 		541A9C2128390D5600C839A2 /* YLNoteBridgeAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNoteBridgeAPI.m; sourceTree = "<group>"; };
+		5422A092283ED7D70019586F /* YLSearchBarBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLSearchBarBackView.h; sourceTree = "<group>"; };
+		5422A093283ED7D70019586F /* YLSearchBarBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLSearchBarBackView.m; sourceTree = "<group>"; };
+		5422A098283ED7EE0019586F /* YLSearchBarBackView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLSearchBarBackView.xib; sourceTree = "<group>"; };
 		542821A12611C5FF0066E070 /* YLQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLQuestionTableViewCell.swift; sourceTree = "<group>"; };
 		542821A22611C5FF0066E070 /* YLQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		542821C5261204950066E070 /* YLDemoSeparatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDemoSeparatorViewController.swift; sourceTree = "<group>"; };
@@ -716,12 +728,23 @@
 		54B84FFB283CDF1A00294D47 /* YLScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScrollView.h; sourceTree = "<group>"; };
 		54B84FFC283CDF1A00294D47 /* YLScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLScrollView.m; sourceTree = "<group>"; };
 		54B85001283CDF2C00294D47 /* YLScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLScrollView.xib; sourceTree = "<group>"; };
-		54B85056283CE8D100294D47 /* YLRecyleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRecyleListViewController.h; sourceTree = "<group>"; };
-		54B85057283CE8D100294D47 /* YLRecyleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRecyleListViewController.m; sourceTree = "<group>"; };
-		54B85058283CE8D100294D47 /* YLRecyleListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLRecyleListViewController.xib; sourceTree = "<group>"; };
-		54B8505E283CE96200294D47 /* YLFimlTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLFimlTableViewCell.h; sourceTree = "<group>"; };
-		54B8505F283CE96200294D47 /* YLFimlTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLFimlTableViewCell.m; sourceTree = "<group>"; };
-		54B85060283CE96200294D47 /* YLFimlTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLFimlTableViewCell.xib; sourceTree = "<group>"; };
+		54B850A6283D358200294D47 /* YLLifeCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLifeCycleView.h; sourceTree = "<group>"; };
+		54B850A7283D358200294D47 /* YLLifeCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLifeCycleView.m; sourceTree = "<group>"; };
+		54B850AF283D35DB00294D47 /* YLLifeCycleViewX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLifeCycleViewX.h; sourceTree = "<group>"; };
+		54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLifeCycleViewX.m; sourceTree = "<group>"; };
+		54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLLifeCycleViewX.xib; sourceTree = "<group>"; };
+		54B850BC283D5FB500294D47 /* YLFimlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFimlTableViewCell.h; sourceTree = "<group>"; };
+		54B850BD283D5FB500294D47 /* YLRecyleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRecyleListViewController.h; sourceTree = "<group>"; };
+		54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFimlTableViewCell.m; sourceTree = "<group>"; };
+		54B850BF283D5FB500294D47 /* YLRecyleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRecyleListViewController.m; sourceTree = "<group>"; };
+		54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLFimlTableViewCell.xib; sourceTree = "<group>"; };
+		54B850C1283D5FB500294D47 /* YLRecyleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRecyleListViewController.xib; sourceTree = "<group>"; };
+		54B850CB283D602F00294D47 /* YLNativeNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNativeNewsViewController.h; sourceTree = "<group>"; };
+		54B850CC283D602F00294D47 /* YLNativeNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNativeNewsViewController.m; sourceTree = "<group>"; };
+		54B850D9283D605700294D47 /* YLNativeNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLNativeNewsViewController.xib; sourceTree = "<group>"; };
+		54B850DE283E2CC900294D47 /* YLFilmTabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLFilmTabView.h; sourceTree = "<group>"; };
+		54B850DF283E2CC900294D47 /* YLFilmTabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLFilmTabView.m; sourceTree = "<group>"; };
+		54B850E4283E2CE800294D47 /* YLFilmTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLFilmTabView.xib; sourceTree = "<group>"; };
 		54BA469E2632C56400665C43 /* YLDemoARCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDemoARCViewController.h; sourceTree = "<group>"; };
 		54BA469F2632C56400665C43 /* YLDemoARCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDemoARCViewController.m; sourceTree = "<group>"; };
 		54BB262D2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKWebDemoListViewController.swift; sourceTree = "<group>"; };
@@ -1041,12 +1064,6 @@
 				54B84FFB283CDF1A00294D47 /* YLScrollView.h */,
 				54B84FFC283CDF1A00294D47 /* YLScrollView.m */,
 				54B85001283CDF2C00294D47 /* YLScrollView.xib */,
-				54B85056283CE8D100294D47 /* YLRecyleListViewController.h */,
-				54B85057283CE8D100294D47 /* YLRecyleListViewController.m */,
-				54B85058283CE8D100294D47 /* YLRecyleListViewController.xib */,
-				54B8505E283CE96200294D47 /* YLFimlTableViewCell.h */,
-				54B8505F283CE96200294D47 /* YLFimlTableViewCell.m */,
-				54B85060283CE96200294D47 /* YLFimlTableViewCell.xib */,
 			);
 			path = ReactNative;
 			sourceTree = "<group>";
@@ -1691,6 +1708,9 @@
 		548FF88724A87F3200ECF7F0 /* YLNote */ = {
 			isa = PBXGroup;
 			children = (
+				54B850BB283D5FB500294D47 /* Native_News */,
+				54B850A5283D355200294D47 /* LiftCycle */,
+				54B850A1283D2DA600294D47 /* Utils */,
 				541A9C1F28390CF400C839A2 /* ReactNative */,
 				54EFAAE92689C9BB00A5BD4D /* 最新笔记 */,
 				54E97A6227B10884001CA669 /* 算法 */,
@@ -1721,7 +1741,6 @@
 				54AEE76024CECF2200A6CFC7 /* YLNote-Bridging-Header.h */,
 				548FF88824A87F3200ECF7F0 /* AppDelegate.h */,
 				548FF88924A87F3200ECF7F0 /* AppDelegate.m */,
-				548FF8D624AC5F5E00ECF7F0 /* YLDefaultMacro.h */,
 				548FF89124A87F3200ECF7F0 /* Main.storyboard */,
 				548FF89424A87F3300ECF7F0 /* Assets.xcassets */,
 				548FF89624A87F3300ECF7F0 /* LaunchScreen.storyboard */,
@@ -2075,6 +2094,64 @@
 			children = (
 			);
 			path = "内存布局";
+			sourceTree = "<group>";
+		};
+		54B850A1283D2DA600294D47 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				548FF8D624AC5F5E00ECF7F0 /* YLDefaultMacro.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		54B850A5283D355200294D47 /* LiftCycle */ = {
+			isa = PBXGroup;
+			children = (
+				54B850A6283D358200294D47 /* YLLifeCycleView.h */,
+				54B850A7283D358200294D47 /* YLLifeCycleView.m */,
+				54B850AF283D35DB00294D47 /* YLLifeCycleViewX.h */,
+				54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */,
+				54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */,
+			);
+			path = LiftCycle;
+			sourceTree = "<group>";
+		};
+		54B850BB283D5FB500294D47 /* Native_News */ = {
+			isa = PBXGroup;
+			children = (
+				54B850CA283D5FD800294D47 /* controllers */,
+				54B850C9283D5FC200294D47 /* views */,
+			);
+			path = Native_News;
+			sourceTree = "<group>";
+		};
+		54B850C9283D5FC200294D47 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				54B850BC283D5FB500294D47 /* YLFimlTableViewCell.h */,
+				54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */,
+				54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		54B850CA283D5FD800294D47 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54B850BD283D5FB500294D47 /* YLRecyleListViewController.h */,
+				54B850BF283D5FB500294D47 /* YLRecyleListViewController.m */,
+				54B850C1283D5FB500294D47 /* YLRecyleListViewController.xib */,
+				54B850CB283D602F00294D47 /* YLNativeNewsViewController.h */,
+				54B850CC283D602F00294D47 /* YLNativeNewsViewController.m */,
+				54B850D9283D605700294D47 /* YLNativeNewsViewController.xib */,
+				5422A092283ED7D70019586F /* YLSearchBarBackView.h */,
+				5422A093283ED7D70019586F /* YLSearchBarBackView.m */,
+				5422A098283ED7EE0019586F /* YLSearchBarBackView.xib */,
+				54B850DE283E2CC900294D47 /* YLFilmTabView.h */,
+				54B850DF283E2CC900294D47 /* YLFilmTabView.m */,
+				54B850E4283E2CE800294D47 /* YLFilmTabView.xib */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		54BA469D2632C54800665C43 /* ARC */ = {
@@ -2906,17 +2983,19 @@
 				54DCC59627CE9609009F289D /* Algo_primary_row_1.json in Resources */,
 				542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */,
 				54B4404A27CAA09A004FDA38 /* thread_gcd_block.json in Resources */,
-				54B8505A283CE8D100294D47 /* YLRecyleListViewController.xib in Resources */,
 				54DCC54627CD349E009F289D /* thread_gcd_source.json in Resources */,
 				54DCC65D27D52AB5009F289D /* Algo_string_row_0.json in Resources */,
+				54B850E5283E2CE800294D47 /* YLFilmTabView.xib in Resources */,
 				54F16A4B2742540D00660DCC /* thread_async_queue.json in Resources */,
 				54DCC5ED27D0C930009F289D /* block_types.json in Resources */,
 				547356D927E64B720096A008 /* optimize_start.json in Resources */,
 				54C6F3AD27BC1DF900756275 /* thread_test.json in Resources */,
 				5434B22E27F61D7E00625D07 /* memory_align.json in Resources */,
 				54BB2646260379E9001A98B4 /* WKWebViewJSTest.html in Resources */,
+				54B850C5283D5FB500294D47 /* YLRecyleListViewController.xib in Resources */,
 				54B4404827CAA09A004FDA38 /* thread_gcd_queue.json in Resources */,
 				54A0C41725BEAACC00D02B43 /* YLDemoLayoutViewController.xib in Resources */,
+				5422A099283ED7EE0019586F /* YLSearchBarBackView.xib in Resources */,
 				548FF89824A87F3300ECF7F0 /* LaunchScreen.storyboard in Resources */,
 				54FD6772260A438A00F7E113 /* YLGroupHeaderView.xib in Resources */,
 				54CAC36E2605DC6B008A7BDF /* cookie.js in Resources */,
@@ -2924,6 +3003,7 @@
 				54E97A9127B10884001CA669 /* Algo.json in Resources */,
 				54E6E42327BD78170019E03C /* Algo_other_row_1.json in Resources */,
 				540B8F60260C755A00475BC5 /* YLHomeViewController.xib in Resources */,
+				54B850B6283D35F800294D47 /* YLLifeCycleViewX.xib in Resources */,
 				54E97AB827B3F393001CA669 /* runloop_run.json in Resources */,
 				548457E727CD074400C2CFAA /* thread_gcd_semaphore.json in Resources */,
 				54C44B1527DA108A00688A7E /* day_test.json in Resources */,
@@ -2933,6 +3013,7 @@
 				54E97AAC27B38004001CA669 /* runloop_other.json in Resources */,
 				54C44AF627D9225F00688A7E /* Algo_string_row_3.json in Resources */,
 				54FD67A3260AFA3B00F7E113 /* YLDemoTestAniViewController.xib in Resources */,
+				54B850DA283D605700294D47 /* YLNativeNewsViewController.xib in Resources */,
 				54A83D4227C2361A001E6CAD /* thread_nsoperation.json in Resources */,
 				540B8F6A260C757800475BC5 /* YLLoginViewController.xib in Resources */,
 				54E97B2427B66DB1001CA669 /* runloop_performSEL.json in Resources */,
@@ -2946,7 +3027,7 @@
 				54FB59A625C2948D00E3FCA4 /* YLAnimationViewController.xib in Resources */,
 				54B43F8427C38515004FDA38 /* thread_operation_block.json in Resources */,
 				5434B21427F61A6000625D07 /* memory_taggedpointer.json in Resources */,
-				54B85062283CE96200294D47 /* YLFimlTableViewCell.xib in Resources */,
+				54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */,
 				54DCC5B727CF4F94009F289D /* Algo_primary_row_2.json in Resources */,
 				54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */,
 				54DCC5DB27D0C751009F289D /* block_test.json in Resources */,
@@ -3116,6 +3197,7 @@
 				54C44AA527D8A30B00688A7E /* YLAlgoStringViewControllerRow2.swift in Sources */,
 				54C6F41327BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift in Sources */,
 				54FA55D42609CB5400AE0A83 /* YLDemoNonAutomicViewController.m in Sources */,
+				54B850E0283E2CC900294D47 /* YLFilmTabView.m in Sources */,
 				545F876625BA8750008BE6E2 /* YLDemoDrawrectViewController.m in Sources */,
 				540B8F70260C81A600475BC5 /* YLNoteUserManager.swift in Sources */,
 				54630DBD27E72F160096888B /* YLObject+Test2.m in Sources */,
@@ -3208,7 +3290,6 @@
 				54E97B2B27B9871B001CA669 /* YLRunloopWithPortViewController.m in Sources */,
 				5487BE6625E7A39F00C6AEAE /* YLSkinMananger.swift in Sources */,
 				542821C7261204950066E070 /* YLDemoSeparatorViewController.swift in Sources */,
-				54B85059283CE8D100294D47 /* YLRecyleListViewController.m in Sources */,
 				545F871E25B19A9F008BE6E2 /* YLPicScanViewController.m in Sources */,
 				54A35D9924CED7290076DFB6 /* YLWebViewController.m in Sources */,
 				5487BDB925CB03DD00C6AEAE /* YLCollectionViewController.swift in Sources */,
@@ -3241,6 +3322,7 @@
 				54E97A8F27B10884001CA669 /* BinaryTree.swift in Sources */,
 				543581BD25AEEBB800452D76 /* YLFileManager.m in Sources */,
 				540B8F84260CA26300475BC5 /* YLQuestionDataManager.swift in Sources */,
+				54B850C3283D5FB500294D47 /* YLRecyleListViewController.m in Sources */,
 				54B6C6A52671FB9400B69298 /* YLDemoRuntimeViewController.swift in Sources */,
 				54C05D95268F0B07006FFAAE /* YLDemoCopyViewController.m in Sources */,
 				5487BDE125DFB35500C6AEAE /* YLDiskCacheViewController.swift in Sources */,
@@ -3311,15 +3393,19 @@
 				54E97A8E27B10884001CA669 /* test.swift in Sources */,
 				5452D5802605E0CB0007FDDA /* TestCookieViewController.m in Sources */,
 				545F873025B5A4D9008BE6E2 /* YLIterator.m in Sources */,
+				54B850CE283D602F00294D47 /* YLNativeNewsViewController.m in Sources */,
 				54DCC67027D52B87009F289D /* reverse_words.swift in Sources */,
 				546368AB27BA253D003CF22F /* YLRunloopDoggy.m in Sources */,
 				54BB262E2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift in Sources */,
+				54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */,
 				54B43F8A27C39E30004FDA38 /* YLOperationSync.m in Sources */,
 				54DCC58F27CE95D1009F289D /* YLAlgoPrimaryViewControllerRow1.swift in Sources */,
+				54B850A8283D358200294D47 /* YLLifeCycleView.m in Sources */,
 				543580F6259DBBEF00452D76 /* YLLogMessageManager.m in Sources */,
 				54E6E42B27BD79250019E03C /* YLAlgoTreeViewContollerRow0.swift in Sources */,
 				54C6F3F927BD6E4800756275 /* YLAlgoArrayViewControllerRow0.swift in Sources */,
 				548A0CD62612208A00BC80D9 /* YLDemoLazyViewController.swift in Sources */,
+				5422A094283ED7D70019586F /* YLSearchBarBackView.m in Sources */,
 				54BB26302601E095001A98B4 /* YLMessageHandlerViewController.swift in Sources */,
 				547C5779272BD5F4001F394B /* YLThreadGCDViewController.m in Sources */,
 				54A35DAB24CED7A30076DFB6 /* YLOperation.m in Sources */,
@@ -3353,6 +3439,7 @@
 				54C44B1027DA105900688A7E /* YLAfgoTestViewController.swift in Sources */,
 				54C44B0B27DA104000688A7E /* day_test.swift in Sources */,
 				54E97A8D27B10884001CA669 /* array.swift in Sources */,
+				54B850C2283D5FB500294D47 /* YLFimlTableViewCell.m in Sources */,
 				54C44A9127D7574900688A7E /* valid_string.swift in Sources */,
 				5435814625A9B8AC00452D76 /* YLWindowLoader.m in Sources */,
 				54DCC55E27CD40DC009F289D /* YLAlgoPrimaryViewControllerRow0.swift in Sources */,
@@ -3365,7 +3452,6 @@
 				54E138362733AEAA002FEEA3 /* NSDate+Tool.m in Sources */,
 				54E6E41E27BD779A0019E03C /* YLAlgoOtherViewControllerRow1.swift in Sources */,
 				54E6E45A27C2295A0019E03C /* YLThreadNSThreadViewController.m in Sources */,
-				54B85061283CE96200294D47 /* YLFimlTableViewCell.m in Sources */,
 				543581B525AEE9E600452D76 /* YLView.m in Sources */,
 				545A199926C3DA150089BECE /* YLDomain.m in Sources */,
 				54C4B4DE26142FFB004BF897 /* YLUser.m in Sources */,

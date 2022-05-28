@@ -75,7 +75,7 @@ static NSInteger tab_width = 80;
         //设置子控制器
         YLRecyleListViewController *recl = [[YLRecyleListViewController alloc] initWithNibName:@"YLRecyleListViewController" bundle:nil];
         if (recl) {
-            recl.title = [NSString stringWithFormat:@"%ld:%@",idx,obj];
+//            recl.title = [NSString stringWithFormat:@"%ld:%@",idx,obj];
             [self addChildViewController:recl];
         }
     }];
@@ -92,7 +92,6 @@ static NSInteger tab_width = 80;
 
 - (void)setupMainUI {
     UIViewController *currentVC = self.childViewControllers[self.currentPage];
-    self.title = currentVC.title;
     [self.mainScroll addSubview:currentVC.view];
     CGRect currentVCFrame = self.mainScroll.frame;
     currentVCFrame.origin.x = self.mainScroll.contentOffset.x;
@@ -135,7 +134,6 @@ static NSInteger tab_width = 80;
     CGFloat x = self.tabUnderlineView.center.x - YLSCREEN_WIDTH / 2;
     CGFloat maxOffset = self.tabScroll.contentSize.width - YLSCREEN_WIDTH;// 最大偏移量，不能超过contentsize大小
     x = x<0 ? 0 : (x>maxOffset ? maxOffset : x);
-//        NSLog(@"(%.1f,%.1f,%.1f,%.1f)",toPageNum,self.tabUnderlineView.center.x,x,maxOffset);
     [self.tabScroll setContentOffset:CGPointMake(x, 0)];
 }
 

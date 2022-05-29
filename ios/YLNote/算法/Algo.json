@@ -190,13 +190,13 @@
         "questions": [
             {
                 "q_id":"sub_1_0",
-                "q_title":"查找数组中的重复元素",
+                "q_title":"all array questions",
                 "q_subtitle":"",
                 "showNextPage": true,
-                "showArticle":false,
+                "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlgoArrayViewControllerRow0",
+                    "className":"YLAlgoArrayListViewController",
                     "style": 1,
                     "useXib": 0
                 },
@@ -204,24 +204,7 @@
                     "art_id":"",
                     "art_url":"",
                     "art_title":"",
-                },
-            },   {
-                "q_id":"sub_1_0",
-                "q_title":"数组中元素是否连续",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle":false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoArrayViewControllerRow1",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                },
+                }
             }
         ]
     },
@@ -232,31 +215,13 @@
         "questions": [
             {
                 "q_id":"sub_1_0",
-                "q_title":"JZ6 从尾到头打印链表",
+                "q_title":"all linked-list questions",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlgoListViewContollerRow0",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                }
-            },
-            {
-                "q_id":"sub_2_0",
-                "q_title":"JZ24 反转链表",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle": false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoListViewContollerRow1",
+                    "className":"YLAlgoLinkedListViewController",
                     "style": 1,
                     "useXib": 0
                 },
@@ -267,6 +232,7 @@
                 }
             }
         ]
+
     },
     {
         "group_id":"algo_tree",

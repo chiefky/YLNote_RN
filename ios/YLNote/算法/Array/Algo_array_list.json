@@ -1,0 +1,37 @@
+[
+    {
+        "q_id":"sub_1_0",
+        "q_title":"查找数组中的重复元素",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayViewControllerRow0",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },   {
+        "q_id":"sub_1_0",
+        "q_title":"数组中元素是否连续",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayViewControllerRow1",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    }
+]

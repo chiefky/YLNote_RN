@@ -1,5 +1,5 @@
 //
-//  YLAlgoArrayViewControllerRow0.swift
+//  YLAlgoArrayListRow_0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoArrayViewControllerRow0: YLBaseTableViewController {
+class YLAlgoArrayListRow_0: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

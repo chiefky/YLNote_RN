@@ -7,7 +7,7 @@
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedListViewContollerRow0",
+            "className":"YLAlgoLinkedListRow_0",
             "style": 1,
             "useXib": 0
         },
@@ -25,7 +25,7 @@
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedListViewContollerRow1",
+            "className":"YLAlgoLinkedListRow_1",
             "style": 1,
             "useXib": 0
         },

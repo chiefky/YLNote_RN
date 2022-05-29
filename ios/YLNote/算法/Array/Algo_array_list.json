@@ -7,7 +7,7 @@
         "showArticle":false,
         "function":"",
         "demo": {
-            "className":"YLAlgoArrayViewControllerRow0",
+            "className":"YLAlgoArrayListRow_0",
             "style": 1,
             "useXib": 0
         },
@@ -24,7 +24,7 @@
         "showArticle":false,
         "function":"",
         "demo": {
-            "className":"YLAlgoArrayViewControllerRow1",
+            "className":"YLAlgoArrayListRow_1",
             "style": 1,
             "useXib": 0
         },

@@ -21,7 +21,6 @@ class YLAlgoArrayListRow_0: YLBaseTableViewController {
         let array = [2,3,1,4,2,5,3] // [2,3,1,0,2,5,3]
         let res = dumplicateWithSet(array);
         print("重复元素是：\(res)")
-
     }
     
     /// 方法一：利用Set的特性，不含重复元素 【时间复杂度：O(n); 空间复杂度：O(n)】
@@ -57,7 +56,6 @@ class YLAlgoArrayListRow_0: YLBaseTableViewController {
         var array = [2,3,1,4,2,5,3] // [2,3,1,0,2,5,3]
         let res = dumplicateWithSort(&array);
         print("重复元素是：\(res)")
-
     }
     /// 方法二：数组重拍  【时间复杂度：O(n); 空间复杂度：O(n)】
     /// - Parameter data: 可修改数组（注意`inout`关键字，调用处需要加`&`）

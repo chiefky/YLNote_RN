@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"sub_1_0",
+        "q_id":"sub_0",
         "q_title":"查找数组中的重复元素",
         "q_subtitle":"",
         "showNextPage": true,
@@ -17,7 +17,7 @@
             "art_title":"",
         },
     },   {
-        "q_id":"sub_1_0",
+        "q_id":"sub_1",
         "q_title":"数组中元素是否连续",
         "q_subtitle":"",
         "showNextPage": true,
@@ -33,5 +33,142 @@
             "art_url":"",
             "art_title":"",
         },
+    },   {
+        "q_id":"sub_2",
+        "q_title":" 两数之和",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_2",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },   {
+        "q_id":"sub_3",
+        "q_title":"删除有序数组中的重复项",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_3",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },   {
+        "q_id":"sub_4",
+        "q_title":"删除有序数组中的指定元素",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_4",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },   {
+        "q_id":"sub_5",
+        "q_title":"搜索插入位置",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_5",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },   {
+        "q_id":"sub_6",
+        "q_title":"最大子数组和",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_6",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },   {
+        "q_id":"sub_7",
+        "q_title":"加一",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_7",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },{
+        "q_id":"sub_8",
+        "q_title":"有序数组合并",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_8",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
+    },{
+        "q_id":"sub_9",
+        "q_title":"打印杨辉三角前n项",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_9",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        },
     }
+
 ]

@@ -64,7 +64,7 @@ static NSString *cellIdentifier = @"YLBaseTableViewCell";
         YLQuestionTableViewCell *tmpCell = (YLQuestionTableViewCell *)cell;
         YLQuestion *cellData = self.datas[indexPath.row];
         if (cellData) {
-            tmpCell.titleLabel.text = cellData.title;
+            tmpCell.titleLabel.text = [NSString stringWithFormat:@"%@🐟%@",@(indexPath.row),cellData.title];
             tmpCell.subtitle = cellData.subtitle;
             tmpCell.nextPage.hidden = !cellData.showNextPage;
             if (cellData.showArticle) {

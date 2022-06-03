@@ -289,6 +289,8 @@
 		54DB9B9728463BB400539AC5 /* Algo_array_row_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DB9B9528463BB400539AC5 /* Algo_array_row_8.json */; };
 		54DB9BDD28469EDB00539AC5 /* YLAlgoArrayListRow_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB9BDB28469EDB00539AC5 /* YLAlgoArrayListRow_9.swift */; };
 		54DB9BDE28469EDB00539AC5 /* Algo_array_row_9.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DB9BDC28469EDB00539AC5 /* Algo_array_row_9.json */; };
+		54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DB9BE3284A6F9000539AC5 /* Algo_array_row_10.json */; };
+		54DB9BE6284A6F9000539AC5 /* YLAlgoArrayListRow_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB9BE4284A6F9000539AC5 /* YLAlgoArrayListRow_10.swift */; };
 		54DCC53027CD3213009F289D /* thread_gcd_IO.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DCC52E27CD3213009F289D /* thread_gcd_IO.json */; };
 		54DCC53127CD3213009F289D /* YLThreadGCDDispatchIOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC52F27CD3213009F289D /* YLThreadGCDDispatchIOController.m */; };
 		54DCC53E27CD3481009F289D /* YLThreadGCDDispatchSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC53D27CD3481009F289D /* YLThreadGCDDispatchSourceController.m */; };
@@ -834,6 +836,8 @@
 		54DB9B9528463BB400539AC5 /* Algo_array_row_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_8.json; sourceTree = "<group>"; };
 		54DB9BDB28469EDB00539AC5 /* YLAlgoArrayListRow_9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_9.swift; sourceTree = "<group>"; };
 		54DB9BDC28469EDB00539AC5 /* Algo_array_row_9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_9.json; sourceTree = "<group>"; };
+		54DB9BE3284A6F9000539AC5 /* Algo_array_row_10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_10.json; sourceTree = "<group>"; };
+		54DB9BE4284A6F9000539AC5 /* YLAlgoArrayListRow_10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_10.swift; sourceTree = "<group>"; };
 		54DCC52D27CD3213009F289D /* YLThreadGCDDispatchIOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLThreadGCDDispatchIOController.h; sourceTree = "<group>"; };
 		54DCC52E27CD3213009F289D /* thread_gcd_IO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thread_gcd_IO.json; sourceTree = "<group>"; };
 		54DCC52F27CD3213009F289D /* YLThreadGCDDispatchIOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLThreadGCDDispatchIOController.m; sourceTree = "<group>"; };
@@ -2483,6 +2487,15 @@
 			path = 9;
 			sourceTree = "<group>";
 		};
+		54DB9BE2284A6F9000539AC5 /* 10 */ = {
+			isa = PBXGroup;
+			children = (
+				54DB9BE3284A6F9000539AC5 /* Algo_array_row_10.json */,
+				54DB9BE4284A6F9000539AC5 /* YLAlgoArrayListRow_10.swift */,
+			);
+			path = 10;
+			sourceTree = "<group>";
+		};
 		54DCC52C27CD3213009F289D /* DispatchIO */ = {
 			isa = PBXGroup;
 			children = (
@@ -2727,6 +2740,7 @@
 			children = (
 				54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */,
 				54DB9B202843D89800539AC5 /* YLAlgoArrayListViewController.swift */,
+				54DB9BE2284A6F9000539AC5 /* 10 */,
 				54DB9BDA28469EDB00539AC5 /* 9 */,
 				54DB9B9328463BB400539AC5 /* 8 */,
 				54DB9B8528461B5500539AC5 /* 7 */,
@@ -3154,6 +3168,7 @@
 				548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */,
 				54E97ADF27B3FF92001CA669 /* YLNoteSwitchTableViewCell.xib in Resources */,
 				54FB59A625C2948D00E3FCA4 /* YLAnimationViewController.xib in Resources */,
+				54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */,
 				54B43F8427C38515004FDA38 /* thread_operation_block.json in Resources */,
 				5434B21427F61A6000625D07 /* memory_taggedpointer.json in Resources */,
 				54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */,
@@ -3349,6 +3364,7 @@
 				54FB59AD25C2961E00E3FCA4 /* YLTestView.swift in Sources */,
 				5487BD9525C4461500C6AEAE /* YLDynamicAnimatorViewController.swift in Sources */,
 				54E97AEA27B4006B001CA669 /* YLRunloopSourceViewController.m in Sources */,
+				54DB9BE6284A6F9000539AC5 /* YLAlgoArrayListRow_10.swift in Sources */,
 				548353E927E07BD5001D3726 /* YLSwiftViewController.swift in Sources */,
 				548A0CE5261220C800BC80D9 /* YLDemoInitDeinitViewController.swift in Sources */,
 				54B84FFD283CDF1A00294D47 /* YLScrollView.m in Sources */,

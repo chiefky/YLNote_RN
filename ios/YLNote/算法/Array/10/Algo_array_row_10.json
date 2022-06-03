@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：递归实现",
+        "q_title":"方法1：暴力法",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -13,7 +13,7 @@
         
     },
   {
-        "q_title":"方法2：借助二维数组",
+        "q_title":"方法2：一次for循环记录最大最小值",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_2",

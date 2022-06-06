@@ -11,11 +11,6 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        },
     },   {
         "q_id":"sub_1",
         "q_title":"数组中元素是否连续",
@@ -27,11 +22,6 @@
             "className":"YLAlgoArrayListRow_1",
             "style": 1,
             "useXib": 0
-        },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
         },
     },   {
         "q_id":"sub_2",
@@ -45,11 +35,6 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        },
     },   {
         "q_id":"sub_3",
         "q_title":"删除有序数组中的重复项",
@@ -61,11 +46,6 @@
             "className":"YLAlgoArrayListRow_3",
             "style": 1,
             "useXib": 0
-        },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
         },
     },   {
         "q_id":"sub_4",
@@ -79,11 +59,6 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        },
     },   {
         "q_id":"sub_5",
         "q_title":"搜索插入位置",
@@ -95,11 +70,6 @@
             "className":"YLAlgoArrayListRow_5",
             "style": 1,
             "useXib": 0
-        },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
         },
     },   {
         "q_id":"sub_6",
@@ -113,11 +83,6 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        },
     },   {
         "q_id":"sub_7",
         "q_title":"加一",
@@ -129,11 +94,6 @@
             "className":"YLAlgoArrayListRow_7",
             "style": 1,
             "useXib": 0
-        },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
         },
     },{
         "q_id":"sub_8",
@@ -147,11 +107,6 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        },
     },{
         "q_id":"sub_9",
         "q_title":"打印杨辉三角前n项",
@@ -163,11 +118,6 @@
             "className":"YLAlgoArrayListRow_9",
             "style": 1,
             "useXib": 0
-        },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
         },
     },{
         "q_id":"sub_10",
@@ -181,12 +131,60 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
+    },{
+        "q_id":"sub_11",
+        "q_title":"判断回文字符串",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_11",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_12",
+        "q_title":"只出现一次的(唯一)数字I",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_12_0",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_12",
+        "q_title":"只出现一次的(两个)数字II",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_12_1",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_12",
+        "q_title":"只出现一次的数字(其他出现三次) III",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_12_2",
+            "style": 1,
+            "useXib": 0
         },
     }
+
+
+
+
+
 
 
 ]

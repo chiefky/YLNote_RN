@@ -11,11 +11,6 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        }
     },
     {
         "q_id":"sub_2_0",
@@ -29,10 +24,5 @@
             "style": 1,
             "useXib": 0
         },
-        "article": {
-            "art_id":"",
-            "art_url":"",
-            "art_title":"",
-        }
     }
 ]

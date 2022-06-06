@@ -1,0 +1,25 @@
+
+[
+  {
+        "q_title":"方法1：Int类型有32位(语言无符号区分:31位)，按位运算",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod_1",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+    },  {
+        "q_title":"方法2：字典",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod_2",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+    },
+
+]   

@@ -2391,24 +2391,8 @@
 				54DB9B412843DAE200539AC5 /* YLAlgoLinkedListViewController.swift */,
 				54DB9BEB284CFB9100539AC5 /* 1 */,
 				54DB9BEA284CFB8100539AC5 /* 0 */,
-				54DB9B292843DA2800539AC5 /* jsons */,
-				54DB9B2C2843DA2800539AC5 /* contrllers */,
 			);
 			path = LinkedList;
-			sourceTree = "<group>";
-		};
-		54DB9B292843DA2800539AC5 /* jsons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = jsons;
-			sourceTree = "<group>";
-		};
-		54DB9B2C2843DA2800539AC5 /* contrllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = contrllers;
 			sourceTree = "<group>";
 		};
 		54DB9B582843E19B00539AC5 /* 0 */ = {

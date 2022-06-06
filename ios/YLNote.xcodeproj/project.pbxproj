@@ -220,7 +220,7 @@
 		54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */; };
 		54B850B6283D35F800294D47 /* YLLifeCycleViewX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */; };
 		54B850C2283D5FB500294D47 /* YLFimlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */; };
-		54B850C3283D5FB500294D47 /* YLRecyleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BF283D5FB500294D47 /* YLRecyleListViewController.m */; };
+		54B850C3283D5FB500294D47 /* YLNatiFilmListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BF283D5FB500294D47 /* YLNatiFilmListViewController.m */; };
 		54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */; };
 		54B850C5283D5FB500294D47 /* YLRecyleListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850C1283D5FB500294D47 /* YLRecyleListViewController.xib */; };
 		54B850CE283D602F00294D47 /* YLNativeNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850CC283D602F00294D47 /* YLNativeNewsViewController.m */; };
@@ -767,9 +767,9 @@
 		54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLifeCycleViewX.m; sourceTree = "<group>"; };
 		54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLLifeCycleViewX.xib; sourceTree = "<group>"; };
 		54B850BC283D5FB500294D47 /* YLFimlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFimlTableViewCell.h; sourceTree = "<group>"; };
-		54B850BD283D5FB500294D47 /* YLRecyleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRecyleListViewController.h; sourceTree = "<group>"; };
+		54B850BD283D5FB500294D47 /* YLNatiFilmListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNatiFilmListViewController.h; sourceTree = "<group>"; };
 		54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFimlTableViewCell.m; sourceTree = "<group>"; };
-		54B850BF283D5FB500294D47 /* YLRecyleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRecyleListViewController.m; sourceTree = "<group>"; };
+		54B850BF283D5FB500294D47 /* YLNatiFilmListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNatiFilmListViewController.m; sourceTree = "<group>"; };
 		54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLFimlTableViewCell.xib; sourceTree = "<group>"; };
 		54B850C1283D5FB500294D47 /* YLRecyleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLRecyleListViewController.xib; sourceTree = "<group>"; };
 		54B850CB283D602F00294D47 /* YLNativeNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNativeNewsViewController.h; sourceTree = "<group>"; };
@@ -2194,6 +2194,12 @@
 		54B850C9283D5FC200294D47 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				5422A092283ED7D70019586F /* YLSearchBarBackView.h */,
+				5422A093283ED7D70019586F /* YLSearchBarBackView.m */,
+				5422A098283ED7EE0019586F /* YLSearchBarBackView.xib */,
+				54B850DE283E2CC900294D47 /* YLFilmTabView.h */,
+				54B850DF283E2CC900294D47 /* YLFilmTabView.m */,
+				54B850E4283E2CE800294D47 /* YLFilmTabView.xib */,
 				54B850BC283D5FB500294D47 /* YLFimlTableViewCell.h */,
 				54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */,
 				54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */,
@@ -2204,18 +2210,12 @@
 		54B850CA283D5FD800294D47 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				54B850BD283D5FB500294D47 /* YLRecyleListViewController.h */,
-				54B850BF283D5FB500294D47 /* YLRecyleListViewController.m */,
+				54B850BD283D5FB500294D47 /* YLNatiFilmListViewController.h */,
+				54B850BF283D5FB500294D47 /* YLNatiFilmListViewController.m */,
 				54B850C1283D5FB500294D47 /* YLRecyleListViewController.xib */,
 				54B850CB283D602F00294D47 /* YLNativeNewsViewController.h */,
 				54B850CC283D602F00294D47 /* YLNativeNewsViewController.m */,
 				54B850D9283D605700294D47 /* YLNativeNewsViewController.xib */,
-				5422A092283ED7D70019586F /* YLSearchBarBackView.h */,
-				5422A093283ED7D70019586F /* YLSearchBarBackView.m */,
-				5422A098283ED7EE0019586F /* YLSearchBarBackView.xib */,
-				54B850DE283E2CC900294D47 /* YLFilmTabView.h */,
-				54B850DF283E2CC900294D47 /* YLFilmTabView.m */,
-				54B850E4283E2CE800294D47 /* YLFilmTabView.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -3558,7 +3558,7 @@
 				54E97A8F27B10884001CA669 /* BinaryTree.swift in Sources */,
 				543581BD25AEEBB800452D76 /* YLFileManager.m in Sources */,
 				540B8F84260CA26300475BC5 /* YLQuestionDataManager.swift in Sources */,
-				54B850C3283D5FB500294D47 /* YLRecyleListViewController.m in Sources */,
+				54B850C3283D5FB500294D47 /* YLNatiFilmListViewController.m in Sources */,
 				54B6C6A52671FB9400B69298 /* YLDemoRuntimeViewController.swift in Sources */,
 				54C05D95268F0B07006FFAAE /* YLDemoCopyViewController.m in Sources */,
 				5487BDE125DFB35500C6AEAE /* YLDiskCacheViewController.swift in Sources */,

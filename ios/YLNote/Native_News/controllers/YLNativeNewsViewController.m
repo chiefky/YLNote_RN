@@ -8,7 +8,7 @@
 
 #import "YLNativeNewsViewController.h"
 #import <Masonry/Masonry.h>
-#import "YLRecyleListViewController.h"
+#import "YLNatiFilmListViewController.h"
 #import "YLFilmTabView.h"
 #import "YLSearchBarBackView.h"
 #import "YLDefaultMacro.h"
@@ -73,7 +73,7 @@ static NSInteger tab_width = 80;
             make.height.mas_equalTo(40);
         }];
         //设置子控制器
-        YLRecyleListViewController *recl = [[YLRecyleListViewController alloc] initWithNibName:@"YLRecyleListViewController" bundle:nil];
+        YLNatiFilmListViewController *recl = [[YLNatiFilmListViewController alloc] initWithNibName:@"YLRecyleListViewController" bundle:nil];
         if (recl) {
 //            recl.title = [NSString stringWithFormat:@"%ld:%@",idx,obj];
             [self addChildViewController:recl];

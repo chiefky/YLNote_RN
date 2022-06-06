@@ -1,5 +1,5 @@
 //
-//  YLRecyleListViewController.h
+//  YLNatiFilmListViewController.h
 //  YLNote
 //
 //  Created by tangh on 2022/5/24.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLRecyleListViewController : UIViewController
+@interface YLNatiFilmListViewController : UIViewController
 
 @end
 

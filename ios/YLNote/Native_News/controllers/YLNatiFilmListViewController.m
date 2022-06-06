@@ -1,26 +1,26 @@
 //
-//  YLRecyleListViewController.m
+//  YLNatiFilmListViewController.m
 //  YLNote
 //
 //  Created by tangh on 2022/5/24.
 //  Copyright © 2022 tangh. All rights reserved.
 //
 
-#import "YLRecyleListViewController.h"
+#import "YLNatiFilmListViewController.h"
 #import <AFNetworking/AFNetworking.h>
 #import <YYModel/YYModel.h>
 #import "YLFimlTableViewCell.h"
 
 static NSString *cellIdentifier = @"kYLFimlTableViewCell";
 
-@interface YLRecyleListViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface YLNatiFilmListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (copy,nonatomic) NSArray *datas;
 
 @end
 
-@implementation YLRecyleListViewController
+@implementation YLNatiFilmListViewController
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self reqData];

@@ -1,5 +1,81 @@
 [
     {
+        "group_id":"algo_array",
+        "unfoldStatus":false,
+        "group_title":"数组",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoArrayListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_linklist",
+        "unfoldStatus":false,
+        "group_title":"链表",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoLinkedListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"algo_tree",
+        "unfoldStatus":false,
+        "group_title":"树",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoTreeListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
         "group_id":"algo_day_test",
         "unfoldStatus":false,
         "group_title":"每日回顾",
@@ -24,7 +100,6 @@
             }
         ]
     },
-
     {
         "group_id":"algo_sort",
         "unfoldStatus":false,
@@ -180,100 +255,6 @@
                     "art_url":"",
                     "art_title":"",
                 },
-            }
-        ]
-    },
-    {
-        "group_id":"3",
-        "unfoldStatus":false,
-        "group_title":"数组",
-        "questions": [
-            {
-                "q_id":"sub_1_0",
-                "q_title":"all questions",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle": false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoArrayListViewController",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                }
-            }
-        ]
-    },
-    {
-        "group_id":"5",
-        "unfoldStatus":false,
-        "group_title":"链表",
-        "questions": [
-            {
-                "q_id":"sub_1_0",
-                "q_title":"all questions",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle": false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoLinkedListViewController",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                }
-            }
-        ]
-
-    },
-    {
-        "group_id":"algo_tree",
-        "unfoldStatus":false,
-        "group_title":"树",
-        "questions": [
-            {
-                "q_id":"sub_1_0",
-                "q_title":"求二叉树深度",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle": false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoTreeViewContollerRow0",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                }
-            },
-            {
-                "q_id":"sub_2_0",
-                "q_title":"判断是否是平衡二叉树",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle": false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoTreeViewContollerRow1",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                }
             }
         ]
     },

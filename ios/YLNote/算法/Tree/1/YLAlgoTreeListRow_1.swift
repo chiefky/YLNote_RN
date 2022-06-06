@@ -1,5 +1,5 @@
 //
-//  YLAlgoTreeViewContollerRow1.swift
+//  YLAlgoTreeListRow_1.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoTreeViewContollerRow1: YLBaseTableViewController {
+class YLAlgoTreeListRow_1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

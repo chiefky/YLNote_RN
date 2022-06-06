@@ -1,5 +1,5 @@
 //
-//  YLAlgoArrayListViewController.swift
+//  YLAlgoTreeListController.swift
 //  YLNote
 //
 //  Created by tangh on 2022/5/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoArrayListViewController: YLBaseTableViewController {
+class YLAlgoTreeListController: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +17,10 @@ class YLAlgoArrayListViewController: YLBaseTableViewController {
     }
     
 
+
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_array_list"
+        return "Algo_tree"
     }
 
 }

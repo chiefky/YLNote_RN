@@ -1,5 +1,5 @@
 //
-//  YLAlgoLinkedListViewController.swift
+//  YLAlgoLinkedListController.swift
 //  YLNote
 //
 //  Created by tangh on 2022/5/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoLinkedListViewController: YLBaseTableViewController {
+class YLAlgoLinkedListController: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

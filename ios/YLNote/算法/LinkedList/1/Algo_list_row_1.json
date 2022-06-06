@@ -3,7 +3,7 @@
         "q_title":"方法1: 双指针",
         "showArticle": false,
         "showNextPage": false,
-        "function":"testReverseList1",
+        "function":"testMethod_1",
         "demo": {},
         "article": {
             "artTitle":"",
@@ -12,22 +12,10 @@
         
     },
     {
-        "q_title":"方法2: 位置交换",
+        "q_title":"方法2: 两两交换",
         "showArticle": false,
         "showNextPage": false,
-        "function":"testReverseList2",
-        "demo": {},
-        "article": {
-            "artTitle":"",
-            "fileName":""
-        }
-        
-    },
-    {
-        "q_title":"方法3: 头插法",
-        "showArticle": false,
-        "showNextPage": false,
-        "function":"testReverseList3",
+        "function":"testMethod_2",
         "demo": {},
         "article": {
             "artTitle":"",

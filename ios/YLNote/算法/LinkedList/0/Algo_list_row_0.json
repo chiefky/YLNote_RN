@@ -3,14 +3,14 @@
         "q_title":"方法1: 往数组头0位置插入",
         "showArticle": false,
         "showNextPage": false,
-        "function":"testPrintListFromTailToHead1",
+        "function":"testMethod_1",
         "demo": {},
     },
     {
-        "q_title":"方法2： 递归",
+        "q_title":"方法2： 数组反序",
         "showArticle": false,
         "showNextPage": false,
-        "function":"testPrintListFromTailToHead2",
+        "function":"testMethod_2",
         "demo": {},
         "article": {
             "artTitle":"",
@@ -18,5 +18,29 @@
         }
         
     },
-    
+    {
+        "q_title":"方法3： 递归",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod_3",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"方法4： 反转链表",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod_4",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+
 ]

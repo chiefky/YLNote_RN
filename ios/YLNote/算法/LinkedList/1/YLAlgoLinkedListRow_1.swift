@@ -16,92 +16,68 @@ class YLAlgoLinkedListRow_1: YLBaseTableViewController {
         // Do any additional setup after loading the view.
     }
     
-    //MARK: 反转链表：
-    
-    /// 双指针
-    @objc func testReverseList1() {
+    //MARK: 反转链表：    
+    @objc func testMethod_1() {
         let linkList = LinkList()
-        for i in 1...4 {
+        for i in [5,8,9,0] {
             linkList.append(value: i)
         }
         
-        var head = reverseList1(linkList.first)
+        var head = method_1(linkList.first)
         var str = ""
-        
         while head != nil {
             str = str + "\(head!.val)" + ","
             head = head?.next
         }
         print(str)
     }
-    
-    func reverseList1( _ head: ListNode?) -> ListNode? {
-        // write code here
-        if (head == nil) { return nil }
-        var pre:ListNode? = nil
-        var cur = head
-        var tmp = cur
-        
-        while (cur != nil) {
-            tmp = cur?.next
-            cur!.next = pre
-            pre = cur
-            cur = tmp
-        }
-        
-        return pre
-    }
-    
-    
-    /// 位置两两交换
-    @objc func testReverseList2() {
+
+    @objc func testMethod_2() {
         let linkList = LinkList()
-        for i in 1...4 {
+        for i in [5,8,9,0] {
             linkList.append(value: i)
         }
         
-        var head = reverseList1(linkList.first)
+        var head = method_2(linkList.first)
         var str = ""
+        while head != nil {
+            str = str + "\(head!.val)" + ","
+            head = head?.next
+        }
+        print(str)
+    }
+
+    /// 双指针
+    /// - Parameter head: 原链表的head
+    /// - Returns: 反转后的head
+    func method_1(_ head:ListNode?) -> ListNode? {
+        var new_head:ListNode? = nil
+        var current = head
+        while current != nil {
+            let tmp = current!.next
+            current!.next = new_head
+            new_head = current
+            current = tmp
+        }
+        return new_head
     }
     
-    /// 疑问：什么是下一个指向下一个，
-    /// - Parameter head: <#head description#>
-    /// - Returns: <#description#>
-    func reverseList2( _ head: ListNode?) -> ListNode? {
-        if head == nil {
-            return nil
+    /// 两两交换
+    /// - Parameter head:
+    /// - Returns:
+    func method_2(_ head: ListNode?) -> ListNode? {
+        var new_head = head
+        let current = head
+        while current?.next != nil {
+            let tmp = current!.next
+            current!.next = tmp?.next;
+            tmp?.next = new_head
+            new_head = tmp
         }
         
-        var cur = head!
-        var top:ListNode? = head
-        
-        while cur.next != nil {
-            var tmp = cur.next
-            cur.next = tmp?.next
-            tmp?.next = top
-            top = tmp
-        }
-        
-        return top
+        return new_head
     }
     
-    
-    func reverseList3( _ head: ListNode?) -> ListNode? {
-        if head == nil {
-            return nil
-        }
-        var cur = head!
-        var top:ListNode? = head
-        
-        while cur.next != nil {
-            var tmp = cur.next
-            cur.next = tmp?.next
-            tmp?.next = top
-            top = tmp
-        }
-        
-        return top
-    }
 
     //    MARK: override
     override func fileName() -> String {

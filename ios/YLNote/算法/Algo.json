@@ -190,7 +190,7 @@
         "questions": [
             {
                 "q_id":"sub_1_0",
-                "q_title":"all array questions",
+                "q_title":"all questions",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle": false,
@@ -215,7 +215,7 @@
         "questions": [
             {
                 "q_id":"sub_1_0",
-                "q_title":"all linked-list questions",
+                "q_title":"all questions",
                 "q_subtitle":"",
                 "showNextPage": true,
                 "showArticle": false,

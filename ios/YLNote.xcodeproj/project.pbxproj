@@ -264,6 +264,7 @@
 		54CAC36A2605BD73008A7BDF /* YLWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAC3692605BD73008A7BDF /* YLWKWebView.swift */; };
 		54CAC36C2605C05E008A7BDF /* YLWebCookieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAC36B2605C05E008A7BDF /* YLWebCookieViewController.swift */; };
 		54CAC36E2605DC6B008A7BDF /* cookie.js in Resources */ = {isa = PBXBuildFile; fileRef = 54CAC36D2605DC6B008A7BDF /* cookie.js */; };
+		54D88609284E4891003DE4F0 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88608284E4891003DE4F0 /* LinkedListNode.swift */; };
 		54D8886A26B1BF440088D056 /* YLAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D8886926B1BF440088D056 /* YLAnimal.m */; };
 		54DB9ADE2843D7A000539AC5 /* Algo_array_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */; };
 		54DB9B212843D89800539AC5 /* YLAlgoArrayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB9B202843D89800539AC5 /* YLAlgoArrayListViewController.swift */; };
@@ -818,6 +819,7 @@
 		54CAC3692605BD73008A7BDF /* YLWKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKWebView.swift; sourceTree = "<group>"; };
 		54CAC36B2605C05E008A7BDF /* YLWebCookieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebCookieViewController.swift; sourceTree = "<group>"; };
 		54CAC36D2605DC6B008A7BDF /* cookie.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cookie.js; sourceTree = "<group>"; };
+		54D88608284E4891003DE4F0 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		54D8886826B1BF440088D056 /* YLAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAnimal.h; sourceTree = "<group>"; };
 		54D8886926B1BF440088D056 /* YLAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAnimal.m; sourceTree = "<group>"; };
 		54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_list.json; sourceTree = "<group>"; };
@@ -2387,6 +2389,7 @@
 		54DB9B282843DA2800539AC5 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				54D88608284E4891003DE4F0 /* LinkedListNode.swift */,
 				54DB9B362843DA6900539AC5 /* Algo_linked_list.json */,
 				54DB9B412843DAE200539AC5 /* YLAlgoLinkedListViewController.swift */,
 				54DB9BEB284CFB9100539AC5 /* 1 */,
@@ -3669,6 +3672,7 @@
 				548FF89B24A87F3300ECF7F0 /* main.m in Sources */,
 				54C44B1027DA105900688A7E /* YLAfgoTestViewController.swift in Sources */,
 				54C44B0B27DA104000688A7E /* day_test.swift in Sources */,
+				54D88609284E4891003DE4F0 /* LinkedListNode.swift in Sources */,
 				54E97A8D27B10884001CA669 /* array.swift in Sources */,
 				54B850C2283D5FB500294D47 /* YLFimlTableViewCell.m in Sources */,
 				54C44A9127D7574900688A7E /* valid_string.swift in Sources */,

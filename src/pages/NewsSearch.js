@@ -1,13 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, NativeEventEmitter, NativeModules } from 'react-native';
-const { RNTEventManager } = NativeModules;
-// const calendarManagerEmitter = new NativeEventEmitter(RNTEventManager);
-// const subscription = calendarManagerEmitter.addListener(
-//     'selectItem',
-//     (reminder) => {
-//         console.log(reminder)
-//     }
-// );
+import { View, Text, StyleSheet, } from 'react-native';
+
 class NewsSearchScreen extends React.Component {
     render() {
         const { naviagetion, route } = this.props;
@@ -21,10 +14,6 @@ class NewsSearchScreen extends React.Component {
             </View>
         </View>);
     }
-
-    // componentWillUnmount() {
-    //     subscription.remove()
-    // }
 }
 
 const styles = StyleSheet.create({

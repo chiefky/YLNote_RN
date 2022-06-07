@@ -38,6 +38,7 @@ static NSInteger tab_width = 80;
     [super viewDidLoad];
     [self setupInitalDatas];
     [self setupUI];
+    self.title = @"Native";
 }
 
 - (void)setupUI {

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLNatiFilmDetailViewController : UIViewController
 
+@property (nonatomic,strong) NSString *filmId;
+
 @end
 
 NS_ASSUME_NONNULL_END

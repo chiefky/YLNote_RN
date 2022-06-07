@@ -10,7 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <YYModel/YYModel.h>
 #import "YLFimlTableViewCell.h"
-#import "YLRNTEventManager.h"
+#import "YLNatiFilmDetailViewController.h"
 
 static NSString *cellIdentifier = @"kYLFimlTableViewCell";
 
@@ -85,8 +85,11 @@ static NSString *cellIdentifier = @"kYLFimlTableViewCell";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    YLRNTEventManager *manager = [[YLRNTEventManager alloc] init];
-    [manager sendEventWithName:@"selectItem" body:@{@"name": @(indexPath.row)}] ;
+    YLFilm *film = self.datas[indexPath.row];
+    YLNatiFilmDetailViewController *detailVC = [[YLNatiFilmDetailViewController alloc] init];
+    detailVC.filmId = film.f_id;
+    detailVC.title = film.original_title;
+    [self.navigationController pushViewController:detailVC animated:YES];
 
 }
 

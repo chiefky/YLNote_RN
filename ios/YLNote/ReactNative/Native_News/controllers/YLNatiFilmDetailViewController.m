@@ -7,6 +7,9 @@
 //
 
 #import "YLNatiFilmDetailViewController.h"
+#import "YLNoteBridgeAPI.h"
+#import <React/RCTRootView.h>
+#import "YLRNTEventManager.h"
 
 @interface YLNatiFilmDetailViewController ()
 
@@ -16,17 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
+    [self initRCTRootView];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initRCTRootView{
+    RCTRootView *rootView = [[RCTRootView alloc]initWithBridge:[YLNoteBridgeAPI shareInstance] moduleName:@"Detail" initialProperties:  @{@"filmId":self.filmId}];
+    self.view = rootView;
+    
 }
-*/
+
+- (void)setupUI {
+    NSDictionary *dict = @{@"f_id": self.filmId};
+    [YLRNTEventManager postEventWithName:@"selectItem" parameter:dict];
+}
 
 @end

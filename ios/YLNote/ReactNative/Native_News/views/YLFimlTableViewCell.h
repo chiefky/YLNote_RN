@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YLFilm : NSObject
+@property(copy,nonatomic,readonly) NSString *f_id;
+@property(copy,nonatomic,readonly) NSString *original_title;
 
 @end
 

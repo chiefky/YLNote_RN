@@ -56,7 +56,7 @@ class NewsScreen extends React.Component {
                         </Swiper>
                     </View>
 
-                    <TouchableOpacity activeOpacity={1} onPress={() => { alert('24h') }}>
+                    <TouchableOpacity activeOpacity={1} onPress={() => this.props.navigation.push('Interaction', { name: '24小时', keyword: "hhahaha" })}>
                         <Image source={require("./../../assets/images/i_24h.png")} resizeMode={'contain'} style={styles.headerRightImage} />
                     </TouchableOpacity>
 

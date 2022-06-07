@@ -65,7 +65,7 @@ class YLAlgoArrayListRow_12_1: YLBaseTableViewController {
         return [v1,v2];
     }
     
-    /// 取出只出现1次的多个元素
+    /// 取出只出现1次的多个元素(n个)
     /// - Parameter nums: <#nums description#>
     /// - Returns: <#description#>
     func method_2(_ nums:[Int]) -> [Int] {

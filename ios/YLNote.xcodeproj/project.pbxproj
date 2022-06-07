@@ -212,7 +212,7 @@
 		54B4405F27CCA60D004FDA38 /* thread_gcd_barrier.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B4405C27CCA60C004FDA38 /* thread_gcd_barrier.json */; };
 		54B4406027CCA60D004FDA38 /* YLThreadGCDDispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B4405E27CCA60C004FDA38 /* YLThreadGCDDispatchBarrierController.m */; };
 		54B6C6A52671FB9400B69298 /* YLDemoRuntimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B6C6A42671FB9400B69298 /* YLDemoRuntimeViewController.swift */; };
-		54B84FE8283CD1FC00294D47 /* RNTEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FE7283CD1FC00294D47 /* RNTEventManager.m */; };
+		54B84FE8283CD1FC00294D47 /* YLRNTEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FE7283CD1FC00294D47 /* YLRNTEventManager.m */; };
 		54B84FEE283CDA7A00294D47 /* RNTSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FED283CDA7A00294D47 /* RNTSwitchView.m */; };
 		54B84FFD283CDF1A00294D47 /* YLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FFC283CDF1A00294D47 /* YLScrollView.m */; };
 		54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B85001283CDF2C00294D47 /* YLScrollView.xib */; };
@@ -267,6 +267,7 @@
 		54D88609284E4891003DE4F0 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88608284E4891003DE4F0 /* LinkedListNode.swift */; };
 		54D88613284E8A55003DE4F0 /* YLAlgoTreeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */; };
 		54D88618284E8A5D003DE4F0 /* Algo_tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D88617284E8A5C003DE4F0 /* Algo_tree.json */; };
+		54D88639284F5410003DE4F0 /* YLNatiFilmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D88638284F5410003DE4F0 /* YLNatiFilmDetailViewController.m */; };
 		54D8886A26B1BF440088D056 /* YLAnimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D8886926B1BF440088D056 /* YLAnimal.m */; };
 		54DB9ADE2843D7A000539AC5 /* Algo_array_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */; };
 		54DB9B212843D89800539AC5 /* YLAlgoArrayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB9B202843D89800539AC5 /* YLAlgoArrayListController.swift */; };
@@ -754,8 +755,8 @@
 		54B4405D27CCA60C004FDA38 /* YLThreadGCDDispatchBarrierController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLThreadGCDDispatchBarrierController.h; sourceTree = "<group>"; };
 		54B4405E27CCA60C004FDA38 /* YLThreadGCDDispatchBarrierController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLThreadGCDDispatchBarrierController.m; sourceTree = "<group>"; };
 		54B6C6A42671FB9400B69298 /* YLDemoRuntimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDemoRuntimeViewController.swift; sourceTree = "<group>"; };
-		54B84FE6283CD1FC00294D47 /* RNTEventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTEventManager.h; sourceTree = "<group>"; };
-		54B84FE7283CD1FC00294D47 /* RNTEventManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTEventManager.m; sourceTree = "<group>"; };
+		54B84FE6283CD1FC00294D47 /* YLRNTEventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRNTEventManager.h; sourceTree = "<group>"; };
+		54B84FE7283CD1FC00294D47 /* YLRNTEventManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRNTEventManager.m; sourceTree = "<group>"; };
 		54B84FEC283CDA7A00294D47 /* RNTSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTSwitchView.h; sourceTree = "<group>"; };
 		54B84FED283CDA7A00294D47 /* RNTSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTSwitchView.m; sourceTree = "<group>"; };
 		54B84FFB283CDF1A00294D47 /* YLScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLScrollView.h; sourceTree = "<group>"; };
@@ -824,6 +825,8 @@
 		54D88608284E4891003DE4F0 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListController.swift; sourceTree = "<group>"; };
 		54D88617284E8A5C003DE4F0 /* Algo_tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_tree.json; sourceTree = "<group>"; };
+		54D88637284F5410003DE4F0 /* YLNatiFilmDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNatiFilmDetailViewController.h; sourceTree = "<group>"; };
+		54D88638284F5410003DE4F0 /* YLNatiFilmDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNatiFilmDetailViewController.m; sourceTree = "<group>"; };
 		54D8886826B1BF440088D056 /* YLAnimal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAnimal.h; sourceTree = "<group>"; };
 		54D8886926B1BF440088D056 /* YLAnimal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAnimal.m; sourceTree = "<group>"; };
 		54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_list.json; sourceTree = "<group>"; };
@@ -1121,10 +1124,11 @@
 		541A9C1F28390CF400C839A2 /* ReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				54B850BB283D5FB500294D47 /* Native_News */,
 				541A9C2028390D5600C839A2 /* YLNoteBridgeAPI.h */,
 				541A9C2128390D5600C839A2 /* YLNoteBridgeAPI.m */,
-				54B84FE6283CD1FC00294D47 /* RNTEventManager.h */,
-				54B84FE7283CD1FC00294D47 /* RNTEventManager.m */,
+				54B84FE6283CD1FC00294D47 /* YLRNTEventManager.h */,
+				54B84FE7283CD1FC00294D47 /* YLRNTEventManager.m */,
 				54B84FEC283CDA7A00294D47 /* RNTSwitchView.h */,
 				54B84FED283CDA7A00294D47 /* RNTSwitchView.m */,
 				54B84FFB283CDF1A00294D47 /* YLScrollView.h */,
@@ -1774,7 +1778,6 @@
 		548FF88724A87F3200ECF7F0 /* YLNote */ = {
 			isa = PBXGroup;
 			children = (
-				54B850BB283D5FB500294D47 /* Native_News */,
 				54B850A5283D355200294D47 /* LiftCycle */,
 				54B850A1283D2DA600294D47 /* Utils */,
 				541A9C1F28390CF400C839A2 /* ReactNative */,
@@ -2216,6 +2219,8 @@
 				54B850CB283D602F00294D47 /* YLNativeNewsViewController.h */,
 				54B850CC283D602F00294D47 /* YLNativeNewsViewController.m */,
 				54B850D9283D605700294D47 /* YLNativeNewsViewController.xib */,
+				54D88637284F5410003DE4F0 /* YLNatiFilmDetailViewController.h */,
+				54D88638284F5410003DE4F0 /* YLNatiFilmDetailViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -3452,6 +3457,7 @@
 				5487BDC825D6F6C100C6AEAE /* YLDemoEmptyViewController.swift in Sources */,
 				548A0D2526122BA900BC80D9 /* YLDemoFuncTableViewController.swift in Sources */,
 				54A35DAF24CED7A30076DFB6 /* YLGCDViewController.m in Sources */,
+				54D88639284F5410003DE4F0 /* YLNatiFilmDetailViewController.m in Sources */,
 				54CAC36A2605BD73008A7BDF /* YLWKWebView.swift in Sources */,
 				54FA55042608835C00AE0A83 /* YLNoteData.m in Sources */,
 				5487BDC225D65AD000C6AEAE /* YLSwiftTopicsViewController.swift in Sources */,
@@ -3549,7 +3555,7 @@
 				54DCC65827D52A64009F289D /* YLAlgoStringViewControllerRow0.swift in Sources */,
 				54FA55E62609D0D800AE0A83 /* YLDemoTypeofViewController.m in Sources */,
 				548457E827CD074400C2CFAA /* YLThreadGCDDispatchSeamphoreController.m in Sources */,
-				54B84FE8283CD1FC00294D47 /* RNTEventManager.m in Sources */,
+				54B84FE8283CD1FC00294D47 /* YLRNTEventManager.m in Sources */,
 				54A35D9324CED7290076DFB6 /* YLLayerViewController.m in Sources */,
 				54DB9B322843DA2800539AC5 /* YLAlgoLinkedListRow_0.swift in Sources */,
 				5487BD9F25C566B000C6AEAE /* UIImageTools.swift in Sources */,

@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
         color: "#000",
         fontSize: pxToDp(17),
         fontWeight: "700",
-        // lineHeight: 28
     },
     cellSubtitle: {
         fontSize: pxToDp(17),

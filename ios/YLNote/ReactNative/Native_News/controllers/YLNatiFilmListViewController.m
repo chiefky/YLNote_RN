@@ -10,6 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <YYModel/YYModel.h>
 #import "YLFimlTableViewCell.h"
+#import "YLRNTEventManager.h"
 
 static NSString *cellIdentifier = @"kYLFimlTableViewCell";
 
@@ -83,5 +84,10 @@ static NSString *cellIdentifier = @"kYLFimlTableViewCell";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    YLRNTEventManager *manager = [[YLRNTEventManager alloc] init];
+    [manager sendEventWithName:@"selectItem" body:@{@"name": @(indexPath.row)}] ;
+
+}
 
 @end

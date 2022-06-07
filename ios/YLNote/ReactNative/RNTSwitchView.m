@@ -9,7 +9,7 @@
 #import "RNTSwitchView.h"
 #import "RNTSwitchView.h"
 #import "YLScrollView.h"
-#import "RNTEventManager.h"
+#import "YLRNTEventManager.h"
 
 @implementation RNTSwitchView
 RCT_EXPORT_MODULE(RNTSwitch)
@@ -21,7 +21,7 @@ RCT_EXPORT_VIEW_PROPERTY(urlArray, NSArray *)
   YLScrollView* scrollView = [[YLScrollView alloc] init];
 //  scrollView.cycleScrollViewStyle = HZCycleScrollViewStyleLoop;
   scrollView.selectItemBlock = ^(NSInteger index) {
-    RNTEventManager *event = [[RNTEventManager alloc] init];
+    YLRNTEventManager *event = [[YLRNTEventManager alloc] init];
     [event sendSelectItem:@{@"index":[NSNumber numberWithUnsignedInteger:index]}];
 
   };

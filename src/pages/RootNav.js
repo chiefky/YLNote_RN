@@ -5,6 +5,7 @@ import SettingScreen from './Setting';
 import DetailsScreen from './Details';
 import NewsScreen from './News';
 import NewsSearchScreen from './NewsSearch';
+import Interaction from './Interaction';
 const Stack = createStackNavigator();// createNativeStackNavigator();
 
 export default RootNav = () => {
@@ -20,6 +21,7 @@ export default RootNav = () => {
                 <Stack.Screen name="News" component={NewsScreen} options={{ title: "ReactNative" }}></Stack.Screen>
                 <Stack.Screen name="NewsSearch" component={NewsSearchScreen} options={({ route }) => ({ title: route.params.name })}></Stack.Screen>
                 <Stack.Screen name="Setting" component={SettingScreen} options={{ title: "SettingScreen" }}></Stack.Screen>
+                <Stack.Screen name="Interaction" component={Interaction} options={{ title: "InteractionScreen" }}></Stack.Screen>
             </Stack.Navigator>
         </NavigationContainer>
     );

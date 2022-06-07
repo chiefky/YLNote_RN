@@ -13,7 +13,7 @@ class HeaderView extends React.Component {
         return (<View style={{ justifyContent: 'flex-end' }}>
             <View style={styles.tabsContainer}            >
                 {tabItems.map((item, index) => {
-                    console.log("🍇", item);
+                    // console.log("🍇", item);
                     const { tabLabel } = item.props
                     return (<TouchableOpacity
                         key={index}

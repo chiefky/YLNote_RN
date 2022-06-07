@@ -9,8 +9,9 @@
 #import "YLNativeNewsViewController.h"
 #import <Masonry/Masonry.h>
 #import "YLNatiFilmListViewController.h"
-#import "YLFilmTabView.h"
+#import "YLInteractionViewController.h"
 #import "YLSearchBarBackView.h"
+#import "YLFilmTabView.h"
 #import "YLDefaultMacro.h"
 #import "YLNote-Swift.h"
 
@@ -120,7 +121,11 @@ static NSInteger tab_width = 80;
 }
 
 - (IBAction)hourClickAction:(id)sender {
+    YLInteractionViewController *interactionVC = [[YLInteractionViewController alloc] init];
+    interactionVC.title = @"交互练习";
+    [self.navigationController pushViewController:interactionVC animated:YES];
 }
+
 - (IBAction)logoClickAction:(id)sender {
 }
 /// 选中下划线frame修改

@@ -7,9 +7,8 @@
 //
 
 #import "YLNatiFilmDetailViewController.h"
-#import "YLNoteBridgeAPI.h"
 #import <React/RCTRootView.h>
-#import "YLRNTEventManager.h"
+#import "YLNoteBridgeAPI.h"
 
 @interface YLNatiFilmDetailViewController ()
 
@@ -19,19 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    [self initRCTRootView];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setupUI];
 }
 
-- (void)initRCTRootView{
+- (void)setupUI{
     RCTRootView *rootView = [[RCTRootView alloc]initWithBridge:[YLNoteBridgeAPI shareInstance] moduleName:@"Detail" initialProperties:  @{@"filmId":self.filmId}];
     self.view = rootView;
-    
 }
 
-- (void)setupUI {
-    NSDictionary *dict = @{@"f_id": self.filmId};
-    [YLRNTEventManager postEventWithName:@"selectItem" parameter:dict];
-}
 
 @end

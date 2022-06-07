@@ -1,8 +1,8 @@
 //
-//  YLSearchBarBackView.h
+//  YLInteractionViewController.h
 //  YLNote
 //
-//  Created by tangh on 2022/5/26.
+//  Created by tangh on 2022/6/8.
 //  Copyright © 2022 tangh. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLSearchBarBackView : UIView
+@interface YLInteractionViewController : UIViewController
 
 @end
 

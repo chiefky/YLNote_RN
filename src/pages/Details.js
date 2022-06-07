@@ -109,15 +109,25 @@ class DetailsScreen extends Component {
 
     componentDidMount() {
         // const { route, navigation } = this.props;
-        const { filmId } = this.props.route.params;
+        console.log("参数：" + this.props)
+        var filmId = ''
+        if (typeof (this.props.route) == "undefined") {
+            // 从原生加载详情页
+            filmId = this.props.filmId
+            console.log("从原生传递filmId：" + filmId)
+        } else {
+            // 从react加载原生页
+            filmId = this.props.route.params.filmId;
+            console.log('从路由传递filmId:', filmId)
+        }
+        this.getInfo(filmId)
 
         // let params = this.props.route.params;
         // let props = this.props;
         // let filmId = JSON.stringify(params.filmId);
         // console.log("navigation ", navigation)
-        console.log('route:', filmId)
-        this.getInfo(filmId)
     }
+
 }
 
 export default DetailsScreen;

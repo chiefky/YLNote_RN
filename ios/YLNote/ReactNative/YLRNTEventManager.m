@@ -16,24 +16,31 @@
 
 @implementation YLRNTEventManager
 RCT_EXPORT_MODULE();
-//.m文件
-+(id)allocWithZone:(NSZone *)zone {
-  static YLRNTEventManager *sharedInstance = nil;
-  static dispatch_once_t onceToken;
-  dispatch_once(&onceToken, ^{
-    sharedInstance = [super allocWithZone:zone];
-  });
-  return sharedInstance;
-}
-
-
 
 - (NSArray<NSString *> *)supportedEvents {
-    return @[@"selectItem"];
+  return @[@"selectItem"]; //这里返回的将是你要发送的消息名的数组。
 }
 
-- (void)sendSelectItem:(NSDictionary *)obj
-{
-  [self sendEventWithName:@"selectItem" body:obj];
+- (void)startObserving {
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(executeEventInternal:)
+                                               name:@"selectItem"
+                                             object:nil];
 }
+
+- (void)stopObserving {
+  [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)executeEventInternal:(NSNotification *)notification {
+  [self sendEventWithName:@"selectItem"
+                     body:notification.userInfo];
+}
+
++ (void)postEventWithName:(NSString *)name parameter:(NSDictionary *)parameter{
+  [[NSNotificationCenter defaultCenter] postNotificationName:name
+                                                      object:self
+                                                    userInfo:parameter];
+}
+
 @end

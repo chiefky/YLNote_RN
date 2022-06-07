@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YLRNTEventManager : RCTEventEmitter
 
 /// 接收通知的方法，接收到通知后发送事件到RN端。RN端接收到事件后可以进行相应的逻辑处理或界面跳转
-- (void)sendSelectItem:(NSDictionary *)obj;
++ (void)postEventWithName:(NSString *)name parameter:(NSDictionary *)parameter;
 
 @end
 

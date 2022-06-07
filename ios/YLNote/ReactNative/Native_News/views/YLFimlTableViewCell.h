@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(copy,nonatomic,readonly) NSString *subtitle;
 @property(copy,nonatomic,readonly) NSString *content;
 @property(copy,nonatomic,readonly) NSString *imageUrl;
+@property(copy,nonatomic,readonly) NSString *score;
 
 - (instancetype)initWithModel:(YLFilm *)ori;
 

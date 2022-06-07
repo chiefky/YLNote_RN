@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subtitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *r_imageView;
 @property (weak, nonatomic) IBOutlet UIView *relContentView;
@@ -51,6 +52,7 @@
     self.titleLabel.text = vmodel.title;
     self.subtitleLabel.text = vmodel.subtitle;
     self.contentLabel.text = vmodel.content;
+    self.scoreLabel.text = [NSString stringWithFormat:@"%@分",vmodel.score];
     [self.r_imageView sd_setImageWithURL:[NSURL URLWithString:vmodel.imageUrl]];
     self.r_imageView.contentMode = UIViewContentModeScaleAspectFill;
 
@@ -99,6 +101,7 @@
 @property(copy,nonatomic) NSString *subtitle;
 @property(copy,nonatomic) NSString *content;
 @property(copy,nonatomic) NSString *imageUrl;
+@property(copy,nonatomic) NSString *score;
 
 @end
 
@@ -112,6 +115,7 @@
         self.subtitle= ori.title;
         self.content = ori.f_description;
         self.imageUrl = ori.image;
+        self.score = ori.rt_score;
     }
     return self;
 }

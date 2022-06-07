@@ -21,8 +21,8 @@ RCT_EXPORT_VIEW_PROPERTY(urlArray, NSArray *)
   YLScrollView* scrollView = [[YLScrollView alloc] init];
 //  scrollView.cycleScrollViewStyle = HZCycleScrollViewStyleLoop;
   scrollView.selectItemBlock = ^(NSInteger index) {
-    YLRNTEventManager *event = [[YLRNTEventManager alloc] init];
-    [event sendSelectItem:@{@"index":[NSNumber numberWithUnsignedInteger:index]}];
+//    YLRNTEventManager *event = [[YLRNTEventManager alloc] init];
+//    [event sendSelectItem:@{@"index":[NSNumber numberWithUnsignedInteger:index]}];
 
   };
   return scrollView;

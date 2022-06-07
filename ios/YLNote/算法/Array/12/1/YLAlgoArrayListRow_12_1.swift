@@ -26,11 +26,19 @@ class YLAlgoArrayListRow_12_1: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         
-        let arr = [4,1,2,1,2,3]//"A man, a plan, a anal: Panama";
+        let arr = [4,1,2,1,2,3];
         let res = method_1(arr)
         print("结果：\(res)")
     }
+    
+    @objc func testMethod_2() {
         
+        let arr = [4,1,2,1,2,3,7];
+        let res = method_2(arr)
+        print("结果：\(res)")
+    }
+        
+
     func method_1(_ nums: [Int]) -> [Int] {
         guard nums.count > 3 else { return [] }
         var v1 = 0,v2 = 0
@@ -57,6 +65,24 @@ class YLAlgoArrayListRow_12_1: YLBaseTableViewController {
         return [v1,v2];
     }
     
+    /// 取出只出现1次的多个元素
+    /// - Parameter nums: <#nums description#>
+    /// - Returns: <#description#>
+    func method_2(_ nums:[Int]) -> [Int] {
+        var res:[Int] = []
+        for num in nums {
+            if res.contains(num) {
+                if let index = res.firstIndex(of: num) {
+                    res.remove(at: index)
+                } else {
+                    print("error")
+                }
+            } else {
+                res.append(num)
+            }
+        }
+        return res
+    }
     
     //    MARK: override
     override func fileName() -> String {

@@ -18,7 +18,7 @@ class YLAlgoArrayListRow_1: YLBaseTableViewController {
     
     
     @objc func testArrayisContinuous() {
-        let array = [11,13,12,0,0]
+        let array = [1,3,3,4,2,5]//[11,13,12,0,0]
         let res = method_1(array);
         print("结果：\(res)")
     }
@@ -52,6 +52,19 @@ class YLAlgoArrayListRow_1: YLBaseTableViewController {
         return true;
     }
     
+    /// 判断一个数组是否是连续的（不可用补0代替）
+    /// - Parameter nums: <#nums description#>
+    /// - Returns: <#description#>
+    func method_test(_ nums:[Int]) -> Bool {
+        let sorted = nums.sorted()
+        for i in 1...sorted.count-1 {
+            let distance = abs(sorted[i] - sorted[i-1])
+            if distance != 1 {
+                return false;
+            }
+        }
+        return true
+    }
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_1"

@@ -96,7 +96,6 @@ class YLAlgoArrayListRow_0: YLBaseTableViewController {
         }
         return -1
     }
-
     
     
     //    MARK: override

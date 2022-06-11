@@ -7,7 +7,7 @@
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedListRow_0",
+            "className":"YLAlgoLinkedlistListRow_0",
             "style": 1,
             "useXib": 0
         },
@@ -20,7 +20,7 @@
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedListRow_1",
+            "className":"YLAlgoLinkedlistListRow_1",
             "style": 1,
             "useXib": 0
         },

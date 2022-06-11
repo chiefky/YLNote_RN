@@ -1,5 +1,5 @@
 //
-//  YLAlgoLinkedListRow_0.swift
+//  YLAlgoLinkedlistListRow_0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -18,7 +18,7 @@ import UIKit
  来源：力扣（LeetCode）
  链接：https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
  */
-class YLAlgoLinkedListRow_0: YLBaseTableViewController {
+class YLAlgoLinkedlistListRow_0: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,7 +124,7 @@ class YLAlgoLinkedListRow_0: YLBaseTableViewController {
 
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_list_row_0"
+        return "Algo_linkedlist_list_row_0"
     }
 
 

@@ -1,5 +1,5 @@
 //
-//  YLAlgoLinkedListController.swift
+//  YLAlgoLinkedlistListController.swift
 //  YLNote
 //
 //  Created by tangh on 2022/5/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoLinkedListController: YLBaseTableViewController {
+class YLAlgoLinkedlistListController: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class YLAlgoLinkedListController: YLBaseTableViewController {
 
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_linked_list"
+        return "Algo_linkedlist_list"
     }
 
 }

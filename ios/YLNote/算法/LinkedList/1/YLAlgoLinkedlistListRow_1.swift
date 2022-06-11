@@ -1,5 +1,5 @@
 //
-//  YLAlgoLinkedListRow_1.swift
+//  YLAlgoLinkedlistListRow_1.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoLinkedListRow_1: YLBaseTableViewController {
+class YLAlgoLinkedlistListRow_1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,22 +47,22 @@ class YLAlgoLinkedListRow_1: YLBaseTableViewController {
         print(str)
     }
 
-    /// 双指针
+    /// 头插法 （关键节点是current；在current位置断开，分裂成两个链表）初始化一个新的空节点，从旧的链表上摘除节点插入到新的链表的new_head位置；
     /// - Parameter head: 原链表的head
     /// - Returns: 反转后的head
     func method_1(_ head:ListNode?) -> ListNode? {
         var new_head:ListNode? = nil
         var current = head
         while current != nil {
-            let tmp = current!.next
-            current!.next = new_head
-            new_head = current
-            current = tmp
+            let tmp = current!
+            current = current!.next
+            tmp.next = new_head
+            new_head = tmp
         }
         return new_head
     }
     
-    /// 两两交换
+    /// 两两交换 （关键节点是current.next；在原来的链表里修改指针的指向，修改完指针指向将新的头结点赋值）
     /// - Parameter head:
     /// - Returns:
     func method_2(_ head: ListNode?) -> ListNode? {
@@ -81,6 +81,6 @@ class YLAlgoLinkedListRow_1: YLBaseTableViewController {
 
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_list_row_1"
+        return "Algo_linkedlist_list_row_1"
     }
 }

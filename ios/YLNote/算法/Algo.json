@@ -61,7 +61,7 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlgoLinkedListController",
+                    "className":"YLAlgoLinkedlistListController",
                     "style": 1,
                     "useXib": 0
                 },

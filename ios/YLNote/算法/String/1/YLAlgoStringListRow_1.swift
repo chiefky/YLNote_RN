@@ -1,5 +1,5 @@
 //
-//  YLAlgoStringViewControllerRow0.swift
+//  YLAlgoStringListRow_0.swift
 //  YLNote
 //
 //  Created by tangh on 2022/3/7.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoStringViewControllerRow0: YLBaseTableViewController {
+class YLAlgoStringViewControllerRow1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,23 +26,17 @@ class YLAlgoStringViewControllerRow0: YLBaseTableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @objc func testReverse_recursive() {
-        let str = "    hello world ! 90   "
-        let reverse = res_reversWord(str)
+    
+    @objc func testInvalid_iteration() {
+        let str = "[{{}"
+        let res = isValid(str)
         
-        print("🐢\(reverse)😯")
-        
-    }
-    @objc func testReverse_iteration() {
-        let str = "the sky is blue"
-        let reverse = reverseWords(str)
-        
-        print("🍎：\(reverse)")
+        print("🍎：\(res)")
         
     }
 
     //MARK: override
     override func fileName() -> String {
-        return "Algo_string_row_0"
+        return "Algo_string_row_1"
     }
 }

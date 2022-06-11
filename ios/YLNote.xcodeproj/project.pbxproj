@@ -238,14 +238,14 @@
 		54C05D7A268F0A72006FFAAE /* YLPerNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C05D6E268F0A72006FFAAE /* YLPerNoteViewController.m */; };
 		54C05D95268F0B07006FFAAE /* YLDemoCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C05D90268F0B07006FFAAE /* YLDemoCopyViewController.m */; };
 		54C44A9127D7574900688A7E /* valid_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44A9027D7574900688A7E /* valid_string.swift */; };
-		54C44A9627D7661000688A7E /* YLAlgoStringViewControllerRow1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44A9527D7661000688A7E /* YLAlgoStringViewControllerRow1.swift */; };
+		54C44A9627D7661000688A7E /* YLAlgoStringListRow_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44A9527D7661000688A7E /* YLAlgoStringListRow_1.swift */; };
 		54C44A9B27D7667400688A7E /* Algo_string_row_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C44A9A27D7667400688A7E /* Algo_string_row_1.json */; };
 		54C44AA027D8A12E00688A7E /* sub_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44A9F27D8A12E00688A7E /* sub_string.swift */; };
-		54C44AA527D8A30B00688A7E /* YLAlgoStringViewControllerRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AA427D8A30B00688A7E /* YLAlgoStringViewControllerRow2.swift */; };
+		54C44AA527D8A30B00688A7E /* YLAlgoStringListRow_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AA427D8A30B00688A7E /* YLAlgoStringListRow_2.swift */; };
 		54C44AAA27D8A37400688A7E /* Algo_string_row_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C44AA927D8A37400688A7E /* Algo_string_row_2.json */; };
 		54C44AC827D9212800688A7E /* common_subseq_dis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AC727D9212800688A7E /* common_subseq_dis.swift */; };
 		54C44AEC27D9215900688A7E /* common_subseq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AEB27D9215900688A7E /* common_subseq.swift */; };
-		54C44AF127D921D900688A7E /* YLAlgoStringViewControllerRow3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AF027D921D900688A7E /* YLAlgoStringViewControllerRow3.swift */; };
+		54C44AF127D921D900688A7E /* YLAlgoStringListRow_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AF027D921D900688A7E /* YLAlgoStringListRow_3.swift */; };
 		54C44AF627D9225F00688A7E /* Algo_string_row_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C44AF527D9225F00688A7E /* Algo_string_row_3.json */; };
 		54C44B0B27DA104000688A7E /* day_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44B0A27DA104000688A7E /* day_test.swift */; };
 		54C44B1027DA105900688A7E /* YLAfgoTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44B0F27DA105900688A7E /* YLAfgoTestViewController.swift */; };
@@ -265,6 +265,8 @@
 		54CAC36E2605DC6B008A7BDF /* cookie.js in Resources */ = {isa = PBXBuildFile; fileRef = 54CAC36D2605DC6B008A7BDF /* cookie.js */; };
 		54D19F77284FC6630016468E /* YLInteractionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D19F76284FC6630016468E /* YLInteractionViewController.m */; };
 		54D19F7C285243780016468E /* day_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D19F7B285243780016468E /* day_test.json */; };
+		54D19F922855284F0016468E /* YLAlgoStringListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D19F912855284F0016468E /* YLAlgoStringListController.swift */; };
+		54D19F97285528570016468E /* Algo_stirng_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D19F96285528570016468E /* Algo_stirng_list.json */; };
 		54D88609284E4891003DE4F0 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88608284E4891003DE4F0 /* LinkedListNode.swift */; };
 		54D88613284E8A55003DE4F0 /* YLAlgoTreeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */; };
 		54D88618284E8A5D003DE4F0 /* Algo_tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D88617284E8A5C003DE4F0 /* Algo_tree.json */; };
@@ -328,7 +330,7 @@
 		54DCC61527D0F14D009F289D /* YLBlockRetainCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC61327D0F14D009F289D /* YLBlockRetainCycleViewController.m */; };
 		54DCC62E27D1E2DD009F289D /* block_code.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DCC62C27D1E2DC009F289D /* block_code.json */; };
 		54DCC62F27D1E2DD009F289D /* YLBlockCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC62D27D1E2DD009F289D /* YLBlockCodeViewController.m */; };
-		54DCC65827D52A64009F289D /* YLAlgoStringViewControllerRow0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC65727D52A64009F289D /* YLAlgoStringViewControllerRow0.swift */; };
+		54DCC65827D52A64009F289D /* YLAlgoStringListRow_0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC65727D52A64009F289D /* YLAlgoStringListRow_0.swift */; };
 		54DCC65D27D52AB5009F289D /* Algo_string_row_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DCC65C27D52AB5009F289D /* Algo_string_row_0.json */; };
 		54DCC66527D52AFC009F289D /* merge_sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC66427D52AFC009F289D /* merge_sort.swift */; };
 		54DCC67027D52B87009F289D /* reverse_words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCC66F27D52B87009F289D /* reverse_words.swift */; };
@@ -794,14 +796,14 @@
 		54C05D8E268F0B07006FFAAE /* YLDemoCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDemoCopyViewController.h; sourceTree = "<group>"; };
 		54C05D90268F0B07006FFAAE /* YLDemoCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDemoCopyViewController.m; sourceTree = "<group>"; };
 		54C44A9027D7574900688A7E /* valid_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valid_string.swift; sourceTree = "<group>"; };
-		54C44A9527D7661000688A7E /* YLAlgoStringViewControllerRow1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringViewControllerRow1.swift; sourceTree = "<group>"; };
+		54C44A9527D7661000688A7E /* YLAlgoStringListRow_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_1.swift; sourceTree = "<group>"; };
 		54C44A9A27D7667400688A7E /* Algo_string_row_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_string_row_1.json; sourceTree = "<group>"; };
 		54C44A9F27D8A12E00688A7E /* sub_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sub_string.swift; sourceTree = "<group>"; };
-		54C44AA427D8A30B00688A7E /* YLAlgoStringViewControllerRow2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringViewControllerRow2.swift; sourceTree = "<group>"; };
+		54C44AA427D8A30B00688A7E /* YLAlgoStringListRow_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_2.swift; sourceTree = "<group>"; };
 		54C44AA927D8A37400688A7E /* Algo_string_row_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_string_row_2.json; sourceTree = "<group>"; };
 		54C44AC727D9212800688A7E /* common_subseq_dis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common_subseq_dis.swift; sourceTree = "<group>"; };
 		54C44AEB27D9215900688A7E /* common_subseq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common_subseq.swift; sourceTree = "<group>"; };
-		54C44AF027D921D900688A7E /* YLAlgoStringViewControllerRow3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringViewControllerRow3.swift; sourceTree = "<group>"; };
+		54C44AF027D921D900688A7E /* YLAlgoStringListRow_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_3.swift; sourceTree = "<group>"; };
 		54C44AF527D9225F00688A7E /* Algo_string_row_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_string_row_3.json; sourceTree = "<group>"; };
 		54C44B0A27DA104000688A7E /* day_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day_test.swift; sourceTree = "<group>"; };
 		54C44B0F27DA105900688A7E /* YLAfgoTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAfgoTestViewController.swift; sourceTree = "<group>"; };
@@ -825,6 +827,8 @@
 		54D19F75284FC6630016468E /* YLInteractionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLInteractionViewController.h; sourceTree = "<group>"; };
 		54D19F76284FC6630016468E /* YLInteractionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLInteractionViewController.m; sourceTree = "<group>"; };
 		54D19F7B285243780016468E /* day_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_test.json; sourceTree = "<group>"; };
+		54D19F912855284F0016468E /* YLAlgoStringListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListController.swift; sourceTree = "<group>"; };
+		54D19F96285528570016468E /* Algo_stirng_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_stirng_list.json; sourceTree = "<group>"; };
 		54D88608284E4891003DE4F0 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListController.swift; sourceTree = "<group>"; };
 		54D88617284E8A5C003DE4F0 /* Algo_tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_tree.json; sourceTree = "<group>"; };
@@ -897,7 +901,7 @@
 		54DCC62B27D1E2DC009F289D /* YLBlockCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBlockCodeViewController.h; sourceTree = "<group>"; };
 		54DCC62C27D1E2DC009F289D /* block_code.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = block_code.json; sourceTree = "<group>"; };
 		54DCC62D27D1E2DD009F289D /* YLBlockCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBlockCodeViewController.m; sourceTree = "<group>"; };
-		54DCC65727D52A64009F289D /* YLAlgoStringViewControllerRow0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringViewControllerRow0.swift; sourceTree = "<group>"; };
+		54DCC65727D52A64009F289D /* YLAlgoStringListRow_0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_0.swift; sourceTree = "<group>"; };
 		54DCC65C27D52AB5009F289D /* Algo_string_row_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_0.json; sourceTree = "<group>"; };
 		54DCC66427D52AFC009F289D /* merge_sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merge_sort.swift; sourceTree = "<group>"; };
 		54DCC66F27D52B87009F289D /* reverse_words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reverse_words.swift; sourceTree = "<group>"; };
@@ -2400,6 +2404,42 @@
 			path = jsons;
 			sourceTree = "<group>";
 		};
+		54D19F86285526ED0016468E /* 0 */ = {
+			isa = PBXGroup;
+			children = (
+				54DCC65727D52A64009F289D /* YLAlgoStringListRow_0.swift */,
+				54DCC65C27D52AB5009F289D /* Algo_string_row_0.json */,
+			);
+			path = 0;
+			sourceTree = "<group>";
+		};
+		54D19F87285526F40016468E /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				54C44A9527D7661000688A7E /* YLAlgoStringListRow_1.swift */,
+				54C44A9A27D7667400688A7E /* Algo_string_row_1.json */,
+			);
+			path = 1;
+			sourceTree = "<group>";
+		};
+		54D19FA4285529240016468E /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				54C44AA427D8A30B00688A7E /* YLAlgoStringListRow_2.swift */,
+				54C44AA927D8A37400688A7E /* Algo_string_row_2.json */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		54D19FA8285529300016468E /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				54C44AF027D921D900688A7E /* YLAlgoStringListRow_3.swift */,
+				54C44AF527D9225F00688A7E /* Algo_string_row_3.json */,
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
 		54D88610284E89FE003DE4F0 /* 0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2719,36 +2759,18 @@
 			path = BlockCode;
 			sourceTree = "<group>";
 		};
-		54DCC63B27D529D8009F289D /* string */ = {
+		54DCC63B27D529D8009F289D /* String */ = {
 			isa = PBXGroup;
 			children = (
+				54D19F912855284F0016468E /* YLAlgoStringListController.swift */,
+				54D19F96285528570016468E /* Algo_stirng_list.json */,
+				54D19FA8285529300016468E /* 3 */,
+				54D19FA4285529240016468E /* 2 */,
+				54D19F87285526F40016468E /* 1 */,
+				54D19F86285526ED0016468E /* 0 */,
 				54DCC64A27D52A1C009F289D /* func */,
-				54DCC64927D52A14009F289D /* controller */,
-				54DCC64227D52A0E009F289D /* json */,
 			);
-			path = string;
-			sourceTree = "<group>";
-		};
-		54DCC64227D52A0E009F289D /* json */ = {
-			isa = PBXGroup;
-			children = (
-				54DCC65C27D52AB5009F289D /* Algo_string_row_0.json */,
-				54C44A9A27D7667400688A7E /* Algo_string_row_1.json */,
-				54C44AA927D8A37400688A7E /* Algo_string_row_2.json */,
-				54C44AF527D9225F00688A7E /* Algo_string_row_3.json */,
-			);
-			path = json;
-			sourceTree = "<group>";
-		};
-		54DCC64927D52A14009F289D /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				54DCC65727D52A64009F289D /* YLAlgoStringViewControllerRow0.swift */,
-				54C44A9527D7661000688A7E /* YLAlgoStringViewControllerRow1.swift */,
-				54C44AA427D8A30B00688A7E /* YLAlgoStringViewControllerRow2.swift */,
-				54C44AF027D921D900688A7E /* YLAlgoStringViewControllerRow3.swift */,
-			);
-			path = controller;
+			path = String;
 			sourceTree = "<group>";
 		};
 		54DCC64A27D52A1C009F289D /* func */ = {
@@ -2801,12 +2823,12 @@
 				54E97A7B27B10884001CA669 /* Algo.json */,
 				54E97A6F27B10884001CA669 /* YLAlgoViewController.swift */,
 				54E97A7127B10884001CA669 /* YLAlgoTabQesDataManger.swift */,
+				54C44B0927DA102100688A7E /* 每日回顾 */,
 				54E97A6527B10884001CA669 /* Array */,
 				54DB9B282843DA2800539AC5 /* LinkedList */,
 				54E6E42727BD78F50019E03C /* Tree */,
-				54C44B0927DA102100688A7E /* 每日回顾 */,
+				54DCC63B27D529D8009F289D /* String */,
 				54DCC55C27CD4056009F289D /* 基础 */,
-				54DCC63B27D529D8009F289D /* string */,
 				54E6E44C27BD82AA0019E03C /* 动态规划 */,
 				54E6E44B27BD82A00019E03C /* 回溯法 */,
 				54E6E44A27BD82600019E03C /* 栈、队列 */,
@@ -3230,6 +3252,7 @@
 				54E97A9127B10884001CA669 /* Algo.json in Resources */,
 				54E6E42327BD78170019E03C /* Algo_other_row_1.json in Resources */,
 				540B8F60260C755A00475BC5 /* YLHomeViewController.xib in Resources */,
+				54D19F97285528570016468E /* Algo_stirng_list.json in Resources */,
 				54DB9BDE28469EDB00539AC5 /* Algo_array_row_9.json in Resources */,
 				54B850B6283D35F800294D47 /* YLLifeCycleViewX.xib in Resources */,
 				54E97AB827B3F393001CA669 /* runloop_run.json in Resources */,
@@ -3431,7 +3454,7 @@
 				54AEB60E26AED748004C8894 /* YLCrashHandler.m in Sources */,
 				5487BDA125C7C66F00C6AEAE /* UIViewTools.swift in Sources */,
 				54FB59B125C4338100E3FCA4 /* UitilityTools.swift in Sources */,
-				54C44AA527D8A30B00688A7E /* YLAlgoStringViewControllerRow2.swift in Sources */,
+				54C44AA527D8A30B00688A7E /* YLAlgoStringListRow_2.swift in Sources */,
 				54C6F41327BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift in Sources */,
 				54DB9BDD28469EDB00539AC5 /* YLAlgoArrayListRow_9.swift in Sources */,
 				54FA55D42609CB5400AE0A83 /* YLDemoNonAutomicViewController.m in Sources */,
@@ -3443,7 +3466,7 @@
 				5435817525AC716900452D76 /* YLClassificationLevelKingdom.m in Sources */,
 				541A9C2228390D5600C839A2 /* YLNoteBridgeAPI.m in Sources */,
 				54DCC5E527D0C90E009F289D /* YLBlockTypesViewController.m in Sources */,
-				54C44AF127D921D900688A7E /* YLAlgoStringViewControllerRow3.swift in Sources */,
+				54C44AF127D921D900688A7E /* YLAlgoStringListRow_3.swift in Sources */,
 				54DB9B662843F66200539AC5 /* YLAlgoArrayListRow_3.swift in Sources */,
 				5400B31425BAE8E000DC4C49 /* YLMenuView.swift in Sources */,
 				54C44AC827D9212800688A7E /* common_subseq_dis.swift in Sources */,
@@ -3484,6 +3507,7 @@
 				54A35D9724CED7290076DFB6 /* YLTestAutoReleaseController.m in Sources */,
 				545F872225B1A875008BE6E2 /* YLSetting.m in Sources */,
 				5435818125AD6FF800452D76 /* YLClassificationLevelSuperOrder.m in Sources */,
+				54D19F922855284F0016468E /* YLAlgoStringListController.swift in Sources */,
 				54B4404927CAA09A004FDA38 /* YLThreadGCDDispatchQueueController.m in Sources */,
 				54C4B52D261C7E99004BF897 /* YLDemoBlockViewController.m in Sources */,
 				54FA55E02609CC3900AE0A83 /* YLDemoDynamicViewController.m in Sources */,
@@ -3544,7 +3568,7 @@
 				54E97AB727B3F393001CA669 /* YLRunloopRunViewController.m in Sources */,
 				5487BE5D25E36F7200C6AEAE /* UIColorTools.swift in Sources */,
 				54E97A7D27B10884001CA669 /* Stack.swift in Sources */,
-				54C44A9627D7661000688A7E /* YLAlgoStringViewControllerRow1.swift in Sources */,
+				54C44A9627D7661000688A7E /* YLAlgoStringListRow_1.swift in Sources */,
 				54456293269C365C00A3BA4D /* YLRuntimeWeakViewController.m in Sources */,
 				54C05D7A268F0A72006FFAAE /* YLPerNoteViewController.m in Sources */,
 				54CAC36C2605C05E008A7BDF /* YLWebCookieViewController.swift in Sources */,
@@ -3557,7 +3581,7 @@
 				54DE85EE25BEC2D400EB8CE0 /* YLDemoLifeCycleViewController.swift in Sources */,
 				5487BE6125E3A45900C6AEAE /* NSObjectTools.swift in Sources */,
 				54DB9B422843DAE200539AC5 /* YLAlgoLinkedListController.swift in Sources */,
-				54DCC65827D52A64009F289D /* YLAlgoStringViewControllerRow0.swift in Sources */,
+				54DCC65827D52A64009F289D /* YLAlgoStringListRow_0.swift in Sources */,
 				54FA55E62609D0D800AE0A83 /* YLDemoTypeofViewController.m in Sources */,
 				548457E827CD074400C2CFAA /* YLThreadGCDDispatchSeamphoreController.m in Sources */,
 				54B84FE8283CD1FC00294D47 /* YLRNTEventManager.m in Sources */,

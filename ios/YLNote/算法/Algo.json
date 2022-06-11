@@ -1,4 +1,28 @@
-[
+[    {
+    "group_id":"algo_day_test",
+    "unfoldStatus":false,
+    "group_title":"每日回顾",
+    "questions": [
+        {
+            "q_id":"algo_day_test_0",
+            "q_title":"所有",
+            "q_subtitle":"",
+            "showNextPage": true,
+            "showArticle":false,
+            "function":"",
+            "demo": {
+                "className":"YLAlgoTestViewController",
+                "style": 1,
+                "useXib": 0
+            },
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            },
+        }
+    ]
+},
     {
         "group_id":"algo_array",
         "unfoldStatus":false,
@@ -72,31 +96,6 @@
                     "art_url":"",
                     "art_title":"",
                 }
-            }
-        ]
-    },
-    {
-        "group_id":"algo_day_test",
-        "unfoldStatus":false,
-        "group_title":"每日回顾",
-        "questions": [
-            {
-                "q_id":"algo_day_test_0",
-                "q_title":"所有",
-                "q_subtitle":"",
-                "showNextPage": true,
-                "showArticle":false,
-                "function":"",
-                "demo": {
-                    "className":"YLAlgoTestViewController",
-                    "style": 1,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"",
-                    "art_url":"",
-                    "art_title":"",
-                },
             }
         ]
     },

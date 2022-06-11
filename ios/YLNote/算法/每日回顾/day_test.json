@@ -2,39 +2,13 @@
     {
         "group_id":"Algo_day_test_0",
         "unfoldStatus":false,
-        "group_title":"基础部分",
+        "group_title":"测试",
         "questions": [
             {
-                "q_title":"二分查找(迭代)",
+                "q_title":"执行测试用例",
                 "showArticle": false,
                 "showNextPage": false,
-                "function":"test_binary_search",
-                "demo": {},
-            },
-            {
-                "q_title":"二分查找(递归)",
-                "showArticle": false,
-                "showNextPage": false,
-                "function":"test_binary_search_res",
-                "demo": {},
-            },
-            {
-                "q_title":"快速排序",
-                "showArticle": false,
-                "showNextPage": false,
-                "function":"test_quick_sort",
-                "demo": {},
-                "article": {
-                    "artTitle":"",
-                    "fileName":""
-                }
-                
-            },
-            {
-                "q_title":"归并排序",
-                "showArticle": false,
-                "showNextPage": false,
-                "function":"test_merge_sort",
+                "function":"daily_test",
                 "demo": {},
                 "article": {
                     "artTitle":"",
@@ -44,49 +18,5 @@
             }
         ]
     },
-    {
-        "group_id":"Algo_day_test_0",
-        "unfoldStatus":false,
-        "group_title":"字符串部分",
-        "questions": [
-            {
-                "q_title":"反转字符串",
-                "showArticle": false,
-                "showNextPage": false,
-                "function":"test_reverse_words",
-                "demo": {},
-                "article": {
-                    "artTitle":"",
-                    "fileName":""
-                }
-                
-            },
-            {
-                "q_title":"有效[]{}()",
-                "showArticle": false,
-                "showNextPage": false,
-                "function":"test_valid_string",
-                "demo": {},
-                "article": {
-                    "artTitle":"",
-                    "fileName":""
-                }
-                
-            },{
-                "q_title":"无重复字符的最长子串",
-                "showArticle": false,
-                "showNextPage": false,
-                "function":"test_sub_string",
-                "demo": {},
-                "article": {
-                    "artTitle":"",
-                    "fileName":""
-                }
-                
-            }
-
-        ]
-    },
-
 ]
 

@@ -49,8 +49,14 @@ class YLAlgoTestViewController: YLBaseGroupTableViewController {
         print("res: \(res)")
     }
 
-    @objc func test_valid_string() {
-    
+    @objc func daily_test() {
+        let nums = [7,7,3,3,4,9]
+//        let linkList = LinkList()
+//        for i in 1...4 {
+//            linkList.append(value: i)
+//        }
+        let res = array_12_algo_test_1_a(nums)
+        print("🐝结果：\(res) ");
     }
     
     @objc func test_sub_string() {

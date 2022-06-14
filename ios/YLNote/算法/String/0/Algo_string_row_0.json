@@ -1,8 +1,8 @@
 
+
 [
     {
-        "q_title":"方法1：fliter方法分割成数组,反转、插入",
-        "q_subtitle":"",
+        "q_title":"方法1：split分割成数组，反转、插入空格",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod",
@@ -11,6 +11,7 @@
             "artTitle":"",
             "fileName":""
         }
+        
     },
     
 ]

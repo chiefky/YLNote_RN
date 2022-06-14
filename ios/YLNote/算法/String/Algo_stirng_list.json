@@ -1,13 +1,13 @@
 [
     {
         "q_id":"algo_string_0",
-        "q_title":"字符串翻转",
-        "q_subtitle":"保证单词顺序正确,空格分割，且去掉两边多余空格",
+        "q_title":"翻转单词顺序",
+        "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
         "function":"",
         "demo": {
-            "className":"YLAlgoStringListRow_0",
+            "className":"YLAlgoStringListRow_9",
             "style": 1,
             "useXib": 0
         },
@@ -15,7 +15,7 @@
     {
         "q_id":"algo_string_1",
         "q_title":"判断字符串是否有效闭合",
-        "q_subtitle":"只包括 '('，')'，'{'，'}'，'['，']' 的字符串s,是否闭合",
+        "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
         "function":"",
@@ -28,7 +28,7 @@
     {
         "q_id":"algo_string_2",
         "q_title":"无重复字符的最长子串",
-        "q_subtitle":"给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度",
+        "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
         "function":"",
@@ -50,5 +50,34 @@
             "style": 1,
             "useXib": 0
         },
-    }
+    },
+    {
+        "q_id":"algo_string_4",
+        "q_title":"替换空格",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoStringListRow_4",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_string_5",
+        "q_title":"第一个只出现一次的字符",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoStringListRow_5",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+
+  
+
 ]

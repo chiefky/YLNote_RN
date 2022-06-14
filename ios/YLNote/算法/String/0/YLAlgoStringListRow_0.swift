@@ -1,14 +1,17 @@
 //
-//  YLAlgoStringListRow_0.swift
+//  YLAlgoStringListRow_9.swift
 //  YLNote
 //
-//  Created by tangh on 2022/3/7.
+//  Created by tangh on 2022/3/10.
 //  Copyright © 2022 tangh. All rights reserved.
 //
 
 import UIKit
-
-class YLAlgoStringListRow_0: YLBaseTableViewController {
+/**
+ 输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。
+ 链接：https://leetcode.cn/problems/fan-zhuan-dan-ci-shun-xu-lcof
+ */
+class YLAlgoStringListRow_9: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,33 +19,19 @@ class YLAlgoStringListRow_0: YLBaseTableViewController {
         // Do any additional setup after loading the view.
     }
     
+    @objc func testMethod() {
+        let res = method_1(" ")
+        print("🍎1：\(res)")
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-    @objc func testReverse_recursive() {
-        let str = "    hello world ! 90   "
-        let reverse = res_reversWord(str)
-        
-        print("🐢\(reverse)😯")
-        
-    }
-    @objc func testReverse_iteration() {
-        let str = "the sky is blue"
-        let reverse = reverseWords(str)
-        
-        print("🍎：\(reverse)")
-        
+    
+    func method_1(_ s:String) -> String {
+        let words1 = s.split(separator: " ")
+       return words1.reversed().joined(separator: " ")
     }
 
     //MARK: override
     override func fileName() -> String {
-        return "Algo_string_row_0"
+        return "Algo_string_row_9"
     }
 }

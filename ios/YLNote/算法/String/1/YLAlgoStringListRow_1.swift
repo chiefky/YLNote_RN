@@ -1,5 +1,5 @@
 //
-//  YLAlgoStringListRow_0.swift
+//  YLAlgoStringListRow_1.swift
 //  YLNote
 //
 //  Created by tangh on 2022/3/7.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLAlgoStringViewControllerRow1: YLBaseTableViewController {
+class YLAlgoStringListRow_1: YLBaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +27,27 @@ class YLAlgoStringViewControllerRow1: YLBaseTableViewController {
     }
     */
     
-    @objc func testInvalid_iteration() {
+    @objc func testMethod() {
         let str = "[{{}"
-        let res = isValid(str)
-        
+        let res = method_1(str)
         print("🍎：\(res)")
+        
+    }
+    
+    func method_1(_ s:String) -> Bool {
+        let dic:[Character:Character] = ["}":"{","]":"[",")":"("];
+        var valid:[Character] = []
+        for c in s {
+            if dic.values.contains(c) {
+                // { ,[, (
+                valid.append(c)
+            } else if let value = dic[c], value != valid.popLast() {
+                // },],)
+                return false
+            }
+        }
+        
+        return true
         
     }
 

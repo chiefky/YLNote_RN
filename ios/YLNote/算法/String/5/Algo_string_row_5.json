@@ -1,7 +1,7 @@
 
 [
     {
-        "q_title":"方法1：fliter方法分割成数组,反转、插入",
+        "q_title":"方法1：遍历",
         "q_subtitle":"",
         "showArticle": false,
         "showNextPage": false,

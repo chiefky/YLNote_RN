@@ -56,6 +56,9 @@ class YLAlgoArrayListRow_1: YLBaseTableViewController {
     /// - Parameter nums: <#nums description#>
     /// - Returns: <#description#>
     func method_test(_ nums:[Int]) -> Bool {
+        guard nums.count > 1 else {
+            return false
+        }
         let sorted = nums.sorted()
         for i in 1...sorted.count-1 {
             let distance = abs(sorted[i] - sorted[i-1])

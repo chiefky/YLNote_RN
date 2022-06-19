@@ -12,7 +12,6 @@ import UIKit
  假设 nums 只有 一个重复的整数 ，返回 这个重复的数 。
  你设计的解决方案必须 不修改 数组 nums 且只用常量级 O(1) 的额外空间。
 
- 来源：力扣（LeetCode）
  链接：https://leetcode.cn/problems/find-the-duplicate-number
  */
 class YLAlgoArrayListRow_0: YLBaseTableViewController {

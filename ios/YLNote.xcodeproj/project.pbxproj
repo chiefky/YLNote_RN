@@ -154,6 +154,21 @@
 		548A0D2A26122BBB00BC80D9 /* YLDemoFuncMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548A0D2926122BBB00BC80D9 /* YLDemoFuncMessageViewController.swift */; };
 		548CAEF9285909DF00F73E71 /* YLAlgoStringListRow_0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAEF7285909DF00F73E71 /* YLAlgoStringListRow_0.swift */; };
 		548CAEFA285909DF00F73E71 /* Algo_string_row_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAEF8285909DF00F73E71 /* Algo_string_row_0.json */; };
+		548CAEFF285F328E00F73E71 /* day_test_linklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAEFE285F328E00F73E71 /* day_test_linklist.swift */; };
+		548CAF04285F3F0300F73E71 /* day_test_string.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF03285F3F0300F73E71 /* day_test_string.swift */; };
+		548CAF14285F4C7700F73E71 /* Algo_string_row_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF0F285F4C7700F73E71 /* Algo_string_row_2.json */; };
+		548CAF15285F4C7700F73E71 /* YLAlgoStringListRow_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF10285F4C7700F73E71 /* YLAlgoStringListRow_2.swift */; };
+		548CAF16285F4C7700F73E71 /* Algo_string_row_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF12285F4C7700F73E71 /* Algo_string_row_3.json */; };
+		548CAF17285F4C7700F73E71 /* YLAlgoStringListRow_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF13285F4C7700F73E71 /* YLAlgoStringListRow_3.swift */; };
+		548CAF30285F545D00F73E71 /* Algo_string_row_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF2E285F545D00F73E71 /* Algo_string_row_4.json */; };
+		548CAF31285F545D00F73E71 /* YLAlgoStringListRow_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF2F285F545D00F73E71 /* YLAlgoStringListRow_4.swift */; };
+		548CAF38285F547A00F73E71 /* Algo_string_row_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF36285F547A00F73E71 /* Algo_string_row_5.json */; };
+		548CAF39285F547A00F73E71 /* YLAlgoStringListRow_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF37285F547A00F73E71 /* YLAlgoStringListRow_5.swift */; };
+		548CAF44285F771100F73E71 /* day_test_array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF43285F771100F73E71 /* day_test_array.swift */; };
+		548CAF4E285FB59F00F73E71 /* YLAlgoStringListRow_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF49285FB59F00F73E71 /* YLAlgoStringListRow_6.swift */; };
+		548CAF4F285FB59F00F73E71 /* Algo_string_row_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF4A285FB59F00F73E71 /* Algo_string_row_6.json */; };
+		548CAF50285FB59F00F73E71 /* Algo_string_row_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF4C285FB59F00F73E71 /* Algo_string_row_7.json */; };
+		548CAF51285FB59F00F73E71 /* YLAlgoStringListRow_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF4D285FB59F00F73E71 /* YLAlgoStringListRow_7.swift */; };
 		548FF88A24A87F3200ECF7F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FF88924A87F3200ECF7F0 /* AppDelegate.m */; };
 		548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89124A87F3200ECF7F0 /* Main.storyboard */; };
 		548FF89524A87F3300ECF7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89424A87F3300ECF7F0 /* Assets.xcassets */; };
@@ -241,10 +256,6 @@
 		54C05D95268F0B07006FFAAE /* YLDemoCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C05D90268F0B07006FFAAE /* YLDemoCopyViewController.m */; };
 		54C44A9627D7661000688A7E /* YLAlgoStringListRow_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44A9527D7661000688A7E /* YLAlgoStringListRow_1.swift */; };
 		54C44A9B27D7667400688A7E /* Algo_string_row_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C44A9A27D7667400688A7E /* Algo_string_row_1.json */; };
-		54C44AA527D8A30B00688A7E /* YLAlgoStringListRow_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AA427D8A30B00688A7E /* YLAlgoStringListRow_2.swift */; };
-		54C44AAA27D8A37400688A7E /* Algo_string_row_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C44AA927D8A37400688A7E /* Algo_string_row_2.json */; };
-		54C44AF127D921D900688A7E /* YLAlgoStringListRow_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44AF027D921D900688A7E /* YLAlgoStringListRow_3.swift */; };
-		54C44AF627D9225F00688A7E /* Algo_string_row_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C44AF527D9225F00688A7E /* Algo_string_row_3.json */; };
 		54C44B0B27DA104000688A7E /* day_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44B0A27DA104000688A7E /* day_test.swift */; };
 		54C44B1027DA105900688A7E /* YLAfgoTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44B0F27DA105900688A7E /* YLAfgoTestViewController.swift */; };
 		54C4B4D8261425C9004BF897 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C4B4D7261425C9004BF897 /* user.json */; };
@@ -265,10 +276,6 @@
 		54D19F7C285243780016468E /* day_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D19F7B285243780016468E /* day_test.json */; };
 		54D19F922855284F0016468E /* YLAlgoStringListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D19F912855284F0016468E /* YLAlgoStringListController.swift */; };
 		54D19F97285528570016468E /* Algo_stirng_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D19F96285528570016468E /* Algo_stirng_list.json */; };
-		54D19FF62857CB1D0016468E /* YLAlgoStringListRow_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D19FF42857CB1D0016468E /* YLAlgoStringListRow_4.swift */; };
-		54D19FF72857CB1D0016468E /* Algo_string_row_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D19FF52857CB1D0016468E /* Algo_string_row_4.json */; };
-		54D1A0012857D0B10016468E /* Algo_string_row_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D19FFF2857D0B10016468E /* Algo_string_row_5.json */; };
-		54D1A0022857D0B10016468E /* YLAlgoStringListRow_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D1A0002857D0B10016468E /* YLAlgoStringListRow_5.swift */; };
 		54D88609284E4891003DE4F0 /* LinkedListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88608284E4891003DE4F0 /* LinkedListNode.swift */; };
 		54D88613284E8A55003DE4F0 /* YLAlgoTreeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */; };
 		54D88618284E8A5D003DE4F0 /* Algo_tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D88617284E8A5C003DE4F0 /* Algo_tree.json */; };
@@ -648,6 +655,21 @@
 		548A0D2926122BBB00BC80D9 /* YLDemoFuncMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDemoFuncMessageViewController.swift; sourceTree = "<group>"; };
 		548CAEF7285909DF00F73E71 /* YLAlgoStringListRow_0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_0.swift; sourceTree = "<group>"; };
 		548CAEF8285909DF00F73E71 /* Algo_string_row_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_0.json; sourceTree = "<group>"; };
+		548CAEFE285F328E00F73E71 /* day_test_linklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day_test_linklist.swift; sourceTree = "<group>"; };
+		548CAF03285F3F0300F73E71 /* day_test_string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day_test_string.swift; sourceTree = "<group>"; };
+		548CAF0F285F4C7700F73E71 /* Algo_string_row_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_2.json; sourceTree = "<group>"; };
+		548CAF10285F4C7700F73E71 /* YLAlgoStringListRow_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_2.swift; sourceTree = "<group>"; };
+		548CAF12285F4C7700F73E71 /* Algo_string_row_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_3.json; sourceTree = "<group>"; };
+		548CAF13285F4C7700F73E71 /* YLAlgoStringListRow_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_3.swift; sourceTree = "<group>"; };
+		548CAF2E285F545D00F73E71 /* Algo_string_row_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_4.json; sourceTree = "<group>"; };
+		548CAF2F285F545D00F73E71 /* YLAlgoStringListRow_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_4.swift; sourceTree = "<group>"; };
+		548CAF36285F547A00F73E71 /* Algo_string_row_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_5.json; sourceTree = "<group>"; };
+		548CAF37285F547A00F73E71 /* YLAlgoStringListRow_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_5.swift; sourceTree = "<group>"; };
+		548CAF43285F771100F73E71 /* day_test_array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day_test_array.swift; sourceTree = "<group>"; };
+		548CAF49285FB59F00F73E71 /* YLAlgoStringListRow_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_6.swift; sourceTree = "<group>"; };
+		548CAF4A285FB59F00F73E71 /* Algo_string_row_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_6.json; sourceTree = "<group>"; };
+		548CAF4C285FB59F00F73E71 /* Algo_string_row_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_7.json; sourceTree = "<group>"; };
+		548CAF4D285FB59F00F73E71 /* YLAlgoStringListRow_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_7.swift; sourceTree = "<group>"; };
 		548FF88524A87F3200ECF7F0 /* YLNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548FF88824A87F3200ECF7F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		548FF88924A87F3200ECF7F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -798,10 +820,6 @@
 		54C05D90268F0B07006FFAAE /* YLDemoCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDemoCopyViewController.m; sourceTree = "<group>"; };
 		54C44A9527D7661000688A7E /* YLAlgoStringListRow_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_1.swift; sourceTree = "<group>"; };
 		54C44A9A27D7667400688A7E /* Algo_string_row_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_string_row_1.json; sourceTree = "<group>"; };
-		54C44AA427D8A30B00688A7E /* YLAlgoStringListRow_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_2.swift; sourceTree = "<group>"; };
-		54C44AA927D8A37400688A7E /* Algo_string_row_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_string_row_2.json; sourceTree = "<group>"; };
-		54C44AF027D921D900688A7E /* YLAlgoStringListRow_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_3.swift; sourceTree = "<group>"; };
-		54C44AF527D9225F00688A7E /* Algo_string_row_3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_string_row_3.json; sourceTree = "<group>"; };
 		54C44B0A27DA104000688A7E /* day_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = day_test.swift; sourceTree = "<group>"; };
 		54C44B0F27DA105900688A7E /* YLAfgoTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAfgoTestViewController.swift; sourceTree = "<group>"; };
 		54C4B4D7261425C9004BF897 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
@@ -826,10 +844,6 @@
 		54D19F7B285243780016468E /* day_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_test.json; sourceTree = "<group>"; };
 		54D19F912855284F0016468E /* YLAlgoStringListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListController.swift; sourceTree = "<group>"; };
 		54D19F96285528570016468E /* Algo_stirng_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_stirng_list.json; sourceTree = "<group>"; };
-		54D19FF42857CB1D0016468E /* YLAlgoStringListRow_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_4.swift; sourceTree = "<group>"; };
-		54D19FF52857CB1D0016468E /* Algo_string_row_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_4.json; sourceTree = "<group>"; };
-		54D19FFF2857D0B10016468E /* Algo_string_row_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_5.json; sourceTree = "<group>"; };
-		54D1A0002857D0B10016468E /* YLAlgoStringListRow_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_5.swift; sourceTree = "<group>"; };
 		54D88608284E4891003DE4F0 /* LinkedListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListNode.swift; sourceTree = "<group>"; };
 		54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListController.swift; sourceTree = "<group>"; };
 		54D88617284E8A5C003DE4F0 /* Algo_tree.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_tree.json; sourceTree = "<group>"; };
@@ -1767,6 +1781,60 @@
 			path = 0;
 			sourceTree = "<group>";
 		};
+		548CAF0E285F4C7700F73E71 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF0F285F4C7700F73E71 /* Algo_string_row_2.json */,
+				548CAF10285F4C7700F73E71 /* YLAlgoStringListRow_2.swift */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		548CAF11285F4C7700F73E71 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF12285F4C7700F73E71 /* Algo_string_row_3.json */,
+				548CAF13285F4C7700F73E71 /* YLAlgoStringListRow_3.swift */,
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
+		548CAF2D285F545D00F73E71 /* 4 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF2E285F545D00F73E71 /* Algo_string_row_4.json */,
+				548CAF2F285F545D00F73E71 /* YLAlgoStringListRow_4.swift */,
+			);
+			path = 4;
+			sourceTree = "<group>";
+		};
+		548CAF35285F547A00F73E71 /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF36285F547A00F73E71 /* Algo_string_row_5.json */,
+				548CAF37285F547A00F73E71 /* YLAlgoStringListRow_5.swift */,
+			);
+			path = 5;
+			sourceTree = "<group>";
+		};
+		548CAF48285FB59F00F73E71 /* 6 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF49285FB59F00F73E71 /* YLAlgoStringListRow_6.swift */,
+				548CAF4A285FB59F00F73E71 /* Algo_string_row_6.json */,
+			);
+			path = 6;
+			sourceTree = "<group>";
+		};
+		548CAF4B285FB59F00F73E71 /* 7 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF4C285FB59F00F73E71 /* Algo_string_row_7.json */,
+				548CAF4D285FB59F00F73E71 /* YLAlgoStringListRow_7.swift */,
+			);
+			path = 7;
+			sourceTree = "<group>";
+		};
 		548FF87C24A87F3200ECF7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -2342,6 +2410,9 @@
 			children = (
 				54D19F7B285243780016468E /* day_test.json */,
 				54C44B0A27DA104000688A7E /* day_test.swift */,
+				548CAF43285F771100F73E71 /* day_test_array.swift */,
+				548CAEFE285F328E00F73E71 /* day_test_linklist.swift */,
+				548CAF03285F3F0300F73E71 /* day_test_string.swift */,
 				54C44B0F27DA105900688A7E /* YLAfgoTestViewController.swift */,
 			);
 			path = "每日回顾";
@@ -2418,42 +2489,6 @@
 				54C44A9A27D7667400688A7E /* Algo_string_row_1.json */,
 			);
 			path = 1;
-			sourceTree = "<group>";
-		};
-		54D19FA4285529240016468E /* 2 */ = {
-			isa = PBXGroup;
-			children = (
-				54C44AA427D8A30B00688A7E /* YLAlgoStringListRow_2.swift */,
-				54C44AA927D8A37400688A7E /* Algo_string_row_2.json */,
-			);
-			path = 2;
-			sourceTree = "<group>";
-		};
-		54D19FA8285529300016468E /* 3 */ = {
-			isa = PBXGroup;
-			children = (
-				54C44AF027D921D900688A7E /* YLAlgoStringListRow_3.swift */,
-				54C44AF527D9225F00688A7E /* Algo_string_row_3.json */,
-			);
-			path = 3;
-			sourceTree = "<group>";
-		};
-		54D19FF32857CA950016468E /* 4 */ = {
-			isa = PBXGroup;
-			children = (
-				54D19FF42857CB1D0016468E /* YLAlgoStringListRow_4.swift */,
-				54D19FF52857CB1D0016468E /* Algo_string_row_4.json */,
-			);
-			path = 4;
-			sourceTree = "<group>";
-		};
-		54D19FFE2857D0B10016468E /* 5 */ = {
-			isa = PBXGroup;
-			children = (
-				54D1A0002857D0B10016468E /* YLAlgoStringListRow_5.swift */,
-				54D19FFF2857D0B10016468E /* Algo_string_row_5.json */,
-			);
-			path = 5;
 			sourceTree = "<group>";
 		};
 		54D88610284E89FE003DE4F0 /* 0 */ = {
@@ -2778,14 +2813,16 @@
 		54DCC63B27D529D8009F289D /* String */ = {
 			isa = PBXGroup;
 			children = (
-				548CAEF6285909DF00F73E71 /* 0 */,
-				54D19F912855284F0016468E /* YLAlgoStringListController.swift */,
 				54D19F96285528570016468E /* Algo_stirng_list.json */,
+				54D19F912855284F0016468E /* YLAlgoStringListController.swift */,
+				548CAF4B285FB59F00F73E71 /* 7 */,
+				548CAF48285FB59F00F73E71 /* 6 */,
+				548CAF35285F547A00F73E71 /* 5 */,
+				548CAF2D285F545D00F73E71 /* 4 */,
+				548CAF11285F4C7700F73E71 /* 3 */,
+				548CAF0E285F4C7700F73E71 /* 2 */,
 				54D19F87285526F40016468E /* 1 */,
-				54D19FA4285529240016468E /* 2 */,
-				54D19FA8285529300016468E /* 3 */,
-				54D19FF32857CA950016468E /* 4 */,
-				54D19FFE2857D0B10016468E /* 5 */,
+				548CAEF6285909DF00F73E71 /* 0 */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -3224,6 +3261,7 @@
 				54C6F42327BD74B200756275 /* Algo_other_row_0.json in Resources */,
 				5435818A25AD8F1A00452D76 /* TRex.json in Resources */,
 				54E97A7F27B10884001CA669 /* Algo_array_row_0.json in Resources */,
+				548CAF50285FB59F00F73E71 /* Algo_string_row_7.json in Resources */,
 				54DB9B2F2843DA2800539AC5 /* Algo_linkedlist_list_row_1.json in Resources */,
 				54E97B3327B9873F001CA669 /* runloop_port.json in Resources */,
 				54DCC53027CD3213009F289D /* thread_gcd_IO.json in Resources */,
@@ -3242,6 +3280,7 @@
 				54DCC5ED27D0C930009F289D /* block_types.json in Resources */,
 				547356D927E64B720096A008 /* optimize_start.json in Resources */,
 				54C6F3AD27BC1DF900756275 /* thread_test.json in Resources */,
+				548CAF16285F4C7700F73E71 /* Algo_string_row_3.json in Resources */,
 				5434B22E27F61D7E00625D07 /* memory_align.json in Resources */,
 				54BB2646260379E9001A98B4 /* WKWebViewJSTest.html in Resources */,
 				54DB9B372843DA6900539AC5 /* Algo_linkedlist_list.json in Resources */,
@@ -3264,7 +3303,6 @@
 				54DB9C46284DE20A00539AC5 /* Algo_array_row_12_2.json in Resources */,
 				5487BDBA25CB03DD00C6AEAE /* YLCollectionViewController.xib in Resources */,
 				54E97AAC27B38004001CA669 /* runloop_other.json in Resources */,
-				54C44AF627D9225F00688A7E /* Algo_string_row_3.json in Resources */,
 				54DB9B71284409A400539AC5 /* Algo_array_row_4.json in Resources */,
 				54FD67A3260AFA3B00F7E113 /* YLDemoTestAniViewController.xib in Resources */,
 				54D88618284E8A5D003DE4F0 /* Algo_tree.json in Resources */,
@@ -3279,14 +3317,16 @@
 				54DB9BEF284CFC9800539AC5 /* Algo_array_row_11.json in Resources */,
 				54DCC61427D0F14D009F289D /* block_recycle.json in Resources */,
 				548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */,
+				548CAF4F285FB59F00F73E71 /* Algo_string_row_6.json in Resources */,
 				54E97ADF27B3FF92001CA669 /* YLNoteSwitchTableViewCell.xib in Resources */,
 				54FB59A625C2948D00E3FCA4 /* YLAnimationViewController.xib in Resources */,
 				54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */,
 				54B43F8427C38515004FDA38 /* thread_operation_block.json in Resources */,
-				54D19FF72857CB1D0016468E /* Algo_string_row_4.json in Resources */,
 				5434B21427F61A6000625D07 /* memory_taggedpointer.json in Resources */,
+				548CAF30285F545D00F73E71 /* Algo_string_row_4.json in Resources */,
 				54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */,
 				54DB9B5D2843E49700539AC5 /* Algo_array_row_2.json in Resources */,
+				548CAF14285F4C7700F73E71 /* Algo_string_row_2.json in Resources */,
 				54DB9B652843F66200539AC5 /* Algo_array_row_3.json in Resources */,
 				54DCC5B727CF4F94009F289D /* Algo_primary_row_2.json in Resources */,
 				54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */,
@@ -3297,7 +3337,6 @@
 				54DB9B9728463BB400539AC5 /* Algo_array_row_8.json in Resources */,
 				54E6E43827BD79680019E03C /* Algo_tree_row_1.json in Resources */,
 				54E97A9927B1091B001CA669 /* LateNote.json in Resources */,
-				54D1A0012857D0B10016468E /* Algo_string_row_5.json in Resources */,
 				54DCC56627CD4128009F289D /* Algo_primary_row_0.json in Resources */,
 				54E6E45F27C229930019E03C /* thread_nshread.json in Resources */,
 				545673732721DAB40026403D /* YLGroupNormalHeaderView.xib in Resources */,
@@ -3305,7 +3344,6 @@
 				5487BD9725C50AB000C6AEAE /* YLSlipMenuView.xib in Resources */,
 				548CAEFA285909DF00F73E71 /* Algo_string_row_0.json in Resources */,
 				54F16A412742451400660DCC /* thread_gcd.json in Resources */,
-				54C44AAA27D8A37400688A7E /* Algo_string_row_2.json in Resources */,
 				542821C8261204950066E070 /* YLDemoSeparatorViewController.xib in Resources */,
 				54DCC62E27D1E2DD009F289D /* block_code.json in Resources */,
 				54DB9ADE2843D7A000539AC5 /* Algo_array_list.json in Resources */,
@@ -3321,6 +3359,7 @@
 				54B4405F27CCA60D004FDA38 /* thread_gcd_barrier.json in Resources */,
 				54E97A8227B10884001CA669 /* Algo_array_row_1.json in Resources */,
 				54C44A9B27D7667400688A7E /* Algo_string_row_1.json in Resources */,
+				548CAF38285F547A00F73E71 /* Algo_string_row_5.json in Resources */,
 				54B4404D27CAA09A004FDA38 /* thread_gcd_group.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3460,8 +3499,8 @@
 				54FA55DA2609CBDA00AE0A83 /* YLDemoHashEqualViewController.m in Sources */,
 				54AEB60E26AED748004C8894 /* YLCrashHandler.m in Sources */,
 				5487BDA125C7C66F00C6AEAE /* UIViewTools.swift in Sources */,
+				548CAF04285F3F0300F73E71 /* day_test_string.swift in Sources */,
 				54FB59B125C4338100E3FCA4 /* UitilityTools.swift in Sources */,
-				54C44AA527D8A30B00688A7E /* YLAlgoStringListRow_2.swift in Sources */,
 				54C6F41327BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift in Sources */,
 				54DB9BDD28469EDB00539AC5 /* YLAlgoArrayListRow_9.swift in Sources */,
 				54FA55D42609CB5400AE0A83 /* YLDemoNonAutomicViewController.m in Sources */,
@@ -3473,7 +3512,6 @@
 				5435817525AC716900452D76 /* YLClassificationLevelKingdom.m in Sources */,
 				541A9C2228390D5600C839A2 /* YLNoteBridgeAPI.m in Sources */,
 				54DCC5E527D0C90E009F289D /* YLBlockTypesViewController.m in Sources */,
-				54C44AF127D921D900688A7E /* YLAlgoStringListRow_3.swift in Sources */,
 				54DB9B662843F66200539AC5 /* YLAlgoArrayListRow_3.swift in Sources */,
 				5400B31425BAE8E000DC4C49 /* YLMenuView.swift in Sources */,
 				545A19BD26C3DD820089BECE /* YLGenus.m in Sources */,
@@ -3521,6 +3559,7 @@
 				54A35D4524CED6B20076DFB6 /* YLOCSwiftViewController.m in Sources */,
 				54DCC56E27CD4305009F289D /* binary_search.swift in Sources */,
 				54A6517C24D4305C005FB5AD /* YLUserViewController.m in Sources */,
+				548CAEFF285F328E00F73E71 /* day_test_linklist.swift in Sources */,
 				54C4B500261437FA004BF897 /* YLWallet.swift in Sources */,
 				549575A6281A94F0002BCFF4 /* YLSwiftTViewController.swift in Sources */,
 				5435811E25A4D8AC00452D76 /* YLAutoReleaseNoteManager.m in Sources */,
@@ -3530,6 +3569,7 @@
 				540B8F69260C757800475BC5 /* YLLoginViewController.swift in Sources */,
 				547356D427E64B320096A008 /* YLOptimizeStartViewController.m in Sources */,
 				5435817B25AD6F0A00452D76 /* YLClassificationLevelSuperClass.m in Sources */,
+				548CAF17285F4C7700F73E71 /* YLAlgoStringListRow_3.swift in Sources */,
 				54A35D9A24CED7290076DFB6 /* YLTheme.swift in Sources */,
 				54DB9B212843D89800539AC5 /* YLAlgoArrayListController.swift in Sources */,
 				54E6E43327BD792E0019E03C /* YLAlgoTreeListRow_1.swift in Sources */,
@@ -3537,6 +3577,7 @@
 				5435817825AD6E9F00452D76 /* YLClassificationLevelPhylum.m in Sources */,
 				54FA55C52609CA8A00AE0A83 /* YLDemoSafeArrayViewController.m in Sources */,
 				54F16A91274268F200660DCC /* YLRunloopWithOtherViewController.m in Sources */,
+				548CAF39285F547A00F73E71 /* YLAlgoStringListRow_5.swift in Sources */,
 				54DCC66527D52AFC009F289D /* merge_sort.swift in Sources */,
 				5452D5832605E1C10007FDDA /* YLCookieManager.m in Sources */,
 				5487BDDC25DC727300C6AEAE /* UITabbarItem+Theme.swift in Sources */,
@@ -3548,6 +3589,7 @@
 				545A19AB26C3DD510089BECE /* YLClass.m in Sources */,
 				545A19B126C3DD640089BECE /* YLOrder.m in Sources */,
 				54E97A5B27B106B2001CA669 /* YLNoteQesDataManager.swift in Sources */,
+				548CAF44285F771100F73E71 /* day_test_array.swift in Sources */,
 				5435812C25A4DB6B00452D76 /* YLRunLoopNoteManager.m in Sources */,
 				545A19C326C3DD920089BECE /* YLSpecies.m in Sources */,
 				54B43F6B27C384CB004FDA38 /* YLThreadBlockOperationController.m in Sources */,
@@ -3604,6 +3646,7 @@
 				5487BDE125DFB35500C6AEAE /* YLDiskCacheViewController.swift in Sources */,
 				545F872525B573ED008BE6E2 /* YLPicBrowserViewController.m in Sources */,
 				54B4404C27CAA09A004FDA38 /* YLThreadGCDDispatchGroupController.m in Sources */,
+				548CAF15285F4C7700F73E71 /* YLAlgoStringListRow_2.swift in Sources */,
 				5487BDDF25DF9D9D00C6AEAE /* UIView+Skin.m in Sources */,
 				54A35D8B24CED7290076DFB6 /* YLNotificationCenter.m in Sources */,
 				54DB9B312843DA2800539AC5 /* YLAlgoLinkedlistListRow_1.swift in Sources */,
@@ -3620,7 +3663,6 @@
 				54A35D9024CED7290076DFB6 /* YLFather.m in Sources */,
 				5435817E25AD6F6500452D76 /* YLClassificationLevelSuperGenus.m in Sources */,
 				54DCC59E27CE965F009F289D /* quick_sort.swift in Sources */,
-				54D1A0022857D0B10016468E /* YLAlgoStringListRow_5.swift in Sources */,
 				54A35D8E24CED7290076DFB6 /* NSObject+Test.m in Sources */,
 				5434B21127F61A6000625D07 /* YLMemoryTaggedPointerVController.m in Sources */,
 				5487BDAB25C9EDDE00C6AEAE /* YLMemoryViewController.swift in Sources */,
@@ -3644,6 +3686,7 @@
 				54E97A4627ADA24E001CA669 /* YLPerNoteQesManager.swift in Sources */,
 				548A0CEF261220F800BC80D9 /* YLDemoProtocolViewController.swift in Sources */,
 				54FD67A2260AFA3B00F7E113 /* YLDemoTestAniViewController.swift in Sources */,
+				548CAF4E285FB59F00F73E71 /* YLAlgoStringListRow_6.swift in Sources */,
 				545F875A25B97336008BE6E2 /* YLThirdLibNoteManager.m in Sources */,
 				54DCC61527D0F14D009F289D /* YLBlockRetainCycleViewController.m in Sources */,
 				54FB599D25BFFE5300E3FCA4 /* YLDemoAnimateViewController.swift in Sources */,
@@ -3662,6 +3705,7 @@
 				54B304A7271ECC1C007747AF /* YLThreadAsyncQueueGroupController.m in Sources */,
 				548A0D2A26122BBB00BC80D9 /* YLDemoFuncMessageViewController.swift in Sources */,
 				542821A32611C5FF0066E070 /* YLQuestionTableViewCell.swift in Sources */,
+				548CAF51285FB59F00F73E71 /* YLAlgoStringListRow_7.swift in Sources */,
 				54DB9B5E2843E49700539AC5 /* YLAlgoArrayListRow_2.swift in Sources */,
 				54DCC62F27D1E2DD009F289D /* YLBlockCodeViewController.m in Sources */,
 				54A35DAD24CED7A30076DFB6 /* YLThreadSync.m in Sources */,
@@ -3706,7 +3750,6 @@
 				548A0CCC2612205C00BC80D9 /* YLDemoPropertyViewController.swift in Sources */,
 				54A35D8624CED7290076DFB6 /* YLHitTestViewController.m in Sources */,
 				5487BDBF25CB0FCD00C6AEAE /* YLCollectionViewCell.swift in Sources */,
-				54D19FF62857CB1D0016468E /* YLAlgoStringListRow_4.swift in Sources */,
 				54DB9C45284DE20A00539AC5 /* YLAlgoArrayListRow_12_2.swift in Sources */,
 				5487BE8F2600AE9500C6AEAE /* YLWebSchemeController.swift in Sources */,
 				54A35D4E24CED6FE0076DFB6 /* YLSDViewController.m in Sources */,
@@ -3718,6 +3761,7 @@
 				5435817225AC715300452D76 /* YLClassificationLevelDomain.m in Sources */,
 				545A199026C3D9D90089BECE /* YLObject.m in Sources */,
 				548FF89B24A87F3300ECF7F0 /* main.m in Sources */,
+				548CAF31285F545D00F73E71 /* YLAlgoStringListRow_4.swift in Sources */,
 				54D88613284E8A55003DE4F0 /* YLAlgoTreeListController.swift in Sources */,
 				54C44B1027DA105900688A7E /* YLAfgoTestViewController.swift in Sources */,
 				54C44B0B27DA104000688A7E /* day_test.swift in Sources */,

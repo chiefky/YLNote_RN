@@ -1,16 +1,17 @@
 
 [
     {
-        "q_title":"方法1：遍历",
-        "q_subtitle":"",
+        "q_title":"方法1：利用滑动窗口",
+        "q_subtitle":"输出最长子串的长度",
         "showArticle": false,
         "showNextPage": false,
-        "function":"testMethod",
+        "function":"testMethod1",
         "demo": {},
         "article": {
             "artTitle":"",
             "fileName":""
         }
+        
     },
-    
+
 ]

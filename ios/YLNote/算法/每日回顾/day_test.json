@@ -5,17 +5,41 @@
         "group_title":"测试",
         "questions": [
             {
-                "q_title":"执行测试用例",
+                "q_title":"数组",
                 "showArticle": false,
                 "showNextPage": false,
-                "function":"daily_test",
+                "function":"daily_test_array",
                 "demo": {},
                 "article": {
                     "artTitle":"",
                     "fileName":""
                 }
                 
+            },
+            {
+                "q_title":"链表",
+                "showArticle": false,
+                "showNextPage": false,
+                "function":"daily_test_linklist",
+                "demo": {},
+                "article": {
+                    "artTitle":"",
+                    "fileName":""
+                }
+                
+            },
+            {
+                "q_title":"字符串",
+                "showArticle": false,
+                "showNextPage": false,
+                "function":"daily_test_string",
+                "demo": {},
+                "article": {
+                    "artTitle":"",
+                    "fileName":""
+                }
             }
+
         ]
     },
 ]

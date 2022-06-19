@@ -1,8 +1,8 @@
 
+
 [
     {
-        "q_title":"方法1：遍历",
-        "q_subtitle":"",
+        "q_title":"方法1：split分割成单词数组，反转每个单词",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod",
@@ -11,6 +11,7 @@
             "artTitle":"",
             "fileName":""
         }
+        
     },
     
 ]

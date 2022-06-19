@@ -31,8 +31,8 @@ class YLAlgoArrayListRow_4: YLBaseTableViewController {
         print("结果：\(res)")
     }
     @objc func testMethod_2() {
-        var array = [0,0,1,1,1,2,2,3,5,4]
-        let res = method_2(&array,3);
+        var array = [0,0,1,1,1,1,9,2,3,3,4]
+        let res = method_2(&array,1);
         print("结果：\(res)")
     }
     
@@ -62,17 +62,19 @@ class YLAlgoArrayListRow_4: YLBaseTableViewController {
         if nums.isEmpty {
             return 0;
         }
-        var left = 0,right = nums.count;
+        var left = 0,right = nums.count-1;
         while left < right {
             if nums[left] == target {
-                nums[left] = nums[right-1];
+                nums[left] = nums[right];
                 right -= 1;
             } else {
                 left += 1;
             }
         }
-        nums.removeSubrange(left..<nums.count)
-        return left
+        let fromIndex = nums[left] == target ? left : left+1
+        nums.removeSubrange(fromIndex..<nums.count)
+        print("end:\(nums)")
+        return nums.count
     }
     
     //    MARK: override

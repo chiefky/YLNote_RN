@@ -50,26 +50,27 @@ class YLAlgoTestViewController: YLBaseGroupTableViewController {
     }
 
     @objc func daily_test() {
+        testString()
+        return
         let nums = [7,7,3,3,4,9]
-//        let linkList = LinkList()
-//        for i in 1...4 {
-//            linkList.append(value: i)
-//        }
         let res = array_12_algo_test_1_a(nums)
         print("🐝结果：\(res) ");
     }
     
-    @objc func test_sub_string() {
+    @objc func daily_test_string() {
+        testString()
+    }
+
+    
+    @objc func daily_test_array() {
+        testArray()
     
     }
 
     
-    @objc func test_sub_sequence() {
-    
+    @objc func daily_test_linklist() {
+        testLinkList();
     }
-
-    
-    
     // MARK: - override
 
     override func fileName() -> String {

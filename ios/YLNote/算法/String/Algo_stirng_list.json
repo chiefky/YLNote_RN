@@ -7,7 +7,7 @@
         "showArticle":false,
         "function":"",
         "demo": {
-            "className":"YLAlgoStringListRow_9",
+            "className":"YLAlgoStringListRow_0",
             "style": 1,
             "useXib": 0
         },
@@ -27,7 +27,7 @@
     },
     {
         "q_id":"algo_string_2",
-        "q_title":"无重复字符的最长子串",
+        "q_title":"替换空格",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
@@ -40,7 +40,7 @@
     },
     {
         "q_id":"algo_string_3",
-        "q_title":"两个字符串的最长公共子序列",
+        "q_title":"第一个只出现一次的字符",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
@@ -51,9 +51,10 @@
             "useXib": 0
         },
     },
+
     {
         "q_id":"algo_string_4",
-        "q_title":"替换空格",
+        "q_title":"无重复字符的最长子串",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
@@ -66,7 +67,7 @@
     },
     {
         "q_id":"algo_string_5",
-        "q_title":"第一个只出现一次的字符",
+        "q_title":"两个字符串的最长公共子序列",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
@@ -77,7 +78,34 @@
             "useXib": 0
         },
     },
+    {
+        "q_id":"algo_string_6",
+        "q_title":"反转字符串",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoStringListRow_6",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_string_7",
+        "q_title":"反转字符串中的单词 III",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoStringListRow_7",
+            "style": 1,
+            "useXib": 0
+        },
+    },
 
-  
+    
+
 
 ]

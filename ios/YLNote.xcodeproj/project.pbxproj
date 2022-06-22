@@ -169,6 +169,12 @@
 		548CAF4F285FB59F00F73E71 /* Algo_string_row_6.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF4A285FB59F00F73E71 /* Algo_string_row_6.json */; };
 		548CAF50285FB59F00F73E71 /* Algo_string_row_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF4C285FB59F00F73E71 /* Algo_string_row_7.json */; };
 		548CAF51285FB59F00F73E71 /* YLAlgoStringListRow_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF4D285FB59F00F73E71 /* YLAlgoStringListRow_7.swift */; };
+		548CAF5B2860CCF700F73E71 /* Algo_string_row_8.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF592860CCF700F73E71 /* Algo_string_row_8.json */; };
+		548CAF5C2860CCF700F73E71 /* YLAlgoStringListRow_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF5A2860CCF700F73E71 /* YLAlgoStringListRow_8.swift */; };
+		548CAF9B2860D05900F73E71 /* Algo_linkedlist_list_row_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF962860D05800F73E71 /* Algo_linkedlist_list_row_2.json */; };
+		548CAF9C2860D05900F73E71 /* YLAlgoLinkedlistListRow_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF972860D05800F73E71 /* YLAlgoLinkedlistListRow_2.swift */; };
+		548CAF9D2860D05900F73E71 /* Algo_linkedlist_list_row_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF992860D05800F73E71 /* Algo_linkedlist_list_row_3.json */; };
+		548CAF9E2860D05900F73E71 /* YLAlgoLinkedlistListRow_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF9A2860D05800F73E71 /* YLAlgoLinkedlistListRow_3.swift */; };
 		548FF88A24A87F3200ECF7F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FF88924A87F3200ECF7F0 /* AppDelegate.m */; };
 		548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89124A87F3200ECF7F0 /* Main.storyboard */; };
 		548FF89524A87F3300ECF7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89424A87F3300ECF7F0 /* Assets.xcassets */; };
@@ -670,6 +676,12 @@
 		548CAF4A285FB59F00F73E71 /* Algo_string_row_6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_6.json; sourceTree = "<group>"; };
 		548CAF4C285FB59F00F73E71 /* Algo_string_row_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_7.json; sourceTree = "<group>"; };
 		548CAF4D285FB59F00F73E71 /* YLAlgoStringListRow_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_7.swift; sourceTree = "<group>"; };
+		548CAF592860CCF700F73E71 /* Algo_string_row_8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_8.json; sourceTree = "<group>"; };
+		548CAF5A2860CCF700F73E71 /* YLAlgoStringListRow_8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_8.swift; sourceTree = "<group>"; };
+		548CAF962860D05800F73E71 /* Algo_linkedlist_list_row_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_linkedlist_list_row_2.json; sourceTree = "<group>"; };
+		548CAF972860D05800F73E71 /* YLAlgoLinkedlistListRow_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_2.swift; sourceTree = "<group>"; };
+		548CAF992860D05800F73E71 /* Algo_linkedlist_list_row_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_linkedlist_list_row_3.json; sourceTree = "<group>"; };
+		548CAF9A2860D05800F73E71 /* YLAlgoLinkedlistListRow_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_3.swift; sourceTree = "<group>"; };
 		548FF88524A87F3200ECF7F0 /* YLNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548FF88824A87F3200ECF7F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		548FF88924A87F3200ECF7F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1835,6 +1847,33 @@
 			path = 7;
 			sourceTree = "<group>";
 		};
+		548CAF582860CCF700F73E71 /* 8 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF5A2860CCF700F73E71 /* YLAlgoStringListRow_8.swift */,
+				548CAF592860CCF700F73E71 /* Algo_string_row_8.json */,
+			);
+			path = 8;
+			sourceTree = "<group>";
+		};
+		548CAF952860D05800F73E71 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF972860D05800F73E71 /* YLAlgoLinkedlistListRow_2.swift */,
+				548CAF962860D05800F73E71 /* Algo_linkedlist_list_row_2.json */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		548CAF982860D05800F73E71 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAF9A2860D05800F73E71 /* YLAlgoLinkedlistListRow_3.swift */,
+				548CAF992860D05800F73E71 /* Algo_linkedlist_list_row_3.json */,
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
 		548FF87C24A87F3200ECF7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -2515,6 +2554,8 @@
 				54D88608284E4891003DE4F0 /* LinkedListNode.swift */,
 				54DB9B362843DA6900539AC5 /* Algo_linkedlist_list.json */,
 				54DB9B412843DAE200539AC5 /* YLAlgoLinkedlistListController.swift */,
+				548CAF982860D05800F73E71 /* 3 */,
+				548CAF952860D05800F73E71 /* 2 */,
 				54DB9BEB284CFB9100539AC5 /* 1 */,
 				54DB9BEA284CFB8100539AC5 /* 0 */,
 			);
@@ -2815,6 +2856,7 @@
 			children = (
 				54D19F96285528570016468E /* Algo_stirng_list.json */,
 				54D19F912855284F0016468E /* YLAlgoStringListController.swift */,
+				548CAF582860CCF700F73E71 /* 8 */,
 				548CAF4B285FB59F00F73E71 /* 7 */,
 				548CAF48285FB59F00F73E71 /* 6 */,
 				548CAF35285F547A00F73E71 /* 5 */,
@@ -3262,12 +3304,14 @@
 				5435818A25AD8F1A00452D76 /* TRex.json in Resources */,
 				54E97A7F27B10884001CA669 /* Algo_array_row_0.json in Resources */,
 				548CAF50285FB59F00F73E71 /* Algo_string_row_7.json in Resources */,
+				548CAF9D2860D05900F73E71 /* Algo_linkedlist_list_row_3.json in Resources */,
 				54DB9B2F2843DA2800539AC5 /* Algo_linkedlist_list_row_1.json in Resources */,
 				54E97B3327B9873F001CA669 /* runloop_port.json in Resources */,
 				54DCC53027CD3213009F289D /* thread_gcd_IO.json in Resources */,
 				54DB9C35284D30A800539AC5 /* Algo_array_row_12_1.json in Resources */,
 				54DCC55827CD3D26009F289D /* thread_lock.json in Resources */,
 				54E97AE927B4006B001CA669 /* runloop_source.json in Resources */,
+				548CAF5B2860CCF700F73E71 /* Algo_string_row_8.json in Resources */,
 				54DB9B8828461B5500539AC5 /* Algo_array_row_7.json in Resources */,
 				54DCC59627CE9609009F289D /* Algo_primary_row_1.json in Resources */,
 				542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */,
@@ -3339,6 +3383,7 @@
 				54E97A9927B1091B001CA669 /* LateNote.json in Resources */,
 				54DCC56627CD4128009F289D /* Algo_primary_row_0.json in Resources */,
 				54E6E45F27C229930019E03C /* thread_nshread.json in Resources */,
+				548CAF9B2860D05900F73E71 /* Algo_linkedlist_list_row_2.json in Resources */,
 				545673732721DAB40026403D /* YLGroupNormalHeaderView.xib in Resources */,
 				54E97B0A27B41F80001CA669 /* runloop_timer.json in Resources */,
 				5487BD9725C50AB000C6AEAE /* YLSlipMenuView.xib in Resources */,
@@ -3643,6 +3688,7 @@
 				54B850C3283D5FB500294D47 /* YLNatiFilmListViewController.m in Sources */,
 				54B6C6A52671FB9400B69298 /* YLDemoRuntimeViewController.swift in Sources */,
 				54C05D95268F0B07006FFAAE /* YLDemoCopyViewController.m in Sources */,
+				548CAF9C2860D05900F73E71 /* YLAlgoLinkedlistListRow_2.swift in Sources */,
 				5487BDE125DFB35500C6AEAE /* YLDiskCacheViewController.swift in Sources */,
 				545F872525B573ED008BE6E2 /* YLPicBrowserViewController.m in Sources */,
 				54B4404C27CAA09A004FDA38 /* YLThreadGCDDispatchGroupController.m in Sources */,
@@ -3650,6 +3696,7 @@
 				5487BDDF25DF9D9D00C6AEAE /* UIView+Skin.m in Sources */,
 				54A35D8B24CED7290076DFB6 /* YLNotificationCenter.m in Sources */,
 				54DB9B312843DA2800539AC5 /* YLAlgoLinkedlistListRow_1.swift in Sources */,
+				548CAF5C2860CCF700F73E71 /* YLAlgoStringListRow_8.swift in Sources */,
 				54DCC5B227CF4F6B009F289D /* YLAlgoPrimaryViewControllerRow3.swift in Sources */,
 				5435816525AC631600452D76 /* YLDinodsaul.m in Sources */,
 				548A0CE0261220B600BC80D9 /* YLDemoSingletonViewController.swift in Sources */,
@@ -3689,6 +3736,7 @@
 				548CAF4E285FB59F00F73E71 /* YLAlgoStringListRow_6.swift in Sources */,
 				545F875A25B97336008BE6E2 /* YLThirdLibNoteManager.m in Sources */,
 				54DCC61527D0F14D009F289D /* YLBlockRetainCycleViewController.m in Sources */,
+				548CAF9E2860D05900F73E71 /* YLAlgoLinkedlistListRow_3.swift in Sources */,
 				54FB599D25BFFE5300E3FCA4 /* YLDemoAnimateViewController.swift in Sources */,
 				54A35DAE24CED7A30076DFB6 /* YLThread.m in Sources */,
 				54FA55332608D31400AE0A83 /* YLDemoLayerViewController.m in Sources */,

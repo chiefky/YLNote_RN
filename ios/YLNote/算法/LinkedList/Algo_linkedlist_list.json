@@ -24,5 +24,32 @@
             "style": 1,
             "useXib": 0
         },
+    },
+    {
+        "q_id":"sub_2_0",
+        "q_title":"链表的中间结点 ",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_2",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"sub_3_0",
+        "q_title":"删除链表的倒数第 N 个结点 （双指针）",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_3",
+            "style": 1,
+            "useXib": 0
+        },
     }
+
 ]

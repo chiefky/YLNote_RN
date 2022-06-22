@@ -9,8 +9,8 @@
 import Foundation
 
 func testString() {
-    let str = "Let's take LeetCode contest"
-    let res = string_method_qes_7(str)
+    let s2 = "eidbaooo";
+    let res = string_method_qes_7(s2)
     print("🔤结果：\(res)")
 }
 
@@ -99,6 +99,8 @@ func string_method_qes_4(_ s:String) -> Int {
     return length
 }
 
+/// 反转字符串
+/// - Parameter s: “abcd”
 func string_method_qes_6(_ s: inout [Character]) {
     var left = 0,right = s.count-1
     while left < right {
@@ -108,7 +110,9 @@ func string_method_qes_6(_ s: inout [Character]) {
     }
 }
 
-
+/// 反转字符串中的单词 III
+/// - Parameter s: "Let's take LeetCode contest"
+/// - Returns: "s'teL ekat edoCteeL tsetnoc"
 func string_method_qes_7(_ s: String) -> String {
     guard s.count > 1 else {
         return s

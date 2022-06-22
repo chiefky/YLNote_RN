@@ -104,6 +104,19 @@
             "useXib": 0
         },
     },
+    {
+        "q_id":"algo_string_8",
+        "q_title":"字符串的排列",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoStringListRow_8",
+            "style": 1,
+            "useXib": 0
+        },
+    },
 
     
 

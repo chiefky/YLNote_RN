@@ -15,7 +15,7 @@ import UIKit
  链接：https://leetcode.cn/problems/two-sum
  */
 
-class YLAlgoArrayListRow_2: YLBaseTableViewController {
+class YLAlgoArrayListRow_2_1: YLBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +24,13 @@ class YLAlgoArrayListRow_2: YLBaseTableViewController {
     }
     
     
-    @objc func testHashMap() {
+    @objc func testMethod1() {
         let array = [11,13,12,1,3,4]
         let res = method_1(array, 13);
         print("结果：\(res)")
     }
     
+    /// 时间复杂度: O(n)，空间复杂度：O(n)
     /// 使用哈希表，利用哈希表key的唯一性以及快速取值特性，降低时间复杂度
     /// key:数组中的元素作为key, value：元素对应的索引值为value；遍历过程中如果哈希表中如果不存在当前元素的搭档执行插入操作(将自身插入哈希表，下次查遍历到搭档时，就可以直接将当前元素和搭档元素的索引一并返回了),
     /// - Parameters:
@@ -52,6 +53,6 @@ class YLAlgoArrayListRow_2: YLBaseTableViewController {
           }
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_array_row_2"
+        return "Algo_array_row_2_1"
     }
 }

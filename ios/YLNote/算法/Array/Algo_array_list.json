@@ -25,17 +25,30 @@
         },
     },   {
         "q_id":"sub_2",
-        "q_title":" 两数之和",
+        "q_title":" 两数之和I",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
         "function":"",
         "demo": {
-            "className":"YLAlgoArrayListRow_2",
+            "className":"YLAlgoArrayListRow_2_1",
             "style": 1,
             "useXib": 0
         },
     },   {
+        "q_id":"sub_2_2",
+        "q_title":" 两数之和II",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_2_2",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
         "q_id":"sub_3",
         "q_title":"删除有序数组中的重复项",
         "q_subtitle":"",

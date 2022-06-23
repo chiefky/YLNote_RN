@@ -50,6 +50,19 @@
             "style": 1,
             "useXib": 0
         },
+    },    {
+        "q_id":"sub_4_0",
+        "q_title":"合并两个有序链表",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_4",
+            "style": 1,
+            "useXib": 0
+        },
     }
+
 
 ]

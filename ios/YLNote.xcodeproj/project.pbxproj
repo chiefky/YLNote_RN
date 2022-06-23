@@ -175,6 +175,12 @@
 		548CAF9C2860D05900F73E71 /* YLAlgoLinkedlistListRow_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF972860D05800F73E71 /* YLAlgoLinkedlistListRow_2.swift */; };
 		548CAF9D2860D05900F73E71 /* Algo_linkedlist_list_row_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAF992860D05800F73E71 /* Algo_linkedlist_list_row_3.json */; };
 		548CAF9E2860D05900F73E71 /* YLAlgoLinkedlistListRow_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAF9A2860D05800F73E71 /* YLAlgoLinkedlistListRow_3.swift */; };
+		548CAFAB286317CA00F73E71 /* YLAlgoArrayListRow_13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAFA9286317CA00F73E71 /* YLAlgoArrayListRow_13.swift */; };
+		548CAFAC286317CA00F73E71 /* Algo_array_row_13.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAFAA286317CA00F73E71 /* Algo_array_row_13.json */; };
+		548CAFB32863643E00F73E71 /* YLAlgoArrayListRow_14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAFB12863643D00F73E71 /* YLAlgoArrayListRow_14.swift */; };
+		548CAFB42863643E00F73E71 /* Algo_array_row_14.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAFB22863643D00F73E71 /* Algo_array_row_14.json */; };
+		548CAFC12863826700F73E71 /* Algo_array_row_15.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAFBF2863826700F73E71 /* Algo_array_row_15.json */; };
+		548CAFC22863826700F73E71 /* YLAlgoArrayListRow_15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAFC02863826700F73E71 /* YLAlgoArrayListRow_15.swift */; };
 		548FF88A24A87F3200ECF7F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FF88924A87F3200ECF7F0 /* AppDelegate.m */; };
 		548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89124A87F3200ECF7F0 /* Main.storyboard */; };
 		548FF89524A87F3300ECF7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89424A87F3300ECF7F0 /* Assets.xcassets */; };
@@ -682,6 +688,12 @@
 		548CAF972860D05800F73E71 /* YLAlgoLinkedlistListRow_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_2.swift; sourceTree = "<group>"; };
 		548CAF992860D05800F73E71 /* Algo_linkedlist_list_row_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_linkedlist_list_row_3.json; sourceTree = "<group>"; };
 		548CAF9A2860D05800F73E71 /* YLAlgoLinkedlistListRow_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_3.swift; sourceTree = "<group>"; };
+		548CAFA9286317CA00F73E71 /* YLAlgoArrayListRow_13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_13.swift; sourceTree = "<group>"; };
+		548CAFAA286317CA00F73E71 /* Algo_array_row_13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_13.json; sourceTree = "<group>"; };
+		548CAFB12863643D00F73E71 /* YLAlgoArrayListRow_14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_14.swift; sourceTree = "<group>"; };
+		548CAFB22863643D00F73E71 /* Algo_array_row_14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_14.json; sourceTree = "<group>"; };
+		548CAFBF2863826700F73E71 /* Algo_array_row_15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_15.json; sourceTree = "<group>"; };
+		548CAFC02863826700F73E71 /* YLAlgoArrayListRow_15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_15.swift; sourceTree = "<group>"; };
 		548FF88524A87F3200ECF7F0 /* YLNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548FF88824A87F3200ECF7F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		548FF88924A87F3200ECF7F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1874,6 +1886,33 @@
 			path = 3;
 			sourceTree = "<group>";
 		};
+		548CAFA8286317CA00F73E71 /* 13 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAFA9286317CA00F73E71 /* YLAlgoArrayListRow_13.swift */,
+				548CAFAA286317CA00F73E71 /* Algo_array_row_13.json */,
+			);
+			path = 13;
+			sourceTree = "<group>";
+		};
+		548CAFB02863643D00F73E71 /* 14 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAFB12863643D00F73E71 /* YLAlgoArrayListRow_14.swift */,
+				548CAFB22863643D00F73E71 /* Algo_array_row_14.json */,
+			);
+			path = 14;
+			sourceTree = "<group>";
+		};
+		548CAFBE2863826700F73E71 /* 15 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAFC02863826700F73E71 /* YLAlgoArrayListRow_15.swift */,
+				548CAFBF2863826700F73E71 /* Algo_array_row_15.json */,
+			);
+			path = 15;
+			sourceTree = "<group>";
+		};
 		548FF87C24A87F3200ECF7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -2927,6 +2966,9 @@
 			children = (
 				54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */,
 				54DB9B202843D89800539AC5 /* YLAlgoArrayListController.swift */,
+				548CAFBE2863826700F73E71 /* 15 */,
+				548CAFB02863643D00F73E71 /* 14 */,
+				548CAFA8286317CA00F73E71 /* 13 */,
 				54DB9C29284D2C2600539AC5 /* 12 */,
 				54DB9BEC284CFC9800539AC5 /* 11 */,
 				54DB9BE2284A6F9000539AC5 /* 10 */,
@@ -3376,12 +3418,14 @@
 				54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */,
 				54DCC5DB27D0C751009F289D /* block_test.json in Resources */,
 				54B43F4F27C2AC4B004FDA38 /* thread_operation_invocation.json in Resources */,
+				548CAFAC286317CA00F73E71 /* Algo_array_row_13.json in Resources */,
 				5487BDC025CB0FCD00C6AEAE /* YLCollectionViewCell.xib in Resources */,
 				54DB9B302843DA2800539AC5 /* Algo_linkedlist_list_row_0.json in Resources */,
 				54DB9B9728463BB400539AC5 /* Algo_array_row_8.json in Resources */,
 				54E6E43827BD79680019E03C /* Algo_tree_row_1.json in Resources */,
 				54E97A9927B1091B001CA669 /* LateNote.json in Resources */,
 				54DCC56627CD4128009F289D /* Algo_primary_row_0.json in Resources */,
+				548CAFC12863826700F73E71 /* Algo_array_row_15.json in Resources */,
 				54E6E45F27C229930019E03C /* thread_nshread.json in Resources */,
 				548CAF9B2860D05900F73E71 /* Algo_linkedlist_list_row_2.json in Resources */,
 				545673732721DAB40026403D /* YLGroupNormalHeaderView.xib in Resources */,
@@ -3403,6 +3447,7 @@
 				54BB2647260379E9001A98B4 /* UIWebViewJSTest.html in Resources */,
 				54B4405F27CCA60D004FDA38 /* thread_gcd_barrier.json in Resources */,
 				54E97A8227B10884001CA669 /* Algo_array_row_1.json in Resources */,
+				548CAFB42863643E00F73E71 /* Algo_array_row_14.json in Resources */,
 				54C44A9B27D7667400688A7E /* Algo_string_row_1.json in Resources */,
 				548CAF38285F547A00F73E71 /* Algo_string_row_5.json in Resources */,
 				54B4404D27CAA09A004FDA38 /* thread_gcd_group.json in Resources */,
@@ -3533,6 +3578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548CAFB32863643E00F73E71 /* YLAlgoArrayListRow_14.swift in Sources */,
 				540B8F5F260C755A00475BC5 /* YLHomeViewController.swift in Sources */,
 				54A35D8F24CED7290076DFB6 /* YLSon.m in Sources */,
 				54E97A8927B10884001CA669 /* YLAlgorithmViewController2.swift in Sources */,
@@ -3742,6 +3788,7 @@
 				54FA55332608D31400AE0A83 /* YLDemoLayerViewController.m in Sources */,
 				545F876225BA8599008BE6E2 /* YLCircleView.m in Sources */,
 				54BB264B2603AC3D001A98B4 /* YLWKCookieViewController.swift in Sources */,
+				548CAFC22863826700F73E71 /* YLAlgoArrayListRow_15.swift in Sources */,
 				54DCC53E27CD3481009F289D /* YLThreadGCDDispatchSourceController.m in Sources */,
 				54FD6765260A0B5000F7E113 /* YLDemoResponderView.swift in Sources */,
 				543581B225ADBA4200452D76 /* YLSafeMutableArray.m in Sources */,
@@ -3833,6 +3880,7 @@
 				54C4B4DE26142FFB004BF897 /* YLUser.m in Sources */,
 				5434B22F27F61D7E00625D07 /* YLMemeoryStructViewController.m in Sources */,
 				54B4406027CCA60D004FDA38 /* YLThreadGCDDispatchBarrierController.m in Sources */,
+				548CAFAB286317CA00F73E71 /* YLAlgoArrayListRow_13.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

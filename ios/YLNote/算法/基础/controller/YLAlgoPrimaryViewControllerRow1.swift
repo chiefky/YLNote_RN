@@ -7,7 +7,7 @@
 //
 
 import UIKit
-var nums = [3,5,9,-1,2,0,12]
+fileprivate var nums = [3,5,9,-1,2,0,12]
 
 class YLAlgoPrimaryViewControllerRow1: YLBaseTableViewController {
 

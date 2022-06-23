@@ -179,7 +179,48 @@
             "style": 1,
             "useXib": 0
         },
+    },{
+        "q_id":"sub_13",
+        "q_title":"977. 有序数组的平方",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_13",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_14",
+        "q_title":" 轮转数组",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_14",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_14",
+        "q_title":"283.移动零",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_15",
+            "style": 1,
+            "useXib": 0
+        },
     }
+
+
+
+
+
 
 
 

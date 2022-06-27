@@ -1,19 +1,19 @@
 [
     {
-        "q_id":"sub_1_0",
+        "q_id":"sub_0",
         "q_title":"从尾到头打印链表",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedlistListRow_0",
+            "className":"YLAlgoLinkedlistListRow",
             "style": 1,
             "useXib": 0
         },
     },
     {
-        "q_id":"sub_2_0",
+        "q_id":"sub_1",
         "q_title":"反转链表",
         "q_subtitle":"",
         "showNextPage": true,
@@ -26,7 +26,7 @@
         },
     },
     {
-        "q_id":"sub_2_0",
+        "q_id":"sub_2",
         "q_title":"链表的中间结点 ",
         "q_subtitle":"",
         "showNextPage": true,
@@ -39,7 +39,7 @@
         },
     },
     {
-        "q_id":"sub_3_0",
+        "q_id":"sub_3",
         "q_title":"删除链表的倒数第 N 个结点 （双指针）",
         "q_subtitle":"",
         "showNextPage": true,
@@ -51,7 +51,7 @@
             "useXib": 0
         },
     },    {
-        "q_id":"sub_4_0",
+        "q_id":"sub_4",
         "q_title":"合并两个有序链表",
         "q_subtitle":"",
         "showNextPage": true,

@@ -189,6 +189,10 @@
 		548CAFE62864E85E00F73E71 /* YLAlgoArrayListRow_2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAFE42864E85E00F73E71 /* YLAlgoArrayListRow_2_2.swift */; };
 		548CAFF32865692500F73E71 /* YLAlgoStringListRow_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAFF12865692500F73E71 /* YLAlgoStringListRow_9.swift */; };
 		548CAFF42865692500F73E71 /* Algo_string_row_9.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAFF22865692500F73E71 /* Algo_string_row_9.json */; };
+		548CAFFE28660D1E00F73E71 /* Algo_tree_row_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CAFFC28660D1E00F73E71 /* Algo_tree_row_2.json */; };
+		548CAFFF28660D1E00F73E71 /* YLAlgoTreeListRow_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAFFD28660D1E00F73E71 /* YLAlgoTreeListRow_2.swift */; };
+		548CB0092866F96300F73E71 /* Algo_tree_row_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 548CB0072866F96300F73E71 /* Algo_tree_row_3.json */; };
+		548CB00A2866F96300F73E71 /* YLAlgoTreeListRow_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CB0082866F96300F73E71 /* YLAlgoTreeListRow_3.swift */; };
 		548FF88A24A87F3200ECF7F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 548FF88924A87F3200ECF7F0 /* AppDelegate.m */; };
 		548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89124A87F3200ECF7F0 /* Main.storyboard */; };
 		548FF89524A87F3300ECF7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548FF89424A87F3300ECF7F0 /* Assets.xcassets */; };
@@ -708,6 +712,10 @@
 		548CAFE42864E85E00F73E71 /* YLAlgoArrayListRow_2_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_2_2.swift; sourceTree = "<group>"; };
 		548CAFF12865692500F73E71 /* YLAlgoStringListRow_9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoStringListRow_9.swift; sourceTree = "<group>"; };
 		548CAFF22865692500F73E71 /* Algo_string_row_9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_string_row_9.json; sourceTree = "<group>"; };
+		548CAFFC28660D1E00F73E71 /* Algo_tree_row_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_tree_row_2.json; sourceTree = "<group>"; };
+		548CAFFD28660D1E00F73E71 /* YLAlgoTreeListRow_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListRow_2.swift; sourceTree = "<group>"; };
+		548CB0072866F96300F73E71 /* Algo_tree_row_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_tree_row_3.json; sourceTree = "<group>"; };
+		548CB0082866F96300F73E71 /* YLAlgoTreeListRow_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListRow_3.swift; sourceTree = "<group>"; };
 		548FF88524A87F3200ECF7F0 /* YLNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548FF88824A87F3200ECF7F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		548FF88924A87F3200ECF7F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -972,7 +980,7 @@
 		54E97A6827B10884001CA669 /* Algo_array_row_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_0.json; sourceTree = "<group>"; };
 		54E97A6B27B10884001CA669 /* Algo_array_row_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_1.json; sourceTree = "<group>"; };
 		54E97A6C27B10884001CA669 /* DoublePointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublePointer.swift; sourceTree = "<group>"; };
-		54E97A6D27B10884001CA669 /* YLTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLTreeNode.swift; sourceTree = "<group>"; };
+		54E97A6D27B10884001CA669 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		54E97A6E27B10884001CA669 /* Recursion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		54E97A6F27B10884001CA669 /* YLAlgoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoViewController.swift; sourceTree = "<group>"; };
 		54E97A7027B10884001CA669 /* BinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
@@ -1959,6 +1967,24 @@
 				548CAFF22865692500F73E71 /* Algo_string_row_9.json */,
 			);
 			path = 9;
+			sourceTree = "<group>";
+		};
+		548CAFFB28660D1E00F73E71 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				548CAFFD28660D1E00F73E71 /* YLAlgoTreeListRow_2.swift */,
+				548CAFFC28660D1E00F73E71 /* Algo_tree_row_2.json */,
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		548CB0062866F96300F73E71 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				548CB0082866F96300F73E71 /* YLAlgoTreeListRow_3.swift */,
+				548CB0072866F96300F73E71 /* Algo_tree_row_3.json */,
+			);
+			path = 3;
 			sourceTree = "<group>";
 		};
 		548FF87C24A87F3200ECF7F0 = {
@@ -2961,33 +2987,15 @@
 		54E6E42727BD78F50019E03C /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				54E97A6D27B10884001CA669 /* TreeNode.swift */,
 				54D88617284E8A5C003DE4F0 /* Algo_tree.json */,
 				54D88612284E8A55003DE4F0 /* YLAlgoTreeListController.swift */,
+				548CB0062866F96300F73E71 /* 3 */,
+				548CAFFB28660D1E00F73E71 /* 2 */,
 				54D88611284E8A05003DE4F0 /* 1 */,
 				54D88610284E89FE003DE4F0 /* 0 */,
 			);
 			path = Tree;
-			sourceTree = "<group>";
-		};
-		54E6E44A27BD82600019E03C /* 栈、队列 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "栈、队列";
-			sourceTree = "<group>";
-		};
-		54E6E44B27BD82A00019E03C /* 回溯法 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "回溯法";
-			sourceTree = "<group>";
-		};
-		54E6E44C27BD82AA0019E03C /* 动态规划 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "动态规划";
 			sourceTree = "<group>";
 		};
 		54E97A6227B10884001CA669 /* 算法 */ = {
@@ -3002,9 +3010,6 @@
 				54E6E42727BD78F50019E03C /* Tree */,
 				54DCC63B27D529D8009F289D /* String */,
 				54DCC55C27CD4056009F289D /* 基础 */,
-				54E6E44C27BD82AA0019E03C /* 动态规划 */,
-				54E6E44B27BD82A00019E03C /* 回溯法 */,
-				54E6E44A27BD82600019E03C /* 栈、队列 */,
 				54C6F41027BD72EE00756275 /* 待整理 */,
 				54C6F41127BD735500756275 /* other */,
 			);
@@ -3040,7 +3045,6 @@
 			isa = PBXGroup;
 			children = (
 				54E97A6C27B10884001CA669 /* DoublePointer.swift */,
-				54E97A6D27B10884001CA669 /* YLTreeNode.swift */,
 				54E97A6E27B10884001CA669 /* Recursion.swift */,
 				54E97A7027B10884001CA669 /* BinarySearch.swift */,
 				54E97A7227B10884001CA669 /* YLAlgorithmViewController2.swift */,
@@ -3457,6 +3461,7 @@
 				54DCC61427D0F14D009F289D /* block_recycle.json in Resources */,
 				548FF89324A87F3200ECF7F0 /* Main.storyboard in Resources */,
 				548CAF4F285FB59F00F73E71 /* Algo_string_row_6.json in Resources */,
+				548CAFFE28660D1E00F73E71 /* Algo_tree_row_2.json in Resources */,
 				54E97ADF27B3FF92001CA669 /* YLNoteSwitchTableViewCell.xib in Resources */,
 				54FB59A625C2948D00E3FCA4 /* YLAnimationViewController.xib in Resources */,
 				54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */,
@@ -3479,6 +3484,7 @@
 				54DCC56627CD4128009F289D /* Algo_primary_row_0.json in Resources */,
 				548CAFC12863826700F73E71 /* Algo_array_row_15.json in Resources */,
 				54E6E45F27C229930019E03C /* thread_nshread.json in Resources */,
+				548CB0092866F96300F73E71 /* Algo_tree_row_3.json in Resources */,
 				548CAF9B2860D05900F73E71 /* Algo_linkedlist_list_row_2.json in Resources */,
 				545673732721DAB40026403D /* YLGroupNormalHeaderView.xib in Resources */,
 				54E97B0A27B41F80001CA669 /* runloop_timer.json in Resources */,
@@ -3688,7 +3694,7 @@
 				548CAFE62864E85E00F73E71 /* YLAlgoArrayListRow_2_2.swift in Sources */,
 				5473566C27E5C5130096A008 /* YLProxy.m in Sources */,
 				5487BE6825E7B69300C6AEAE /* NameSpaceWapper.swift in Sources */,
-				54E97A8427B10884001CA669 /* YLTreeNode.swift in Sources */,
+				54E97A8427B10884001CA669 /* TreeNode.swift in Sources */,
 				5487BD9325C4404300C6AEAE /* YLDisplayLinkViewController.swift in Sources */,
 				54E97A9027B10884001CA669 /* Iteration.swift in Sources */,
 				54DCC55027CD3C76009F289D /* YLThreadLockViewController.m in Sources */,
@@ -3857,6 +3863,7 @@
 				548A0D2A26122BBB00BC80D9 /* YLDemoFuncMessageViewController.swift in Sources */,
 				542821A32611C5FF0066E070 /* YLQuestionTableViewCell.swift in Sources */,
 				548CAF51285FB59F00F73E71 /* YLAlgoStringListRow_7.swift in Sources */,
+				548CB00A2866F96300F73E71 /* YLAlgoTreeListRow_3.swift in Sources */,
 				54DCC62F27D1E2DD009F289D /* YLBlockCodeViewController.m in Sources */,
 				54A35DAD24CED7A30076DFB6 /* YLThreadSync.m in Sources */,
 				5400B31B25BAEB5C00DC4C49 /* YLAnimationHelper.swift in Sources */,
@@ -3900,6 +3907,7 @@
 				548A0CCC2612205C00BC80D9 /* YLDemoPropertyViewController.swift in Sources */,
 				54A35D8624CED7290076DFB6 /* YLHitTestViewController.m in Sources */,
 				5487BDBF25CB0FCD00C6AEAE /* YLCollectionViewCell.swift in Sources */,
+				548CAFFF28660D1E00F73E71 /* YLAlgoTreeListRow_2.swift in Sources */,
 				54DB9C45284DE20A00539AC5 /* YLAlgoArrayListRow_12_2.swift in Sources */,
 				5487BE8F2600AE9500C6AEAE /* YLWebSchemeController.swift in Sources */,
 				54A35D4E24CED6FE0076DFB6 /* YLSDViewController.m in Sources */,

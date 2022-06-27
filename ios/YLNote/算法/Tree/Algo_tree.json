@@ -1,7 +1,7 @@
 
 [
     {
-        "q_id":"sub_1_0",
+        "q_id":"sub_0",
         "q_title":"求二叉树深度",
         "q_subtitle":"",
         "showNextPage": true,
@@ -19,7 +19,7 @@
         }
     },
     {
-        "q_id":"sub_2_0",
+        "q_id":"sub_1",
         "q_title":"判断是否是平衡二叉树",
         "q_subtitle":"",
         "showNextPage": true,
@@ -35,5 +35,43 @@
             "art_url":"",
             "art_title":"",
         }
+    },
+    {
+        "q_id":"sub_2",
+        "q_title":"合并二叉树",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoTreeListRow_2",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"sub_3",
+        "q_title":" 填充每个节点的下一个右侧节点指针",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoTreeListRow_3",
+            "style": 1,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        }
     }
+
+
 ]

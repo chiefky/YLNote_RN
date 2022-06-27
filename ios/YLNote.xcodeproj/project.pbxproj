@@ -2984,7 +2984,7 @@
 			path = String;
 			sourceTree = "<group>";
 		};
-		54E6E42727BD78F50019E03C /* Tree */ = {
+		54E6E42727BD78F50019E03C /* BinaryTree */ = {
 			isa = PBXGroup;
 			children = (
 				54E97A6D27B10884001CA669 /* TreeNode.swift */,
@@ -2995,7 +2995,7 @@
 				54D88611284E8A05003DE4F0 /* 1 */,
 				54D88610284E89FE003DE4F0 /* 0 */,
 			);
-			path = Tree;
+			path = BinaryTree;
 			sourceTree = "<group>";
 		};
 		54E97A6227B10884001CA669 /* 算法 */ = {
@@ -3007,7 +3007,7 @@
 				54C44B0927DA102100688A7E /* 每日回顾 */,
 				54E97A6527B10884001CA669 /* Array */,
 				54DB9B282843DA2800539AC5 /* LinkedList */,
-				54E6E42727BD78F50019E03C /* Tree */,
+				54E6E42727BD78F50019E03C /* BinaryTree */,
 				54DCC63B27D529D8009F289D /* String */,
 				54DCC55C27CD4056009F289D /* 基础 */,
 				54C6F41027BD72EE00756275 /* 待整理 */,

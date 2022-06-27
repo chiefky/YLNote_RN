@@ -103,7 +103,7 @@
     {
         "group_id":"algo_tree",
         "unfoldStatus":false,
-        "group_title":"树",
+        "group_title":"二叉树",
         "questions": [
             {
                 "q_id":"sub_1_0",

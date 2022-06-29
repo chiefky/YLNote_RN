@@ -126,6 +126,32 @@
         ]
     },
     {
+        "group_id":"algo_bit",
+        "unfoldStatus":false,
+        "group_title":"位运算",
+        "questions": [
+            {
+                "q_id":"sub_1_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoBitListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+
+    {
         "group_id":"algo_sort",
         "unfoldStatus":false,
         "group_title":"基础算法",

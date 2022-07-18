@@ -29,7 +29,8 @@ typealias YLQuestionDataManagerBaseFuncHanler = (_ question: YLQuestion , _ pram
 protocol YLQuestionDataManagerBaseProtocol: YLQuestionDataProtocol,UITableViewDelegate,UITableViewDataSource {
     
 }
-class YLQuestionDataManagerBase: NSObject, YLQuestionDataManagerBaseProtocol {
+
+@objcMembers open class YLQuestionDataManagerBase: NSObject, YLQuestionDataManagerBaseProtocol {
 
     var jsonFileName: String {
         return ""
@@ -50,23 +51,23 @@ class YLQuestionDataManagerBase: NSObject, YLQuestionDataManagerBaseProtocol {
         return array ?? []
     }()
 
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return self.allDatas.count
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40.0
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.01;
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44.0
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: self.headerIdentifier) as? YLGroupHeaderView else { return UIView() }
         
         let groupData = self.allDatas[section]
@@ -82,18 +83,18 @@ class YLQuestionDataManagerBase: NSObject, YLQuestionDataManagerBaseProtocol {
         return header
     }
     
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+    public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let view = UIView()
         view.backgroundColor = .red
         return view
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let groupData = self.allDatas[section]
         return groupData.unfoldStatus ? groupData.questions.count : 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath) as? YLQuestionTableViewCell else { return UITableViewCell() }
         cell.selectionStyle = .none
         let group = self.allDatas[indexPath.section]
@@ -111,7 +112,7 @@ class YLQuestionDataManagerBase: NSObject, YLQuestionDataManagerBaseProtocol {
         return cell;
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let groupData = self.allDatas[indexPath.section]
         guard let question = groupData.questions[safe: indexPath.row] else { return }
         if question.showNextPage {

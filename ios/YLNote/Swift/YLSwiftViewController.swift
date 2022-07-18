@@ -7,13 +7,27 @@
 //
 
 import UIKit
+class YLSwiftTabQesDataManager: YLQuestionDataManagerBase {
+    override var jsonFileName: String {
+        return "LateSwift"
+    }
+    
+    override var headerIdentifier: String {
+        return "YLSwiftViewController.header"
+    }
+    
+    override var cellIdentifier: String {
+        return "YLSwiftViewController.cell"
+    }
+
+}
 
 class YLSwiftViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        self.title = "Swift"
+        self.navigationItem.title = "Swift"
         setupUI()
     }
     
@@ -40,16 +54,3 @@ class YLSwiftViewController: UIViewController {
     }()
 }
 
-//extension YLSwiftViewController: YLQuestionDataProtocol {
-//    var jsonFileName: String {
-//        return "Swift"
-//    }
-//
-//    var headerIdentifier: String {
-//        return "YLSwiftViewController.header"
-//    }
-//
-//    var cellIdentifier: String {
-//        return "YLSwiftViewController.cell"
-//    }
-//}

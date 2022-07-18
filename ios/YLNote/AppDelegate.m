@@ -14,7 +14,6 @@
 #import "YLOCSwiftViewController.h"
 #import "YLRctNatViewController.h"
 #import "YLUserViewController.h"
-#import "YLPerNoteViewController.h"
 #import "YLNativeNewsViewController.h"
 #import "YLNote-Swift.h"
 
@@ -59,7 +58,7 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     UINavigationController *naviNote = [[UINavigationController alloc] initWithRootViewController:noteVC];
     
     YLAlgoViewController *algoriVC = [[YLAlgoViewController alloc] init];
-    algoriVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"算法整理" image:[UIImage imageNamed:@"algorithm"] tag:2];
+    algoriVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"算法" image:[UIImage imageNamed:@"algorithm"] tag:2];
     UINavigationController *naviAlgori = [[UINavigationController alloc] initWithRootViewController:algoriVC];
     
     
@@ -72,7 +71,6 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     
     YLNativeNewsViewController *homeVC = [[YLNativeNewsViewController alloc] initWithNibName:@"YLNativeNewsViewController" bundle:nil];
     homeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Native" image:[UIImage imageNamed:@"apple"] tag:5];
-//    homeVC.tabBarItem.selectedImage = []
     UINavigationController *naviUser = [[UINavigationController alloc] initWithRootViewController:homeVC];
     
     UITabBarController *tab = [[UITabBarController alloc] init];

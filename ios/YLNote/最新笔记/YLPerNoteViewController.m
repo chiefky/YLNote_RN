@@ -23,7 +23,7 @@
 @implementation YLPerNoteViewController
 
 - (void)setupUI {
-    
+    self.title = @"笔记整理";
     self.sectionDatas = self.dataManager.allDatas;
     self.table.delegate = self.dataManager;
     self.table.dataSource = self.dataManager;

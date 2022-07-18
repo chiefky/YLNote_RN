@@ -1,8 +1,8 @@
 
 [
-    {
-        "q_title":"使用递归",
-        "showArticle":true,
+  {
+        "q_title":"方法1：Map",
+        "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
         "demo": {},
@@ -12,9 +12,9 @@
         }
         
     },
-    {
-        "q_title":"使用队列+BFS",
-        "showArticle":true,
+  {
+        "q_title":"方法1：投票法",
+        "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_2",
         "demo": {},
@@ -23,4 +23,5 @@
             "fileName":""
         }
         
-    }]
+    },
+]   

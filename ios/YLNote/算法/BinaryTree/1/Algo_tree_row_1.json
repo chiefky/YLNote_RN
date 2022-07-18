@@ -4,7 +4,7 @@
        "q_title":"使用递归",
        "showArticle":true,
        "showNextPage": false,
-       "function":"testIsBalanced",
+       "function":"testMethod_1",
        "demo": {},
        "article": {
            "artTitle":"",

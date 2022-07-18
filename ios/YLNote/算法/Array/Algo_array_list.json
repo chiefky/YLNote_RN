@@ -1,13 +1,26 @@
 [
     {
-        "q_id":"sub_0",
-        "q_title":"查找数组中的重复元素",
+        "q_id":"sub_0_1",
+        "q_title":"查找数组中的重复元素I",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,
         "function":"",
         "demo": {
-            "className":"YLAlgoArrayListRow_0",
+            "className":"YLAlgoArrayListRow_0_1",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"sub_0_2",
+        "q_title":"查找数组中的重复元素II",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_0_2",
             "style": 1,
             "useXib": 0
         },
@@ -24,7 +37,7 @@
             "useXib": 0
         },
     },   {
-        "q_id":"sub_2",
+        "q_id":"sub_2_1",
         "q_title":" 两数之和I",
         "q_subtitle":"",
         "showNextPage": true,
@@ -217,7 +230,7 @@
             "useXib": 0
         },
     },{
-        "q_id":"sub_14",
+        "q_id":"sub_15",
         "q_title":"283.移动零",
         "q_subtitle":"",
         "showNextPage": true,
@@ -228,17 +241,31 @@
             "style": 1,
             "useXib": 0
         },
+    },{
+        "q_id":"sub_16",
+        "q_title":"数组中出现次数超过一半的数字",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_16",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_17",
+        "q_title":"三数之和",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_17",
+            "style": 1,
+            "useXib": 0
+        },
     }
-
-
-
-
-
-
-
-
-
-
 
 
 ]

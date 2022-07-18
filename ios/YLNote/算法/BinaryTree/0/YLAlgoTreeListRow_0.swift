@@ -7,7 +7,19 @@
 //
 
 import UIKit
+/**
+ 104. 二叉树的最大深度
 
+ 给定一个二叉树，找出其最大深度。
+
+ 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+ 说明: 叶子节点是指没有子节点的节点。
+
+ 示例：
+ 给定二叉树 [3,9,20,null,null,15,7]，
+
+ 链接：https://leetcode.cn/problems/maximum-depth-of-binary-tree
+ */
 class YLAlgoTreeListRow_0: YLBaseTableViewController {
 
     override func viewDidLoad() {
@@ -16,72 +28,55 @@ class YLAlgoTreeListRow_0: YLBaseTableViewController {
         // Do any additional setup after loading the view.
     }
     
-    /// 使用递归
-    /// - Returns: 深度
-    @objc func testBinaryDepthByRecursion() {
-        let rootNode = BinaryTreeNode(val: 1)
-        let node1 = BinaryTreeNode(val: 3)
-        let node2 = BinaryTreeNode(val: 4)
-        let node3 = BinaryTreeNode(val: 5)
-        rootNode.left = node1;
-        rootNode.right = node2
-        node1.left = node3
-        node1.right = nil
-        node2.left = nil;
-        node2.right = nil
-        node3.left = nil;
-        node3.right = nil;
-        let deep = getBinaryTreeDepthByRecursion(rootNode)
-        print("二叉树深度:\(deep)")
-
+    @objc func testMethod_1() {
+        let root = TreeNode.from([3,9,20,nil,nil,15,7], 0)
+        let res = depth_recursion(root)
+        print("🍎：\(res)")
     }
     
-    /// "使用栈+DFS"
-    /// - Returns: 深度
-    @objc func testBinaryDepthByDFS() {
-        let rootNode = BinaryTreeNode(val: 1)
-        let node1 = BinaryTreeNode(val: 3)
-        let node2 = BinaryTreeNode(val: 4)
-        let node3 = BinaryTreeNode(val: 5)
-        rootNode.left = node1;
-        rootNode.right = node2
-        node1.left = node3
-        node1.right = nil
-        node2.left = nil;
-        node2.right = nil
-        node3.left = nil;
-        node3.right = nil;
-        let deep = getBinaryTreeDepthWithDFS(rootNode)
-        print("二叉树深度:\(deep)")
-
+    @objc func testMethod_2() {
+        let root = TreeNode.from([3,9,20,nil,nil,15,7], 0)
+        let res = deepth_BFS(root)
+        print("🍎：\(res)")
     }
-
-    /// "使用队列+BFS"
-    /// - Returns: 深度
-    @objc func testBinaryDepthByBFS() {
-        let rootNode = BinaryTreeNode(val: 1)
-        let node1 = BinaryTreeNode(val: 3)
-        let node2 = BinaryTreeNode(val: 4)
-        let node3 = BinaryTreeNode(val: 5)
-        rootNode.left = node1;
-        rootNode.right = node2
-        node1.left = node3
-        node1.right = nil
-        node2.left = nil;
-        node2.right = nil
-        node3.left = nil;
-        node3.right = nil;
-        let deep = getBinaryTreeDepthWithBFS(rootNode)
-        print("二叉树深度:\(deep)")
-
+    
+    /// 递归
+    func depth_recursion(_ root:TreeNode?) -> Int {
+        guard let r = root else { return 0 }
+        let left = depth_recursion(r.left)
+        let right = depth_recursion(r.right)
+        return 1 + max(left, right)
     }
+    
+    /// 层次遍历（广度优先搜索）
+    func deepth_BFS(_ root: TreeNode?) -> Int {
+        guard let r = root else { return 0 }
+        var res = 0
+        var queue:[TreeNode] = [r]
+        while !queue.isEmpty {
+            var level_count = queue.count
+//            print("🌹\(res)：\(level_count)")
+            while level_count > 0 {
+                let node = queue.removeFirst()
+                if let left = node.left {
+                    queue.append(left)
+                }
+                
+                if let right = node.right {
+                    queue.append(right)
+                }
+                level_count -= 1;
+            }
 
+            res += 1;
+        }
+        return res
+    }
+    
     //    MARK: override
     override func fileName() -> String {
         return "Algo_tree_row_0"
     }
-
-
 
 }
 

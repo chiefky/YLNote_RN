@@ -9,8 +9,8 @@
 import Foundation
 
 func testArray()  {
-    var nums:[Int] = [0,0,1,1,1,1,9,2,3,3,4]//[0,0,1,1,1,2,2,3,3,4]
-    let res = array_method_qes_4(&nums,1)
+    var nums:[Int] = [2, 3, 1, 0, 2, 5, 3]; //[0,0,1,1,1,1,9,2,3,3,4]//[0,0,1,1,1,2,2,3,3,4]
+    let res = array_method_qes_3(&nums)
     print("👨‍👩‍👧‍👦结果：\(res)")
     
 }

@@ -62,7 +62,19 @@
             "style": 1,
             "useXib": 0
         },
-    }
+    },  {
+        "q_id":"sub_5",
+        "q_title":"两数相加",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_5",
+            "style": 1,
+            "useXib": 0
+        },
+    },
 
 
 ]

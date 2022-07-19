@@ -265,6 +265,18 @@
             "style": 1,
             "useXib": 0
         },
+    },{
+        "q_id":"sub_18",
+        "q_title":"二维数组中的查找",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_18",
+            "style": 1,
+            "useXib": 0
+        },
     }
 
 

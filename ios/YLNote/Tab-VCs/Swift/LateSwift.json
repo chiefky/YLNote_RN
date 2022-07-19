@@ -2,6 +2,46 @@
     {
         "group_id":3001,
         "unfoldStatus":false,
+        "group_title":"OC-Swift混编",
+        "questions": [
+            {
+                "q_title":"在swift中使用OC",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLOC_in_SwiftViewController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"3001_001",
+                    "art_url":"/content/Swift/OC-Swift混编.md",
+                }
+            },
+            {
+                "q_title":"在OC中使用swift",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLSwift_in_OCViewController",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"3001_002",
+                    "art_url":"/content/Swift/OC-Swift混编.md",
+                }
+            }
+
+
+        ]
+
+    },
+    {
+        "group_id":3002,
+        "unfoldStatus":false,
         "group_title":"基本语法",
         "questions": [
             {
@@ -15,7 +55,7 @@
                     "useXib": 0
                 },
                 "article": {
-                    "art_id":"1001_001",
+                    "art_id":"3002_001",
                     "art_url":"/content/Swift/Swift.md",
                 }
             },
@@ -30,7 +70,7 @@
                     "useXib": 0
                 },
                 "article": {
-                    "art_id":"1001_001",
+                    "art_id":"3002_001",
                     "art_url":"/content/Swift/Swift.md",
                 }
             },
@@ -40,7 +80,7 @@
                 "showArticle":true,
                 "function":"",
                 "article": {
-                    "art_id":"1001_001",
+                    "art_id":"3002_001",
                     "art_url":"/content/Swift/Swift.md",
                 }
             },
@@ -50,7 +90,7 @@
                 "showArticle":true,
                 "function":"",
                 "article": {
-                    "art_id":"1001_001",
+                    "art_id":"3002_001",
                     "art_url":"/content/Swift/Swift.md",
                 }
             },
@@ -60,7 +100,7 @@
                 "showArticle":true,
                 "function":"",
                 "article": {
-                    "art_id":"1001_001",
+                    "art_id":"3002_001",
                     "art_url":"/content/Swift/Swift.md",
                 }
             }

@@ -39,7 +39,6 @@ public class TreeNode {
         return root
     }
 
-        
 }
 
 //public class TreeNodeType {

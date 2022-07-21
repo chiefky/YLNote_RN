@@ -7,7 +7,6 @@
 //
 
 import UIKit
-fileprivate var nums = [3,5,9,-1,2,0,12]
 
 class YLAlgoPrimaryViewControllerRow1: YLBaseTableViewController {
 
@@ -18,6 +17,8 @@ class YLAlgoPrimaryViewControllerRow1: YLBaseTableViewController {
     }
     
     @objc func testSort_recursive()  {
+        var nums = [3,5,9,-1,2,0,12]
+
         let arr = quicksort(&nums,low: 0,high: nums.count-1)
         print("\(arr)")
     }

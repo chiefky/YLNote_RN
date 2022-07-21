@@ -1,8 +1,8 @@
 
 [
-    {
-        "q_title":"递归：",
-        "showArticle":true,
+  {
+        "q_title":"方法1：左右指针",
+        "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
         "demo": {},
@@ -11,5 +11,7 @@
             "fileName":""
         }
         
-    }
-]
+    },
+
+
+]   

@@ -93,8 +93,9 @@ class YLOC_in_SwiftViewController: UIViewController {
             }
         }
         print(allPro)
-
-        free(propertyList)
+        
+// 在swift文件中，使用了C语言函数的create\copy\malloc，不需要手动写CFRelease(source)、free()之类的了。
+//        free(propertyList)
     }
 
 

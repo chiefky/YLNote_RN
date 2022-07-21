@@ -277,7 +277,57 @@
             "style": 1,
             "useXib": 0
         },
+    },{
+        "q_id":"sub_19",
+        "q_title":"旋转数组的最小数字",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_19",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_20",
+        "q_title":"打印从1到最大的n位数",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_20",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_21",
+        "q_title":" 调整数组顺序使奇数位于偶数前面",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_21",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+        "q_id":"sub_22",
+        "q_title":" 顺时针打印矩阵",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_22",
+            "style": 1,
+            "useXib": 0
+        },
     }
+
+
 
 
 ]

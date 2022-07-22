@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"algo_string_0",
+        "q_id":"algo_string-0",
         "q_title":"翻转单词顺序",
         "q_subtitle":"",
         "showNextPage": true,
@@ -13,7 +13,7 @@
         },
     },
     {
-        "q_id":"algo_string_1",
+        "q_id":"algo_string-1",
         "q_title":"判断字符串是否有效闭合",
         "q_subtitle":"",
         "showNextPage": true,
@@ -26,7 +26,7 @@
         },
     },
     {
-        "q_id":"algo_string_2",
+        "q_id":"algo_string-2",
         "q_title":"替换空格",
         "q_subtitle":"",
         "showNextPage": true,
@@ -39,7 +39,7 @@
         },
     },
     {
-        "q_id":"algo_string_3",
+        "q_id":"algo_string-3",
         "q_title":"第一个只出现一次的字符",
         "q_subtitle":"",
         "showNextPage": true,
@@ -53,7 +53,7 @@
     },
 
     {
-        "q_id":"algo_string_4",
+        "q_id":"algo_string-4",
         "q_title":"无重复字符的最长子串",
         "q_subtitle":"",
         "showNextPage": true,
@@ -66,7 +66,7 @@
         },
     },
     {
-        "q_id":"algo_string_5",
+        "q_id":"algo_string-5",
         "q_title":"两个字符串的最长公共子序列",
         "q_subtitle":"",
         "showNextPage": true,
@@ -79,7 +79,7 @@
         },
     },
     {
-        "q_id":"algo_string_6",
+        "q_id":"algo_string-6",
         "q_title":"反转字符串",
         "q_subtitle":"",
         "showNextPage": true,
@@ -92,7 +92,7 @@
         },
     },
     {
-        "q_id":"algo_string_7",
+        "q_id":"algo_string-7",
         "q_title":"反转字符串中的单词 III",
         "q_subtitle":"",
         "showNextPage": true,
@@ -105,7 +105,7 @@
         },
     },
     {
-        "q_id":"algo_string_8",
+        "q_id":"algo_string-8",
         "q_title":"字符串的排列",
         "q_subtitle":"",
         "showNextPage": true,

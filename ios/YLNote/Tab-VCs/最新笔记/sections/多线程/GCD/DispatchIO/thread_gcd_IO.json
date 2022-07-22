@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"thread_gcd_IO_0",
+        "q_id":"thread_gcd_IO-0",
         "q_title":"异步串行读取文件",
         "q_subtitle":"dispatch_io_read",
         "showNextPage": false,
@@ -13,7 +13,7 @@
         }
     },
     {
-        "q_id":"thread_gcd_IO_1",
+        "q_id":"thread_gcd_IO-1",
         "q_title":"异步并行读取文件",
         "q_subtitle":"dispatch_io_read + group",
         "showNextPage": false,

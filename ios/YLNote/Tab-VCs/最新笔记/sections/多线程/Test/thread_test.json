@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"thread_test_0",
+        "q_id":"thread_test-0",
         "q_title":"原子性和非原子性",
         "q_subtitle":"",
         "showNextPage": false,
@@ -14,7 +14,7 @@
         
     },
     {
-        "q_id":"thread_test_1",
+        "q_id":"thread_test-1",
         "q_title":"任务与队列的多种组合场景",
         "q_subtitle":"",
         "showNextPage": true,
@@ -33,7 +33,7 @@
         
     },
     {
-        "q_id":"thread_test_2",
+        "q_id":"thread_test-2",
         "q_title":"线程池缓存线程最大并发数(NSOperation): 64",
         "q_subtitle":"",
         "showNextPage": false,
@@ -46,7 +46,7 @@
         }
     },
     {
-        "q_id":"thread_test_3",
+        "q_id":"thread_test-3",
         "q_title":"线程池缓存线程最大并发数(GCD): 64",
         "q_subtitle":"",
         "showNextPage": false,

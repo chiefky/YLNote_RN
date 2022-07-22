@@ -1,7 +1,7 @@
 
 [
     {
-        "q_id":"block_test_0",
+        "q_id":"block_test-0",
         "q_title":"block类型：copy前后",
         "q_subtitle":"",
         "showNextPage": false,
@@ -15,7 +15,7 @@
         
     },
     {
-        "q_id":"block_test_1",
+        "q_id":"block_test-1",
         "q_title":"2",
         "q_subtitle":"",
         "showNextPage": true,
@@ -34,7 +34,7 @@
         
     },
     {
-        "q_id":"block_test_2",
+        "q_id":"block_test-2",
         "q_title":"3",
         "q_subtitle":"",
         "showNextPage": false,
@@ -47,7 +47,7 @@
         }
     },
     {
-        "q_id":"block_test_3",
+        "q_id":"block_test-3",
         "q_title":"4",
         "q_subtitle":"",
         "showNextPage": false,

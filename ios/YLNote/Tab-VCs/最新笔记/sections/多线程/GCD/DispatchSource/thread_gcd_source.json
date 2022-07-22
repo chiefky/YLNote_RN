@@ -1,13 +1,13 @@
 [
     {
-        "q_id":"thread_gcd_source_0",
+        "q_id":"thread_gcd_source-0",
         "q_title":"使用 dispatch_source 实现 timer 计时器功能：",
         "q_subtitle":"dispatch_source_set_timer",
         "showNextPage": false,
         "showArticle":true,
         "function":"testGCD_source_timer",
         "article": {
-            "art_id":"thread_gcd_group_0",
+            "art_id":"thread_gcd_source-0",
             "art_url":"/content/Thread/GCD/Thread-GCD_group.md",
             "art_title":"",
         }

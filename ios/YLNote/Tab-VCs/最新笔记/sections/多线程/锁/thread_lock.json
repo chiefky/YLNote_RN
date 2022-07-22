@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"thread_lock_0",
+        "q_id":"thread_lock-0",
         "q_title":"同步锁",
         "q_subtitle":"",
         "showNextPage": false,
@@ -14,7 +14,7 @@
 
     },
     {
-        "q_id":" thread_lock_1",
+        "q_id":" thread_lock-1",
         "q_title":"递归锁",
         "q_subtitle":"",
         "showNextPage": false,
@@ -27,7 +27,7 @@
         }
     },
     {
-        "q_id":" thread_lock_2",
+        "q_id":" thread_lock-2",
         "q_title":"自旋锁",
         "q_subtitle":"",
         "showNextPage": false,

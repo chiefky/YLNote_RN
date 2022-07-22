@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"thread_gcd_seamphore_0",
+        "q_id":"thread_gcd_seamphore-0",
         "q_title":"多线程同步",
         "q_subtitle":"`dispatch_semaphore_t`",
         "showNextPage": false,
@@ -12,13 +12,13 @@
             "useXib": 0
         },
         "article": {
-            "art_id":"thread_gcd_seamphore_0",
+            "art_id":"thread_gcd_seamphore-0",
             "art_url":"/content/Thread/GCD/Thread-GCD_seamphore.md",
             "art_title":"",
         }
     },
     {
-        "q_id":"thread_gcd_seamphore_0",
+        "q_id":"thread_gcd_seamphore-1",
         "q_title":"保证线程安全，为线程加锁",
         "q_subtitle":"`dispatch_semaphore_t`",
         "showNextPage": false,

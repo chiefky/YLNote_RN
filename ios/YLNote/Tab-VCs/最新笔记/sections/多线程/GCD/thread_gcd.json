@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"thread_gcd_0",
+        "q_id":"thread_gcd-0",
         "q_title":"队列",
         "q_subtitle":"Dispatch Queue",
         "showNextPage": true,
@@ -12,7 +12,7 @@
             "useXib": 0
         },
         "article": {
-            "art_id":"thread_gcd_0",
+            "art_id":"thread_gcd-0",
             "art_url":"/content/Thread/GCD/Thread-GCD_queue.md",
             "art_title":"",
         }
@@ -20,7 +20,7 @@
     },
     {
         
-        "q_id":"thread_gcd_1",
+        "q_id":"thread_gcd-1",
         "q_title":"任务",
         "q_subtitle":"Dispatch Block",
         "showNextPage": true,
@@ -32,14 +32,14 @@
             "useXib": 0
         },
         "article": {
-            "art_id":"thread_gcd_1",
+            "art_id":"thread_gcd-1",
             "art_url":"/content/Thread/GCD/Thread-GCD_block.md",
             "art_title":"",
         }
         
     },
     {
-        "q_id":"thread_gcd_2",
+        "q_id":"thread_gcd-2",
         "q_title":"队列组",
         "q_subtitle":"Dispatch Group",
         "showNextPage": true,
@@ -58,7 +58,7 @@
         
     },
     {
-        "q_id":"thread_gcd_3",
+        "q_id":"thread_gcd-3",
         "q_title":"栅栏",
         "q_subtitle":"Dispatch Barrier",
         "showNextPage": true,
@@ -78,7 +78,7 @@
     },
 
     {
-        "q_id":"thread_gcd_4",
+        "q_id":"thread_gcd-4",
         "q_title":"信号量",
         "q_subtitle":"Dispatch Semaphore",
         "showNextPage": true,
@@ -96,7 +96,7 @@
         }
     },
     {
-        "q_id":"thread_gcd_5",
+        "q_id":"thread_gcd-5",
         "q_title":"信号源",
         "q_subtitle":"Dispatch Source",
         "showNextPage": true,
@@ -114,7 +114,7 @@
         }
     },
     {
-        "q_id":"thread_gcd_6",
+        "q_id":"thread_gcd-6",
         "q_title":"GCD文件读取",
         "q_subtitle":"Dispatch Source",
         "showNextPage": true,

@@ -1,7 +1,7 @@
 
 [
     {
-        "q_id":"block_types_0",
+        "q_id":"block_types-0",
         "q_title":"全局区（__NSGlobalBlock__）",
         "q_subtitle":"block内不使用外部变量或者只使用全局变量/静态变量",
         "showNextPage": false,
@@ -15,7 +15,7 @@
         
     },
     {
-        "q_id":"block_types_1",
+        "q_id":"block_types-1",
         "q_title":"栈区(__NSStackBlock__)",
         "q_subtitle":"在block内部可以使用外部变量或OC属性，且不能将block赋值给强引用变量",
         "showNextPage": false,
@@ -34,7 +34,7 @@
         
     },
     {
-        "q_id":"block_types_2",
+        "q_id":"block_types-2",
         "q_title":"堆区(__NSMallocBlock__)",
         "q_subtitle":"",
         "showNextPage": false,
@@ -47,7 +47,7 @@
         }
     },
     {
-        "q_id":"block_types_3",
+        "q_id":"block_types-3",
         "q_title":"超出作用域测试",
         "q_subtitle":"",
         "showNextPage": false,
@@ -60,7 +60,7 @@
         }
     },
     {
-        "q_id":"block_types_4",
+        "q_id":"block_types-4",
         "q_title":"block作为参数传递系统是否会自动copy",
         "q_subtitle":"",
         "showNextPage": false,

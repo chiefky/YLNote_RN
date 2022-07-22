@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"algo_bit_0",
+        "q_id":"algo_bit-0",
         "q_title":"2 的幂",
         "q_subtitle":"",
         "showNextPage": true,
@@ -13,7 +13,7 @@
         },
     },
     {
-        "q_id":"algo_bit_1",
+        "q_id":"algo_bit-1",
         "q_title":"位1的个数",
         "q_subtitle":"",
         "showNextPage": true,
@@ -26,7 +26,7 @@
         },
     },
     {
-        "q_id":"algo_bit_2",
+        "q_id":"algo_bit-2",
         "q_title":"颠倒二进制位",
         "q_subtitle":"",
         "showNextPage": true,
@@ -39,7 +39,7 @@
         },
     },
     {
-        "q_id":"algo_bit_3",
+        "q_id":"algo_bit-3",
         "q_title":"只出现一次的数字",
         "q_subtitle":"",
         "showNextPage": true,

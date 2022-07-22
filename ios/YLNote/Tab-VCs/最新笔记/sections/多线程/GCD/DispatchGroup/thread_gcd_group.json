@@ -1,26 +1,26 @@
 [
     {
-        "q_id":"thread_gcd_group_0",
+        "q_id":"thread_gcd_group-0",
         "q_title":"多线程任务同步结合AFNetworking",
         "q_subtitle":"dispatch_group_notify",
         "showNextPage": false,
         "showArticle":true,
         "function":"testGCD_group_nofitfy",
         "article": {
-            "art_id":"thread_gcd_group_0",
+            "art_id":"thread_gcd_group-0",
             "art_url":"/content/Thread/GCD/Thread-GCD_group.md",
             "art_title":"",
         }
     },
     {
-        "q_id":"thread_gcd_group_1",
+        "q_id":"thread_gcd_group-1",
         "q_title":"多线程任务同步结合AFNetworking",
         "q_subtitle":"dispatch_group_wait",
         "showNextPage": false,
         "showArticle":true,
         "function":"testGCD_group_wait",
         "article": {
-            "art_id":"thread_gcd_group_0",
+            "art_id":"thread_gcd_group-0",
             "art_url":"/content/Thread/GCD/Thread-GCD_group.md",
             "art_title":"",
         }

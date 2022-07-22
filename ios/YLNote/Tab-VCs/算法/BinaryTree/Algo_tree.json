@@ -1,7 +1,7 @@
 
 [
     {
-        "q_id":"sub_0",
+        "q_id":"algo_tree-0",
         "q_title":"求二叉树深度",
         "q_subtitle":"",
         "showNextPage": true,
@@ -19,7 +19,7 @@
         }
     },
     {
-        "q_id":"sub_1",
+        "q_id":"algo_tree-1",
         "q_title":"判断是否是平衡二叉树",
         "q_subtitle":"",
         "showNextPage": true,
@@ -37,7 +37,7 @@
         }
     },
     {
-        "q_id":"sub_2",
+        "q_id":"algo_tree-2",
         "q_title":"合并二叉树",
         "q_subtitle":"",
         "showNextPage": true,
@@ -55,7 +55,7 @@
         }
     },
     {
-        "q_id":"sub_3",
+        "q_id":"algo_tree-3",
         "q_title":" 填充每个节点的下一个右侧节点指针",
         "q_subtitle":"",
         "showNextPage": true,
@@ -73,7 +73,7 @@
         }
     },
     {
-        "q_id":"sub_4",
+        "q_id":"algo_tree-4",
         "q_title":"是否是对称二叉树",
         "q_subtitle":"",
         "showNextPage": true,
@@ -91,7 +91,7 @@
         }
     },
     {
-        "q_id":"sub_5",
+        "q_id":"algo_tree-5",
         "q_title":"二叉树的直径",
         "q_subtitle":"",
         "showNextPage": true,
@@ -109,7 +109,7 @@
         }
     },
     {
-        "q_id":"sub_6",
+        "q_id":"algo_tree-6",
         "q_title":"重建二叉树",
         "q_subtitle":"",
         "showNextPage": true,

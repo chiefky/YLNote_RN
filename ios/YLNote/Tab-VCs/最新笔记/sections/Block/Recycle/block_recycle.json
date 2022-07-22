@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"block_recycle_1",
+        "q_id":"block_recycle-1",
         "q_title":"造成循环引用的场景有哪些",
         "q_subtitle":"",
         "showNextPage": false,
@@ -13,7 +13,7 @@
         }
     },
     {
-        "q_id":"block_recycle_2",
+        "q_id":"block_recycle-2",
         "q_title":"1. 借__weak解决循环引用",
         "q_subtitle":"",
         "showNextPage": false,
@@ -27,7 +27,7 @@
 
     },
     {
-        "q_id":"block_recycle_3",
+        "q_id":"block_recycle-3",
         "q_title":"2. 借助__block解决循环引用",
         "q_subtitle":"",
         "showNextPage": false,
@@ -41,7 +41,7 @@
 
     },
     {
-        "q_id":"block_recycle_4",
+        "q_id":"block_recycle-4",
         "q_title":"3. `将强引用对象作为block参数传入`解决循环引用",
         "q_subtitle":"",
         "showNextPage": false,
@@ -55,7 +55,7 @@
 
     },
     {
-        "q_id":"block_recycle_5",
+        "q_id":"block_recycle-5",
         "q_title":"4. 借助NSProxy解决循环引用",
         "q_subtitle":"",
         "showNextPage": false,
@@ -69,7 +69,7 @@
 
     },
     {
-        "q_id":"block_recycle_0",
+        "q_id":"block_recycle-0",
         "q_title":"思考：__weak一定能打破循环引用吗",
         "q_subtitle":"",
         "showNextPage": false,

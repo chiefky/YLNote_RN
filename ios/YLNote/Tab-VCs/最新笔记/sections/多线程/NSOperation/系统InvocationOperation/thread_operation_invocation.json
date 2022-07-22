@@ -1,7 +1,7 @@
 
 [
     {
-        "q_id":"thread_operation_0",
+        "q_id":"thread_operation-0",
         "q_title":"NSInvocationOperation基本使用",
         "q_subtitle":"initWithTarget:Selector:",
         "showNextPage": false,
@@ -15,7 +15,7 @@
         
     },
     {
-        "q_id":"thread_operation_1",
+        "q_id":"thread_operation-1",
         "q_title":"NSInvocationOperation动态执行不同的selector",
         "q_subtitle":"修改`invocationOperation.invocation.selector = NSSelectorFromString(data[0])`",
         "showNextPage": false,
@@ -28,7 +28,7 @@
         }        
     },
     {
-        "q_id":"thread_operation_2",
+        "q_id":"thread_operation-2",
         "q_title":"使用queue管理多个invocation任务",
         "q_subtitle":"自定义queue的maxConcurrentOperationCount默认值是-1，代表是并发队列，开启线程个数由系统决定",
         "showNextPage": false,

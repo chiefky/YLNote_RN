@@ -1,6 +1,6 @@
 [
     {
-        "q_id":"thread_operation_0",
+        "q_id":"thread_nsoperation-0",
         "q_title":"NSInvocationOperation",
         "q_subtitle":"系统提供，NSOperation子类",
         "showNextPage": true,
@@ -20,7 +20,7 @@
         
     },
     {
-        "q_id":"thread_operation_1",
+        "q_id":"thread_nsoperation-1",
         "q_title":"NSBlockOperation",
         "q_subtitle":"系统提供，NSOperation子类",
         "showNextPage": true,
@@ -40,7 +40,7 @@
         
     },
     {
-        "q_id":"thread_operation_2",
+        "q_id":"thread_nsoperation-2",
         "q_title":"自定义同步Operation",
         "q_subtitle":"isAsynchronous：NO",
         "showNextPage": true,
@@ -59,7 +59,7 @@
         
     },
     {
-        "q_id":"thread_operation_3",
+        "q_id":"thread_nsoperation-3",
         "q_title":"自定义异步Operation",
         "q_subtitle":"isAsynchronous：YES",
         "showNextPage": true,
@@ -78,7 +78,7 @@
         
     },
     {
-        "q_id":"thread_operation_4",
+        "q_id":"thread_nsoperation-4",
         "q_title":"多任务依赖(使用queue),第一优先级【isReady】",
         "q_subtitle":"`[op1 addDependency:op2]`tip: 依赖必须在addOperation之前",
         "showNextPage": false,
@@ -92,7 +92,7 @@
         
     },
     {
-        "q_id":"thread_operation_5",
+        "q_id":"thread_nsoperation-5",
         "q_title":"多任务依赖(不使用queue),第一优先级【isReady】",
         "q_subtitle":"`[op1 addDependency:op2]`tip: start顺序必须:op4,op3,op2,op1;",
         "showNextPage": false,
@@ -106,7 +106,7 @@
         
     },
     {
-        "q_id":"thread_operation_6",
+        "q_id":"thread_nsoperation-6",
         "q_title":"修改 Operation 在队列中的优先级,第二优先级【queuePriority】",
         "q_subtitle":"属性`queuePriority`",
         "showNextPage": false,
@@ -120,7 +120,7 @@
         
     },
     {
-        "q_id":"thread_operation_7",
+        "q_id":"thread_nsoperation-7",
         "q_title":" 修改 Operation 执行任务线程的优先级",
         "q_subtitle":"属性`qualityOfService`，注意区分是queue还是operation的优先级，二者没有直接关系",
         "showNextPage": false,

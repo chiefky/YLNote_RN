@@ -268,6 +268,8 @@
 		54ABCB552889B188006C65D6 /* YLAlgoArrayListRow_21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB532889B188006C65D6 /* YLAlgoArrayListRow_21.swift */; };
 		54ABCB592889B8A2006C65D6 /* YLAlgoArrayListRow_22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB572889B8A2006C65D6 /* YLAlgoArrayListRow_22.swift */; };
 		54ABCB5A2889B8A2006C65D6 /* Algo_array_row_22.json in Resources */ = {isa = PBXBuildFile; fileRef = 54ABCB582889B8A2006C65D6 /* Algo_array_row_22.json */; };
+		54ABCB5E2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB5C2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift */; };
+		54ABCB5F2889DF2E006C65D6 /* Algo_array_row_23.json in Resources */ = {isa = PBXBuildFile; fileRef = 54ABCB5D2889DF2E006C65D6 /* Algo_array_row_23.json */; };
 		54AEB60E26AED748004C8894 /* YLCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEB60D26AED748004C8894 /* YLCrashHandler.m */; };
 		54B1CCB32885DBB200D99F01 /* thread_gcd_IO.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B1CCB12885DBB200D99F01 /* thread_gcd_IO.json */; };
 		54B1CCB42885DBB200D99F01 /* YLThreadGCDDispatchIOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B1CCB22885DBB200D99F01 /* YLThreadGCDDispatchIOController.m */; };
@@ -866,6 +868,8 @@
 		54ABCB532889B188006C65D6 /* YLAlgoArrayListRow_21.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_21.swift; sourceTree = "<group>"; };
 		54ABCB572889B8A2006C65D6 /* YLAlgoArrayListRow_22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_22.swift; sourceTree = "<group>"; };
 		54ABCB582889B8A2006C65D6 /* Algo_array_row_22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_22.json; sourceTree = "<group>"; };
+		54ABCB5C2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_23.swift; sourceTree = "<group>"; };
+		54ABCB5D2889DF2E006C65D6 /* Algo_array_row_23.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_23.json; sourceTree = "<group>"; };
 		54AEB60C26AED748004C8894 /* YLCrashHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCrashHandler.h; sourceTree = "<group>"; };
 		54AEB60D26AED748004C8894 /* YLCrashHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCrashHandler.m; sourceTree = "<group>"; };
 		54AEE76024CECF2200A6CFC7 /* YLNote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLNote-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2582,6 +2586,15 @@
 			path = 22;
 			sourceTree = "<group>";
 		};
+		54ABCB5B2889DF2E006C65D6 /* 23 */ = {
+			isa = PBXGroup;
+			children = (
+				54ABCB5C2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift */,
+				54ABCB5D2889DF2E006C65D6 /* Algo_array_row_23.json */,
+			);
+			path = 23;
+			sourceTree = "<group>";
+		};
 		54AEB6E126AF4548004C8894 /* CrahHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -3317,6 +3330,7 @@
 			children = (
 				54DB9ADD2843D7A000539AC5 /* Algo_array_list.json */,
 				54DB9B202843D89800539AC5 /* YLAlgoArrayListController.swift */,
+				54ABCB5B2889DF2E006C65D6 /* 23 */,
 				54ABCB562889B8A2006C65D6 /* 22 */,
 				54ABCB512889B188006C65D6 /* 21 */,
 				54ABCB4C288933BB006C65D6 /* 20 */,
@@ -3708,6 +3722,7 @@
 				54ABCB4A288863C7006C65D6 /* Algo_tree_row_6.json in Resources */,
 				54DCC55827CD3D26009F289D /* thread_lock.json in Resources */,
 				54E97AE927B4006B001CA669 /* runloop_source.json in Resources */,
+				54ABCB5F2889DF2E006C65D6 /* Algo_array_row_23.json in Resources */,
 				54B1CCB32885DBB200D99F01 /* thread_gcd_IO.json in Resources */,
 				548CAF5B2860CCF700F73E71 /* Algo_string_row_8.json in Resources */,
 				54DB9B8828461B5500539AC5 /* Algo_array_row_7.json in Resources */,
@@ -4143,6 +4158,7 @@
 				54B43F5E27C2AE3A004FDA38 /* YLThreadOperationSyncController.m in Sources */,
 				5487BDA625C7F13500C6AEAE /* YLWaveView.swift in Sources */,
 				543581C425AEEE2400452D76 /* YLOmnipotentDelegate.m in Sources */,
+				54ABCB5E2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift in Sources */,
 				5435818725AD70C600452D76 /* YLClassificationLevelSuperSpecies.m in Sources */,
 				54A35D9824CED7290076DFB6 /* YLBlockViewController1.m in Sources */,
 				54DCC5D527D0C660009F289D /* YLBlockTestViewController.m in Sources */,

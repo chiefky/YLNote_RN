@@ -64,8 +64,7 @@ static NSString *cellIdentifier = @"YLBaseTableViewCell";
         YLQuestionTableViewCell *tmpCell = (YLQuestionTableViewCell *)cell;
         YLQuestion *cellData = self.datas[indexPath.row];
         if (cellData) {
-            NSString *q_id = [cellData.q_id componentsSeparatedByString:@"-"].lastObject ?: @"null"; // [cellData.q_id substringFromIndex:4] ?: @"null";
-            tmpCell.titleLabel.text = [NSString stringWithFormat:@"%@🐟 %@",q_id,cellData.title];
+            NSString *q_id = [cellData.q_id componentsSeparatedByString:@"-"].lastObject;            tmpCell.titleLabel.text = [NSString stringWithFormat:@"%@%@",(q_id ? [q_id stringByAppendingString:@"、 "] : @"🐳 " ),cellData.title];
             tmpCell.subtitle = cellData.subtitle;
             tmpCell.nextPage.hidden = !cellData.showNextPage;
             if (cellData.showArticle) {

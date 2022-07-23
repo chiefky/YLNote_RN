@@ -60,15 +60,16 @@ class YLAlgoArrayListRow_0_2: YLBaseTableViewController {
     /// - Returns: 重复元素
     func method_binarysearch(_ nums:[Int]) -> Int {
         var left = 1, right = nums.count - 1 // 初始right值实际是n
-        print("🧒中位数: \(left + (right-left)/2),初始区间：[\(left)...\(right)]")
         while left < right {
             let mid = left + (right-left)/2
+            print("数字区间：[\(left)...\(right)]， 中位数：\(mid)")
             var count = 0
             for num in nums {
                 if num <= mid {
                     count += 1
                 }
             }
+            print("原始数组中 ≤\(mid) 的个数：\(count)")
             if count > mid {
                 right = mid
             } else {

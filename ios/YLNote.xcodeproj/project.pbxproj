@@ -270,6 +270,10 @@
 		54ABCB5A2889B8A2006C65D6 /* Algo_array_row_22.json in Resources */ = {isa = PBXBuildFile; fileRef = 54ABCB582889B8A2006C65D6 /* Algo_array_row_22.json */; };
 		54ABCB5E2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB5C2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift */; };
 		54ABCB5F2889DF2E006C65D6 /* Algo_array_row_23.json in Resources */ = {isa = PBXBuildFile; fileRef = 54ABCB5D2889DF2E006C65D6 /* Algo_array_row_23.json */; };
+		54ABCB66288C4FB7006C65D6 /* YLAlgoQueueListRow_0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB62288C4FB6006C65D6 /* YLAlgoQueueListRow_0.swift */; };
+		54ABCB67288C4FB7006C65D6 /* Algo_queue_row_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 54ABCB63288C4FB6006C65D6 /* Algo_queue_row_0.json */; };
+		54ABCB68288C4FB7006C65D6 /* Algo_queue_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 54ABCB64288C4FB6006C65D6 /* Algo_queue_list.json */; };
+		54ABCB69288C4FB7006C65D6 /* YLAlgoQueueListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB65288C4FB6006C65D6 /* YLAlgoQueueListController.swift */; };
 		54AEB60E26AED748004C8894 /* YLCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEB60D26AED748004C8894 /* YLCrashHandler.m */; };
 		54B1CCB32885DBB200D99F01 /* thread_gcd_IO.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B1CCB12885DBB200D99F01 /* thread_gcd_IO.json */; };
 		54B1CCB42885DBB200D99F01 /* YLThreadGCDDispatchIOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B1CCB22885DBB200D99F01 /* YLThreadGCDDispatchIOController.m */; };
@@ -870,6 +874,10 @@
 		54ABCB582889B8A2006C65D6 /* Algo_array_row_22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_22.json; sourceTree = "<group>"; };
 		54ABCB5C2889DF2E006C65D6 /* YLAlgoArrayListRow_23.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_23.swift; sourceTree = "<group>"; };
 		54ABCB5D2889DF2E006C65D6 /* Algo_array_row_23.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_23.json; sourceTree = "<group>"; };
+		54ABCB62288C4FB6006C65D6 /* YLAlgoQueueListRow_0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoQueueListRow_0.swift; sourceTree = "<group>"; };
+		54ABCB63288C4FB6006C65D6 /* Algo_queue_row_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_queue_row_0.json; sourceTree = "<group>"; };
+		54ABCB64288C4FB6006C65D6 /* Algo_queue_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_queue_list.json; sourceTree = "<group>"; };
+		54ABCB65288C4FB6006C65D6 /* YLAlgoQueueListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoQueueListController.swift; sourceTree = "<group>"; };
 		54AEB60C26AED748004C8894 /* YLCrashHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLCrashHandler.h; sourceTree = "<group>"; };
 		54AEB60D26AED748004C8894 /* YLCrashHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCrashHandler.m; sourceTree = "<group>"; };
 		54AEE76024CECF2200A6CFC7 /* YLNote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YLNote-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -2595,6 +2603,25 @@
 			path = 23;
 			sourceTree = "<group>";
 		};
+		54ABCB60288C4F79006C65D6 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				54ABCB61288C4FB6006C65D6 /* 0 */,
+				54ABCB64288C4FB6006C65D6 /* Algo_queue_list.json */,
+				54ABCB65288C4FB6006C65D6 /* YLAlgoQueueListController.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		54ABCB61288C4FB6006C65D6 /* 0 */ = {
+			isa = PBXGroup;
+			children = (
+				54ABCB62288C4FB6006C65D6 /* YLAlgoQueueListRow_0.swift */,
+				54ABCB63288C4FB6006C65D6 /* Algo_queue_row_0.json */,
+			);
+			path = 0;
+			sourceTree = "<group>";
+		};
 		54AEB6E126AF4548004C8894 /* CrahHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -3318,6 +3345,7 @@
 				54DCC63B27D529D8009F289D /* String */,
 				54E6E42727BD78F50019E03C /* BinaryTree */,
 				548CB04A2869AB1E00F73E71 /* bit */,
+				54ABCB60288C4F79006C65D6 /* Queue */,
 				54DCC55C27CD4056009F289D /* 基础 */,
 				54C6F41027BD72EE00756275 /* 待整理 */,
 				54C6F41127BD735500756275 /* other */,
@@ -3722,6 +3750,7 @@
 				54ABCB4A288863C7006C65D6 /* Algo_tree_row_6.json in Resources */,
 				54DCC55827CD3D26009F289D /* thread_lock.json in Resources */,
 				54E97AE927B4006B001CA669 /* runloop_source.json in Resources */,
+				54ABCB68288C4FB7006C65D6 /* Algo_queue_list.json in Resources */,
 				54ABCB5F2889DF2E006C65D6 /* Algo_array_row_23.json in Resources */,
 				54B1CCB32885DBB200D99F01 /* thread_gcd_IO.json in Resources */,
 				548CAF5B2860CCF700F73E71 /* Algo_string_row_8.json in Resources */,
@@ -3788,6 +3817,7 @@
 				548CAFFE28660D1E00F73E71 /* Algo_tree_row_2.json in Resources */,
 				54E97ADF27B3FF92001CA669 /* YLNoteSwitchTableViewCell.xib in Resources */,
 				54FB59A625C2948D00E3FCA4 /* YLAnimationViewController.xib in Resources */,
+				54ABCB67288C4FB7006C65D6 /* Algo_queue_row_0.json in Resources */,
 				54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */,
 				54B43F8427C38515004FDA38 /* thread_operation_block.json in Resources */,
 				5434B21427F61A6000625D07 /* memory_taggedpointer.json in Resources */,
@@ -4015,6 +4045,7 @@
 				54A35D8824CED7290076DFB6 /* YLKVOViewController.m in Sources */,
 				5400B31925BAEA6600DC4C49 /* CAlayer+Tools.swift in Sources */,
 				5487BDC825D6F6C100C6AEAE /* YLDemoEmptyViewController.swift in Sources */,
+				54ABCB66288C4FB7006C65D6 /* YLAlgoQueueListRow_0.swift in Sources */,
 				548A0D2526122BA900BC80D9 /* YLDemoFuncTableViewController.swift in Sources */,
 				54A35DAF24CED7A30076DFB6 /* YLGCDViewController.m in Sources */,
 				54D88639284F5410003DE4F0 /* YLNatiFilmDetailViewController.m in Sources */,
@@ -4172,6 +4203,7 @@
 				548CB0742869B99A00F73E71 /* YLAlgoBitListRow_3.swift in Sources */,
 				5487BDDA25D943BE00C6AEAE /* YLPet.swift in Sources */,
 				54D19F77284FC6630016468E /* YLInteractionViewController.m in Sources */,
+				54ABCB69288C4FB7006C65D6 /* YLAlgoQueueListController.swift in Sources */,
 				54A35D8A24CED7290076DFB6 /* YLNotification.m in Sources */,
 				54DB9BF0284CFC9800539AC5 /* YLAlgoArrayListRow_11.swift in Sources */,
 				5435811225A4D18900452D76 /* YLWebNoteManager.m in Sources */,

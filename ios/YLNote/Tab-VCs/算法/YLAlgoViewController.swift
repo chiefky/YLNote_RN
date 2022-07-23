@@ -20,7 +20,7 @@ class YLAlgoTabQesDataManger: YLQuestionDataManagerBase {
     override var cellIdentifier: String {
         return "YLAlgorithmViewController.header"
     }
-
+    
 }
 
 class YLAlgoViewController: UIViewController {
@@ -39,13 +39,33 @@ class YLAlgoViewController: UIViewController {
         view.addSubview(self.table)
         self.table.dataSource = self.dataManager;
         self.table.delegate = self.dataManager;
-        self.dataManager.funcHandler = { (ques,pram) in
-            print("\(ques.description)")
+        self.dataManager.funcHandler = { (ques,indexpath) in
+            print("indexpath:\(String(describing: indexpath)), \(ques.function)")
+            let funcName = ques.function
+            if funcName.contains(":") {
+                /// 第1种 带参数
+                let funcc = NSSelectorFromString(funcName)
+                self.perform(funcc, with: indexpath)
+            } else {
+                /// 第2种 不带参数
+                let function = Selector(funcName)
+                guard self.responds(to: function) else {
+                    print("Can't responder to sel: \(funcName)")
+                    return
+                }
+                self.perform(function)
+            }
+            
         }
-
+        
         let name = String(describing: YLQuestionTableViewCell.self)
         table.register(UINib(nibName: name, bundle: nil), forCellReuseIdentifier: dataManager.cellIdentifier)
         table.register(YLGroupHeaderView.self, forHeaderFooterViewReuseIdentifier: dataManager.headerIdentifier)
+    }
+    
+    //MARK: 每日抽查测试:
+    @objc func array_test() {
+        testArray()
     }
     
     //MARK: lazy method

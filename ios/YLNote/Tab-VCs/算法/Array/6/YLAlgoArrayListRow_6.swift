@@ -8,7 +8,7 @@
 
 import UIKit
 /**
- 给你一个整数数组 nums，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
+ 给你一个整数数组nums，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
  子数组 是数组中的一个连续部分。
 
  链接：https://leetcode.cn/problems/maximum-subarray/
@@ -29,14 +29,18 @@ class YLAlgoArrayListRow_6: YLBaseTableViewController {
     }
 
     
-    func method_1(_ nums: [Int]) -> (Int) {
+    /// 动态规划 最大子数组可以分解成任何一个数组+[当前元素]：只要前一个数组的和+当前元素>当前元素就将当前元素加入前一个数组，否则取当前元素作为新的子数组
+    /// 时间复杂度O：(n）,空间复杂度：O(1)
+    /// - Parameter nums: 初始数组
+    /// - Returns: 最大和
+    func method_1(_ nums: [Int]) -> Int {
         if nums.isEmpty {
             return (0);
         }
-        var preSum = 0
-        var maxvalue = 0
-        for num in nums {
-            preSum = max(preSum+num, num)
+        var preSum = nums[0]
+        var maxvalue = nums[0]
+        for i in 1..<nums.count {
+            preSum = max(preSum+nums[i], nums[i])
             maxvalue = max(preSum, maxvalue)
         }
         return maxvalue

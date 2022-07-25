@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：利用二路归并排序",
+        "q_title":"方法1：双指针逆序插入",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",

@@ -8,12 +8,6 @@
 
 import Foundation
 
-func testArray()  {
-    var nums:[Int] = [2, 3, 1, 0, 2, 5, 3]; //[0,0,1,1,1,1,9,2,3,3,4]//[0,0,1,1,1,2,2,3,3,4]
-    let res = array_method_qes_3(&nums)
-    print("👨‍👩‍👧‍👦结果：\(res)")
-}
-
 //MARK: 0
 ///  寻找重复数
 /// - Parameter nums: [1,3,4,2,2]
@@ -169,4 +163,115 @@ func array_method_qes_5(_ nums: [Int],_ target: Int) -> Int {
     }
     
     return nums[left] < target ? left+1 : left
+}
+
+//MARK: 6
+func array_qes_6(_ nums: [Int]) -> Int {
+    if nums.isEmpty {
+        return 0
+    }
+    var maxSum = nums[0], preMax = nums[0]
+    for i in 1..<nums.count {
+        preMax = max(preMax+nums[i], nums[i])
+        maxSum = max(maxSum,preMax)
+    }
+    return maxSum
+}
+
+//MARK: 10
+func array_qes_10(_  prices: [Int]) -> Int {
+    if prices.count < 2 {
+        return 0
+    }
+    var maxProfit = 0, preMin = prices[0]
+    for i in 0..<prices.count {
+        preMin = min(preMin, prices[i])
+        maxProfit = max(maxProfit, prices[i] - preMin)
+    }
+    return maxProfit
+}
+
+//MARK: 7
+func array_qes_7(_ digits:[Int]) -> [Int] {
+    var res = digits;
+    for i in (0..<digits.count).reversed() {
+        res[i] = (digits[i] + 1) % 10
+        if res[i] != 0 {
+            return res
+        }
+    }
+
+    if res[0] == 0 {
+        res.insert(1, at: 0)
+    }
+    return res
+}
+//MARK: 8
+func array_qes_8(_ nums1:inout [Int],_ m: Int, _ nums2:[Int], _ n:Int) {
+    var p1 = m-1,p2 = n-1;
+    var p = m + n - 1;
+    while p1 >= 0 || p2 >= 0 {
+        if p1 == -1 {
+            nums1[p] = nums2[p2]
+            p2 -= 1
+        } else if p2 == -1 {
+            nums1[p] = nums1[p1]
+            p1 -= 1
+        } else if nums1[p1] > nums2[p2] {
+            nums1[p] = nums1[p1]
+            p1 -= 1
+        } else {
+            nums1[p] = nums2[p2]
+            p2 -= 1
+        }
+        p -= 1
+    }
+}
+//MARK: 9
+func array_qes_9(_ numRows:Int) -> [[Int]] {
+    var res:[[Int]] = [];
+    for i in 0..<numRows {
+        var line = Array(repeating: 1, count: i+1);
+        var j = 1
+        while j < i {
+            let preLine = res[i-1]
+            line[j] = preLine[j] + preLine[j-1]
+            j += 1
+        }
+        res.append(line)
+    }
+    return res
+    
+}
+
+func array_qes_12_0(_ nums:[Int]) -> Int {
+    var res = 0
+    for num in nums {
+        res ^= num
+    }
+    return res
+}
+
+func array_qes_12_1(_ nums:[Int]) -> Int {
+    var res = 0
+    return res
+}
+
+func array_res_13(_ nums:[Int]) -> [Int] {
+    var res:[Int] = []
+    var i = 0
+    while i < nums.count {
+        
+        i += 1
+    }
+    
+    
+}
+
+func testArray()  {
+//    var nums1 = [0];
+    let nums2 = [2,2,1];
+    //[0,0,1,1,1,1,9,2,3,3,4]//[0,0,1,1,1,2,2,3,3,4]
+    let res = array_qes_12_0(nums2)
+    print("👨‍👩‍👧‍👦结果：\(res)")
 }

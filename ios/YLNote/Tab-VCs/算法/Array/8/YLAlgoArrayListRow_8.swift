@@ -31,35 +31,33 @@ class YLAlgoArrayListRow_8: YLBaseTableViewController {
         method_1(&array,2,arr2,4);
         print("结果：\(array)")
     }
-
+    
+    /// 利用双指针，逆向插入
+    /// 时间复杂度：O(m+n)，空间复杂度：O(1)
+    /// - Parameters:
+    ///   - nums1: nums1
+    ///   - m: 有效nums1的长度
+    ///   - nums2: nums2
+    ///   - n: 有效nums2的长度
     func method_1(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
-        if n == 0 {
-            return;
-        }
-        if m == 0 {
-            nums1 = nums2;
-            return;
-        }
-        var r1 = m-1
-        var r2 = n-1
-        var cur = m+n-1
-        
-        while r1>0 && r2>0 {
-            if nums2[r2] >= nums1[r1] {
-                nums1[cur] = nums2[r2];
-                r2 -= 1;
+        var p1 = m-1,p2 = n-1;
+        var p = m + n - 1;
+        while p1 >= 0 || p2 >= 0 {
+            if p1 == -1 {
+                nums1[p] = nums2[p2]
+                p2 -= 1
+            } else if p2 == -1 {
+                nums1[p] = nums1[p1]
+                p1 -= 1
+            } else if nums1[p1] > nums2[p2] {
+                nums1[p] = nums1[p1]
+                p1 -= 1
             } else {
-                nums1[cur] = nums1[r1];
-                r1 -= 1;
+                nums1[p] = nums2[p2]
+                p2 -= 1
             }
-            cur -= 1;
+            p -= 1
         }
-        while r2 > 0 {
-            nums1[cur] = nums2[r2];
-            r2 -= 1;
-            cur -= 1;
-        }
-        
     }
     
     //    MARK: override

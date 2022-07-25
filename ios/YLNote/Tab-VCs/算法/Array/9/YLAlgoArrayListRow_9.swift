@@ -25,88 +25,28 @@ class YLAlgoArrayListRow_9: YLBaseTableViewController {
     }
     
     @objc func testMethod_1() {
-        
-        let arr = method_1(5);
-        print("结果：\(arr)")
-    }
-    
-    func method_1(_ numRows: Int) -> [[Int]] {
-        if numRows == 0 {
-            return []
-        }
-        var res:[[Int]] = []
-        for i in 0...numRows-1 {
-            res.append(getLine(i))
-        }
-        return res
-    }
-    
-    func getNum(_ i: Int, _ n:Int) -> Int {
-        if n == 0 || i == 0 || i == n {
-            return 1
-        }
-        let res = getNum(i, n-1) + getNum(i-1, n-1)
-        return res
-    }
-    
-    func getLine(_ n:Int) -> [Int] {
-        var res = [Int]()
-        for i in 0...n {
-            res.append(getNum(i, n))
-        }
-        return res
-    }
-    
-    @objc func testMethod_2() {
-        
-        let arr = getRow(4);
+        let arr = generate(5);
         print("结果：\(arr)")
     }
     
     /// 巧妙利用二维数组，一维先全部用1组成的数组填充，然后二维修改一维内部的具体元素
+    /// 时间复杂度：O(n^2)， 空间复杂度：O(1)
     /// - Parameter numRows: 第几行
     /// - Returns: 前n行的组成元素
-    func method_2(_ numRows: Int) -> [[Int]] {
-        if numRows == 0 {
-            return []
-        }
-        
-        var a:[[Int]] = []
-        for i in 0...numRows-1 {
+    func generate(_ numRows: Int) -> [[Int]] {
+        var res:[[Int]] = []
+        for i in 0..<numRows {
             var tmp = [Int](repeating: 1, count: i+1)
-            if i>1 {
-                for j in 0...i {
-                    if j==0 || j==i {
-                        tmp[j] = 1;
-                    } else {
-                        let preLine = a[i-1];
-                        tmp[j] = preLine[j] + preLine[j-1];
-                    }
-                }
+            var j = 1
+            while j < i {
+                let preLine = res[i-1]
+                tmp[j] = preLine[j-1] + preLine[j];
+                j += 1
             }
             // print("\(tmp)");
-            a.append(tmp)
+            res.append(tmp)
         }
-        return a
-    }
-    
-    /// 打印杨辉三角第i行
-    /// - Parameter rowIndex: <#rowIndex description#>
-    /// - Returns: <#description#>
-    func getRow(_ rowIndex: Int) -> [Int] {
-        if (rowIndex < 0) {return []};
-        var a = [[Int]]()
-        for i in 0...rowIndex {
-            var tmp = [Int](repeating:1 ,count:i+1)
-            if (i > 1) {
-                for j in 1..<i {
-                    let preLine = a[i-1]
-                    tmp[j] = preLine[j-1] + preLine[j];
-                }
-            }
-            a.append(tmp)
-        }
-        return a[rowIndex];
+        return res
     }
     
     

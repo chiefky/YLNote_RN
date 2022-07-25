@@ -11,17 +11,5 @@
             "fileName":""
         }
         
-    },{
-        "q_title":"方法2：双指针",
-        "showArticle": false,
-        "showNextPage": false,
-        "function":"testMethod_x",
-        "demo": {},
-        "article": {
-            "artTitle":"",
-            "fileName":""
-        }
-        
-    },
-    
+    }
 ]   

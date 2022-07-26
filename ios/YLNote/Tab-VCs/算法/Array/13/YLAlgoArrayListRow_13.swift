@@ -32,7 +32,7 @@ class YLAlgoArrayListRow_13: YLBaseTableViewController {
     }
     
     @objc func testMethod_1() {
-        let array = [-4]
+        let array = [-4,-1,0,3,10]
         let res = method_1(array);
         print("🍎结果：\(res)")
     }
@@ -43,15 +43,14 @@ class YLAlgoArrayListRow_13: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
 
-
+    
+    /// 时间复杂度：O(n），空间复杂度：O(1)
+    /// - Parameter nums: <#nums description#>
+    /// - Returns: <#description#>
     func method_1(_ nums: [Int]) -> [Int] {
-        guard !nums.isEmpty else {
-            return nums
-        }
-        
         var res:[Int] = []
         var left = 0,right = nums.count-1;
-        while left < right  {
+        while left <= right  {
             if nums[left]*nums[left] >= nums[right]*nums[right] {
                 res.insert(nums[left] * nums[left], at: 0)
                 left += 1;
@@ -59,8 +58,8 @@ class YLAlgoArrayListRow_13: YLBaseTableViewController {
                 res.insert(nums[right] * nums[right], at: 0)
                 right -= 1;
             }
+            print("🌹: \(res)")
         }
-        res.insert(nums[left] * nums[left], at: 0)
         return res
     }
     

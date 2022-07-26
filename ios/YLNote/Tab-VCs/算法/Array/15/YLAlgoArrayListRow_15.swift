@@ -31,33 +31,22 @@ class YLAlgoArrayListRow_15: YLBaseTableViewController {
     }
     
     @objc func testMethod_1() {
-        var array = [1,0,1]
+        var array = [0,1,0,3,12]
          method_1(&array);
         print("🍎结果：\(array)")
     }
-    
     func method_1(_ nums: inout [Int]) {
-        guard !nums.isEmpty else {
-            return
-        }
-        var fast =  0 ,slow = 0
-        while fast < nums.count {
-            if nums[slow] != 0 {
-                slow += 1;
-            } else {
-                if nums[fast] != 0 {
-                    nums.swapAt(slow, fast)
-                    slow += 1
-                }
+         var slow = 0
+         for fast in 0..<nums.count {
+             if nums[fast] != 0 {
+                 nums.swapAt(fast, slow)
+                 slow += 1
+             }
+             print("🌸：\(nums)")
+         }
+     }
+    
 
-            }
-            print("🌸：\(nums)")
-            fast += 1
-        }
-    }
-    
-    
-    
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_15"

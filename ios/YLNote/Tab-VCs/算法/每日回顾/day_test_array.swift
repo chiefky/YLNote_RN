@@ -257,15 +257,30 @@ func array_qes_12_1(_ nums:[Int]) -> Int {
     return res
 }
 
+//MARK:13
 func array_res_13(_ nums:[Int]) -> [Int] {
     var res:[Int] = []
-    var i = 0
-    while i < nums.count {
-        
-        i += 1
+    var left = 0, right = nums.count-1;
+    while left <= right {
+        while left < right,abs(nums[right]) >= abs(nums[left]) {
+            res.append(nums[right]*nums[right])
+            right -= 1
+        }
+        res.append(nums[left]*nums[left])
+        left += 1
     }
-    
-    
+    return res.reversed()
+}
+
+//MARK:15
+func array_res_15(_ nums: inout [Int]) {
+    var slow = 0
+    for fast in 0..<nums.count {
+        if nums[fast] != 0 {
+            nums.swapAt(fast, slow)
+            slow += 1
+        }
+    }
 }
 
 func testArray()  {

@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：双指针",
+        "q_title":"方法1：快慢指针",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -11,6 +11,5 @@
             "fileName":""
         }
         
-    },
-    
+    }
 ]   

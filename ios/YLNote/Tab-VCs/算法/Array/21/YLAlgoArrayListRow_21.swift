@@ -54,9 +54,9 @@ class YLAlgoArrayListRow_21: YLBaseTableViewController {
             if l < r {
                 res.swapAt(l, r)
                 print("🌹(\(l),\(r))交换位置：\(res)")
+                l += 1
+                r -= 1
             }
-            l += 1
-            r -= 1
         }
         return res
     }

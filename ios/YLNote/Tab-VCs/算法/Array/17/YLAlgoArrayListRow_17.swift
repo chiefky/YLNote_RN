@@ -43,6 +43,9 @@ class YLAlgoArrayListRow_17: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
     
+    /// 时间复杂度O(n(n+1)/2)，空间复杂度：O(n）(忽略快速排序的时间、空间复杂度)
+    /// - Parameter nums: <#nums description#>
+    /// - Returns: <#description#>
     func method_three_pointer(_ nums: [Int]) -> [[Int]] {
         guard nums.count > 2 else {
             return []

@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法：使用额外的数组",
+        "q_title":"方法1：使用额外的数组",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -11,5 +11,18 @@
             "fileName":""
         }
         
+    },
+  {
+        "q_title":"方法2：数组翻转",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod_2",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
     }
+
 ]   

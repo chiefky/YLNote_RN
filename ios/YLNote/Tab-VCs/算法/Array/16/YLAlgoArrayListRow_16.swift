@@ -41,7 +41,9 @@ class YLAlgoArrayListRow_16: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
     
-
+    /// 时间复杂度O(n)，空间复杂度：O(n)
+    /// - Parameter nums: nums
+    /// - Returns: x
     func method_map(_ nums: [Int]) -> Int {
         guard !nums.isEmpty else {
             return -1
@@ -62,6 +64,9 @@ class YLAlgoArrayListRow_16: YLBaseTableViewController {
         return res
     }
     
+    /// 时间复杂度O(n)，空间复杂度：O(1)
+    /// - Parameter nums: nums
+    /// - Returns: x
     func method_vote(_ nums:[Int]) -> Int {
         var vote = 0
         var vote_sum = 0

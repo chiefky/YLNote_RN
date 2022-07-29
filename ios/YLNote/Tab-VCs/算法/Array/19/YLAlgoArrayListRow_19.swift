@@ -51,7 +51,6 @@ class YLAlgoArrayListRow_19: YLBaseTableViewController {
             return numbers.last ?? -1
         }
         var l = 0,r = numbers.count - 1
-        
         while l < r {
             let mid = l + (r - l)/2
             if numbers[mid] > numbers[r] {

@@ -257,8 +257,8 @@ func array_qes_12_1(_ nums:[Int]) -> Int {
     return res
 }
 
-//MARK:13
-func array_res_13(_ nums:[Int]) -> [Int] {
+//MARK: 13
+func array_qes_13(_ nums:[Int]) -> [Int] {
     var res:[Int] = []
     var left = 0, right = nums.count-1;
     while left <= right {
@@ -272,8 +272,8 @@ func array_res_13(_ nums:[Int]) -> [Int] {
     return res.reversed()
 }
 
-//MARK:15
-func array_res_15(_ nums: inout [Int]) {
+//MARK: 15
+func array_qes_15(_ nums: inout [Int]) {
     var slow = 0
     for fast in 0..<nums.count {
         if nums[fast] != 0 {
@@ -283,10 +283,228 @@ func array_res_15(_ nums: inout [Int]) {
     }
 }
 
+//MARK: 16
+func array_qes_16(_ nums: inout [Int]) -> Int {
+    let tmp = nums.sorted()
+    return tmp[(nums.count-1)/2]
+}
+
+//MARK: 17
+func array_qes_17(_ nums: [Int]) -> [[Int]] {
+    guard nums.count > 2 else { return [] }
+    let sorted = nums.sorted()
+    if sorted.first! > 0 || sorted.last! < 0 {
+        return []
+    }
+    var res:[[Int]] = []
+    for first in 0..<sorted.count {
+        if first > 0,sorted[first] == sorted[first-1] {
+            continue
+        }
+        var second = first + 1,third = sorted.count - 1
+        while second < third {
+            let last = 0 - sorted[first] - sorted[second]
+//            print("🌹：\([sorted[first],sorted[second],sorted[third]])：\(last == sorted[third])")
+            if sorted[third] == last {
+                res.append([sorted[first],sorted[second],sorted[third]])
+                while second < third, sorted[third] == sorted[third-1] {
+                    third -= 1
+                }
+                while second < third, sorted[second] == sorted[second+1] {
+                        second += 1
+                }
+                
+                third -= 1
+                second += 1
+            } else if last < sorted[third] {
+                third -= 1
+            } else {
+                second += 1
+            }
+        }
+    }
+    
+    return res
+    
+}
+
+//MARK: 18
+func array_qes_18(_ matrix: [[Int]], _ target:Int) -> Bool {
+    guard let fisrtline = matrix.first, !fisrtline.isEmpty else { return false }
+    let n = matrix.count, m = fisrtline.count
+    var i = 0,j = m-1
+    while i < n,j >= 0 {
+//        print("🌹：\(i),\(j):\(matrix[i][j])")
+        if matrix[i][j] == target {
+            return true
+        } else if matrix[i][j] > target {
+            j -= 1
+        } else {
+            i += 1
+        }
+    }
+    return false
+}
+
+//MARK: 14
+func array_qes_14(_ nums: inout [Int], _ k:Int)  {
+    let n = nums.count
+    guard n > 0 else { return  }
+    let k = k%n;
+    reverseArray(&nums, 0, n-1)
+    reverseArray(&nums, 0, k-1)
+    reverseArray(&nums, k, n-1)
+}
+
+func reverseArray(_ nums: inout [Int], _ start: Int,_ end: Int) {
+    var l = start,r = end
+    while l < r {
+        nums.swapAt(l, r)
+        l += 1
+        r -= 1
+    }
+    print("🌹：\(nums)")
+}
+
+//MARK: 19
+func array_qes_19(_ nums: [Int]) -> Int {
+    if nums.isEmpty {
+        return -1
+    }
+    var l = 0,r = nums.count-1
+    while l < r {
+        let mid = l + (r-l)/2
+        if nums[mid] > nums[r] {
+            l = mid + 1
+        } else  if nums[mid] < nums[r] {
+            r = mid
+        } else {
+            r -= 1
+        }
+    }
+    return nums[r]
+}
+
+//MARK: 20
+var result:[Int] = []
+func array_qes_20(_ n:Int)  {
+    var chars = [String](repeating: "0", count: n)
+    dfs(&chars, 0, n)
+}
+
+func dfs(_ chars: inout [String],_ index: Int,_ n:Int) {
+    if index == n {
+        let str = chars.joined(separator: "")
+        if let num =  Int(str),num != 0 {
+            result.append(num)
+        }
+        return
+    }
+    for i in ["0","1","2","3","4","5","6","7","8","9"] {
+        chars[index] = i
+        dfs(&chars, index+1, n)
+    }
+}
+
+//MARK: 21
+func array_qes_21(_ nums: [Int]) -> [Int] {
+    var nums = nums
+    var l = 0,r = nums.count - 1
+    while l < r {
+        if l < r, nums[r] % 2 == 0 {
+            r -= 1
+        }
+        if l < r, nums[l] % 2 == 1 {
+            l += 1
+        }
+        if l < r {
+            nums.swapAt(l, r)
+            l += 1
+            r -= 1
+        }
+    }
+    return nums
+}
+
+//MARK: 22
+func array_qes_22(_ nums: [[Int]]) -> [Int] {
+    guard let firstline = nums.first,firstline.count > 0 else { return [] }
+    let m = nums.count, n = firstline.count
+    var top = 0,left = 0 ,bottom = m - 1,right = n - 1
+    var res:[Int] = []
+    while true {
+        // top: 左->右,修改上限
+        for i in left...right {
+            res.append(nums[top][i])
+        }
+        if top + 1 > bottom { break }
+        top += 1
+        
+        // right: 上->下，修改右边界
+        for i in top...bottom {
+            res.append(nums[i][right])
+        }
+        if right-1 < left { break }
+        right -= 1
+
+        // bottom: 右->左，修改下限
+        for i in (left...right).reversed() {
+            res.append(nums[bottom][i])
+        }
+        if bottom-1 < top { break }
+        bottom -= 1
+
+        // left: 下->上，修改左边界
+        for i in (top...bottom).reversed() {
+            res.append(nums[i][left])
+        }
+        if left+1 > right { break }
+        left += 1
+    }
+    return res
+}
+
+//MARK: 22
+func array_qes_23(_ nums: [Int],_ k: Int) -> [Int] {
+    guard nums.count > k else {
+        return nums
+    }
+    var arr = nums
+    print("🌲：\(nums)")
+    quick_sort(&arr, 0, nums.count-1, k)
+    return Array(arr[0..<k])
+}
+
+/// 快速排序优化
+/// - Parameters:
+///   - nums: 待排序数组
+///   - start: 待排序区间 起点
+///   - end: 待排序区间 终点
+///   - k: topK 中的k的取值
+func quick_sort(_ nums: inout [Int], _ start: Int,_ end: Int,_ k: Int )  {
+    guard start < end else { return  }
+    var l = start, r = end
+    while l < r {
+        while l < r, nums[r] >= nums[start] {
+            r -= 1
+        }
+        while l < r, nums[l] <= nums[start] {
+            l += 1
+        }
+        nums.swapAt(l, r)
+    }
+    nums.swapAt(start, l)
+    if l == k-1 {
+         return
+    } else if l > k-1 {
+        quick_sort(&nums, start, l-1, k)
+    } else {
+        quick_sort(&nums, l+1, end, k)
+    }
+}
+
 func testArray()  {
-//    var nums1 = [0];
-    let nums2 = [2,2,1];
-    //[0,0,1,1,1,1,9,2,3,3,4]//[0,0,1,1,1,2,2,3,3,4]
-    let res = array_qes_12_0(nums2)
+    let nums2 = [0,1,1,2,4,4,1,3,3,2];
+    let res = array_qes_23(nums2, 6)
     print("👨‍👩‍👧‍👦结果：\(res)")
 }

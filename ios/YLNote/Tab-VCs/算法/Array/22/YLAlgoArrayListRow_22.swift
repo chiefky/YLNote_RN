@@ -43,43 +43,44 @@ class YLAlgoArrayListRow_22: YLBaseTableViewController {
     /// 时间复杂度 O(m*n）
     /// 空间复杂度O(1)
     ///
-    func spiralOrder(_ matrix: [[Int]]) -> [Int] {
-        guard matrix.count > 1, let first = matrix.first else { return matrix.first ?? [] }
-        let rows = matrix.count ,columns = first.count
+    func spiralOrder(_ nums: [[Int]]) -> [Int] {
+        guard let firstline = nums.first,firstline.count > 0 else { return [] }
+        let m = nums.count, n = firstline.count
+        var top = 0,left = 0 ,bottom = m - 1,right = n - 1
         var res:[Int] = []
-        var top = 0, bottom = rows-1, left = 0 ,right = columns-1
         while true {
-            // 从左到右
+            // top: 左->右,修改上限
             for i in left...right {
-                res.append(matrix[top][i])
+                res.append(nums[top][i])
             }
-            if top+1 > bottom { break }
-            top += 1         // 每条路线走完之后，要修改下一条路线的临界点
+            if top + 1 > bottom { break }
+            top += 1
             
-            // 从上到下
+            // right: 上->下，修改右边界
             for i in top...bottom {
-                res.append(matrix[i][right])
+                res.append(nums[i][right])
             }
             if right-1 < left { break }
             right -= 1
-            
-            // 从右到左
+
+            // bottom: 右->左，修改下限
             for i in (left...right).reversed() {
-                res.append(matrix[bottom][i])
+                res.append(nums[bottom][i])
             }
-            if bottom-1 < top  { break }
+            if bottom-1 < top { break }
             bottom -= 1
 
-            // 从下到上
+            // left: 下->上，修改左边界
             for i in (top...bottom).reversed() {
-                res.append(matrix[i][left])
+                res.append(nums[i][left])
             }
             if left+1 > right { break }
             left += 1
+            
         }
-
         return res
     }
+    
     
    
 

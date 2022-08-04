@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：先排序后截取（系统排序）",
+        "q_title":"方法1：一次遍历",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -13,7 +13,7 @@
         
     },
   {
-        "q_title":"方法2：快速排序后截取（自己写快速排序）",
+        "q_title":"方法2：二分查找",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_2",
@@ -24,18 +24,4 @@
         }
         
     },
-  {
-        "q_title":"方法3：快速排序后截取（优化快速排序）",
-        "showArticle": false,
-        "showNextPage": false,
-        "function":"testMethod_3",
-        "demo": {},
-        "article": {
-            "artTitle":"",
-            "fileName":""
-        }
-        
-    },
-
-
 ]   

@@ -1,5 +1,42 @@
 [
     {
+        "q_id":"algo_array-26",
+        "q_title":"  ",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_26",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
+    "q_id":"algo_array-25",
+    "q_title":"在排序数组中查找数字 I的个数",
+    "q_subtitle":"",
+    "showNextPage": true,
+    "showArticle":false,
+    "function":"",
+    "demo": {
+        "className":"YLAlgoArrayListRow_25",
+        "style": 1,
+        "useXib": 0
+    },
+},
+    {
+        "q_id":"algo_array-24",
+        "q_title":" 0～n-1中缺失的数字",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_24",
+            "style": 1,
+            "useXib": 0
+        },
+    },{
         "q_id":"algo_array-23",
         "q_title":"最小的k个数",
         "q_subtitle":"",

@@ -63,7 +63,7 @@ class YLAlgoArrayListRow_23: YLBaseTableViewController {
     
     var quick_sort_x = 0 // 分组次数
     /// 自己写排序算法（不加优化）
-    /// 时间复杂度 O(NlogN)
+    /// 时间复杂度 O(NlogN),演算过程：N*（logN）；（logN) 是递归的次数
     /// - Parameters:
     ///   - arr: arr
     ///   - k: k 元素个数
@@ -97,8 +97,8 @@ class YLAlgoArrayListRow_23: YLBaseTableViewController {
     }
     
     var quick_sort__optimize_x = 0 // 分组次数
-    /// 自己写排序算法（不加优化）
-    /// 时间复杂度 O(logN)
+    /// 自己写排序算法（加优化）
+    /// 时间复杂度 O(N),演算过程：N+N/2+N/4+N/8+.....
     /// - Parameters:
     ///   - arr: arr
     ///   - k: k 元素个数

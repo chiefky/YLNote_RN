@@ -1,26 +1,52 @@
 [
     {
-        "q_id":"algo_linkedlist-0",
-        "q_title":"从尾到头打印链表",
+        "q_id":"algo_linkedlist-6",
+        "q_title":"删除链表的节点",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedlistListRow",
+            "className":"YLAlgoLinkedlistListRow_6",
             "style": 1,
             "useXib": 0
         },
     },
     {
-        "q_id":"algo_linkedlist-1",
-        "q_title":"反转链表",
+        "q_id":"algo_linkedlist-5",
+        "q_title":"两数相加",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedlistListRow_1",
+            "className":"YLAlgoLinkedlistListRow_5",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_linkedlist-4",
+        "q_title":"合并两个有序链表",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_4",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_linkedlist-3",
+        "q_title":"删除链表的倒数第 N 个结点 （双指针）",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_3",
             "style": 1,
             "useXib": 0
         },
@@ -39,42 +65,31 @@
         },
     },
     {
-        "q_id":"algo_linkedlist-3",
-        "q_title":"删除链表的倒数第 N 个结点 （双指针）",
+        "q_id":"algo_linkedlist-1",
+        "q_title":"反转链表",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle": false,
         "function":"",
         "demo": {
-            "className":"YLAlgoLinkedlistListRow_3",
-            "style": 1,
-            "useXib": 0
-        },
-    },    {
-        "q_id":"algo_linkedlist-4",
-        "q_title":"合并两个有序链表",
-        "q_subtitle":"",
-        "showNextPage": true,
-        "showArticle": false,
-        "function":"",
-        "demo": {
-            "className":"YLAlgoLinkedlistListRow_4",
-            "style": 1,
-            "useXib": 0
-        },
-    },  {
-        "q_id":"algo_linkedlist-5",
-        "q_title":"两数相加",
-        "q_subtitle":"",
-        "showNextPage": true,
-        "showArticle": false,
-        "function":"",
-        "demo": {
-            "className":"YLAlgoLinkedlistListRow_5",
+            "className":"YLAlgoLinkedlistListRow_1",
             "style": 1,
             "useXib": 0
         },
     },
-
-
+    {
+        "q_id":"algo_linkedlist-0",
+        "q_title":"从尾到头打印链表",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    
+    
 ]

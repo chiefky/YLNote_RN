@@ -29,7 +29,7 @@
         "group_title":"数组",
         "questions": [
             {
-                "q_id":"algo_1_0",
+                "q_id":"algo_array_0",
                 "q_title":"测试",
                 "q_subtitle":"",
                 "showNextPage": false,
@@ -42,7 +42,7 @@
                 }
             },
             {
-                "q_id":"algo_1_1",
+                "q_id":"algo_array_1",
                 "q_title":"all questions",
                 "q_subtitle":"",
                 "showNextPage": true,
@@ -65,9 +65,21 @@
         "group_id":"algo_linklist",
         "unfoldStatus":false,
         "group_title":"链表",
-        "questions": [
+        "questions": [            {
+            "q_id":"algo_linklist_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"linklist_test",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
             {
-                "q_id":"algo_1_0",
+                "q_id":"algo_linklist_1",
                 "q_title":"all questions",
                 "q_subtitle":"",
                 "showNextPage": true,

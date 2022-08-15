@@ -16,11 +16,11 @@
     },
     {
         "q_id":"block_test-1",
-        "q_title":"2",
+        "q_title":"block作为系统函数参数,arc下是否会自动copy",
         "q_subtitle":"",
-        "showNextPage": true,
+        "showNextPage": false,
         "showArticle":true,
-        "function":"",
+        "function":"testBlockCopy_as_apiPamater",
         "demo": {
             "className":"",
             "style": 0,
@@ -35,11 +35,11 @@
     },
     {
         "q_id":"block_test-2",
-        "q_title":"3",
+        "q_title":"block作为gcd函数参数,arc下是否会自动copy",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"",
+        "function":"testBlockCopy_as_gcdPamater",
         "article": {
             "art_id":"block_test",
             "art_url":"/content/Block/Block_test.md",
@@ -48,11 +48,11 @@
     },
     {
         "q_id":"block_test-3",
-        "q_title":"4",
+        "q_title":"block在修改NSMutableArray，需不需要添加__block",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"",
+        "function":"testBlock_change_muArray",
         "article": {
             "art_id":"block_test",
             "art_url":"/content/Block/Block_test.md",

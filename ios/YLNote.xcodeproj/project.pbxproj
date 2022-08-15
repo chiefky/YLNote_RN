@@ -432,6 +432,14 @@
 		54E5AEC728A9000100F18DCC /* Algo_bit_row_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AEC528A9000100F18DCC /* Algo_bit_row_5.json */; };
 		54E5AECB28A9CBBD00F18DCC /* Algo_array_row_27.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AEC928A9CBBC00F18DCC /* Algo_array_row_27.json */; };
 		54E5AECC28A9CBBD00F18DCC /* YLAlgoArrayListRow_27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AECA28A9CBBC00F18DCC /* YLAlgoArrayListRow_27.swift */; };
+		54E5AED028AA1CDE00F18DCC /* TmpNote.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AECE28AA1CDE00F18DCC /* TmpNote.json */; };
+		54E5AED128AA1CDE00F18DCC /* YLNoteTmpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AECF28AA1CDE00F18DCC /* YLNoteTmpViewController.swift */; };
+		54E5AED828AA347200F18DCC /* timer_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AED528AA347100F18DCC /* timer_test.json */; };
+		54E5AED928AA347200F18DCC /* YLTimerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AED728AA347100F18DCC /* YLTimerTestViewController.m */; };
+		54E5AEDD28AA350000F18DCC /* timer_recycle.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AEDA28AA350000F18DCC /* timer_recycle.json */; };
+		54E5AEDE28AA350000F18DCC /* YLTimerRetainCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEDC28AA350000F18DCC /* YLTimerRetainCycleViewController.m */; };
+		54E5AEE228AA4E8000F18DCC /* YLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEE128AA4E8000F18DCC /* YLTimer.m */; };
+		54E5AEE528AA7D0E00F18DCC /* NSTimer+SafeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEE428AA7D0E00F18DCC /* NSTimer+SafeBlock.m */; };
 		54E6E41627BD77770019E03C /* YLAlgoArrayListRow_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6E41527BD77770019E03C /* YLAlgoArrayListRow_1.swift */; };
 		54E6E41E27BD779A0019E03C /* YLAlgoOtherViewControllerRow1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6E41D27BD779A0019E03C /* YLAlgoOtherViewControllerRow1.swift */; };
 		54E6E42327BD78170019E03C /* Algo_other_row_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E6E42227BD78170019E03C /* Algo_other_row_1.json */; };
@@ -1099,6 +1107,18 @@
 		54E5AEC528A9000100F18DCC /* Algo_bit_row_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_bit_row_5.json; sourceTree = "<group>"; };
 		54E5AEC928A9CBBC00F18DCC /* Algo_array_row_27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_27.json; sourceTree = "<group>"; };
 		54E5AECA28A9CBBC00F18DCC /* YLAlgoArrayListRow_27.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_27.swift; sourceTree = "<group>"; };
+		54E5AECE28AA1CDE00F18DCC /* TmpNote.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TmpNote.json; sourceTree = "<group>"; };
+		54E5AECF28AA1CDE00F18DCC /* YLNoteTmpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLNoteTmpViewController.swift; sourceTree = "<group>"; };
+		54E5AED528AA347100F18DCC /* timer_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timer_test.json; sourceTree = "<group>"; };
+		54E5AED628AA347100F18DCC /* YLTimerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTimerTestViewController.h; sourceTree = "<group>"; };
+		54E5AED728AA347100F18DCC /* YLTimerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTimerTestViewController.m; sourceTree = "<group>"; };
+		54E5AEDA28AA350000F18DCC /* timer_recycle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timer_recycle.json; sourceTree = "<group>"; };
+		54E5AEDB28AA350000F18DCC /* YLTimerRetainCycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTimerRetainCycleViewController.h; sourceTree = "<group>"; };
+		54E5AEDC28AA350000F18DCC /* YLTimerRetainCycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTimerRetainCycleViewController.m; sourceTree = "<group>"; };
+		54E5AEE028AA4E8000F18DCC /* YLTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLTimer.h; sourceTree = "<group>"; };
+		54E5AEE128AA4E8000F18DCC /* YLTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTimer.m; sourceTree = "<group>"; };
+		54E5AEE328AA7D0E00F18DCC /* NSTimer+SafeBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+SafeBlock.h"; sourceTree = "<group>"; };
+		54E5AEE428AA7D0E00F18DCC /* NSTimer+SafeBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+SafeBlock.m"; sourceTree = "<group>"; };
 		54E6E41527BD77770019E03C /* YLAlgoArrayListRow_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_1.swift; sourceTree = "<group>"; };
 		54E6E41D27BD779A0019E03C /* YLAlgoOtherViewControllerRow1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoOtherViewControllerRow1.swift; sourceTree = "<group>"; };
 		54E6E42227BD78170019E03C /* Algo_other_row_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_other_row_1.json; sourceTree = "<group>"; };
@@ -1375,6 +1395,7 @@
 		5426D71E2885D5C900298D14 /* Tab-VCs */ = {
 			isa = PBXGroup;
 			children = (
+				54E5AECD28AA1C9500F18DCC /* 最最新 */,
 				5426D7222885D8FF00298D14 /* Flutter */,
 				541A9C1F28390CF400C839A2 /* ReactNative */,
 				548353DB27E0755C001D3726 /* Swift */,
@@ -2892,7 +2913,6 @@
 				5434B20527F61A3A00625D07 /* Memory */,
 				547356AA27E648070096A008 /* Optimize */,
 				548353D627E06E3E001D3726 /* Runtime */,
-				54DCC5C927CF5309009F289D /* Block */,
 				54E97AA027B18282001CA669 /* Runloop */,
 				546368B927BBAED8003CF22F /* 多线程 */,
 				54C05D88268F0B07006FFAAE /* 7.2 */,
@@ -3479,6 +3499,58 @@
 			path = 27;
 			sourceTree = "<group>";
 		};
+		54E5AECD28AA1C9500F18DCC /* 最最新 */ = {
+			isa = PBXGroup;
+			children = (
+				54E5AED228AA32D800F18DCC /* NSTimer */,
+				54DCC5C927CF5309009F289D /* Block */,
+				54E5AECE28AA1CDE00F18DCC /* TmpNote.json */,
+				54E5AECF28AA1CDE00F18DCC /* YLNoteTmpViewController.swift */,
+			);
+			path = "最最新";
+			sourceTree = "<group>";
+		};
+		54E5AED228AA32D800F18DCC /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				54E5AEDF28AA4E6300F18DCC /* YLTimer */,
+				54E5AED428AA342A00F18DCC /* Recyle */,
+				54E5AED328AA341B00F18DCC /* Test */,
+			);
+			path = NSTimer;
+			sourceTree = "<group>";
+		};
+		54E5AED328AA341B00F18DCC /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				54E5AED528AA347100F18DCC /* timer_test.json */,
+				54E5AED628AA347100F18DCC /* YLTimerTestViewController.h */,
+				54E5AED728AA347100F18DCC /* YLTimerTestViewController.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		54E5AED428AA342A00F18DCC /* Recyle */ = {
+			isa = PBXGroup;
+			children = (
+				54E5AEDA28AA350000F18DCC /* timer_recycle.json */,
+				54E5AEDB28AA350000F18DCC /* YLTimerRetainCycleViewController.h */,
+				54E5AEDC28AA350000F18DCC /* YLTimerRetainCycleViewController.m */,
+			);
+			path = Recyle;
+			sourceTree = "<group>";
+		};
+		54E5AEDF28AA4E6300F18DCC /* YLTimer */ = {
+			isa = PBXGroup;
+			children = (
+				54E5AEE028AA4E8000F18DCC /* YLTimer.h */,
+				54E5AEE128AA4E8000F18DCC /* YLTimer.m */,
+				54E5AEE328AA7D0E00F18DCC /* NSTimer+SafeBlock.h */,
+				54E5AEE428AA7D0E00F18DCC /* NSTimer+SafeBlock.m */,
+			);
+			path = YLTimer;
+			sourceTree = "<group>";
+		};
 		54E6E42727BD78F50019E03C /* BinaryTree */ = {
 			isa = PBXGroup;
 			children = (
@@ -3929,6 +4001,7 @@
 				542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */,
 				54DB9B79284415E000539AC5 /* Algo_array_row_5.json in Resources */,
 				54DB9B8028441FAC00539AC5 /* Algo_array_row_6.json in Resources */,
+				54E5AED828AA347200F18DCC /* timer_test.json in Resources */,
 				548CB0732869B99A00F73E71 /* Algo_bit_row_3.json in Resources */,
 				54B4404A27CAA09A004FDA38 /* thread_gcd_block.json in Resources */,
 				54E5AEBD28A505A500F18DCC /* Algo_stack_row_0.json in Resources */,
@@ -3939,6 +4012,7 @@
 				54DCC5ED27D0C930009F289D /* block_types.json in Resources */,
 				547356D927E64B720096A008 /* optimize_start.json in Resources */,
 				54C6F3AD27BC1DF900756275 /* thread_test.json in Resources */,
+				54E5AEDD28AA350000F18DCC /* timer_recycle.json in Resources */,
 				548CAF16285F4C7700F73E71 /* Algo_string_row_3.json in Resources */,
 				5434B22E27F61D7E00625D07 /* memory_align.json in Resources */,
 				54BB2646260379E9001A98B4 /* WKWebViewJSTest.html in Resources */,
@@ -4032,6 +4106,7 @@
 				54E5AEB328A4F17B00F18DCC /* Algo_bit_row_4.json in Resources */,
 				548353E027E075C1001D3726 /* LateSwift.json in Resources */,
 				54ABCB542889B188006C65D6 /* Algo_array_row_21.json in Resources */,
+				54E5AED028AA1CDE00F18DCC /* TmpNote.json in Resources */,
 				54E97AE027B3FF92001CA669 /* runloop_alive.json in Resources */,
 				54ABCB5A2889B8A2006C65D6 /* Algo_array_row_22.json in Resources */,
 				5434B23027F61D7E00625D07 /* memory_struct.json in Resources */,
@@ -4186,6 +4261,7 @@
 				548A0CF42612210800BC80D9 /* YLDemoNotificationViewController.swift in Sources */,
 				54A83D3D27C235EE001E6CAD /* YLThreadNSOperationViewController.m in Sources */,
 				54E97ADE27B3FF92001CA669 /* YLRunloopKeepThreadAliveVController.m in Sources */,
+				54E5AEE528AA7D0E00F18DCC /* NSTimer+SafeBlock.m in Sources */,
 				54ABCB4B288863C7006C65D6 /* YLAlgoTreeListRow_6.swift in Sources */,
 				54BB264326035E84001A98B4 /* YLSwiftJavaScriptTools.swift in Sources */,
 				54A35D5024CED6FE0076DFB6 /* YLRctNatViewController.m in Sources */,
@@ -4254,11 +4330,13 @@
 				5435818125AD6FF800452D76 /* YLClassificationLevelSuperOrder.m in Sources */,
 				54D19F922855284F0016468E /* YLAlgoStringListController.swift in Sources */,
 				5426D7242885D93300298D14 /* YLFlutterViewController.swift in Sources */,
+				54E5AEDE28AA350000F18DCC /* YLTimerRetainCycleViewController.m in Sources */,
 				54ABCB452887C5A1006C65D6 /* YLAlgoArrayListRow_19.swift in Sources */,
 				54B4404927CAA09A004FDA38 /* YLThreadGCDDispatchQueueController.m in Sources */,
 				54C4B52D261C7E99004BF897 /* YLDemoBlockViewController.m in Sources */,
 				54FA55E02609CC3900AE0A83 /* YLDemoDynamicViewController.m in Sources */,
 				54A35D4524CED6B20076DFB6 /* YLOCSwiftViewController.m in Sources */,
+				54E5AED928AA347200F18DCC /* YLTimerTestViewController.m in Sources */,
 				54DCC56E27CD4305009F289D /* binary_search.swift in Sources */,
 				54A6517C24D4305C005FB5AD /* YLUserViewController.m in Sources */,
 				548CAEFF285F328E00F73E71 /* day_test_linklist.swift in Sources */,
@@ -4434,8 +4512,10 @@
 				54C4B514261495AD004BF897 /* YLKeyChainManager.swift in Sources */,
 				54E97A8327B10884001CA669 /* DoublePointer.swift in Sources */,
 				5435812F25A4DC8C00452D76 /* YLMessageNoteManager.m in Sources */,
+				54E5AEE228AA4E8000F18DCC /* YLTimer.m in Sources */,
 				5435818425AD704100452D76 /* YLClassificationLevelSuperFamily.m in Sources */,
 				54E97A8E27B10884001CA669 /* test.swift in Sources */,
+				54E5AED128AA1CDE00F18DCC /* YLNoteTmpViewController.swift in Sources */,
 				54E5AEBC28A505A500F18DCC /* YLAlgoStackListRow_0.swift in Sources */,
 				5452D5802605E0CB0007FDDA /* TestCookieViewController.m in Sources */,
 				545F873025B5A4D9008BE6E2 /* YLIterator.m in Sources */,

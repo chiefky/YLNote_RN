@@ -1,0 +1,85 @@
+[
+    {
+        "q_id":"timer_recycle-0",
+        "q_title":"timer 初始化",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testCreateTimer",
+        "article": {
+            "art_id":"timer_recycle",
+            "art_url":"/content/NSTimer/NSTimer_recycle.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"timer_recycle-99",
+        "q_title":"push下一页",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testPushNextPage_timer",
+        "article": {
+            "art_id":"timer_recycle",
+            "art_url":"/content/NSTimer/NSTimer_recycle.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"timer_recycle-1",
+        "q_title":"自定义timer",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testResolveTimerRecycle_custom",
+        "article": {
+            "art_id":"timer_recycle",
+            "art_url":"/content/NSTimer/NSTimer_recycle.md",
+            "art_title":"",
+        }
+
+    },
+    {
+        "q_id":"timer_recycle-2",
+        "q_title":"苹果API接口解决方案（iOS10以上使用）",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testResolveTimerRecycle_latest_api",
+        "article": {
+            "art_id":"timer_recycle",
+            "art_url":"/content/NSTimer/NSTimer_recycle.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"timer_recycle-3",
+        "q_title":"借助block解决",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testResolveTimerRecycle_block",
+        "article": {
+            "art_id":"timer_recycle",
+            "art_url":"/content/NSTimer/NSTimer_recycle.md",
+            "art_title":"",
+        }
+
+    },
+    {
+        "q_id":"timer_recycle-4",
+        "q_title":"使用NSProxy解决",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testResolveTimerRecycle_proxy",
+        "article": {
+            "art_id":"timer_recycle",
+            "art_url":"/content/NSTimer/NSTimer_recycle.md",
+            "art_title":"",
+        }
+
+    }
+    
+]
+ 

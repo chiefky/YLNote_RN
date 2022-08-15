@@ -44,6 +44,10 @@ typedef void(^YLTypesBlock)(void);
         
     };
     NSLog(@"`weak` block类型：%@",object_getClass(self.weakBlock));
+    self.weakBlock = ^{
+        static_local_num = 102;
+    };
+    NSLog(@"`weak` block类型：%@",object_getClass(self.weakBlock));
 
     self.strongBlock = ^{
         
@@ -104,7 +108,11 @@ typedef void(^YLTypesBlock)(void);
  */
 - (void)testBlock_Malloc {
     NSString *name = @"Malloc_Block1";
-
+    YLTypesBlock blk = ^{
+        NSLog(@"使用局部变量: %@",name);
+    };
+    NSLog(@"block类型：%@",object_getClass(blk));
+    
     self.strongBlock = ^{
         NSLog(@"使用局部变量: %@",name);
     };

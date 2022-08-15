@@ -69,16 +69,20 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     YLRctNatViewController *reactVC = [[YLRctNatViewController alloc] init];
     reactVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ReactNative" image:[UIImage imageNamed:@"react"] tag:4];
     
-    YLFlutterViewController *flutterVC = [[YLFlutterViewController alloc] init];
-    flutterVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Flutter" image:[UIImage imageNamed:@"flutter"] tag:4];
+//    YLFlutterViewController *flutterVC = [[YLFlutterViewController alloc] init];
+//    flutterVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Flutter" image:[UIImage imageNamed:@"flutter"] tag:4];
+    
+    YLNoteTmpViewController *tmpNodeVC = [[YLNoteTmpViewController alloc] init];
+    tmpNodeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"最新" image:[UIImage imageNamed:@"note"] tag:4];
+    UINavigationController *naviTmpNote = [[UINavigationController alloc] initWithRootViewController:tmpNodeVC];
 
 //    YLNativeNewsViewController *nativeVC = [[YLNativeNewsViewController alloc] initWithNibName:@"YLNativeNewsViewController" bundle:nil];
 //    nativeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Native" image:[UIImage imageNamed:@"apple"] tag:5];
-    UINavigationController *naviFlutter = [[UINavigationController alloc] initWithRootViewController:flutterVC];
+//    UINavigationController *naviFlutter = [[UINavigationController alloc] initWithRootViewController:flutterVC];
     
     UITabBarController *tab = [[UITabBarController alloc] init];
     tab.tabBar.translucent = NO;
-    tab.viewControllers = @[naviNote,naviAlgori,naviSwift,reactVC,naviFlutter];
+    tab.viewControllers = @[naviNote,naviAlgori,naviSwift,reactVC,naviTmpNote];
     self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];
     

@@ -156,7 +156,7 @@
         "group_title":"位运算",
         "questions": [
             {
-                "q_id":"algo_1_0",
+                "q_id":"algo_bit_0",
                 "q_title":"all questions",
                 "q_subtitle":"",
                 "showNextPage": true,
@@ -175,9 +175,58 @@
             }
         ]
     },
-
     {
-        "group_id":"algo_sort",
+        "group_id":"algo_queue",
+        "unfoldStatus":false,
+        "group_title":"队列",
+        "questions": [
+            {
+                "q_id":"algo_queue_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoQueueListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_stack",
+        "unfoldStatus":false,
+        "group_title":"栈",
+        "questions": [
+            {
+                "q_id":"algo_stack_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoStackListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_primary",
         "unfoldStatus":false,
         "group_title":"基础算法",
         "questions": [

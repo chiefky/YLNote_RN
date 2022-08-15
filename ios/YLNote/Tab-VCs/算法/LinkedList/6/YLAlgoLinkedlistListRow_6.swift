@@ -37,7 +37,7 @@ class YLAlgoLinkedlistListRow_6: YLBaseTableViewController {
         // Do any additional setup after loading the view.
     }
     
-    //MARK: 删除链表的倒数第 N 个结点：
+    //MARK: 删除链表中值为val的结点：
     @objc func testMethod_1() {
         let linkList1 = LinkList()
         for i in [-3,5,-99] {

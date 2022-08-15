@@ -42,7 +42,7 @@ class YLAlgoQueueListRow_0: YLBaseTableViewController {
     
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_array_row_23"
+        return "Algo_queue_row_0"
     }
     
 }

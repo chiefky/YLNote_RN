@@ -305,12 +305,12 @@
                 "showArticle":true,
                 "function":"",
                 "demo": {
-                    "className":"YLBlockTestViewController",
+                    "className":"YLMemeoryTestViewController",
                     "style": 0,
                     "useXib": 0
                 },
                 "article": {
-                    "art_id":"1003_002",
+                    "art_id":"1004_002",
                     "art_url":"/content/Memory/Memory_test.md",
                 }
             },

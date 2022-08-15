@@ -1,7 +1,6 @@
-
 [
-  {
-        "q_title":"方法1：滑动窗口",
+    {
+        "q_title":"方法1: pre、current节点",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -12,4 +11,5 @@
         }
         
     },
-]   
+
+]

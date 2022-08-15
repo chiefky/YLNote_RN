@@ -40,11 +40,43 @@ func linklist_qes_1(_ head: ListNode?) -> ListNode? {
     return new_head
 }
     
-func testLinkList() {
-    let linkList = LinkList()
-    for i in 1...4 {
-        linkList.append(value: i)
+//MARK: 4
+func linklist_qes_4(_ head1:ListNode?,_ head2:ListNode?) -> ListNode? {
+    guard let head1 = head1 else {
+        return head2
     }
-    let res = linklist_qes_0(linkList.first)
+    
+    guard let head2 = head2 else {
+        return head1
+    }
+    
+    if head1.val <= head2.val {
+        head1.next = linklist_qes_4(head1.next, head2)
+        return head1
+    } else {
+        head2.next = linklist_qes_4(head1, head2.next)
+        return head2
+    }
+}
+
+//MARK: test
+func testLinkList() {
+    let linkList1 = LinkList()
+    for i in [1,2,4] {
+        linkList1.append(value: i)
+    }
+    
+    let linkList2 = LinkList()
+    for i in [1,3,4] {
+        linkList2.append(value: i)
+    }
+
+    var node = linklist_qes_4(linkList1.first, linkList2.first)
+    var res = ""
+    while node != nil {
+        res += String(node!.val)
+        res += node?.next == nil ? ".":"->"
+        node = node?.next
+    }
     print("⛓结果：\(res) ");
 }

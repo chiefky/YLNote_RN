@@ -244,6 +244,7 @@ func array_qes_9(_ numRows:Int) -> [[Int]] {
     
 }
 
+//MARK: 12
 func array_qes_12_0(_ nums:[Int]) -> Int {
     var res = 0
     for num in nums {
@@ -252,23 +253,68 @@ func array_qes_12_0(_ nums:[Int]) -> Int {
     return res
 }
 
-func array_qes_12_1(_ nums:[Int]) -> Int {
-    var res = 0
+func array_qes_12_1(_ nums:[Int]) -> [Int] {
+    guard nums.count >= 2 else {
+        return []
+    }
+    
+    var xor = 0
+    for num in nums {
+        xor ^= num
+    }
+    
+    var x = xor,k = 0
+    while x&1 == 0 {
+        x >>= 1
+        k += 1
+    }
+    var v1 = 0,v2 = 0
+    for num in nums {
+        let value = num>>k
+        if(value&1) == 1 {
+            v1 ^= num
+        } else {
+            v2 ^= num
+        }
+    }
+    return [v1,v2]
+}
+
+func array_qes_12_2(_ nums:[Int]) -> Int {
+    guard nums.count > 2 else {
+        return nums.first ?? -1
+    }
+    var i = 0,res=0
+    while i < 64 {
+        var sum = 0
+        for num in nums {
+            let tmp = num >> i
+            let bit_i = tmp & 1
+            sum += bit_i
+        }
+        
+        if sum%3 == 1 {
+            res = 1<<i | res
+        }
+        i += 1
+    }
     return res
 }
 
 //MARK: 13
 func array_qes_13(_ nums:[Int]) -> [Int] {
     var res:[Int] = []
-    var left = 0, right = nums.count-1;
-    while left <= right {
-        while left < right,abs(nums[right]) >= abs(nums[left]) {
+    var left = 0,right = nums.count - 1
+    while left < right {
+        if abs(nums[left]) > abs(nums[right]) {
+            res.append(nums[left]*nums[left])
+            left += 1
+        } else {
             res.append(nums[right]*nums[right])
             right -= 1
         }
-        res.append(nums[left]*nums[left])
-        left += 1
     }
+    res.append(nums[left]*nums[left])
     return res.reversed()
 }
 
@@ -504,7 +550,7 @@ func quick_sort(_ nums: inout [Int], _ start: Int,_ end: Int,_ k: Int )  {
 }
 
 func testArray()  {
-    let nums2 = [0,1,1,2,4,4,1,3,3,2];
-    let res = array_qes_23(nums2, 6)
+    let nums = [1,2,1,3,2,5];
+    let res = array_qes_12_1(nums)
     print("👨‍👩‍👧‍👦结果：\(res)")
 }

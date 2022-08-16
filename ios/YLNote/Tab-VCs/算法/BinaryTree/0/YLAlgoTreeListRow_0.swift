@@ -35,7 +35,7 @@ class YLAlgoTreeListRow_0: YLBaseTableViewController {
     }
     
     @objc func testMethod_2() {
-        let root = TreeNode.from([3,9,20,nil,nil,15,7], 0)
+        let root = TreeNode.from([1,2,3,4,nil,nil,5], 0)
         let res = deepth_BFS(root)
         print("🍎：\(res)")
     }
@@ -55,7 +55,8 @@ class YLAlgoTreeListRow_0: YLBaseTableViewController {
         var queue:[TreeNode] = [r]
         while !queue.isEmpty {
             var level_count = queue.count
-//            print("🌹\(res)：\(level_count)")
+            let level_nodes = transformToValues(queue)
+            print("🌹\(res)：\(level_count),\(level_nodes)")
             while level_count > 0 {
                 let node = queue.removeFirst()
                 if let left = node.left {
@@ -73,6 +74,10 @@ class YLAlgoTreeListRow_0: YLBaseTableViewController {
         return res
     }
     
+    func transformToValues(_ nodes:[TreeNode]) -> [Int] {
+        return nodes.map{$0.val};
+    }
+
     //    MARK: override
     override func fileName() -> String {
         return "Algo_tree_row_0"

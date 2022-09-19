@@ -13,10 +13,22 @@
         
     },
   {
-        "q_title":"方法1：迭代(适用超过2个的单一元素)",
+        "q_title":"方法2：异或运算+补码",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_2",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+  {
+        "q_title":"方法3：迭代(适用超过2个的单一元素)",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod_3",
         "demo": {},
         "article": {
             "artTitle":"",

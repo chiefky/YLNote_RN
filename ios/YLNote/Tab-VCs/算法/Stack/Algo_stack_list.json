@@ -1,4 +1,16 @@
-[
+[    {
+    "q_id":"algo_stack-1",
+    "q_title":"栈的压入、弹出序列",
+    "q_subtitle":"",
+    "showNextPage": true,
+    "showArticle":false,
+    "function":"",
+    "demo": {
+        "className":"YLAlgoStackListRow_1",
+        "style": 1,
+        "useXib": 0
+    },
+},
     {
         "q_id":"algo_stack-0",
         "q_title":"包含min函数的栈",

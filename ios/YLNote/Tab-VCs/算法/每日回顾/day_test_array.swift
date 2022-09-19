@@ -549,8 +549,25 @@ func quick_sort(_ nums: inout [Int], _ start: Int,_ end: Int,_ k: Int )  {
     }
 }
 
+func singleNumbers(_ nums: [Int]) -> Int {
+    var k = 0
+    var res = 0
+    while k < 64 {
+        var sum_k = 0
+        for num in nums {
+            let tmp = (num >> k) & 1
+            sum_k += tmp
+        }
+        if sum_k % 3 != 0 {
+            res |= 1<<k
+        }
+        k += 1
+    }
+    return res
+}
+
 func testArray()  {
     let nums = [1,2,1,3,2,5];
-    let res = array_qes_12_1(nums)
+    let res = singleNumbers(nums)
     print("👨‍👩‍👧‍👦结果：\(res)")
 }

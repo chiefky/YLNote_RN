@@ -1,5 +1,44 @@
 [
     {
+        "q_id":"algo_array-30",
+        "q_title":"构建乘积数组",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_30",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_array-29",
+        "q_title":"礼物的最大价值",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_29",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_array-28",
+        "q_title":"矩阵中的路径",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle":false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoArrayListRow_28",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
         "q_id":"algo_array-27",
         "q_title":"圆圈中最后剩下的数字",
         "q_subtitle":"",

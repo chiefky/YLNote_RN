@@ -1,5 +1,31 @@
 [
     {
+        "q_id":"algo_linkedlist-8",
+        "q_title":"24. 两两交换链表中的节点",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_8",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
+        "q_id":"algo_linkedlist-7",
+        "q_title":"剑指 Offer 52. 两个链表的第一个公共节点",
+        "q_subtitle":"C/C++",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_7",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    {
         "q_id":"algo_linkedlist-6",
         "q_title":"删除链表的节点",
         "q_subtitle":"",

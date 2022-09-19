@@ -13,8 +13,7 @@ import UIKit
  输入两个链表，找出它们的第一个公共节点。
 
  如下面的两个链表：
-
-
+ https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/
  */
 class YLAlgoLinkedlistListRow_7: YLBaseTableViewController {
 
@@ -25,17 +24,7 @@ class YLAlgoLinkedlistListRow_7: YLBaseTableViewController {
     }
     
     @objc func testMethod_1() {
-        let linkList1 = LinkList()
-        for i in [-3,5,-99] {
-            linkList1.append(value: i)
-        }
-//        var head = deleteNode(linkList1.first, -99)
-//        var str = ""
-//        while head != nil {
-//            str = str + "\(head!.val)" + ","
-//            head = head?.next
-//        }
-//        print(str)
+        print("只能用C语言/C++");
     }
     
   

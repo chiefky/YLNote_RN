@@ -82,7 +82,7 @@
 
 #pragma mark - lazy 数据源
 - (NSString *)fileName {
-    return @"memory_struct";
+    return @"Memory_class_obj";
 }
 
 

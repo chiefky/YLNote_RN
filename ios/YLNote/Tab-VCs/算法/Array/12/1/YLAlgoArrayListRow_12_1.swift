@@ -38,7 +38,9 @@ class YLAlgoArrayListRow_12_1: YLBaseTableViewController {
         print("结果：\(res)")
     }
         
-
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// - Parameter nums: nums
+    /// - Returns: 【v1,v2】
     func method_1(_ nums: [Int]) -> [Int] {
         guard nums.count > 3 else { return [] }
         var v1 = 0,v2 = 0
@@ -65,10 +67,28 @@ class YLAlgoArrayListRow_12_1: YLBaseTableViewController {
         return [v1,v2];
     }
     
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// - Parameter nums: nums
+    /// - Returns: 【v1,v2】
+    func method_2(_ nums:[Int]) -> [Int]  {
+        var xor = 0,v1 = 0 , v2 = 0
+        for num in nums {
+            xor ^= num
+        }
+        let mask = (xor == Int.min ? xor : (xor & (-xor))) // 代替方法1中的查找第k位
+        for num in nums {
+            if (num&mask != 0) {
+                v1 ^= num
+            } else {
+                v2 ^= num
+            }
+        }
+        return [v1,v2]
+    }
     /// 取出只出现1次的多个元素(n个)
     /// - Parameter nums: <#nums description#>
     /// - Returns: <#description#>
-    func method_2(_ nums:[Int]) -> [Int] {
+    func method_3(_ nums:[Int]) -> [Int] {
         var res:[Int] = []
         for num in nums {
             if res.contains(num) {

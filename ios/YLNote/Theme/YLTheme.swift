@@ -26,6 +26,7 @@ class YLTheme: NSObject {
         }
     }
     @objc let subColor:UIColor = #colorLiteral(red: 0.5382906199, green: 0.2054870129, blue: 0.1187047735, alpha: 0.6)
+    @objc let subColor1:UIColor = #colorLiteral(red: 0.9794269204, green: 0.9398242831, blue: 0.8755992055, alpha: 1)
 
 
     @objc let tabTintColor:UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

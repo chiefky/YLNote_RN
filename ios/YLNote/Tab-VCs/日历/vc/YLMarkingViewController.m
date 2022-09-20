@@ -19,6 +19,9 @@
 @interface YLMarkingViewController ()
 @property (nonatomic, strong) YLCalendarView *calendarView;
 @property (nonatomic, strong) UIButton *recordButn;
+@property (nonatomic, strong) UILabel *textTitleLabel;
+@property (nonatomic, strong) UITextView *textView;
+
 @end
 
 @implementation YLMarkingViewController
@@ -56,6 +59,21 @@
         make.size.mas_equalTo(CGSizeMake(100, 100));
     }];
     
+    [self.textTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(30);
+        make.right.mas_equalTo(-30);
+        make.height.mas_equalTo(20);
+        make.centerX.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.recordButn.mas_bottom).offset(20);
+    }];
+
+    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(30);
+        make.right.mas_equalTo(-30);
+        make.height.mas_equalTo(50);
+        make.centerX.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.textTitleLabel.mas_bottom).offset(10);
+    }];
 //    if (@available(iOS 14,*)) {
 //        self.algoButn.showsMenuAsPrimaryAction = YES;
 //        self.algoButn.menu = [UIMenu menuWithChildren:@[
@@ -83,7 +101,7 @@
 - (UIView *)setWeekViewday {
     UIView *weekView = [[UIView alloc] init];
     [self.view addSubview:weekView];
-    weekView.backgroundColor = [YLTheme main].subColor;
+    weekView.backgroundColor = [YLTheme main].subColor1;
     NSArray *weekTitleArray = @[@"日",@"一",@"二",@"三",@"四",@"五",@"六"];
     CGFloat weekTitleWidth = self.view.bounds.size.width/weekTitleArray.count;
     
@@ -136,8 +154,8 @@
 /// 分享
 /// @param sender x
 - (void)shareAction:(UIButton *)sender {
-    [self mark:self.view :^(UIActivityType type, BOOL complete, NSArray * items, NSError * error) {
-        NSLog(@"%@",items);
+    [self shareWithTitle:self.textView.text content:self.view completeHandler:^(UIActivityType type, BOOL complete, NSArray * items, NSError * error) {
+//        NSLog(@"%@",items);
     }];
 }
 
@@ -164,4 +182,23 @@
     }
     return _recordButn;
 }
+- (UILabel *)textTitleLabel {
+    if (!_textTitleLabel) {
+        _textTitleLabel = [UILabel new];
+        _textTitleLabel.text = @"今日内容：";
+        _textTitleLabel.textColor = [YLTheme main].textColor;
+        _textTitleLabel.font = [YLTheme main].mainFont;
+        [self.view addSubview:_textTitleLabel];
+    }
+    return _textTitleLabel;
+}
+- (UITextView *)textView {
+    if (!_textView) {
+        _textView = [[UITextView alloc] init];
+        _textView.backgroundColor = [[YLTheme main] subColor1];
+        [self.view addSubview:_textView];
+    }
+    return _textView;
+}
+
 @end

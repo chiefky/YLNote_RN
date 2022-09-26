@@ -7,20 +7,23 @@
 //
 
 #import "YLMarkingViewController.h"
+#import <Masonry/Masonry.h>
 #import "YLNote-Swift.h"
 #import "WXApi.h"
 #import "YLCalendarView.h"
-#import <Masonry/Masonry.h>
 #import "YLSetting.h"
 #import "YLCalendarDBManager.h"
 #import "YLDate.h"
 #import "NSDate+Tool.h"
+#import "YLDefaultMacro.h"
 
-@interface YLMarkingViewController ()
+@interface YLMarkingViewController ()<UIScrollViewDelegate,UITextViewDelegate>
 @property (nonatomic, strong) YLCalendarView *calendarView;
 @property (nonatomic, strong) UIButton *recordButn;
 @property (nonatomic, strong) UILabel *textTitleLabel;
 @property (nonatomic, strong) UITextView *textView;
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIView *contentView;
 
 @end
 
@@ -34,7 +37,7 @@
     [self refreshUI];
 }
 
-- (void)setupUI {
+- (void)setupUI2 {
     UIButton *btn  = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn addTarget:self action:@selector(shareAction:) forControlEvents:UIControlEventTouchUpInside];
     [btn setImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
@@ -43,9 +46,24 @@
     self.navigationItem.rightBarButtonItem = share;
     self.view.backgroundColor = [UIColor whiteColor];
     
+
+    self.scrollView = [[UIScrollView alloc] init];
+    self.scrollView.backgroundColor = [UIColor greenColor];
+    // 添加scrollView添加到父视图，并设置其约束
+    [self.view addSubview:self.scrollView];
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.mas_equalTo(0);
+            make.bottom.right.mas_equalTo(0);
+    }];
+    // 设置scrollView的子视图，即过渡视图contentSize，并设置其约束
+    self.contentView = [[UIView alloc] init];
+    [self.scrollView addSubview:self.contentView];
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.scrollView);
+            make.width.equalTo(self.scrollView);//垂直滚动宽度固定，这个很重要
+    }];
+
     UIView *weekView = [self setWeekViewday];
-    self.calendarView.backgroundColor = [UIColor redColor];
-    [self.view addSubview:self.calendarView];
     [self.calendarView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);
         make.right.mas_equalTo(0);
@@ -69,27 +87,61 @@
 
     [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(30);
-        make.right.mas_equalTo(-30);
+        make.right.bottom.mas_equalTo(-30);
         make.height.mas_equalTo(50);
+        make.top.mas_equalTo(self.textTitleLabel.mas_bottom).offset(10);
+
+    }];
+}
+
+- (void)setupUI {
+    UIButton *btn  = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn addTarget:self action:@selector(shareAction:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
+    btn.frame = CGRectMake(0, 0, 27, 27);
+    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem = share;
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+    
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.scrollView);
+        make.width.mas_equalTo(YLSCREEN_WIDTH);
+        make.height.mas_equalTo(YLSCREEN_HEIGHT);
+    }];
+    
+    UIView *weekView = [self setWeekViewday];
+    [self.calendarView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.top.mas_equalTo(weekView.mas_bottom);
+        make.height.mas_equalTo(300);
+    }];
+
+    [self.recordButn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.calendarView.mas_bottom).offset(50);
+        make.centerX.mas_equalTo(self.calendarView.mas_centerX);
+        make.size.mas_equalTo(CGSizeMake(100, 100));
+    }];
+    
+    [self.textTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(30);
+        make.right.mas_equalTo(-30);
+        make.height.mas_equalTo(20);
         make.centerX.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.recordButn.mas_bottom).offset(20);
+    }];
+
+    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(30);
+        make.right.bottom.mas_equalTo(-30);
+        make.height.mas_equalTo(50);
         make.top.mas_equalTo(self.textTitleLabel.mas_bottom).offset(10);
     }];
-//    if (@available(iOS 14,*)) {
-//        self.algoButn.showsMenuAsPrimaryAction = YES;
-//        self.algoButn.menu = [UIMenu menuWithChildren:@[
-//            [UIAction actionWithTitle:@"1" image:[UIImage imageNamed:@"search"] identifier:@"1" handler:^(__kindof UIAction * _Nonnull action) {
-//            NSLog(@"Select Messages");
-//        }],
-//             [UIAction actionWithTitle:@"Select Messages 2" image:[UIImage imageNamed:@"search"] identifier:@"2" handler:^(__kindof UIAction * _Nonnull action) {
-//             
-//         }],
-//              [UIAction actionWithTitle:@"Select Messages 3" image:[UIImage imageNamed:@"search"] identifier:@"3" handler:^(__kindof UIAction * _Nonnull action) {
-//              
-//          }],
-//            ]];
-//    } else {
-//        
-//    }
+    
 }
 
 - (void)refreshUI {
@@ -100,7 +152,7 @@
 #pragma mark - 设置日历顶部的周几显示控件
 - (UIView *)setWeekViewday {
     UIView *weekView = [[UIView alloc] init];
-    [self.view addSubview:weekView];
+    [self.contentView addSubview:weekView];
     weekView.backgroundColor = [YLTheme main].subColor1;
     NSArray *weekTitleArray = @[@"日",@"一",@"二",@"三",@"四",@"五",@"六"];
     CGFloat weekTitleWidth = self.view.bounds.size.width/weekTitleArray.count;
@@ -124,10 +176,9 @@
         }];
     }
     
-    CGFloat topHeight = [YLSetting defaultSettingCenter].statusBarHeight + self.navigationController.navigationBar.frame.size.height;
     [weekView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(topHeight);
+        make.top.mas_equalTo(0);
         make.height.mas_equalTo(30);
     }];
     return weekView;
@@ -158,10 +209,16 @@
 //        NSLog(@"%@",items);
     }];
 }
+#pragma mark - UITextViewDelegate
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    [textView resignFirstResponder];
+}
 
+#pragma mark - lazy
 - (YLCalendarView *)calendarView {
     if (!_calendarView) {
         _calendarView = [[YLCalendarView alloc]initWithFrame:CGRectZero];
+        [self.contentView addSubview:_calendarView];
     }
     return  _calendarView;
 }
@@ -178,7 +235,7 @@
         [_recordButn setTitle:@"已打卡" forState:UIControlStateDisabled];
 //        _recordButn.layer.cornerRadius = 50;
 //        _recordButn.layer.masksToBounds = YES;
-        [self.view addSubview:_recordButn];
+        [self.contentView addSubview:_recordButn];
     }
     return _recordButn;
 }
@@ -188,7 +245,7 @@
         _textTitleLabel.text = @"今日内容：";
         _textTitleLabel.textColor = [YLTheme main].textColor;
         _textTitleLabel.font = [YLTheme main].mainFont;
-        [self.view addSubview:_textTitleLabel];
+        [self.contentView addSubview:_textTitleLabel];
     }
     return _textTitleLabel;
 }
@@ -196,9 +253,30 @@
     if (!_textView) {
         _textView = [[UITextView alloc] init];
         _textView.backgroundColor = [[YLTheme main] subColor1];
-        [self.view addSubview:_textView];
+        _textView.delegate = self;
+        [self.contentView addSubview:_textView];
     }
     return _textView;
+}
+- (UIScrollView *)scrollView {
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+        _scrollView.delegate = self;
+        _scrollView.scrollEnabled = YES;
+        _scrollView.showsVerticalScrollIndicator = YES;
+        _scrollView.contentSize = CGSizeMake(YLSCREEN_WIDTH, YLSCREEN_HEIGHT-150);
+        [self.view addSubview:_scrollView];
+        _scrollView.backgroundColor = [UIColor systemPinkColor];
+    }
+    return _scrollView;
+}
+
+- (UIView *)contentView {
+    if (!_contentView) {
+        _contentView = [UIView new];
+        [self.scrollView addSubview:_contentView];
+    }
+    return _contentView;
 }
 
 @end

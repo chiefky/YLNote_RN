@@ -35,14 +35,6 @@
 		542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542821A22611C5FF0066E070 /* YLQuestionTableViewCell.xib */; };
 		542821C7261204950066E070 /* YLDemoSeparatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542821C5261204950066E070 /* YLDemoSeparatorViewController.swift */; };
 		542821C8261204950066E070 /* YLDemoSeparatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542821C6261204950066E070 /* YLDemoSeparatorViewController.xib */; };
-		5434B21127F61A6000625D07 /* YLMemoryTaggedPointerVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434B20627F61A6000625D07 /* YLMemoryTaggedPointerVController.m */; };
-		5434B21427F61A6000625D07 /* memory_taggedpointer.json in Resources */ = {isa = PBXBuildFile; fileRef = 5434B20C27F61A6000625D07 /* memory_taggedpointer.json */; };
-		5434B22D27F61D7E00625D07 /* YLMemoryAlignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434B22627F61D7E00625D07 /* YLMemoryAlignViewController.m */; };
-		5434B22E27F61D7E00625D07 /* memory_align.json in Resources */ = {isa = PBXBuildFile; fileRef = 5434B22827F61D7E00625D07 /* memory_align.json */; };
-		5434B22F27F61D7E00625D07 /* YLMemeoryStructViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434B22A27F61D7E00625D07 /* YLMemeoryStructViewController.m */; };
-		5434B23027F61D7E00625D07 /* memory_struct.json in Resources */ = {isa = PBXBuildFile; fileRef = 5434B22B27F61D7E00625D07 /* memory_struct.json */; };
-		5434B24427F622D600625D07 /* YLMemoryAutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434B24327F622D600625D07 /* YLMemoryAutoReleaseViewController.m */; };
-		5434B24F27F622F800625D07 /* memory_autorelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 5434B24E27F622F800625D07 /* memory_autorelease.json */; };
 		543580F6259DBBEF00452D76 /* YLLogMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 543580F5259DBBEF00452D76 /* YLLogMessageManager.m */; };
 		5435811225A4D18900452D76 /* YLWebNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5435811125A4D18900452D76 /* YLWebNoteManager.m */; };
 		5435811725A4D4D600452D76 /* YLRuntimeNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5435811625A4D4D600452D76 /* YLRuntimeNoteManager.m */; };
@@ -243,7 +235,6 @@
 		54A0F19C28C8F9D0007E3805 /* YLAlgoTreeListRow_9_I.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F19A28C8F9D0007E3805 /* YLAlgoTreeListRow_9_I.swift */; };
 		54A0F19F28C8FA2D007E3805 /* Algo_tree_row_9_II.json in Resources */ = {isa = PBXBuildFile; fileRef = 54A0F19D28C8FA2D007E3805 /* Algo_tree_row_9_II.json */; };
 		54A0F1A028C8FA2D007E3805 /* YLAlgoTreeListRow_9_II.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F19E28C8FA2D007E3805 /* YLAlgoTreeListRow_9_II.swift */; };
-		54A0F1A428D05D18007E3805 /* YLMemeoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F1A328D05D18007E3805 /* YLMemeoryManageViewController.m */; };
 		54A0F1A728D3958C007E3805 /* YLShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F1A628D3958C007E3805 /* YLShare.swift */; };
 		54A0F1B228D3B766007E3805 /* YLMarkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F1B028D3B766007E3805 /* YLMarkingViewController.m */; };
 		54A0F1BA28D6508F007E3805 /* YLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A0F1B928D6508F007E3805 /* YLCalendarView.m */; };
@@ -302,6 +293,16 @@
 		54AEB60E26AED748004C8894 /* YLCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AEB60D26AED748004C8894 /* YLCrashHandler.m */; };
 		54B1CCB32885DBB200D99F01 /* thread_gcd_IO.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B1CCB12885DBB200D99F01 /* thread_gcd_IO.json */; };
 		54B1CCB42885DBB200D99F01 /* YLThreadGCDDispatchIOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B1CCB22885DBB200D99F01 /* YLThreadGCDDispatchIOController.m */; };
+		54B2C71728E1F6E6005404BA /* YLMemoryAutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C70228E1F6E6005404BA /* YLMemoryAutoReleaseViewController.m */; };
+		54B2C71828E1F6E6005404BA /* memory_autorelease.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B2C70428E1F6E6005404BA /* memory_autorelease.json */; };
+		54B2C71928E1F6E6005404BA /* YLMemeoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C70628E1F6E6005404BA /* YLMemeoryTestViewController.m */; };
+		54B2C71A28E1F6E6005404BA /* YLMemeoryManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C70A28E1F6E6005404BA /* YLMemeoryManageViewController.m */; };
+		54B2C71B28E1F6E6005404BA /* YLMemoryTaggedPointerVController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C70C28E1F6E6005404BA /* YLMemoryTaggedPointerVController.m */; };
+		54B2C71C28E1F6E6005404BA /* memory_taggedpointer.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B2C70E28E1F6E6005404BA /* memory_taggedpointer.json */; };
+		54B2C71D28E1F6E6005404BA /* memory_struct.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B2C71128E1F6E6005404BA /* memory_struct.json */; };
+		54B2C71E28E1F6E6005404BA /* YLMemeoryStructViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C71228E1F6E6005404BA /* YLMemeoryStructViewController.m */; };
+		54B2C71F28E1F6E6005404BA /* YLMemoryAlignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B2C71428E1F6E6005404BA /* YLMemoryAlignViewController.m */; };
+		54B2C72028E1F6E6005404BA /* memory_align.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B2C71628E1F6E6005404BA /* memory_align.json */; };
 		54B304A7271ECC1C007747AF /* YLThreadAsyncQueueGroupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B304A6271ECC1C007747AF /* YLThreadAsyncQueueGroupController.m */; };
 		54B43F4727C2AC25004FDA38 /* YLThreadInvocationOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B43F4627C2AC25004FDA38 /* YLThreadInvocationOperationController.m */; };
 		54B43F4F27C2AC4B004FDA38 /* thread_operation_invocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 54B43F4E27C2AC4B004FDA38 /* thread_operation_invocation.json */; };
@@ -448,7 +449,6 @@
 		54E5AEA5289BD67400F18DCC /* YLAlgoLinkedlistListRow_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEA3289BD67400F18DCC /* YLAlgoLinkedlistListRow_6.swift */; };
 		54E5AEA9289C280800F18DCC /* Algo_linkedlist_list_row_7.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AEA7289C280800F18DCC /* Algo_linkedlist_list_row_7.json */; };
 		54E5AEAA289C280800F18DCC /* YLAlgoLinkedlistListRow_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEA8289C280800F18DCC /* YLAlgoLinkedlistListRow_7.swift */; };
-		54E5AEAD28A17E0000F18DCC /* YLMemeoryTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEAC28A17E0000F18DCC /* YLMemeoryTestViewController.m */; };
 		54E5AEAF28A4E4E500F18DCC /* CQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEAE28A4E4E500F18DCC /* CQueue.swift */; };
 		54E5AEB328A4F17B00F18DCC /* Algo_bit_row_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AEB128A4F17B00F18DCC /* Algo_bit_row_4.json */; };
 		54E5AEB428A4F17B00F18DCC /* YLAlgoBitListRow_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AEB228A4F17B00F18DCC /* YLAlgoBitListRow_4.swift */; };
@@ -590,18 +590,6 @@
 		542821A22611C5FF0066E070 /* YLQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		542821C5261204950066E070 /* YLDemoSeparatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDemoSeparatorViewController.swift; sourceTree = "<group>"; };
 		542821C6261204950066E070 /* YLDemoSeparatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLDemoSeparatorViewController.xib; sourceTree = "<group>"; };
-		5434B20627F61A6000625D07 /* YLMemoryTaggedPointerVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemoryTaggedPointerVController.m; sourceTree = "<group>"; };
-		5434B20B27F61A6000625D07 /* YLMemoryTaggedPointerVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemoryTaggedPointerVController.h; sourceTree = "<group>"; };
-		5434B20C27F61A6000625D07 /* memory_taggedpointer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_taggedpointer.json; sourceTree = "<group>"; };
-		5434B22627F61D7E00625D07 /* YLMemoryAlignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemoryAlignViewController.m; sourceTree = "<group>"; };
-		5434B22727F61D7E00625D07 /* YLMemoryAlignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemoryAlignViewController.h; sourceTree = "<group>"; };
-		5434B22827F61D7E00625D07 /* memory_align.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_align.json; sourceTree = "<group>"; };
-		5434B22A27F61D7E00625D07 /* YLMemeoryStructViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemeoryStructViewController.m; sourceTree = "<group>"; };
-		5434B22B27F61D7E00625D07 /* memory_struct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_struct.json; sourceTree = "<group>"; };
-		5434B22C27F61D7E00625D07 /* YLMemeoryStructViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemeoryStructViewController.h; sourceTree = "<group>"; };
-		5434B24227F622D600625D07 /* YLMemoryAutoReleaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMemoryAutoReleaseViewController.h; sourceTree = "<group>"; };
-		5434B24327F622D600625D07 /* YLMemoryAutoReleaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMemoryAutoReleaseViewController.m; sourceTree = "<group>"; };
-		5434B24E27F622F800625D07 /* memory_autorelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_autorelease.json; sourceTree = "<group>"; };
 		543580F4259DBBEF00452D76 /* YLLogMessageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLogMessageManager.h; sourceTree = "<group>"; };
 		543580F5259DBBEF00452D76 /* YLLogMessageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLogMessageManager.m; sourceTree = "<group>"; };
 		5435811025A4D18900452D76 /* YLWebNoteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWebNoteManager.h; sourceTree = "<group>"; };
@@ -878,8 +866,6 @@
 		54A0F19A28C8F9D0007E3805 /* YLAlgoTreeListRow_9_I.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListRow_9_I.swift; sourceTree = "<group>"; };
 		54A0F19D28C8FA2D007E3805 /* Algo_tree_row_9_II.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_tree_row_9_II.json; sourceTree = "<group>"; };
 		54A0F19E28C8FA2D007E3805 /* YLAlgoTreeListRow_9_II.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListRow_9_II.swift; sourceTree = "<group>"; };
-		54A0F1A228D05D18007E3805 /* YLMemeoryManageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMemeoryManageViewController.h; sourceTree = "<group>"; };
-		54A0F1A328D05D18007E3805 /* YLMemeoryManageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMemeoryManageViewController.m; sourceTree = "<group>"; };
 		54A0F1A628D3958C007E3805 /* YLShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLShare.swift; sourceTree = "<group>"; };
 		54A0F1AF28D3B766007E3805 /* YLMarkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMarkingViewController.h; sourceTree = "<group>"; };
 		54A0F1B028D3B766007E3805 /* YLMarkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMarkingViewController.m; sourceTree = "<group>"; };
@@ -975,6 +961,22 @@
 		54B1CCB02885DBB200D99F01 /* YLThreadGCDDispatchIOController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLThreadGCDDispatchIOController.h; sourceTree = "<group>"; };
 		54B1CCB12885DBB200D99F01 /* thread_gcd_IO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thread_gcd_IO.json; sourceTree = "<group>"; };
 		54B1CCB22885DBB200D99F01 /* YLThreadGCDDispatchIOController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLThreadGCDDispatchIOController.m; sourceTree = "<group>"; };
+		54B2C70228E1F6E6005404BA /* YLMemoryAutoReleaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemoryAutoReleaseViewController.m; sourceTree = "<group>"; };
+		54B2C70328E1F6E6005404BA /* YLMemoryAutoReleaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemoryAutoReleaseViewController.h; sourceTree = "<group>"; };
+		54B2C70428E1F6E6005404BA /* memory_autorelease.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_autorelease.json; sourceTree = "<group>"; };
+		54B2C70628E1F6E6005404BA /* YLMemeoryTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemeoryTestViewController.m; sourceTree = "<group>"; };
+		54B2C70728E1F6E6005404BA /* YLMemeoryTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemeoryTestViewController.h; sourceTree = "<group>"; };
+		54B2C70928E1F6E6005404BA /* YLMemeoryManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemeoryManageViewController.h; sourceTree = "<group>"; };
+		54B2C70A28E1F6E6005404BA /* YLMemeoryManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemeoryManageViewController.m; sourceTree = "<group>"; };
+		54B2C70C28E1F6E6005404BA /* YLMemoryTaggedPointerVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemoryTaggedPointerVController.m; sourceTree = "<group>"; };
+		54B2C70D28E1F6E6005404BA /* YLMemoryTaggedPointerVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemoryTaggedPointerVController.h; sourceTree = "<group>"; };
+		54B2C70E28E1F6E6005404BA /* memory_taggedpointer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_taggedpointer.json; sourceTree = "<group>"; };
+		54B2C71028E1F6E6005404BA /* YLMemeoryStructViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemeoryStructViewController.h; sourceTree = "<group>"; };
+		54B2C71128E1F6E6005404BA /* memory_struct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_struct.json; sourceTree = "<group>"; };
+		54B2C71228E1F6E6005404BA /* YLMemeoryStructViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemeoryStructViewController.m; sourceTree = "<group>"; };
+		54B2C71428E1F6E6005404BA /* YLMemoryAlignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLMemoryAlignViewController.m; sourceTree = "<group>"; };
+		54B2C71528E1F6E6005404BA /* YLMemoryAlignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLMemoryAlignViewController.h; sourceTree = "<group>"; };
+		54B2C71628E1F6E6005404BA /* memory_align.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memory_align.json; sourceTree = "<group>"; };
 		54B304A5271ECC1C007747AF /* YLThreadAsyncQueueGroupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLThreadAsyncQueueGroupController.h; sourceTree = "<group>"; };
 		54B304A6271ECC1C007747AF /* YLThreadAsyncQueueGroupController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLThreadAsyncQueueGroupController.m; sourceTree = "<group>"; };
 		54B43F4527C2AC25004FDA38 /* YLThreadInvocationOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLThreadInvocationOperationController.h; sourceTree = "<group>"; };
@@ -1160,8 +1162,6 @@
 		54E5AEA3289BD67400F18DCC /* YLAlgoLinkedlistListRow_6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_6.swift; sourceTree = "<group>"; };
 		54E5AEA7289C280800F18DCC /* Algo_linkedlist_list_row_7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_linkedlist_list_row_7.json; sourceTree = "<group>"; };
 		54E5AEA8289C280800F18DCC /* YLAlgoLinkedlistListRow_7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_7.swift; sourceTree = "<group>"; };
-		54E5AEAB28A17E0000F18DCC /* YLMemeoryTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMemeoryTestViewController.h; sourceTree = "<group>"; };
-		54E5AEAC28A17E0000F18DCC /* YLMemeoryTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLMemeoryTestViewController.m; sourceTree = "<group>"; };
 		54E5AEAE28A4E4E500F18DCC /* CQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CQueue.swift; sourceTree = "<group>"; };
 		54E5AEB128A4F17B00F18DCC /* Algo_bit_row_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_bit_row_4.json; sourceTree = "<group>"; };
 		54E5AEB228A4F17B00F18DCC /* YLAlgoBitListRow_4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoBitListRow_4.swift; sourceTree = "<group>"; };
@@ -1535,68 +1535,6 @@
 				54FB599C25BFFE5300E3FCA4 /* YLDemoAnimateViewController.xib */,
 			);
 			path = controllers;
-			sourceTree = "<group>";
-		};
-		5434B20527F61A3A00625D07 /* Memory */ = {
-			isa = PBXGroup;
-			children = (
-				54A0F1A128D05CB8007E3805 /* Management */,
-				5434B23427F61D8700625D07 /* Test */,
-				5434B22927F61D7E00625D07 /* Struct */,
-				5434B22527F61D7E00625D07 /* Align */,
-				5434B22427F61D5400625D07 /* TaggedPoniter */,
-				5434B24127F6203300625D07 /* AutoRelease */,
-			);
-			path = Memory;
-			sourceTree = "<group>";
-		};
-		5434B22427F61D5400625D07 /* TaggedPoniter */ = {
-			isa = PBXGroup;
-			children = (
-				5434B20C27F61A6000625D07 /* memory_taggedpointer.json */,
-				5434B20B27F61A6000625D07 /* YLMemoryTaggedPointerVController.h */,
-				5434B20627F61A6000625D07 /* YLMemoryTaggedPointerVController.m */,
-			);
-			path = TaggedPoniter;
-			sourceTree = "<group>";
-		};
-		5434B22527F61D7E00625D07 /* Align */ = {
-			isa = PBXGroup;
-			children = (
-				5434B22627F61D7E00625D07 /* YLMemoryAlignViewController.m */,
-				5434B22727F61D7E00625D07 /* YLMemoryAlignViewController.h */,
-				5434B22827F61D7E00625D07 /* memory_align.json */,
-			);
-			path = Align;
-			sourceTree = "<group>";
-		};
-		5434B22927F61D7E00625D07 /* Struct */ = {
-			isa = PBXGroup;
-			children = (
-				5434B22C27F61D7E00625D07 /* YLMemeoryStructViewController.h */,
-				5434B22A27F61D7E00625D07 /* YLMemeoryStructViewController.m */,
-				5434B22B27F61D7E00625D07 /* memory_struct.json */,
-			);
-			path = Struct;
-			sourceTree = "<group>";
-		};
-		5434B23427F61D8700625D07 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				54E5AEAB28A17E0000F18DCC /* YLMemeoryTestViewController.h */,
-				54E5AEAC28A17E0000F18DCC /* YLMemeoryTestViewController.m */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		5434B24127F6203300625D07 /* AutoRelease */ = {
-			isa = PBXGroup;
-			children = (
-				5434B24E27F622F800625D07 /* memory_autorelease.json */,
-				5434B24227F622D600625D07 /* YLMemoryAutoReleaseViewController.h */,
-				5434B24327F622D600625D07 /* YLMemoryAutoReleaseViewController.m */,
-			);
-			path = AutoRelease;
 			sourceTree = "<group>";
 		};
 		543580F3259DBBAB00452D76 /* Log */ = {
@@ -2556,15 +2494,6 @@
 			path = I;
 			sourceTree = "<group>";
 		};
-		54A0F1A128D05CB8007E3805 /* Management */ = {
-			isa = PBXGroup;
-			children = (
-				54A0F1A228D05D18007E3805 /* YLMemeoryManageViewController.h */,
-				54A0F1A328D05D18007E3805 /* YLMemeoryManageViewController.m */,
-			);
-			path = Management;
-			sourceTree = "<group>";
-		};
 		54A0F1A528D39534007E3805 /* 分享 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2923,6 +2852,77 @@
 			path = DispatchIO;
 			sourceTree = "<group>";
 		};
+		54B2C70028E1F6E6005404BA /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C70128E1F6E6005404BA /* AutoRelease */,
+				54B2C70528E1F6E6005404BA /* Test */,
+				54B2C70828E1F6E6005404BA /* Management */,
+				54B2C70B28E1F6E6005404BA /* TaggedPoniter */,
+				54B2C70F28E1F6E6005404BA /* Struct */,
+				54B2C71328E1F6E6005404BA /* Align */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		54B2C70128E1F6E6005404BA /* AutoRelease */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C70228E1F6E6005404BA /* YLMemoryAutoReleaseViewController.m */,
+				54B2C70328E1F6E6005404BA /* YLMemoryAutoReleaseViewController.h */,
+				54B2C70428E1F6E6005404BA /* memory_autorelease.json */,
+			);
+			path = AutoRelease;
+			sourceTree = "<group>";
+		};
+		54B2C70528E1F6E6005404BA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C70628E1F6E6005404BA /* YLMemeoryTestViewController.m */,
+				54B2C70728E1F6E6005404BA /* YLMemeoryTestViewController.h */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		54B2C70828E1F6E6005404BA /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C70928E1F6E6005404BA /* YLMemeoryManageViewController.h */,
+				54B2C70A28E1F6E6005404BA /* YLMemeoryManageViewController.m */,
+			);
+			path = Management;
+			sourceTree = "<group>";
+		};
+		54B2C70B28E1F6E6005404BA /* TaggedPoniter */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C70C28E1F6E6005404BA /* YLMemoryTaggedPointerVController.m */,
+				54B2C70D28E1F6E6005404BA /* YLMemoryTaggedPointerVController.h */,
+				54B2C70E28E1F6E6005404BA /* memory_taggedpointer.json */,
+			);
+			path = TaggedPoniter;
+			sourceTree = "<group>";
+		};
+		54B2C70F28E1F6E6005404BA /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C71028E1F6E6005404BA /* YLMemeoryStructViewController.h */,
+				54B2C71228E1F6E6005404BA /* YLMemeoryStructViewController.m */,
+				54B2C71128E1F6E6005404BA /* memory_struct.json */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		54B2C71328E1F6E6005404BA /* Align */ = {
+			isa = PBXGroup;
+			children = (
+				54B2C71428E1F6E6005404BA /* YLMemoryAlignViewController.m */,
+				54B2C71528E1F6E6005404BA /* YLMemoryAlignViewController.h */,
+				54B2C71628E1F6E6005404BA /* memory_align.json */,
+			);
+			path = Align;
+			sourceTree = "<group>";
+		};
 		54B43F4227C2A6A8004FDA38 /* 自定义异步operation */ = {
 			isa = PBXGroup;
 			children = (
@@ -3119,7 +3119,6 @@
 		54C05D86268F0B07006FFAAE /* sections */ = {
 			isa = PBXGroup;
 			children = (
-				5434B20527F61A3A00625D07 /* Memory */,
 				547356AA27E648070096A008 /* Optimize */,
 				548353D627E06E3E001D3726 /* Runtime */,
 				54E97AA027B18282001CA669 /* Runloop */,
@@ -3748,6 +3747,7 @@
 			children = (
 				54E5AECF28AA1CDE00F18DCC /* YLNoteTmpViewController.swift */,
 				54E5AECE28AA1CDE00F18DCC /* TmpNote.json */,
+				54B2C70028E1F6E6005404BA /* Memory */,
 				54E5AED228AA32D800F18DCC /* NSTimer */,
 				54DCC5C927CF5309009F289D /* Block */,
 			);
@@ -4253,7 +4253,9 @@
 				54ABCB4A288863C7006C65D6 /* Algo_tree_row_6.json in Resources */,
 				54E5AEA0289BA07600F18DCC /* Algo_array_row_26.json in Resources */,
 				54DCC55827CD3D26009F289D /* thread_lock.json in Resources */,
+				54B2C71C28E1F6E6005404BA /* memory_taggedpointer.json in Resources */,
 				54E97AE927B4006B001CA669 /* runloop_source.json in Resources */,
+				54B2C71828E1F6E6005404BA /* memory_autorelease.json in Resources */,
 				54ABCB68288C4FB7006C65D6 /* Algo_queue_list.json in Resources */,
 				54ABCB5F2889DF2E006C65D6 /* Algo_array_row_23.json in Resources */,
 				54B1CCB32885DBB200D99F01 /* thread_gcd_IO.json in Resources */,
@@ -4277,7 +4279,6 @@
 				54A0F18128C62F24007E3805 /* Algo_array_row_30.json in Resources */,
 				54E5AEDD28AA350000F18DCC /* timer_recycle.json in Resources */,
 				548CAF16285F4C7700F73E71 /* Algo_string_row_3.json in Resources */,
-				5434B22E27F61D7E00625D07 /* memory_align.json in Resources */,
 				54BB2646260379E9001A98B4 /* WKWebViewJSTest.html in Resources */,
 				54E5AECB28A9CBBD00F18DCC /* Algo_array_row_27.json in Resources */,
 				54DB9B372843DA6900539AC5 /* Algo_linkedlist_list.json in Resources */,
@@ -4291,7 +4292,6 @@
 				54FD6772260A438A00F7E113 /* YLGroupHeaderView.xib in Resources */,
 				54CAC36E2605DC6B008A7BDF /* cookie.js in Resources */,
 				5426D71828854F9B00298D14 /* Algo_linkedlist_list_row_5.json in Resources */,
-				5434B24F27F622F800625D07 /* memory_autorelease.json in Resources */,
 				54E97A9127B10884001CA669 /* Algo.json in Resources */,
 				54E6E42327BD78170019E03C /* Algo_other_row_1.json in Resources */,
 				540B8F60260C755A00475BC5 /* YLHomeViewController.xib in Resources */,
@@ -4336,7 +4336,6 @@
 				54ABCB67288C4FB7006C65D6 /* Algo_queue_row_0.json in Resources */,
 				54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */,
 				54B43F8427C38515004FDA38 /* thread_operation_block.json in Resources */,
-				5434B21427F61A6000625D07 /* memory_taggedpointer.json in Resources */,
 				548CB092286C318000F73E71 /* Algo_tree_row_5.json in Resources */,
 				548CAF30285F545D00F73E71 /* Algo_string_row_4.json in Resources */,
 				54A0F19F28C8FA2D007E3805 /* Algo_tree_row_9_II.json in Resources */,
@@ -4374,18 +4373,19 @@
 				54DCC62E27D1E2DD009F289D /* block_code.json in Resources */,
 				54DB9ADE2843D7A000539AC5 /* Algo_array_list.json in Resources */,
 				54DCC5BC27CF4FBF009F289D /* Algo_primary_row_3.json in Resources */,
+				54B2C72028E1F6E6005404BA /* memory_align.json in Resources */,
 				54E5AEB328A4F17B00F18DCC /* Algo_bit_row_4.json in Resources */,
 				548353E027E075C1001D3726 /* LateSwift.json in Resources */,
 				54ABCB542889B188006C65D6 /* Algo_array_row_21.json in Resources */,
 				54E5AED028AA1CDE00F18DCC /* TmpNote.json in Resources */,
 				54E97AE027B3FF92001CA669 /* runloop_alive.json in Resources */,
 				54ABCB5A2889B8A2006C65D6 /* Algo_array_row_22.json in Resources */,
-				5434B23027F61D7E00625D07 /* memory_struct.json in Resources */,
 				54DB9C2C284D2C2600539AC5 /* Algo_array_row_12_0.json in Resources */,
 				54E6E43D27BD79720019E03C /* Algo_tree_row_0.json in Resources */,
 				54FB599E25BFFE5300E3FCA4 /* YLDemoAnimateViewController.xib in Resources */,
 				54D19F7C285243780016468E /* day_test.json in Resources */,
 				54BB2647260379E9001A98B4 /* UIWebViewJSTest.html in Resources */,
+				54B2C71D28E1F6E6005404BA /* memory_struct.json in Resources */,
 				54E5AEBF28A505A500F18DCC /* Algo_stack_list.json in Resources */,
 				54DDB57428769779000419E2 /* Algo_array_row_0_1.json in Resources */,
 				54B4405F27CCA60D004FDA38 /* thread_gcd_barrier.json in Resources */,
@@ -4638,7 +4638,6 @@
 				54DCC66527D52AFC009F289D /* merge_sort.swift in Sources */,
 				5452D5832605E1C10007FDDA /* YLCookieManager.m in Sources */,
 				5487BDDC25DC727300C6AEAE /* UITabbarItem+Theme.swift in Sources */,
-				54E5AEAD28A17E0000F18DCC /* YLMemeoryTestViewController.m in Sources */,
 				54B43F4727C2AC25004FDA38 /* YLThreadInvocationOperationController.m in Sources */,
 				54B43FB727C68B25004FDA38 /* YLImageView.m in Sources */,
 				5456736B2721DA960026403D /* YLGroupNormalHeaderView.swift in Sources */,
@@ -4676,7 +4675,6 @@
 				5487BDAD25C9F26400C6AEAE /* ArrayTools.swift in Sources */,
 				543581C125AEEC7300452D76 /* YLLayer.m in Sources */,
 				54E97B1727B662B2001CA669 /* YLRunloopWithPerfomSELViewController.m in Sources */,
-				5434B22D27F61D7E00625D07 /* YLMemoryAlignViewController.m in Sources */,
 				54E97AB727B3F393001CA669 /* YLRunloopRunViewController.m in Sources */,
 				5487BE5D25E36F7200C6AEAE /* UIColorTools.swift in Sources */,
 				54A0F17628B778C9007E3805 /* YLAlgoStackListRow_1.swift in Sources */,
@@ -4705,6 +4703,7 @@
 				54A0F1BA28D6508F007E3805 /* YLCalendarView.m in Sources */,
 				54DB9B322843DA2800539AC5 /* YLAlgoLinkedlistListRow_0.swift in Sources */,
 				5487BD9F25C566B000C6AEAE /* UIImageTools.swift in Sources */,
+				54B2C71F28E1F6E6005404BA /* YLMemoryAlignViewController.m in Sources */,
 				54ABCB412885E0EF006C65D6 /* YLSwift_in_OCViewController.m in Sources */,
 				543581BE25AEEBB800452D76 /* YLAlertManager.m in Sources */,
 				54C4B519261498EA004BF897 /* YLUserDeafultsManager.swift in Sources */,
@@ -4737,8 +4736,8 @@
 				54A35D9024CED7290076DFB6 /* YLFather.m in Sources */,
 				5435817E25AD6F6500452D76 /* YLClassificationLevelSuperGenus.m in Sources */,
 				54DCC59E27CE965F009F289D /* quick_sort.swift in Sources */,
+				54B2C71928E1F6E6005404BA /* YLMemeoryTestViewController.m in Sources */,
 				54A35D8E24CED7290076DFB6 /* NSObject+Test.m in Sources */,
-				5434B21127F61A6000625D07 /* YLMemoryTaggedPointerVController.m in Sources */,
 				5487BDAB25C9EDDE00C6AEAE /* YLMemoryViewController.swift in Sources */,
 				54D8886A26B1BF440088D056 /* YLAnimal.m in Sources */,
 				54A0F17128B7522C007E3805 /* YLAlgoArrayListRow_28.swift in Sources */,
@@ -4792,6 +4791,7 @@
 				548CB00A2866F96300F73E71 /* YLAlgoTreeListRow_3.swift in Sources */,
 				54DCC62F27D1E2DD009F289D /* YLBlockCodeViewController.m in Sources */,
 				54A35DAD24CED7A30076DFB6 /* YLThreadSync.m in Sources */,
+				54B2C71728E1F6E6005404BA /* YLMemoryAutoReleaseViewController.m in Sources */,
 				54A0F1BE28D651B3007E3805 /* SimpleCollectionViewCell.m in Sources */,
 				5400B31B25BAEB5C00DC4C49 /* YLAnimationHelper.swift in Sources */,
 				54C4B514261495AD004BF897 /* YLKeyChainManager.swift in Sources */,
@@ -4806,6 +4806,8 @@
 				54A0F1A728D3958C007E3805 /* YLShare.swift in Sources */,
 				545F873025B5A4D9008BE6E2 /* YLIterator.m in Sources */,
 				54B850CE283D602F00294D47 /* YLNativeNewsViewController.m in Sources */,
+				54B2C71E28E1F6E6005404BA /* YLMemeoryStructViewController.m in Sources */,
+				54B2C71A28E1F6E6005404BA /* YLMemeoryManageViewController.m in Sources */,
 				546368AB27BA253D003CF22F /* YLRunloopDoggy.m in Sources */,
 				54BB262E2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift in Sources */,
 				54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */,
@@ -4855,8 +4857,8 @@
 				5435817225AC715300452D76 /* YLClassificationLevelDomain.m in Sources */,
 				545A199026C3D9D90089BECE /* YLObject.m in Sources */,
 				548FF89B24A87F3300ECF7F0 /* main.m in Sources */,
-				54A0F1A428D05D18007E3805 /* YLMemeoryManageViewController.m in Sources */,
 				548CAF31285F545D00F73E71 /* YLAlgoStringListRow_4.swift in Sources */,
+				54B2C71B28E1F6E6005404BA /* YLMemoryTaggedPointerVController.m in Sources */,
 				54DDB59828769C2D000419E2 /* YLAlgoArrayListRow_0_2.swift in Sources */,
 				54D88613284E8A55003DE4F0 /* YLAlgoTreeListController.swift in Sources */,
 				54C44B1027DA105900688A7E /* YLAfgoTestViewController.swift in Sources */,
@@ -4871,7 +4873,6 @@
 				54BA46A02632C56400665C43 /* YLDemoARCViewController.m in Sources */,
 				54A35D9124CED7290076DFB6 /* YLFather+Job.m in Sources */,
 				54E5AEAF28A4E4E500F18DCC /* CQueue.swift in Sources */,
-				5434B24427F622D600625D07 /* YLMemoryAutoReleaseViewController.m in Sources */,
 				546368C227BBB0F7003CF22F /* YLThreadTestViewController.m in Sources */,
 				5426D71328854ECF00298D14 /* YLAlgoArrayListRow_18.swift in Sources */,
 				5435812825A4DB2C00452D76 /* YLAnimationNoteManager.m in Sources */,
@@ -4886,7 +4887,6 @@
 				54DB9B70284409A400539AC5 /* YLAlgoArrayListRow_4.swift in Sources */,
 				545A199926C3DA150089BECE /* YLDomain.m in Sources */,
 				54C4B4DE26142FFB004BF897 /* YLUser.m in Sources */,
-				5434B22F27F61D7E00625D07 /* YLMemeoryStructViewController.m in Sources */,
 				54B4406027CCA60D004FDA38 /* YLThreadGCDDispatchBarrierController.m in Sources */,
 				54E5AEB428A4F17B00F18DCC /* YLAlgoBitListRow_4.swift in Sources */,
 				548CAFAB286317CA00F73E71 /* YLAlgoArrayListRow_13.swift in Sources */,

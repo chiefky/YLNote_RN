@@ -1,0 +1,36 @@
+[
+    {
+        "q_id":"100",
+        "q_title":"iskindOfClass & isMemberOfClass经典用例",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+                "function":"testKindOrMember",
+    },
+    {
+        "q_id":"101",
+        "q_title":"实例方法查找过程",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+                "function":"testInstanceMethod",
+    },
+    {
+        "q_id":"102",
+        "q_title":"类方法查找过程",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+                "function":"testClassMethod",
+    },
+    {
+        "q_id":"103",
+        "q_title":"imp查找过程",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+                "function":"testLookImpInClass_MeatClss",
+    }
+
+]
+

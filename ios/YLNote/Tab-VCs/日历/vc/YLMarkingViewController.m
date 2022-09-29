@@ -24,6 +24,7 @@
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, strong) UIView *weekView;
 
 @end
 
@@ -35,63 +36,6 @@
     [self setupUI];
 
     [self refreshUI];
-}
-
-- (void)setupUI2 {
-    UIButton *btn  = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn addTarget:self action:@selector(shareAction:) forControlEvents:UIControlEventTouchUpInside];
-    [btn setImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
-    btn.frame = CGRectMake(0, 0, 27, 27);
-    UIBarButtonItem *share = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    self.navigationItem.rightBarButtonItem = share;
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-
-    self.scrollView = [[UIScrollView alloc] init];
-    self.scrollView.backgroundColor = [UIColor greenColor];
-    // 添加scrollView添加到父视图，并设置其约束
-    [self.view addSubview:self.scrollView];
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.mas_equalTo(0);
-            make.bottom.right.mas_equalTo(0);
-    }];
-    // 设置scrollView的子视图，即过渡视图contentSize，并设置其约束
-    self.contentView = [[UIView alloc] init];
-    [self.scrollView addSubview:self.contentView];
-    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self.scrollView);
-            make.width.equalTo(self.scrollView);//垂直滚动宽度固定，这个很重要
-    }];
-
-    UIView *weekView = [self setWeekViewday];
-    [self.calendarView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(0);
-        make.right.mas_equalTo(0);
-        make.top.mas_equalTo(weekView.mas_bottom);
-        make.height.mas_equalTo(300);
-    }];
-
-    [self.recordButn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.calendarView.mas_bottom).offset(50);
-        make.centerX.mas_equalTo(self.calendarView.mas_centerX);
-        make.size.mas_equalTo(CGSizeMake(100, 100));
-    }];
-    
-    [self.textTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(30);
-        make.right.mas_equalTo(-30);
-        make.height.mas_equalTo(20);
-        make.centerX.mas_equalTo(self.view);
-        make.top.mas_equalTo(self.recordButn.mas_bottom).offset(20);
-    }];
-
-    [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(30);
-        make.right.bottom.mas_equalTo(-30);
-        make.height.mas_equalTo(50);
-        make.top.mas_equalTo(self.textTitleLabel.mas_bottom).offset(10);
-
-    }];
 }
 
 - (void)setupUI {
@@ -108,36 +52,35 @@
     }];
     
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.scrollView);
+        make.top.left.mas_equalTo(self.scrollView);
         make.width.mas_equalTo(YLSCREEN_WIDTH);
         make.height.mas_equalTo(YLSCREEN_HEIGHT);
     }];
     
-    UIView *weekView = [self setWeekViewday];
+    [self setupWeekViewday];
     [self.calendarView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);
         make.right.mas_equalTo(0);
-        make.top.mas_equalTo(weekView.mas_bottom);
-        make.height.mas_equalTo(300);
+        make.top.mas_equalTo(self.weekView.mas_bottom);
+        make.height.mas_equalTo(310);
     }];
 
     [self.recordButn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.calendarView.mas_bottom).offset(50);
+        make.top.mas_equalTo(self.calendarView.mas_bottom).offset(20);
         make.centerX.mas_equalTo(self.calendarView.mas_centerX);
         make.size.mas_equalTo(CGSizeMake(100, 100));
     }];
     
     [self.textTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.recordButn.mas_bottom).offset(20);
         make.left.mas_equalTo(30);
         make.right.mas_equalTo(-30);
         make.height.mas_equalTo(20);
-        make.centerX.mas_equalTo(self.view);
-        make.top.mas_equalTo(self.recordButn.mas_bottom).offset(20);
     }];
 
     [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(30);
-        make.right.bottom.mas_equalTo(-30);
+        make.right.mas_equalTo(-30);
         make.height.mas_equalTo(50);
         make.top.mas_equalTo(self.textTitleLabel.mas_bottom).offset(10);
     }];
@@ -150,13 +93,15 @@
 }
 
 #pragma mark - 设置日历顶部的周几显示控件
-- (UIView *)setWeekViewday {
-    UIView *weekView = [[UIView alloc] init];
-    [self.contentView addSubview:weekView];
-    weekView.backgroundColor = [YLTheme main].subColor1;
+- (void)setupWeekViewday {
+    [self.weekView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.height.mas_equalTo(30);
+    }];
+    
     NSArray *weekTitleArray = @[@"日",@"一",@"二",@"三",@"四",@"五",@"六"];
     CGFloat weekTitleWidth = self.view.bounds.size.width/weekTitleArray.count;
-    
     for (int i = 0; i<weekTitleArray.count; i++) {
         UILabel *weekTitleLable = [[UILabel alloc] init];
         if (i == 0 || i == 6) {
@@ -167,22 +112,14 @@
         weekTitleLable.text = [weekTitleArray objectAtIndex:i];
         weekTitleLable.textAlignment = NSTextAlignmentCenter;
         weekTitleLable.font = [UIFont boldSystemFontOfSize:17];
-        [weekView addSubview:weekTitleLable];
+        [self.weekView addSubview:weekTitleLable];
         [weekTitleLable mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(weekTitleWidth*i);
             make.width.mas_equalTo(weekTitleWidth);
-            make.centerY.mas_equalTo(weekView);
+            make.centerY.mas_equalTo(0);
             make.height.mas_equalTo(20);
         }];
     }
-    
-    [weekView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(0);
-        make.height.mas_equalTo(30);
-    }];
-    return weekView;
-    
 }
 - (BOOL)todayIsMarked {
     NSString *dateId = [[NSDate date] yldate_id];
@@ -215,9 +152,31 @@
 }
 
 #pragma mark - lazy
+- (UIScrollView *)scrollView {
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
+        _scrollView.delegate = self;
+        _scrollView.scrollEnabled = YES;
+        _scrollView.showsVerticalScrollIndicator = YES;
+        _scrollView.contentSize = CGSizeMake(YLSCREEN_WIDTH, YLSCREEN_HEIGHT-150);
+        [self.view addSubview:_scrollView];
+    }
+    return _scrollView;
+}
+
+- (UIView *)contentView {
+    if (!_contentView) {
+        _contentView = [UIView new];
+//        _contentView.backgroundColor = [UIColor brownColor];
+        [self.scrollView addSubview:_contentView];
+    }
+    return _contentView;
+}
+
 - (YLCalendarView *)calendarView {
     if (!_calendarView) {
         _calendarView = [[YLCalendarView alloc]initWithFrame:CGRectZero];
+        _calendarView.backgroundColor = [UIColor grayColor];
         [self.contentView addSubview:_calendarView];
     }
     return  _calendarView;
@@ -258,25 +217,14 @@
     }
     return _textView;
 }
-- (UIScrollView *)scrollView {
-    if (!_scrollView) {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
-        _scrollView.delegate = self;
-        _scrollView.scrollEnabled = YES;
-        _scrollView.showsVerticalScrollIndicator = YES;
-        _scrollView.contentSize = CGSizeMake(YLSCREEN_WIDTH, YLSCREEN_HEIGHT-150);
-        [self.view addSubview:_scrollView];
-        _scrollView.backgroundColor = [UIColor systemPinkColor];
-    }
-    return _scrollView;
-}
 
-- (UIView *)contentView {
-    if (!_contentView) {
-        _contentView = [UIView new];
-        [self.scrollView addSubview:_contentView];
+- (UIView *)weekView {
+    if (!_weekView) {
+        _weekView = [UIView new];
+        _weekView.backgroundColor = [YLTheme main].subColor1;
+        [self.contentView addSubview:_weekView];
     }
-    return _contentView;
+    return _weekView;
 }
 
 @end

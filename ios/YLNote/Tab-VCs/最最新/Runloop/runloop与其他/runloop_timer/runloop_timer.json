@@ -1,0 +1,36 @@
+
+[
+    {
+        "q_id":"runloop_timer-1_0",
+        "q_title":"scheduledTimer:手动开启,自动加入;5s后自动终止",
+        "q_subtitle":"'scheduledTimerWithTimeInterval'或'performSelector:afterDelay:'初始化timer",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"testScheduledTimer"
+    },
+    {
+        "q_id":"runloop_timer-2_0",
+        "q_title":"timeIntervalTimer:手动开启,手动加入;5s后自动终止",
+        "q_subtitle":"'initWithFireDate'或'timerWithTimeInterval'初始化timer",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"testInitTimer"
+    },
+    {
+        "q_id":"runloop_timer-3_0",
+        "q_title":"设置正确的limitDate:10s,(到达limitDate自动终止)",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"testStopTimerAuto"
+    },
+    {
+        "q_id":"stop_manual",
+        "q_title":"在当前线程中执行'[timer invalidate]'(手动终止)",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"testStopTimerManual"
+    },
+
+]

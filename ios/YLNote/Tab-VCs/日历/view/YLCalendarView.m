@@ -7,14 +7,14 @@
 //
 
 #import "YLCalendarView.h"
-#import "SimpleCollectionViewCell.h"
+#import "YLCalendarViewCell.h"
 #import <Masonry/Masonry.h>
 #import "YLCalendarDBManager.h"
 #import "YLDateManager.h"
 #import "YLDate.h"
 
-static NSString *SIMPLESUPPLEMENTARYIDENTIFIER = @"Simple Supplementary Identifier";
-static NSString *SIMPLECELLIDENTIFIER = @"Simple Cell Identifier";
+static NSString *CALENDAR_SUPPLEMENTARY_IDENTIFIER =@"";
+static NSString *CALENDAR_CELL_IDENTIFIER = @"kYLCalendarViewCell";
 
 @interface YLCalendarView ()<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate>
 
@@ -50,7 +50,7 @@ static NSString *SIMPLECELLIDENTIFIER = @"Simple Cell Identifier";
     [self addSubview:self.collectionView];
     
     // 注册 cell
-    [self.collectionView registerClass:[SimpleCollectionViewCell class] forCellWithReuseIdentifier:SIMPLECELLIDENTIFIER];
+    [self.collectionView registerClass:[YLCalendarViewCell class] forCellWithReuseIdentifier:CALENDAR_CELL_IDENTIFIER];
 //    [self.collectionView registerClass:[SimpleReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:SIMPLESUPPLEMENTARYIDENTIFIER];
 
 }
@@ -91,7 +91,7 @@ static NSString *SIMPLECELLIDENTIFIER = @"Simple Cell Identifier";
 }
 
 //- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//    SimpleReusableView *reuseableView = (SimpleReusableView *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:SIMPLESUPPLEMENTARYIDENTIFIER forIndexPath:indexPath];
+//    SimpleReusableView *reuseableView = (SimpleReusableView *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CALENDAR_SUPPLEMENTARY_IDENTIFIER forIndexPath:indexPath];
 //    reuseableView.num = [NSString stringWithFormat:@"%ld",(long)indexPath.section];
 //    [reuseableView refreshData];
 //    return reuseableView;
@@ -106,14 +106,13 @@ static NSString *SIMPLECELLIDENTIFIER = @"Simple Cell Identifier";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    SimpleCollectionViewCell *cell = (SimpleCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:SIMPLECELLIDENTIFIER forIndexPath:indexPath];
+    YLCalendarViewCell *cell = (YLCalendarViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:CALENDAR_CELL_IDENTIFIER forIndexPath:indexPath];
     
     NSUInteger firstdayOffset = [YLDateManager weekdayforFirstDayInMonth:[NSDate date]]; //当月1号在item中的偏移位置(1号之前的位置皆为空白）
     if (indexPath.item < firstdayOffset) {
-        cell.num = @"";//[NSString stringWithFormat:@"%ld",(long)indexPath.item];
+        [cell refreshData:nil];
     } else {
         YLDate *date = self.actualDates[indexPath.item - firstdayOffset];
-        cell.num = [NSString stringWithFormat:@"%ld",(long)date.day];
         YLDate *today = [[YLDate alloc] initWithDate:[NSDate date]];
         BOOL isfuture = date.day > today.day;
         NSDictionary *vmDict = @{
@@ -122,7 +121,7 @@ static NSString *SIMPLECELLIDENTIFIER = @"Simple Cell Identifier";
             @"selected": @(date.day == today.day),
             @"marked":@(date.marked),
         };
-        SimpleCollectionCellModel *model = [[SimpleCollectionCellModel alloc] initWithDict:vmDict];
+        YLCalendarViewCellModel *model = [[YLCalendarViewCellModel alloc] initWithDict:vmDict];
         [cell refreshData:model];
     }
     return cell;

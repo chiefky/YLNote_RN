@@ -1,0 +1,69 @@
+[
+    {
+        
+        "q_id":"runloop_performSEL-1_0",
+        "q_title":"❌NSThread子线程：先run,后performSelectoe:afterDelay:",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": true,
+        "function":"testPerformSelAfterDelayOnNSthreadWrong",
+        "article": {
+            "art_id":"performSelOnThread1",
+            "art_url":"/content/Runloop/Runloop_performselector.md",
+        }
+
+    },
+    {
+        
+        "q_id":"runloop_performSEL-2_0",
+        "q_title":"✅NSThread子线程：先performSelectoe:afterDelay:，后run",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": true,
+        "function":"testPerformSelAfterDelayOnNSthreadRight",
+        "article": {
+            "art_id":"performSelOnThread2",
+            "art_url":"/content/Runloop/Runloop_performselector.md",
+        }
+    },
+    {
+        
+        "q_id":"runloop_performSEL-3_0",
+        "q_title":"✅GCD子线程：经验证，同NSThread一致",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": true,
+        "function":"testPerformSelAfterDelayOnGCDRight",
+        "article": {
+            "art_id":"performSelOnThread3",
+            "art_url":"/content/Runloop/Runloop_performselector.md",
+        }
+    },
+    {
+        
+        "q_id":"runloop_performSEL-4_0",
+        "q_title":"❌NSThread子线程：不执行",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": true,
+        "function":"testPerformSelOnNSthreadUntilDateWrong",
+        "article": {
+            "art_id":"performSelOnThread3",
+            "art_url":"/content/Runloop/Runloop_performselector.md",
+        }
+    },
+    {
+        
+        "q_id":"runloop_performSEL-5_0",
+        "q_title":"✅NSThread子线程：仅执行一次",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": true,
+        "function":"testPerformSelOnNSthreadUntilDateRight",
+        "article": {
+            "art_id":"performSelOnThread3",
+            "art_url":"/content/Runloop/Runloop_performselector.md",
+        }
+    }
+
+]

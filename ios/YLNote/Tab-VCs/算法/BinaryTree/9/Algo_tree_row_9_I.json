@@ -1,7 +1,7 @@
 
 [
    {
-       "q_title":"两次遍历",
+       "q_title":"迭代-查找公共路径",
        "showArticle":true,
        "showNextPage": false,
        "function":"testMethod_1",
@@ -13,7 +13,7 @@
        
    },
    {
-       "q_title":"一次遍历",
+       "q_title":"迭代-一次遍历",
        "showArticle":true,
        "showNextPage": false,
        "function":"testMethod_2",
@@ -23,6 +23,17 @@
            "fileName":""
        }
        
+   },
+   {
+       "q_title":"递归",
+       "showArticle":true,
+       "showNextPage": false,
+       "function":"testMethod_3",
+       "demo": {},
+       "article": {
+           "artTitle":"",
+           "fileName":""
+       }
+       
    }
-
 ]

@@ -41,31 +41,27 @@ public class TreeNode {
 
 }
 
-//public class TreeNodeType {
-////    public var val: Int
-////    public var left: T?
-////    public var right: T?
-////    public var next:
-////    public init(_ val: Int) {
-////        self.val = val
-////        self.left = nil
-////        self.right = nil
-////    }
-////
-//    static func from(_ arr:[Int?],_ index: Int) -> T? {
-//        var root:TreeNodeType = nil
-//        if index < arr.count {
-//            guard let val:Int = arr[index] else { return nil }
-//            root = Node(val)
-//            root?.left = from(arr, 2*index+1) as? T
-//            root?.right = from(arr, 2*index+2) as? T
-//        }
-//        return root
-//    }
-//
-//    
-//}
 
-
+extension TreeNode {
+    func treeDiscription() -> [Int] {
+        var res:[Int] = []
+        var queue:[TreeNode] = [self]
+        while !queue.isEmpty {
+            var count = queue.count
+            while count > 0 {
+                let node = queue.removeFirst()
+                res.append(node.val)
+                if let left = node.left {
+                    queue.append(left)
+                }
+                if let right = node.right {
+                    queue.append(right)
+                }
+                count -= 1
+            }
+        }
+        return res
+    }
+}
 
 

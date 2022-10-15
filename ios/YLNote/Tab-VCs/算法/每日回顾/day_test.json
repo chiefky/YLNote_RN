@@ -3,7 +3,18 @@
         "group_id":"Algo_day_test_0",
         "unfoldStatus":false,
         "group_title":"测试",
-        "questions": [
+        "questions": [            {
+            "q_title":"二叉树",
+            "showArticle": false,
+            "showNextPage": false,
+            "function":"daily_test_tree",
+            "demo": {},
+            "article": {
+                "artTitle":"",
+                "fileName":""
+            }
+            
+        },
             {
                 "q_title":"数组",
                 "showArticle": false,

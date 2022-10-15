@@ -25,6 +25,40 @@
         
     },
     {
+        "group_id":"group_app-start",
+        "unfoldStatus":false,
+        "group_title":"应用启动过程",
+        "questions": [
+            {
+                "q_id":"",
+                "q_title":"总卷",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"",
+                "article": {
+                    "art_id":"yn_compile_all",
+                    "art_url":"/content/AppStart/AppStart.md",
+                }
+            },
+            {
+                "q_id":"",
+                "q_title":"面试题整理",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"yn_compile_test",
+                    "art_url":"/content/AppStart/AppStart_test.md",
+                }
+            },
+        ]
+    },
+    {
         "group_id":"group_compile",
         "unfoldStatus":false,
         "group_title":"编译原理",

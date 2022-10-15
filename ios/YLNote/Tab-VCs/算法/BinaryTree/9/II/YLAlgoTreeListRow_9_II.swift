@@ -8,15 +8,12 @@
 
 import UIKit
 /**
- 给定一个二叉树，判断它是否是高度平衡的二叉树。
- 本题中，一棵高度平衡二叉树定义为：
- 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。
+ 236. 二叉树的最近公共祖先
+ 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
 
- 示例 1：
- 输入：root = [3,9,20,null,null,15,7]
- 输出：true
- https://leetcode.cn/problems/balanced-binary-tree/
+ 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”
 
+ 链接：https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/
  */
 class YLAlgoTreeListRow_9_II: YLBaseTableViewController {
 
@@ -28,24 +25,24 @@ class YLAlgoTreeListRow_9_II: YLBaseTableViewController {
     
     @objc func testMethod_1(){
         let root = TreeNode.from([3,9,20,nil,nil,15,7], 0)
-        let res = method_recursion(root)
+        let p = TreeNode(5)
+        let q = TreeNode(1)
+        let res = lowestCommonAncestor(root, p, q)
         print("🍎：\(res)")
 
     }
     
-    func method_recursion(_ root:TreeNode?) -> Bool {
-        guard let r = root else { return true }
-        let deepth_left = depth_recursion(r.left)
-        let deepth_right = depth_recursion(r.right)
-        return (abs(deepth_right - deepth_left) <= 1) && method_recursion(r.left) && method_recursion(r.right)
+    func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        guard let root = root,let p = p,let q = q  else { return nil }
+        if p.val == root.val || q.val == root.val {
+            return root
+        }
+        let l_root = lowestCommonAncestor(root.left, p, q)
+        let r_root = lowestCommonAncestor(root.right, p, q)
+        return l_root == nil ? r_root : (r_root == nil ? l_root : root)
+        
     }
     
-    func depth_recursion(_ root: TreeNode?) -> Int {
-        guard let r = root else { return 0 }
-        let left = depth_recursion(r.left)
-        let right = depth_recursion(r.right)
-        return 1 + max(left, right)
-    }
 
     //    MARK: override
     override func fileName() -> String {

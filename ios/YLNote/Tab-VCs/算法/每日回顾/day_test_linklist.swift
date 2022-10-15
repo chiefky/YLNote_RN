@@ -59,6 +59,25 @@ func linklist_qes_4(_ head1:ListNode?,_ head2:ListNode?) -> ListNode? {
     }
 }
 
+//MARK: 5
+func linklist_qes_5(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+    var ahead = 0
+       var h1 = l1,h2 = l2
+       let preHead = ListNode(-1)
+       var cur = preHead
+       while h1 != nil || h2 != nil || ahead != 0 {
+           let sum = (h1?.val ?? 0) + (h2?.val ?? 0) + ahead
+           let x = sum%10
+           ahead = sum/10
+           let node = ListNode(x)
+           cur.next = node
+           cur = node;
+           
+           h1 = h1?.next
+           h2 = h2?.next
+       }
+       return preHead.next
+}
 //MARK: test
 func testLinkList() {
     let linkList1 = LinkList()
@@ -71,12 +90,12 @@ func testLinkList() {
         linkList2.append(value: i)
     }
 
-    var node = linklist_qes_4(linkList1.first, linkList2.first)
+    var node = linklist_qes_5(linkList1.first, linkList2.first)
     var res = ""
     while node != nil {
         res += String(node!.val)
         res += node?.next == nil ? ".":"->"
         node = node?.next
     }
-    print("⛓结果：\(res) ");
+    print("👯结果：\(res) ");
 }

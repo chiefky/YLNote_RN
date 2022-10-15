@@ -2,7 +2,7 @@
 [
     {
         "q_id":"algo_tree-9_II",
-        "q_title":"二叉树的最近公共祖先II",
+        "q_title":"二叉树的最近公共祖先II（普通二叉树）",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle": false,
@@ -19,7 +19,7 @@
         }
     },    {
         "q_id":"algo_tree-9_I",
-        "q_title":"二叉搜索树的最近公共祖先I",
+        "q_title":"二叉搜索树的最近公共祖先I（二叉搜索树）",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle": false,

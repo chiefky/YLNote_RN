@@ -57,6 +57,10 @@ class YLAlgoTestViewController: YLBaseGroupTableViewController {
         print("🐝结果：\(res) ");
     }
     
+    @objc func daily_test_tree() {
+        testTree();
+    }
+    
     @objc func daily_test_string() {
         testString()
     }

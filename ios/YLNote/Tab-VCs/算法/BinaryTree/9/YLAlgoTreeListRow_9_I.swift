@@ -32,15 +32,16 @@ class YLAlgoTreeListRow_9_I: YLBaseTableViewController {
 
         // Do any additional setup after loading the view.
     }
+    /// 查找二叉搜索树公共祖先（查找公共路径）
     @objc func testMethod_1(){
         let root = TreeNode.from([6,2,8,0,4,7,9,nil,nil,3,5], 0)
         let p = TreeNode(2)
         let q = TreeNode(8)
-        let res = lowestCommonAncestor_twice(root, p, q)
+        let res = lowestCommonAncestor_lookfor_path(root, p, q)
         print("🍎：\(res)")
 
     }
-    func lowestCommonAncestor_twice(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor_lookfor_path(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         let p_path = lookforPath(root, p);
         let q_path = lookforPath(root, q);
         let p_leghth = p_path.count, q_length = q_path.count;
@@ -75,16 +76,17 @@ class YLAlgoTreeListRow_9_I: YLBaseTableViewController {
         return res
     }
     
+    /// 查找二叉搜索树公共祖先（迭代）
     @objc func testMethod_2(){
         let root = TreeNode.from([6,2,8,0,4,7,9,nil,nil,3,5], 0)
         let p = TreeNode(2)
         let q = TreeNode(8)
-        let res = lowestCommonAncestor_single(root, p, q)
-        print("🍎：\(res)")
+        let res = lowestCommonAncestor_iteration(root, p, q)
+        print("🍎root:\(res?.val)")
 
     }
     
-    func lowestCommonAncestor_single(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+    func lowestCommonAncestor_iteration(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
         guard let r = root,let p = p, let q = q else { return nil }
         var current:TreeNode? = r
         while let cur = current {
@@ -99,6 +101,29 @@ class YLAlgoTreeListRow_9_I: YLBaseTableViewController {
         return nil
     }
 
+    
+    /// 二叉搜索树查找公共祖先（递归）
+    @objc func testMethod_3(){
+            let root = TreeNode.from([6,2,8,0,4,7,9,nil,nil,3,5], 0)
+            let p = TreeNode(2)
+            let q = TreeNode(8)
+            let res = lowestCommonAncestor_recursion(root, p, q)
+            print("🍎root：\(res)")
+    }
+    
+    func lowestCommonAncestor_recursion(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
+        guard let root = root ,let p = p,let q = q else {
+            return nil
+        }
+        if root.val < p.val && root.val < q.val {
+            return lowestCommonAncestor_recursion(root.left, p, q)
+        } else if root.val > p.val && root.val > q.val {
+            return lowestCommonAncestor_recursion(root.right, p, q)
+        } else {
+            return root
+        }
+    }
+    
     //    MARK: override
     override func fileName() -> String {
         return "Algo_tree_row_9_I"

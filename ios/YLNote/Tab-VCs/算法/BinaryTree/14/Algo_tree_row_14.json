@@ -1,0 +1,28 @@
+
+[
+    {
+        "q_title":"序列化：",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"testMethod_serialize",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    {
+        "q_title":"反序列化：",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"testMethod_deserialize",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    }
+
+]

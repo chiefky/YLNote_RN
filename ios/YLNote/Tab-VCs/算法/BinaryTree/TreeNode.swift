@@ -16,6 +16,18 @@ public class Node {
     init(_ val: Int) {
         self.val = val
     }
+    
+    static func from(_ arr:[Int?],_ index: Int) -> Node? {
+        var root:Node? = nil
+        if index < arr.count {
+            guard let val:Int = arr[index] else { return nil }
+            root = Node(val)
+            root?.left = from(arr, 2*index+1)
+            root?.right = from(arr, 2*index+2)
+        }
+        return root
+    }
+
 }
 
 public class TreeNode {

@@ -566,8 +566,19 @@ func singleNumbers(_ nums: [Int]) -> Int {
     return res
 }
 
+func maxProfit(_ prices: [Int]) -> Int {
+       guard prices.count >= 2 else { return 0}
+       var maxProfit = 0, preMin = prices[0]
+       for price in prices {
+           preMin = min(preMin,price)
+           maxProfit = max(maxProfit,price-preMin)
+           print("\(maxProfit)--\(preMin)")
+       }
+       return maxProfit;
+}
+
 func testArray()  {
-    let nums = [1,2,1,3,2,5];
-    let res = singleNumbers(nums)
+    let nums = [7,1,5,3,6,4];
+    let res = maxProfit(nums)
     print("👨‍👩‍👧‍👦结果：\(res)")
 }

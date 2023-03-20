@@ -105,10 +105,6 @@ __weak id obj;
     [NSThread detachNewThreadSelector:@selector(createAndConfigObserverInSecondaryThread) toTarget:self withObject:nil];
 }
 
-- (void)testResponder {
-    
-}
-
 - (void)testUIRefresh {
     
 }

@@ -16,9 +16,14 @@
         "q_id":"runloop_other-2_0",
         "q_title":"Runloop与事件响应",
         "q_subtitle":"",
-        "showNextPage": false,
+        "showNextPage": true,
         "showArticle":true,
-        "function":"testResponder",
+        "function":"",
+        "demo": {
+            "className":"YLRunloopResponderController",
+            "style": 0,
+            "useXib": 0
+        },
         "article": {
             "art_id":"runloop_Responder",
             "art_url":"/content/Runloop/runloop_other/Runloop_responder.md",

@@ -49,20 +49,23 @@
 /// "✅GCD子线程：经验证，同NSThread一致"
 - (void)testPerformSelAfterDelayOnGCDRight {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
-        [self performSelector:@selector(printInfo) withObject:nil afterDelay:1];
+        [self performSelector:@selector(printInfo) withObject:nil afterDelay:0];
+//        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
         NSLog(@"---: block end");
     });
     NSLog(@"%s: Hello world",__func__);
 }
 
-/// "❌NSThread子线程：不执行"原因： 子线程执行完操作之后就会立即释放，即使我们使用强引用引用子线程使子线程不被释放，也不能给子线程再次添加操作，或者再次开启。这里可以使用Runloop。子线程获取其对应的Runloop对象并使之运行。一般使用常驻子线程。
+/// "❌NSThread子线程：不执行"原因： 子线程执行完操作之后就会立即释放，即使我们使用强引用子线程使子线程不被释放，也不能给子线程再次添加操作，或者再次开启。这里可以使用Runloop。子线程获取其对应的Runloop对象并使之运行。一般使用常驻子线程。
 - (void)testPerformSelOnNSthreadUntilDateWrong {
-    NSThread *thread = [[NSThread alloc] initWithBlock:^{
+    YLThread *thread = [[YLThread alloc] initWithBlock:^{
         NSLog(@"---: block end");
     }];
     [thread start];
+    NSLog(@"-----------------");
     [self performSelector:@selector(printInfo) onThread:thread withObject:nil waitUntilDone:NO];
+    NSLog(@"after performSelector -----------------");
+
 }
 
 /// "✅NSThread子线程：仅执行一次"

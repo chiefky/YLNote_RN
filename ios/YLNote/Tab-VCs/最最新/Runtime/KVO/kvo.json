@@ -1,0 +1,65 @@
+[
+    {
+        "q_id":"100",
+        "q_title":"重复添加Observer,只remove一次",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":false,
+        "function":"testAddObserverMulti",
+        "article": {
+            "art_id":"",
+            "art_url":"",
+            "art_title":"",
+        }
+
+    },
+    {
+        "q_id":"101",
+        "q_title":"KVO如何处理异常",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+    },
+    {
+        "q_id":"102",
+        "q_title":"KVO处理非对象和自定义对象",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+    },
+    {
+        "q_id":"103",
+        "q_title":"KVO与容器类",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+    },
+    {
+        "q_id":"104",
+        "q_title":"KVO和字典",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+    },
+    {
+        "q_id":"105",
+        "q_title":"KVO的内部实现机制",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"testMyKVO",
+    },
+    {
+        "q_id":"106",
+        "q_title":"KVO的正确性验证",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+    }
+    
+]

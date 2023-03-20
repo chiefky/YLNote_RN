@@ -11,6 +11,8 @@
 
 @interface YLTimerTestViewController ()
 
+@property (nonatomic,unsafe_unretained) CGFloat myName;
+
 @end
 
 @implementation YLTimerTestViewController
@@ -18,6 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.myName = 88;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"------：%@",self.myName);
 }
 
 #pragma mark - funcs

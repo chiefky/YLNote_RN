@@ -64,7 +64,7 @@ extension UIColor {
     
     
     /// 随机色值
-    static func random() -> UIColor {
+    @objc static func random() -> UIColor {
         return UIColor(red: .random(),
                        green: .random(),
                        blue: .random(),

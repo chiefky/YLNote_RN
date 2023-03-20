@@ -35,6 +35,20 @@ typedef void(^YLDemoProxyBlock)(YLProxy *);
     // 1. delegate 使用了strong关键字，可能会造成循环引用
     // 2. block 内部直接使用了block的持有者，可能会造成循环引用
     // 3. NSTimer 使用了timer的 持有者作为target，可能会造成循环引用
+    
+    
+    
+    NSMutableArray * arr = [[NSMutableArray alloc] init];
+
+    NSLog(@"init obj = %p",&arr);
+    self.yl_VBlock = ^{
+        NSLog(@"1秒后执行");
+        [arr addObject:@"2"];
+        NSLog(@"block obj = %p",&arr);
+        NSLog(@"🌹。。。。。：%ld",CFGetRetainCount((__bridge  CFTypeRef)arr));
+    };
+    self.yl_VBlock();
+    NSLog(@"出作用域了。。。。。：%ld",CFGetRetainCount((__bridge  CFTypeRef)arr));
 }
 
 #pragma mark - 解决Block循环引用的方案

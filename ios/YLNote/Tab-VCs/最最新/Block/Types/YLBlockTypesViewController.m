@@ -9,8 +9,8 @@
 #import "YLBlockTypesViewController.h"
 #import <objc/runtime.h>
 
-//static NSInteger static_global_num_blockTypes = 10;// 静态全局变量
-//NSInteger global_num = 10; // 全局变量
+static NSInteger static_global_num_blockTypes = 10;// 静态全局变量
+NSInteger global_num = 10; // 全局变量
 typedef void(^YLTypesBlock)(void);
 
 @interface YLBlockTypesViewController ()
@@ -74,7 +74,7 @@ typedef void(^YLTypesBlock)(void);
 
 /// __NSStackBlock__
 /**
- - - 前提：在block内部只能使用外部变量或OC属性，不能使用静态变量和全局变量，并且不对block赋值或者只能赋值给weak修饰的变量
+ - - 前提：在block内部使用外部变量或OC属性，也可以使用静态变量和全局变量，并且不对block赋值或者只能赋值给weak修饰的变量
  */
 - (void)testBlock_Stack {
     NSInteger num = 3;

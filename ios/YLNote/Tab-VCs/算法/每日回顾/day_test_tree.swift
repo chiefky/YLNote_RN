@@ -366,11 +366,62 @@ func tree_qes_9_2_recursion(_ root: TreeNode?,_ p: TreeNode?,_ q:TreeNode?) -> T
 
 //MARK: test
 func testTree() {
-    let t = TreeNode.from([3,5,1,6,2,0,8,nil,nil,7,4], 0)
-    let p = TreeNode(5)
-    let q = TreeNode(1)
-    
-    let res = tree_qes_9_2_recursion(t, p, q)
-    print("\(res?.treeDiscription())")
+    let t = TreeNode.from([3,9,20,nil,nil,15,7], 0)
+    let res = isBalanced(t)
+    print("🌹：\(res)")
 
+}
+func isSymmetric(_ root: TreeNode?) -> Bool {
+    guard let root = root else {
+        return true
+    }
+    return dfs_check(root.left, root.right)
+}
+
+func dfs_check(_ left:TreeNode?,_ right: TreeNode?) -> Bool {
+    if left == nil && right == nil {
+        return true
+    } else if left == nil || right == nil {
+        return false;
+    } else {
+       return left?.val == right?.val && dfs_check(left?.left, right?.right) && dfs_check(left?.right, right?.left)
+    }
+}
+
+func mergeTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> TreeNode? {
+    var root:TreeNode? = nil
+    if let root1 = root1 {
+        if let root2 = root2 {
+            root = TreeNode(root1.val+root2.val)
+            root?.left = mergeTrees(root1.left, root2.left)
+            root?.right = mergeTrees(root1.right, root2.right)
+        } else {
+            root = root1
+        }
+    } else {
+        if let root2 = root2 {
+            root = root2
+        } else {
+            root = nil
+        }
+    }
+    return root
+}
+
+func isBalanced(_ root: TreeNode?) -> Bool {
+    guard let root = root else {
+        return true
+    }
+    let l = depth(root.left)
+    let r = depth(root.right)
+    return abs(l-r) <= 1 && isBalanced(root.left) && isBalanced(root.right)
+}
+
+func depth(_ root:TreeNode?) -> Int {
+    guard let root = root else {
+        return 0
+    }
+    let l = depth(root.left)
+    let r = depth(root.right)
+    return max(l, r) + 1;
 }

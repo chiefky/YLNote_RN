@@ -7,12 +7,50 @@
 //
 
 import Foundation
+import UIKit
 
 func testString() {
-    let s2 = "eidbaooo";
-    let res = string_method_qes_7(s2)
+    let s2 = "abcabcbb";
+    let res = fix_lengthOfLongestSubstring(s2)
     print("🔤结果：\(res)")
 }
+
+/// 无重复最长子串
+/// - Parameter s: 字符串
+/// - Returns: 最长子串的长度
+func fix_lengthOfLongestSubstring(_ s: String) -> Int {
+    guard s.count > 1 else {
+        return s.count
+    }
+    var res = 0
+    var window:[Character] = []
+    for char in s {
+        while window.contains(char) {
+            window.removeFirst()
+        }
+        window.append(char)
+        res = max(res, window.count)
+    }
+    return res
+}
+
+func lookforSuper(_ view1: UIView,_ view2:UIView) -> UIView {
+
+    var a:UIView? = view1.superview, b = view2.superview
+    if a == nil {
+        a = view2
+    }
+    while let tmpA = a, let tmpB = b {
+        if tmpA == tmpB {
+            return tmpA
+        }
+        a = tmpA.superview
+        b = tmpB.superview
+    }
+    
+    return a!
+}
+
 
 /// 翻转单词顺序：
 /// - Parameter s: "  hello world!  "
@@ -131,3 +169,4 @@ func string_method_qes_7(_ s: String) -> String {
     }
     return res.joined(separator: " ")
 }
+

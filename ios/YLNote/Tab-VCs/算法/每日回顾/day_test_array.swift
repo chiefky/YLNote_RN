@@ -39,22 +39,40 @@ func array_qes_0(_ nums:[Int]) -> Int {
 }
 
 //MARK: 1
-/// 判断一个数组是否是连续的
+/// 判断5张牌是否是顺子
 /// - Parameter nums: [1,2,3,5]
 /// - Returns: false
-func array_method_qes_1(_ nums:[Int]) -> Bool {
-    guard nums.count > 1 else {
-        return false
-    }
-    let sorted = nums.sorted()
-    for i in 1...sorted.count-1 {
-        let distance = sorted[i] - sorted[i-1]
-        if abs(distance) != 1 {
-            return false
+///
+func array_qes_1(_ nums:[Int]) -> Bool {
+    var numsSet = [Int]();
+    var ma = 0,mi = 14;
+    for num in nums {
+        if num == 0 {
+            continue;
         }
+        if numsSet.contains(num) {
+            return false;
+        }
+        ma = max(ma, num);
+        mi = min(mi, num);
+        numsSet.append(num);
     }
-    return true
+    return ma - mi < 5;
 }
+
+//func array_method_qes_1(_ nums:[Int]) -> Bool {
+//    guard nums.count > 1 else {
+//        return false
+//    }
+//    let sorted = nums.sorted()
+//    for i in 1...sorted.count-1 {
+//        let distance = sorted[i] - sorted[i-1]
+//        if abs(distance) != 1 {
+//            return false
+//        }
+//    }
+//    return true
+//}
 //MARK: 2
 /// . 两数之和
 /// - Parameters:
@@ -73,6 +91,26 @@ func array_method_qes_2(_ nums:[Int],target:Int) -> [Int] {
    return []
 }
 
+/// 2-II
+/// - Parameters:
+///   - nums: 有序数组
+///   - target: 目标
+/// - Returns: 下标
+func array_method_qes_2_II(_ nums:[Int],target:Int) -> [Int] {
+    var l = 0,r = nums.count-1
+    while l < r {
+        let sum = nums[l] + nums[r]
+        if sum == target {
+            return [l+1,r+1]
+        } else if sum < target {
+            l += 1
+        } else {
+            r -= 1
+        }
+    }
+    return []
+}
+//MARK:3
 ///  删除有序数组中的重复项
 /// - Parameter nums: [0,0,1,1,1,2,2,3,3,4]
 /// - Returns: 5, nums = [0,1,2,3,4]
@@ -93,8 +131,8 @@ func array_method_qes_3(_ nums: inout [Int]) -> Int {
     print("⏹\(nums)");
     return nums.count
 }
-
-/// 移除元素
+//MARK：4
+/// 移除指定元素
 /// - Parameters:
 ///   - nums: [0,0,1,1,1,1,2,3,3,4]
 ///   - val: 1
@@ -141,6 +179,7 @@ func array_method_qes_4(_ nums: inout [Int],_ val: Int) -> Int {
 //    return nums.count
 //}
 
+//MARK: 5
 /// 搜索插入位置
 /// - Parameters:
 ///   - nums: [1,3,5,6]
@@ -167,15 +206,13 @@ func array_method_qes_5(_ nums: [Int],_ target: Int) -> Int {
 
 //MARK: 6
 func array_qes_6(_ nums: [Int]) -> Int {
-    if nums.isEmpty {
-        return 0
+    var preMax = 0
+    var maxValue = nums[0]
+    for num in nums {
+        preMax = max(preMax+num,num)
+        maxValue = max(maxValue,preMax)
     }
-    var maxSum = nums[0], preMax = nums[0]
-    for i in 1..<nums.count {
-        preMax = max(preMax+nums[i], nums[i])
-        maxSum = max(maxSum,preMax)
-    }
-    return maxSum
+    return maxValue
 }
 
 //MARK: 10
@@ -577,8 +614,27 @@ func maxProfit(_ prices: [Int]) -> Int {
        return maxProfit;
 }
 
+
+/// 构建乘积数组
+/// - Parameter nums: nums
+/// - Returns:
+func array_qes_30(_ nums: [Int]) -> [Int] {
+    guard nums.count > 1 else { return nums }
+    let n = nums.count    
+    var B = Array(repeating: 1, count: n)
+    for i in 1...n-1 {
+        B[i] = B[i-1] * nums[i-1]
+    }
+    var r = 1
+    for i in (0...n-1).reversed() {
+        B[i] = B[i] * r
+        r = r * nums[i]
+    }
+    return B
+}
+
 func testArray()  {
-    let nums = [7,1,5,3,6,4];
-    let res = maxProfit(nums)
+    let nums = [1,2,3,4,5];
+    let res = array_qes_1(nums)
     print("👨‍👩‍👧‍👦结果：\(res)")
 }

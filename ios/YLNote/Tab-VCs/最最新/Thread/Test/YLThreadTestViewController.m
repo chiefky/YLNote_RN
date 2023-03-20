@@ -62,6 +62,23 @@
         }];
     }
 }
+
+- (void)testGCDSync_serial_concurrent {
+    dispatch_queue_t queue_s = dispatch_queue_create("yuri.gcd.serial", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue_c = dispatch_queue_create("yuri.gcd.concurrent", DISPATCH_QUEUE_CONCURRENT);
+    NSLog(@"-------main start---------");
+    dispatch_sync(queue_s, ^{
+        NSLog(@"-------串行队列 中：%@",[NSThread currentThread]);
+
+    });
+
+    NSLog(@"------- main 中 ---------");
+    dispatch_sync(queue_c, ^{
+        NSLog(@"-------并发队列 中：%@ ",[NSThread currentThread]);
+    });
+    NSLog(@"------- main end ---------");
+    
+}
 #pragma mark - cell data
 - (NSString *)fileName {
     return @"thread_test";

@@ -27,32 +27,32 @@ dispatch_semaphore_t semaphoreLock = nil;
 /// 多线程同步--dispatch_group_wait
 - (void)testGCD_seamphore_sync {
     dispatch_queue_t queue = dispatch_queue_create("yuli.thread.gcd.group", DISPATCH_QUEUE_CONCURRENT);
-    dispatch_semaphore_t seamphore = dispatch_semaphore_create(0);
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     [[AFHTTPSessionManager manager] GET:@"http://www.baidu.com" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 请求成功
         NSLog(@"🍎 success: %@", [NSThread currentThread]);
-        dispatch_semaphore_signal(seamphore);
+        dispatch_semaphore_signal(semaphore);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 请求失败
         NSLog(@"🍎 failure: %@", [NSThread currentThread]);
-        dispatch_semaphore_signal(seamphore);
+        dispatch_semaphore_signal(semaphore);
     }];
     sleep(3);
     [[AFHTTPSessionManager manager] GET:@"http://www.baidu.com" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 请求成功
         NSLog(@"🍇 success: %@", [NSThread currentThread]);
-        dispatch_semaphore_signal(seamphore);
+        dispatch_semaphore_signal(semaphore);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         // 请求失败
         NSLog(@"🍇 success: %@", [NSThread currentThread]);
-        dispatch_semaphore_signal(seamphore);
+        dispatch_semaphore_signal(semaphore);
         
     }];
     dispatch_async(queue, ^{
         long result =
-        dispatch_semaphore_wait(seamphore, DISPATCH_TIME_FOREVER);
-        result = dispatch_semaphore_wait(seamphore, DISPATCH_TIME_FOREVER);
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        result = dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         
         if (result == 0) {
             NSLog(@"捕获所有宝宝🍎🍇...");

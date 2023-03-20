@@ -1,0 +1,60 @@
+[
+    {
+        "q_id":"thread_nsoperation-1",
+        "q_title":"queue + addDependency",
+        "q_subtitle":"依赖添加必须在addOperation之前，任务默认是第一优先级【isReady】;",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_invocation_dependency_queue",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"thread_nsoperation-2",
+        "q_title":"只使用addDependency, 不使用queue",
+        "q_subtitle":"start顺序必须是依赖顺序的逆序，任务默认是第一优先级【isReady】;",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_invocation_dependency_non_queue",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"thread_nsoperation-3",
+        "q_title":"修改queuePriority不能实现任务依赖（无效方案）",
+        "q_subtitle":"修改任务的queuePriority,operation在队列中的优先级（第二优先级）",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_invocation_queuePriority",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"thread_nsoperation-4",
+        "q_title":"修改qualityOfService,不能实现任务依赖（无效方案）",
+        "q_subtitle":"属性`qualityOfService`，注意区分是queue还是operation的优先级，二者没有直接关系",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testOperation_invocation_qualityOfService",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_NSOperation.md",
+            "art_title":"",
+        }
+        
+    },
+    
+]
+ 

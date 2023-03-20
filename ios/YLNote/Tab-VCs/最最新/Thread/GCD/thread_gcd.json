@@ -130,6 +130,24 @@
             "art_url":"/content/Thread/GCD/Thread-GCD_IO.md",
             "art_title":"",
         }
+    },
+    {
+        "q_id":"thread_gcd-7",
+        "q_title":"GCD多线程依赖实现方式",
+        "q_subtitle":"几种--2种",
+        "showNextPage": true,
+        "showArticle":true,
+        "function":"",
+        "demo": {
+            "className":"YLThreadGCDDependcyController",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"yn_6004",
+            "art_url":"/content/Thread/GCD/Thread-GCD_IO.md",
+            "art_title":"",
+        }
     }
 
 ]

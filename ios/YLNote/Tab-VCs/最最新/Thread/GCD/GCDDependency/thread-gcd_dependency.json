@@ -1,0 +1,31 @@
+[ {
+        "q_id":"thread_gcd-1",
+        "q_title":"串行队列+信号量",
+        "q_subtitle":"串行队列保证任务阻塞顺序，信号量控制任务放行",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_dependency_serial_queue",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/GCD/Thread-GCD_group.md",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"thread_gcd-2",
+        "q_title":"使用Group",
+        "q_subtitle":"dispatch_group_wait阻塞当前线程，等待group中任务执行完成才继续执行",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testGCD_dependency_group_notify",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/GCD/Thread-GCD_group.md",
+            "art_title":"",
+        }
+        
+    },
+    
+]
+ 

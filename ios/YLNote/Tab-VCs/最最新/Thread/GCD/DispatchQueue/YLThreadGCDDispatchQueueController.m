@@ -46,28 +46,100 @@
 
 /// 不同队列任务同步（慎用）
 - (void)testGCD_queue_setTarget {
-    dispatch_queue_t targetQueue = dispatch_queue_create("yuli.target.queue", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t targetQueue = dispatch_queue_create("yuli.target.queue", DISPATCH_QUEUE_CONCURRENT);
     
-    dispatch_queue_t queue1 = dispatch_queue_create("test.1", DISPATCH_QUEUE_SERIAL);
-    dispatch_queue_t queue2 = dispatch_queue_create("test.2", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue_1 = dispatch_queue_create("test.1", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue_2 = dispatch_queue_create("test.2", DISPATCH_QUEUE_SERIAL);
 
-    dispatch_set_target_queue(queue1, targetQueue);
-    dispatch_set_target_queue(queue2, targetQueue);
+    dispatch_set_target_queue(queue_1, targetQueue);
+    dispatch_set_target_queue(queue_2, targetQueue);
     
-    dispatch_async(queue1, ^{
-        // 会在 target 队列（也在queue1队列），相同的线程里执行
-        NSLog(@"1 in %@",[NSThread currentThread]);
+    dispatch_async(queue_1, ^{
+        NSLog(@"A in %@",[NSThread currentThread]);
         [NSThread sleepForTimeInterval:3.f];
-        NSLog(@"1 out");
+        NSLog(@"A out");
     });
-    
-    dispatch_async(queue2, ^{
-        // 会在 target 队列，相同的线程里执行
-        NSLog(@"2 in %@",[NSThread currentThread]);
+
+
+    dispatch_async(queue_1, ^{
+        NSLog(@"B in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:3.f];
+        NSLog(@"B out");
+    });
+
+    dispatch_async(queue_2, ^{
+        NSLog(@"C in %@",[NSThread currentThread]);
         [NSThread sleepForTimeInterval:2.f];
-        NSLog(@"2 out");
+        NSLog(@"C out");
         
     });
+    
+    dispatch_async(queue_2, ^{
+        NSLog(@"D in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"D out");
+        
+    });
+
+    dispatch_barrier_async(targetQueue, ^{
+        NSLog(@"barrier in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"barrier out");
+    });
+    
+    dispatch_async(targetQueue, ^{
+        NSLog(@"M in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"M out");
+
+    });
+    
+}
+
+/// 改变队列层级体系（慎用）
+- (void)testGCD_queue_setTarget2 {
+    dispatch_queue_t targetQueue = dispatch_queue_create("yuli.target.queue", DISPATCH_QUEUE_SERIAL);
+    
+    dispatch_queue_t queue_1 = dispatch_queue_create("test.1", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue_2 = dispatch_queue_create("test.2", DISPATCH_QUEUE_CONCURRENT);
+
+    dispatch_set_target_queue(queue_1, targetQueue);
+    dispatch_set_target_queue(queue_2, targetQueue);
+    
+    dispatch_async(queue_1, ^{
+        NSLog(@"A in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:3.f];
+        NSLog(@"A out");
+    });
+
+
+    dispatch_async(queue_1, ^{
+        NSLog(@"B in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:3.f];
+        NSLog(@"B out");
+    });
+
+    dispatch_async(queue_2, ^{
+        NSLog(@"C in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"C out");
+        
+    });
+    
+    dispatch_async(queue_2, ^{
+        NSLog(@"D in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"D out");
+        
+    });
+    
+    dispatch_async(targetQueue, ^{
+        NSLog(@"M in %@",[NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2.f];
+        NSLog(@"M out");
+
+    });
+    
 }
 - (void)testGCD_queue_after {
     NSLog(@"Hello world---0");

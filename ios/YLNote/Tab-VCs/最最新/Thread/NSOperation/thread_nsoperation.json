@@ -77,64 +77,27 @@
         }
         
     },
-    {
-        "q_id":"thread_nsoperation-4",
-        "q_title":"多任务依赖(使用queue),第一优先级【isReady】",
-        "q_subtitle":"`[op1 addDependency:op2]`tip: 依赖必须在addOperation之前",
-        "showNextPage": false,
-        "showArticle":true,
-        "function":"testOperation_invocation_dependency_queue",
-        "article": {
-            "art_id":"yn_6001",
-            "art_url":"/content/Thread/Thread_NSOperation.md",
-            "art_title":"",
-        }
-        
-    },
-    {
-        "q_id":"thread_nsoperation-5",
-        "q_title":"多任务依赖(不使用queue),第一优先级【isReady】",
-        "q_subtitle":"`[op1 addDependency:op2]`tip: start顺序必须:op4,op3,op2,op1;",
-        "showNextPage": false,
-        "showArticle":true,
-        "function":"testOperation_invocation_dependency_non_queue",
-        "article": {
-            "art_id":"yn_6001",
-            "art_url":"/content/Thread/Thread_NSOperation.md",
-            "art_title":"",
-        }
-        
-    },
-    {
-        "q_id":"thread_nsoperation-6",
-        "q_title":"修改 Operation 在队列中的优先级,第二优先级【queuePriority】",
-        "q_subtitle":"属性`queuePriority`",
-        "showNextPage": false,
-        "showArticle":true,
-        "function":"testOperation_invocation_queuePriority",
-        "article": {
-            "art_id":"yn_6001",
-            "art_url":"/content/Thread/Thread_NSOperation.md",
-            "art_title":"",
-        }
-        
-    },
-    {
-        "q_id":"thread_nsoperation-7",
-        "q_title":" 修改 Operation 执行任务线程的优先级",
-        "q_subtitle":"属性`qualityOfService`，注意区分是queue还是operation的优先级，二者没有直接关系",
-        "showNextPage": false,
-        "showArticle":true,
-        "function":"testOperation_invocation_qualityOfService",
-        "article": {
-            "art_id":"yn_6001",
-            "art_url":"/content/Thread/Thread_NSOperation.md",
-            "art_title":"",
-        }
-        
-    },
-    
-    
+   
+   {
+       "q_id":"thread_nsoperation-4",
+       "q_title":"NSOperation多线程依赖实现方式",
+       "q_subtitle":"几种--2种",
+       "showNextPage": true,
+       "showArticle":true,
+       "function":"",
+       "demo": {
+           "className":"YLThreadOperationDependencyController",
+           "style": 0,
+           "useXib": 0
+       },
+       "article": {
+           "art_id":"yn_6001",
+           "art_url":"/content/Thread/Thread_NSOperation.md",
+           "art_title":"",
+       }
+       
+   },
+
     
 ]
  

@@ -1,11 +1,11 @@
 [
     {
-        "q_id":"thread_test-0",
-        "q_title":"原子性和非原子性",
+        "q_id":"thread_dependency_gcd-0",
+        "q_title":"GCD线程依赖: 信号量",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"testPropertyNonAtomic",
+        "function":"testDependency_gcd_semaphore",
         "article": {
             "art_id":"yn_6001",
             "art_url":"/content/Thread/Thread_test.md",
@@ -14,17 +14,25 @@
         
     },
     {
-        "q_id":"thread_test-1",
-        "q_title":"任务与队列的多种组合场景",
+        "q_id":"thread_dependency_gcd-1",
+        "q_title":"GCD线程依赖: dispatch_group",
         "q_subtitle":"",
-        "showNextPage": true,
+        "showNextPage": false,
         "showArticle":true,
-        "function":"",
-        "demo": {
-            "className":"YLThreadAsyncQueueGroupController",
-            "style": 0,
-            "useXib": 0
-        },
+        "function":"testDependency_gcd_group",
+        "article": {
+            "art_id":"yn_6001",
+            "art_url":"/content/Thread/Thread_test.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"thread_dependency_gcd-2",
+        "q_title":"GCD线程依赖：dispatch_setTarget",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testDependency_setTarget",
         "article": {
             "art_id":"yn_6001",
             "art_url":"/content/Thread/Thread_test.md",
@@ -33,46 +41,33 @@
         
     },
     {
-        "q_id":"thread_test-2",
-        "q_title":"线程池缓存线程最大并发数(NSOperation): 64",
+        "q_id":"thread_multiToSync_gcd-0",
+        "q_title":"GCD异步任务同步：dispatch_group + wait",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"testMaxCount_NSOperation",
+        "function":"testMultiToSync_group_wait",
         "article": {
             "art_id":"yn_6001",
             "art_url":"/content/Thread/Thread_test.md",
             "art_title":"",
         }
+        
     },
     {
-        "q_id":"thread_test-3",
-        "q_title":"线程池缓存线程最大并发数(GCD): 64",
+        "q_id":"thread_multiToSync_gcd-1",
+        "q_title":"GCD异步任务同步：dispatch_group + notify",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"testMaxCount_GCD",
+        "function":"testMultiToSync_group_notify",
         "article": {
             "art_id":"yn_6001",
             "art_url":"/content/Thread/Thread_test.md",
             "art_title":"",
         }
-
+        
     },
-    {
-        "q_id":"thread_test-4",
-        "q_title":"在当前线程下，sync 一个 串行队列 或 并行队列 的区别",
-        "q_subtitle":"",
-        "showNextPage": false,
-        "showArticle":true,
-        "function":"testGCDSync_serial_concurrent",
-        "article": {
-            "art_id":"yn_6001",
-            "art_url":"/content/Thread/Thread_test.md",
-            "art_title":"",
-        }
-
-    }
 
     
 ]

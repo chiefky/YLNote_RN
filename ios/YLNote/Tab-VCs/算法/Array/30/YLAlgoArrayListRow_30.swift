@@ -37,25 +37,22 @@ class YLAlgoArrayListRow_30: YLBaseTableViewController {
     }
     
     /// 时间复杂度：O(n)，空间复杂度：O(1)
-    /// - Parameter a: nums
-    /// - Returns: nums
+    /// 分段计算
     func constructArr(_ a: [Int]) -> [Int] {
-        guard !a.isEmpty else { return [] }
-        let length = a.count
-        var B:[Int] = Array(repeating: 1, count: length)
-        for i in 1...length-1 {
-            B[i] = B[i-1] * a[i-1]
+        guard !a.isEmpty else {return []}
+        let n = a.count;
+        var B:[Int] = Array(repeating: 1, count: n)
+        for i in 1..<n {
+            B[i] = B[i-1] * a[i-1];
         }
-        var R = 1
-        for j in (0...length-1).reversed() {
-            B[j] = B[j] * R
-            R = R * a[j]
+        var C = 1;
+        for i in (0...n-1).reversed() {
+            B[i] = B[i] * C
+            C *= a[i];
         }
-        return B
+        return B;
     }
 
-    
-    
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_30"

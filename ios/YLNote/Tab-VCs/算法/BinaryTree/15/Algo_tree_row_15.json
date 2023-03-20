@@ -1,21 +1,10 @@
 
 [
     {
-        "q_title":"方法1：快慢指针",
-        "showArticle": false,
+        "q_title":"递归",
+        "showArticle":true,
         "showNextPage": false,
-        "function":"testMethod_1",
-        "demo": {},
-        "article": {
-            "artTitle":"",
-            "fileName":""
-        }
-        
-    },    {
-        "q_title":"方法2：左右指针（优化快慢指针）",
-        "showArticle": false,
-        "showNextPage": false,
-        "function":"testMethod_2",
+        "function":"testMethod_recursive",
         "demo": {},
         "article": {
             "artTitle":"",
@@ -23,6 +12,17 @@
         }
         
     },
+    {
+        "q_title":"迭代",
+        "showArticle":true,
+        "showNextPage": false,
+        "function":"testMethod_iterator",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    }
 
-    
-]   
+]

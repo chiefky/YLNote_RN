@@ -23,29 +23,35 @@ class YLAlgoArrayListRow_6: YLBaseTableViewController {
     }
     
     @objc func testMethod_1() {
-        let array = [-2,1,-3,4,-1,2,1,-5,4]
-        let res = method_1(array);
+        let array = [1,-1,3]//[-2,1,-3,4,-1,2,1,-5,4]
+        let res = maxSubArray(array);
         print("结果：\(res)")
     }
-
     
-    /// 动态规划 最大子数组可以分解成任何一个数组+[当前元素]：只要前一个数组的和+当前元素>当前元素就将当前元素加入前一个数组，否则取当前元素作为新的子数组
-    /// 时间复杂度O：(n）,空间复杂度：O(1)
-    /// - Parameter nums: 初始数组
-    /// - Returns: 最大和
-    func method_1(_ nums: [Int]) -> Int {
-        if nums.isEmpty {
-            return (0);
+    /// 时间复杂度：O(n），空间复杂度：O(1)
+    /// 动态规划
+    func maxSubArray(_ nums: [Int]) -> Int {
+        var subSum = nums[0],preSum = 0;
+        var subArray:[Int] = [],preSubArray:[Int] = [];
+        for num in nums {
+            if num >= preSum+num {
+                preSubArray = [num];
+            } else {
+                preSubArray.append(num);
+            }
+            preSum = max(preSum+num, num);
+            
+            if preSum > subSum {
+                subArray = preSubArray;
+            }
+            subSum = max(preSum, subSum);
+            print("🌹(\(num))|\(preSubArray)");
         }
-        var preSum = nums[0]
-        var maxvalue = nums[0]
-        for i in 1..<nums.count {
-            preSum = max(preSum+nums[i], nums[i])
-            maxvalue = max(preSum, maxvalue)
-        }
-        return maxvalue
+        print("最大和的连续子数组为\(subArray)");
+        return subSum;
     }
-    
+
+        
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_6"

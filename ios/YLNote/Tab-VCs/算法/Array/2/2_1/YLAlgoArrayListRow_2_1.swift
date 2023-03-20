@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 /**
  给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target  的那 两个 整数，并返回它们的数组下标。
  你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。
@@ -26,7 +27,7 @@ class YLAlgoArrayListRow_2_1: YLBaseTableViewController {
     
     @objc func testMethod1() {
         let array = [11,13,12,1,3,4]
-        let res = method_1(array, 13);
+        let res = twoSum(array, 13);
         print("结果：\(res)")
     }
     
@@ -37,20 +38,19 @@ class YLAlgoArrayListRow_2_1: YLBaseTableViewController {
     ///   - nums: 任意数组
     ///   - target: 目标和
     /// - Returns: 任意满足和为target的组合元素的索引
-    func method_1(_ nums: [Int], _ target: Int) -> [Int] {
-          if nums.count <= 1 {
-              return []
-          }
-          var dic:[Int:Int] = [:]
-          for (idx,value) in nums.enumerated() {
-              if let pre_index = dic[target-value] {
-                  return [pre_index,idx]
-              } else {
-                  dic[value] = idx;
-              }
-          }
-          return [];
-          }
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var dic:[Int:Int] = [:]
+        for (idx,num) in nums.enumerated() {
+            let another = target - num;
+            if let j = dic[another] {
+                return [idx,j];
+            } else {
+                dic[num] = idx;
+            }
+        }
+        return [];
+    }
+    
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_2_1"

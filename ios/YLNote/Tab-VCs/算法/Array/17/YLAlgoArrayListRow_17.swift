@@ -39,53 +39,52 @@ class YLAlgoArrayListRow_17: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         let array = [-2,-1,0,1,1,3,2,-1,-4]
-        let res = method_three_pointer(array)
+        let res = threeSum(array)
         print("🍎结果：\(res)")
     }
     
-    /// 时间复杂度O(n(n+1)/2)，空间复杂度：O(n）(忽略快速排序的时间、空间复杂度)
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
-    func method_three_pointer(_ nums: [Int]) -> [[Int]] {
-        guard nums.count > 2 else {
-            return []
-        }
-        let sorted_nums = nums.sorted()
-        print("started:\(sorted_nums)")
-        if sorted_nums.first! > 0 || sorted_nums.last! < 0 {
-            return []
-        } else if sorted_nums.first! == sorted_nums.last!,sorted_nums.first! == 0 {
-            return [[0,0,0]]
+    /// 时间复杂度：O(n^2)，空间复杂度：O(1)；忽略了排序的复杂度
+    /// 排序+双指针
+    func threeSum(_ nums: [Int]) -> [[Int]] {
+        let nums = nums.sorted();
+        var res:[[Int]] = [];
+        let n = nums.count;
+        guard let first = nums.first,let last = nums.last else { return [] }
+        if first > 0 || last < 0  {
+            return [];
+        } else if first == last,first == 0 {
+            return [[0,0,0]];
         } else {
-            var res:[[Int]] = []
-            for i in 0..<sorted_nums.count {
-                if i > 0 , sorted_nums[i] == sorted_nums[i-1] {
-                    continue
+            for first in 0...n-1 {
+                if first>0,nums[first] == nums[first-1] {
+                    continue;
                 }
-                var l = i + 1, r = sorted_nums.count - 1
+                
+                var l = first+1,r = n - 1;
+                let target = 0 - nums[first];
                 while l < r {
-                    let sum = sorted_nums[i] + sorted_nums[l] + sorted_nums[r]
-                    if sum > 0 {
-                      r -= 1
-                    } else if sum < 0 {
+                    if nums[l]+nums[r] < target {
                         l += 1
+                    } else if nums[l]+nums[r] > target {
+                        r -= 1
                     } else {
-                        res.append([sorted_nums[i],sorted_nums[l],sorted_nums[r]])
-                        while r > l, sorted_nums[r] == sorted_nums[r-1] {
-                            r -= 1
-                        }
-                        while l < r, sorted_nums[l] == sorted_nums[l+1] {
+                        // 先去重，找到最右面的left有效位和最左面的right有效位
+                        while l<r,nums[l] == nums[l+1] {
                             l += 1
                         }
+                        while l<r,nums[r] == nums[r-1] {
+                            r -= 1;
+                        }
+                        res.append([nums[first],nums[l],nums[r]]);
+                        // 添加完有效结果后，左右区间个缩进1个位置
                         l += 1;
-                        r -= 1
+                        r -= 1;
                     }
                 }
-                print("\(i),🌹：\(res)")
             }
-            return res;
         }
-       }
+        return res;
+    }
 
     //    MARK: override
     override func fileName() -> String {

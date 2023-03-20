@@ -38,38 +38,36 @@ class YLAlgoArrayListRow_24: YLBaseTableViewController {
 
     @objc func testMethod_2() {
         let arr = [0,1,2,3,4,5,6,7,9]
-        let res = binary_compare(arr)
+        let res = missingNumber(arr)
         print("🍎结果：\(res)")
+    }
+    /// 时间复杂度：O(logn)，空间复杂度：O(1)
+    /// 二分查找 (注意临界点取值<=)
+    func missingNumber(_ nums:[Int]) -> Int {
+        var l = 0,r = nums.count-1;
+        while l <= r {
+            let mid = l + (r-l)/2
+            if nums[mid] == mid {
+                r = mid + 1
+            } else {
+                l = mid - 1
+            }
+        }
+        return l;
     }
     
     /// 时间复杂度：O(n)，空间复杂度：O(1)
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
+    /// 迭代
     func compareIndex(_ nums:[Int]) -> Int {
-        let right = nums.count
+        let right = nums.count-1;
         for i in 0...right {
-            if i<right,nums[i] != i {
-                return i
+            if nums[i] != i {
+                return i;
             }
         }
-        return right
+        return nums.count;
     }
     
-    /// 时间复杂度：O(logn)，空间复杂度：O(1)
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
-    func binary_compare(_ nums: [Int]) -> Int {
-        var left = 0,right = nums.count - 1
-        while left <= right {
-            let mid = left + (right-left)/2
-            if nums[mid] == mid {
-                left = mid + 1
-            } else {
-                right = mid - 1
-            }
-        }
-        return left
-    }
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_24"

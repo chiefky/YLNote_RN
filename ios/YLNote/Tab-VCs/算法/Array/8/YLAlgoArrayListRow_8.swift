@@ -28,36 +28,31 @@ class YLAlgoArrayListRow_8: YLBaseTableViewController {
         var array = [3,7]
         let arr2 = [1,2,8,9]
         
-        method_1(&array,2,arr2,4);
+        merge(&array, 2, arr2, 4);
         print("结果：\(array)")
     }
     
-    /// 利用双指针，逆向插入
-    /// 时间复杂度：O(m+n)，空间复杂度：O(1)
-    /// - Parameters:
-    ///   - nums1: nums1
-    ///   - m: 有效nums1的长度
-    ///   - nums2: nums2
-    ///   - n: 有效nums2的长度
-    func method_1(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
-        var p1 = m-1,p2 = n-1;
-        var p = m + n - 1;
-        while p1 >= 0 || p2 >= 0 {
-            if p1 == -1 {
-                nums1[p] = nums2[p2]
-                p2 -= 1
-            } else if p2 == -1 {
-                nums1[p] = nums1[p1]
-                p1 -= 1
-            } else if nums1[p1] > nums2[p2] {
-                nums1[p] = nums1[p1]
-                p1 -= 1
+    /// 时间复杂度：O(n），空间复杂度：O(1）
+    /// 由后向前插入
+    func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
+        var p = m+n-1;
+        var m = m-1,n = n-1;
+        while n >= 0 {
+            if m < 0 {
+                nums1[p] = nums2[n];
+                n -= 1;
             } else {
-                nums1[p] = nums2[p2]
-                p2 -= 1
+                if nums2[n] >= nums1[m] {
+                    nums1[p] = nums2[n];
+                    n -= 1;
+                } else {
+                    nums1[p] = nums1[m];
+                    m -= 1;
+                }
             }
-            p -= 1
+            p -= 1;
         }
+    
     }
     
     //    MARK: override

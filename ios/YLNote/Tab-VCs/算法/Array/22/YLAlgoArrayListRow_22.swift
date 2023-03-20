@@ -39,43 +39,42 @@ class YLAlgoArrayListRow_22: YLBaseTableViewController {
         let res = spiralOrder(arr)
         print("🍎结果：\(res)")
     }
-    
-    /// 时间复杂度 O(m*n）
-    /// 空间复杂度O(1)
-    ///
+
+    /// 时间复杂度 O(m*n）; 空间复杂度O(1)
+    /// 每遍历一趟，边界往里缩进一层
     func spiralOrder(_ nums: [[Int]]) -> [Int] {
         guard let firstline = nums.first,firstline.count > 0 else { return [] }
         let m = nums.count, n = firstline.count
-        var top = 0,left = 0 ,bottom = m - 1,right = n - 1
+        var t = 0,l = 0 ,b = m - 1,r = n - 1
         var res:[Int] = []
         while true {
-            // top: 左->右,修改上限
-            for i in left...right {
-                res.append(nums[top][i])
+            // t: 左->右,修改上边界
+            for i in l...r {
+                res.append(nums[t][i])
             }
-            if top + 1 > bottom { break }
-            top += 1
+            if t + 1 > b { break }
+            t += 1
             
-            // right: 上->下，修改右边界
-            for i in top...bottom {
-                res.append(nums[i][right])
+            // r: 上->下，修改右边界
+            for i in t...b {
+                res.append(nums[i][r])
             }
-            if right-1 < left { break }
-            right -= 1
+            if r-1 < l { break }
+            r -= 1
 
-            // bottom: 右->左，修改下限
-            for i in (left...right).reversed() {
-                res.append(nums[bottom][i])
+            // b: 右->左，修改下边界
+            for i in (l...r).reversed() {
+                res.append(nums[b][i])
             }
-            if bottom-1 < top { break }
-            bottom -= 1
+            if b-1 < t { break }
+            b -= 1
 
-            // left: 下->上，修改左边界
-            for i in (top...bottom).reversed() {
-                res.append(nums[i][left])
+            // l: 下->上，修改左边界
+            for i in (t...b).reversed() {
+                res.append(nums[i][l])
             }
-            if left+1 > right { break }
-            left += 1
+            if l+1 > r { break }
+            l += 1
             
         }
         return res

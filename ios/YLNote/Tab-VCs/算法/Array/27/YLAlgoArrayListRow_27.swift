@@ -30,17 +30,17 @@ class YLAlgoArrayListRow_27: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
     
-    /// 时间复杂度：O(n)，
-    /// 空间复杂度：O(1)
-    /// - Parameter target: target
-    /// - Returns: []
+    /// 时间复杂度：O(n）；空间复杂度：O(1）；
+    /// 动态规划
     func lastRemaining(_ n: Int, _ m: Int) -> Int {
-        var res = 0
-       for i in 2...n {
-           res = (res+m)%i
-       }
-       return res
-
+        guard n > 1 else {
+            return 0;
+        }
+        var res = 0;
+        for i in 2...n {
+            res = (res+m)%i;
+        }
+        return res;
     }
     
     //    MARK: override

@@ -11,10 +11,10 @@
             "fileName":""
         }
     },  {
-        "q_title":"方法2：字典",
+        "q_title":"方法2：hashmap,保存每个num的count，空间复杂度为O(n)，暂不考虑",
         "showArticle": false,
         "showNextPage": false,
-        "function":"testMethod_2",
+        "function":"",
         "demo": {},
         "article": {
             "artTitle":"",

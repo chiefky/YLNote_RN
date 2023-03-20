@@ -33,7 +33,7 @@ class YLAlgoArrayListRow_13: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         let array = [-4,-1,0,3,10]
-        let res = method_1(array);
+        let res = sortedSquares(array);
         print("🍎结果：\(res)")
     }
     
@@ -42,26 +42,27 @@ class YLAlgoArrayListRow_13: YLBaseTableViewController {
         let res = method_2(array);
         print("🍎结果：\(res)")
     }
-
     
     /// 时间复杂度：O(n），空间复杂度：O(1)
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
-    func method_1(_ nums: [Int]) -> [Int] {
-        var res:[Int] = []
+    /// 双指针逆向插入
+    func sortedSquares(_ nums: [Int]) -> [Int] {
         var left = 0,right = nums.count-1;
-        while left <= right  {
-            if nums[left]*nums[left] >= nums[right]*nums[right] {
-                res.insert(nums[left] * nums[left], at: 0)
+        var res:[Int] = Array(repeating: 0, count: nums.count)
+        var qos = right;
+        while left <= right {
+            if abs(nums[left]) > abs(nums[right]) {
+                res[qos] = (nums[left]*nums[left]);
                 left += 1;
             } else {
-                res.insert(nums[right] * nums[right], at: 0)
+                res[qos] = (nums[right]*nums[right]);
                 right -= 1;
             }
-            print("🌹: \(res)")
+            qos -= 1
         }
         return res
     }
+    
+ 
     
     func method_2(_ nums:[Int]) -> [Int] {
         guard !nums.isEmpty else {

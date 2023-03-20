@@ -42,27 +42,21 @@ class YLAlgoArrayListRow_19: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
     
-    /// 时间复杂度 O(logN)
-    /// 空间复杂度 O(1)
-    /// - Parameter numbers: numbers
-    /// - Returns: the minium
+    /// 时间复杂度：O(logn)，空间复杂度：O(1)
+    /// 二分查找逆序临界点(附：最终l的值就是翻转的次数）
     func minArray(_ numbers: [Int]) -> Int {
-        guard numbers.count > 1 else {
-            return numbers.last ?? -1
-        }
-        var l = 0,r = numbers.count - 1
+        var l = 0, r = numbers.count-1 ;
         while l < r {
-            let mid = l + (r - l)/2
+            let mid = l + (r-l)/2
             if numbers[mid] > numbers[r] {
                 l = mid + 1
             } else if numbers[mid] < numbers[r] {
-                r = mid
+                r = mid;
             } else {
-                r -= 1
+                r -= 1;
             }
-            print("🌹： \(numbers[l])...\(numbers[r])")
         }
-        return numbers[r]
+        return numbers[l];
     }
     
     //    MARK: override

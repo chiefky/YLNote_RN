@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：动态规划",
+        "q_title":"方法1：分段计算",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",

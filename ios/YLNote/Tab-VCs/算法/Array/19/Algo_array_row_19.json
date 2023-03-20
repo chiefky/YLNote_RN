@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：二分查找",
+        "q_title":"方法1：二分查找(逆序临界点)",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",

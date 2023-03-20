@@ -26,57 +26,32 @@ class YLAlgoArrayListRow_7: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         var array = [9,9]
-        let res = method_1(array);
+        let res = plusOne(array);
         print("结果：\(res)")
     }
-
+    
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// 迭代（逆序遍历）
+    func plusOne(_ digits: [Int]) -> [Int] {
+        var index = digits.count-1;
+        var res = digits;
+        while index >= 0 {
+            let val = digits[index] + 1
+            if val % 10 != 0 {
+                res[index] = val;
+                return res;
+            }
+            res[index] = 0;
+            index -= 1
+        }
+        if res[0] == 0 {
+            res.insert(1, at: 0);
+        }
+        return res;
+    }
 
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_7"
     }
-    
-    func method_1(_ digits: [Int]) -> [Int] {
-        if(digits.isEmpty){
-            return [];
-        }
-        var res = digits
-        var i = digits.count - 1;
-        while i>=0 {
-            res[i] = (res[i] + 1)%10;
-            if res[i] != 0 {
-                return res
-            }
-            i -= 1;
-        }
-        if res[0] == 0 {
-            res.insert(1, at: 0)
-        }
-        return res
-    }
-    
-    func mehtod_2(_ digits: inout [Int]) -> [Int] {
-        if(digits.isEmpty){
-            return [];
-        }
-        var len = digits.count - 1;
-        while(len>=0) {
-            if(digits[len] != 9) {
-                digits[len] += 1;
-                return digits;
-            } else {
-                digits[len] = 0;
-                len -= 1;
-            }
-        }
-        if digits[0] == 0 {
-            digits.insert(1, at: 0)
-        }
-        return digits
-    }
-    
-    
-    func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
-
-        }
 }

@@ -32,20 +32,21 @@ class YLAlgoArrayListRow_15: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         var array = [0,1,0,3,12]
-         method_1(&array);
+         moveZeroes(&array);
         print("🍎结果：\(array)")
     }
-    func method_1(_ nums: inout [Int]) {
-         var slow = 0
-         for fast in 0..<nums.count {
-             if nums[fast] != 0 {
-                 nums.swapAt(fast, slow)
-                 slow += 1
-             }
-             print("🌸：\(nums)")
-         }
-     }
     
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// 快慢指针
+    func moveZeroes(_ nums: inout [Int]) {
+        var slow = 0;
+        for fast in 0..<nums.count {
+            if nums[fast] != 0 {
+                nums.swapAt(slow, fast)
+                slow += 1;
+            }
+        }
+    }
 
     //    MARK: override
     override func fileName() -> String {

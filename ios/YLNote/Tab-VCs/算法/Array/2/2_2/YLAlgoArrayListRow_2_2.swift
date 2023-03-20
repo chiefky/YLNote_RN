@@ -39,7 +39,7 @@ class YLAlgoArrayListRow_2_2: YLBaseTableViewController {
     
     @objc func testMethod2() {
         let array = [1,3,4,11,12,13]
-        let res = method_2(array, 17);
+        let res = twoSum(array, 17);
         print("结果：\(res)")
     }
 
@@ -68,22 +68,20 @@ class YLAlgoArrayListRow_2_2: YLBaseTableViewController {
         return [];
     }
     
-    func method_2(_ numbers: [Int], _ target: Int) -> [Int] {
-        guard numbers.count > 1 else {
-            return [];
-        }
-        var left = 0,right = numbers.count-1
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// 左右指针
+    func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
+        var left = 0,right = numbers.count - 1;
         while left < right {
-            let sum = numbers[left] + numbers[right]
-            if target == sum {
-                return [left+1,right+1]
-            } else if target > sum {
-                left += 1
+            if target - numbers[right] == numbers[left] {
+                return [left+1, right+1];
+            } else if target - numbers[right] > numbers[left] {
+                left += 1;
             } else {
-                right -= 1
+                right -= 1;
             }
         }
-        return []
+        return [];
     }
     
     //    MARK: override

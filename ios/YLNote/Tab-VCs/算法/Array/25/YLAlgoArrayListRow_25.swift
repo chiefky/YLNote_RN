@@ -48,7 +48,6 @@ class YLAlgoArrayListRow_25: YLBaseTableViewController {
         let res = binary_search(arr, 8)
         print("🍎结果：\(res)")
     }
-
     
     func search(_ nums: [Int], _ target: Int) -> Int {
         var count = 0

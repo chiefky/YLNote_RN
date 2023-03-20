@@ -33,55 +33,36 @@ class YLAlgoArrayListRow_1: YLBaseTableViewController {
     
     @objc func testArrayisContinuous() {
         let array = [1,3,3,4,2,5]//[11,13,12,0,0]
-        let res = method_1(array);
+        let res = isStraight(array);
         print("结果：\(res)")
     }
     
-    /// 对排序后的非零数组,计算前后元素差值,
-    /// 差值>=2:用可用的0补充，如果不够补就是false,够补 continue
-    /// 差值==0: false
-    /// 差值==1：continue
-    /// - Parameter arr: 原始数组
-    /// - Returns: 元素是否连续
-    func method_1(_ arr:[Int]) -> Bool {
-        let num_arry = arr.filter {$0 != 0} // 筛选非0数组
-        let sorr_arr = num_arry.sorted { $0 > $1 } // 对非0数组排序
-        var zero_count = arr.count - sorr_arr.count // 0的个数
-        for i in 0...sorr_arr.count-2 {
-            let dis = sorr_arr[i] - sorr_arr[i+1]
-//            print("(num[i]:\(sorr_arr[i]),num[i+1]:\(sorr_arr[i+1])),\(dis),\(zero_count)")
-            if dis == 0 { // dis == 1
-                return false
-            } else if dis == 1 { // dis == 1
-                continue;
-            } else  { // dis >= 2
-                zero_count -= (dis-1);
-                if zero_count >= 0 {
-                    continue
-                } else {
-                    return false;
-                }
-            }
-        }
-        return true;
+    /// 遍历五张牌，遇到大小王（即 000 ）直接跳过。
+    /// 判别重复： 利用 Set 实现遍历判重， Set 的查找方法的时间复杂度为 O(1)O(1)O(1) ；
+    /// 获取最大 / 最小的牌： 借助辅助变量 mamama 和 mimimi ，遍历统计即可。
+    /// 复杂度分析：
+    /// 时间复杂度 O(N)=O(5)=O(1)O(N) = O(5) = O(1)O(N)=O(5)=O(1) ： 其中 NNN 为 numsnumsnums 长度，本题中 N≡5N \equiv 5N≡5 ；遍历数组使用 O(N)O(N)O(N) 时间。
+    /// 空间复杂度 O(N)=O(5)=O(1)O(N) = O(5) = O(1)O(N)=O(5)=O(1) ： 用于判重的辅助 Set 使用 O(N)O(N)O(N) 额外空间。
+
+    /// - Parameter nums: 参数
+    /// - Returns: 是否为顺子
+    func isStraight(_ nums:[Int]) -> Bool {
+     var numsSet = [Int]()
+     var ma = 0, mi = 14;
+     for num in nums {
+     if num == 0 {
+     continue;
+     }
+     ma = max(ma, num)
+     mi = min(mi,num);
+     if numsSet.contains(num) {
+         return false ;
+     }
+     numsSet.append(num)
+     }
+        return ma - mi < 5
     }
     
-    /// 判断一个数组是否是连续的（不可用补0代替）
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
-    func method_test(_ nums:[Int]) -> Bool {
-        guard nums.count > 1 else {
-            return false
-        }
-        let sorted = nums.sorted()
-        for i in 1...sorted.count-1 {
-            let distance = abs(sorted[i] - sorted[i-1])
-            if distance != 1 {
-                return false;
-            }
-        }
-        return true
-    }
     //    MARK: override
     override func fileName() -> String {
         return "Algo_array_row_1"

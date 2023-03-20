@@ -32,36 +32,24 @@ class YLAlgoArrayListRow_21: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
     
-    /// 时间复杂度 O(n）
-    /// 空间复杂度O(1)
-    /// - Parameter nums: 原始数组
-    /// - Returns: 先奇后偶 数组
+    /// 时间复杂度 O(n）, 空间复杂度O(1)
+    /// 左右指针
     func exchange(_ nums: [Int]) -> [Int] {
-        guard nums.count > 1 else {
-            return nums
+        var res = nums;
+        var left = 0 ,right = nums.count-1;
+        while left < right {
+            while left<right, nums[left]&1 == 1 {
+                left += 1;
+            }
+            while left<right, nums[right]&1 == 0 {
+                right -= 1;
+            }
+            res.swapAt(left, right)
+            left += 1;
+            right -= 1;
         }
-        var res = nums
-        var l = 0,r = res.count-1
-        while l < r {
-            // 从右->左 找第一个奇数的下标
-            while r > l, res[r] % 2 == 0 {
-                r -= 1
-            }
-            // 从左->右 找第一个偶数的下标
-            while l < r, res[l] % 2 == 1 {
-                l = l + 1
-            }
-            if l < r {
-                res.swapAt(l, r)
-                print("🌹(\(l),\(r))交换位置：\(res)")
-                l += 1
-                r -= 1
-            }
-        }
-        return res
+        return res;
     }
-    
-   
 
     //    MARK: override
     override func fileName() -> String {

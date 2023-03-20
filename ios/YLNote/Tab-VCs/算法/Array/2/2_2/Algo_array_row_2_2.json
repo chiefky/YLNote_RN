@@ -11,8 +11,9 @@
             "fileName":""
         }
         
-    },{
-        "q_title":"方法1：双指针",
+    },
+    {
+        "q_title":"方法2：双指针(左右指针)",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod2",

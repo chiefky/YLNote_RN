@@ -27,52 +27,22 @@ class YLAlgoArrayListRow_10: YLBaseTableViewController {
     @objc func testMethod_1() {
         
         let arr = [7,6,4,3,1]//[7,1,5,3,6,4];
-        let res = method_1(arr)
+        let res = maxProfit(arr)
         
         print("结果：\(res)")
     }
     
-    /// 暴力法（超时）
-    /// - Parameter prices: <#prices description#>
-    /// - Returns: <#description#>
-    func method_1(_ prices: [Int]) -> Int {
-        var res = 0
-        if prices.count <= 1 {
-            return res
-        }
-        
-        var preMax = 0
-        
-        for i in 0...prices.count-1 {
-            var j = prices.count - 1
-            while j > i {
-                preMax = prices[j] - prices[i];
-                res = max(preMax, res)
-                j -= 1
-            }
-        }
-        
-        return res
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// 遍历过程中找最低买入价格，比较先前记录利润与当前利润的大小
+    func maxProfit(_ prices: [Int]) -> Int {
+         var maxValue = 0
+         var inPrice = prices[0]
+         for price in prices {
+             inPrice = min(inPrice,price)
+             maxValue = max(maxValue,price-inPrice)
+         }
+         return maxValue;
     }
-    
-    @objc func testMethod_2() {
-        let arr = [7,1,5,3,6,4];
-        let res = method_2(arr)
-        print("结果：\(res)")
-    }
-    func method_2(_ prices: [Int]) -> Int {
-          if prices.count <= 1 { return 0}
-          var res = 0;
-          var minValue = prices[0];
-          for i in 0...prices.count-1 {
-              if prices[i] < minValue {
-                  minValue = prices[i]
-              } else if (prices[i] - minValue > res) {
-                  res = prices[i] - minValue
-              }
-          }
-          return res
-      }
     
     //    MARK: override
     override func fileName() -> String {

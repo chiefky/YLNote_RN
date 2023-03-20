@@ -30,19 +30,19 @@ class YLAlgoArrayListRow_12_0: YLBaseTableViewController {
     @objc func testMethod_1() {
         
         let arr = [4,1,2,1,2]//"A man, a plan, a anal: Panama";
-        let res = method_1(arr)
+        let res = singleNumber(arr)
         print("结果：\(res)")
     }
     
-    
-    
-    func method_1(_ nums: [Int]) -> Int {
-        guard nums.count > 2 else { return 0 }
-        var res = 0
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// 按位运算（异或）
+    func singleNumber(_ nums: [Int]) -> Int {
+        var res = 0;
         for num in nums {
-            res ^= num
+            res ^= num;
+            
         }
-        return res
+        return res;
     }
     
     

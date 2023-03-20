@@ -33,14 +33,57 @@ class YLAlgoArrayListRow_29: YLBaseTableViewController {
 
     @objc func testMethod_1() {
         let board:[[Int]] = [
-            [1,3,1],
-            [1,5,1],
-            [4,2,1]
-          ]
-        let res = ""//maxValue(board);
+            [1,2,5],
+            [3,2,1]
+        ]
+        let res = maxValue(board);
         print("🍎结果：\(res)")
     }
 
+    
+    /// 错误答案
+    /// - Parameter grid: <#grid description#>
+    /// - Returns: <#description#>
+    func maxValue(_ grid: [[Int]]) -> Int {
+        guard let first = grid.first else { return 0 }
+        let m = grid.count,n = first.count
+        var i = 0, j = 0
+        var preMax = grid[0][0]
+        var path = "\(preMax)"
+        var res = preMax
+        while i < m && j < n {
+            if i < m-1, j < n-1 {
+                let r_next = grid[i][j+1]
+                let b_next = grid[i+1][j]
+                if r_next > b_next {
+                    preMax += r_next
+                    j += 1
+                    path += "->\(r_next)"
+                } else {
+                    preMax += b_next
+                    i += 1
+                    path += "->\(b_next)"
+                }
+            } else if i == m-1, j == n-1 {
+                break;
+            } else if i == m-1  {
+                let next = grid[i][j+1]
+                preMax += next
+                j += 1
+                path += "->\(next)"
+            } else {
+                let next = grid[i+1][j]
+                preMax += next
+                i += 1
+                path += "->\(next)"
+            }
+            
+            res = max(res, preMax)
+        }
+        print("路径：\(path)")
+        return res
+    }
+    
 //    func maxValue(_ grid: [[Int]]) -> Int {
 //        guard let first = grid.first else { return 0 }
 //        let m = grid.count , n = first.count

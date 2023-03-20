@@ -47,29 +47,24 @@ class YLAlgoArrayListRow_18: YLBaseTableViewController {
         print("🍎结果：\(res)")
     }
     
-    /// 时间复杂度 O(M+N)O(M+N) ：其中，NN 和 MM 分别为矩阵行数和列数，此算法最多循环 M+N 次。
-    /// 空间复杂度 O(1) : i, j 指针使用常数大小额外空间
-    /// - Parameters:
-    ///   - matrix: 二维数组
-    ///   - target: target
-    /// - Returns: bool
+    /// 时间复杂度：O(M+N），空间复杂度：O(1)
+    /// 矩阵左下角开始遍历
     func findNumberIn2DArray(_ matrix: [[Int]], _ target: Int) -> Bool {
-        guard let first = matrix.first else {
-            return false
-        }
-        var row = 0, column = first.count - 1
-        while row < matrix.count , column >= 0 {
-            print("🌹 \(row),\(column):\(matrix[row][column])")
-            if matrix[row][column] < target {
-                row += 1
-            } else if matrix[row][column] > target {
-                column -= 1
-            }  else {
-                return true
+        guard let firstLine = matrix.first else { return false }
+        let m = matrix.count;// 总行数
+        let n = firstLine.count; //总列数
+        var i = m-1;// 行
+        var j=0; // 列
+        while i >= 0,j <= n-1 {
+            if matrix[i][j] < target {
+                j += 1;
+            } else if matrix[i][j] > target {
+                i -= 1;
+            } else {
+                return true;
             }
         }
-        
-        return false
+        return false;
     }
     
     //    MARK: override

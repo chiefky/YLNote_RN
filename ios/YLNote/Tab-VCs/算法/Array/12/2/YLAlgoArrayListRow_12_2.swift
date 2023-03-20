@@ -29,51 +29,28 @@ class YLAlgoArrayListRow_12_2: YLBaseTableViewController {
     @objc func testMethod_1() {
         
         let arr = [-2,-2,1,1,4,1,4,4,-4,-2];
-        let res = method_1(arr)
+        let res = singleNumber(arr)
         print("结果：\(res)")
-    }
-    @objc func testMethod_2() {
-        let arr = [2,2,3,2];
-        let res = method_2(arr)
-        print("结果：\(res)")
-    }
-
-    /// 按位求和运算得到有效数字当前位是0或1，若当前位为1,拼上之前的i-1位更新结果(或运算)
-    /// 时间复杂度（）
-    /// - Parameter nums:
-    /// - Returns:
-    func method_1(_ nums: [Int]) -> Int {
-        var res = 0
-        for i in 0...64 {
-            var total = 0
-            for num in nums {
-                total += (num>>i) & 1
-            }
-            if (total%3==1) {
-                res |= (1<<i)
-            }
-        }
-        return res;
     }
     
-    func method_2(_ nums: [Int]) -> Int {
-        var dic:[Int:Int] = [:]
-        for num in nums {
-            if dic.keys.contains(num) {
-                var count:Int = dic[num] ?? 0
-                count += 1
-                dic[num] = count
-            } else {
-                dic[num] = 1
+    /// 时间复杂度：O(64n)，空间复杂度：O(1)
+    /// 按位运算
+    func singleNumber(_ nums: [Int]) -> Int {
+        var res = 0;
+        var i = 0
+        while i < 64 {
+            var sum_i = 0
+            for num in nums {
+                let tmp = num>>i
+                let x = tmp & 1
+                sum_i += x
             }
-        }
-        
-        for (key,value) in dic {
-            if value == 1 {
-                return key
+            if sum_i%3 == 1 {
+                res |= (1<<i)
             }
+            i += 1;
         }
-        return 0;
+        return res;
     }
     
     //    MARK: override

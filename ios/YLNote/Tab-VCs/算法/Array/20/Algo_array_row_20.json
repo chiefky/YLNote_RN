@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：迭代",
+        "q_title":"方法1：全排列",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -12,17 +12,4 @@
         }
         
     },
-  {
-        "q_title":"方法1：全排列",
-        "showArticle": false,
-        "showNextPage": false,
-        "function":"testMethod_2",
-        "demo": {},
-        "article": {
-            "artTitle":"",
-            "fileName":""
-        }
-        
-    },
-
 ]   

@@ -27,33 +27,16 @@ class YLAlgoArrayListRow_4: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         var array = [0,0,1,1,1,2,2,3,3,4]
-        let res = method_1(&array,3);
+        let res = removeElement(&array,3);
         print("结果：\(res)")
     }
+    
     @objc func testMethod_2() {
         var array = [0,0,1,1,1,1,9,2,3,3,4]
         let res = method_2(&array,1);
         print("结果：\(res)")
     }
-    
-    /// 双指针：快慢指针
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
-    func method_1(_ nums: inout [Int],_ target: Int) -> Int {
-        if nums.isEmpty {
-            return 0;
-        }
-        var slow = 0;
-        for fast in 0..<nums.count {
-            if nums[fast] != target {
-                nums[slow] = nums[fast];
-                slow += 1;
-            }
-        }
-        nums.removeSubrange(slow..<nums.count);
-        return slow
-    }
-    
+        
     /// 双指针: 左右指针
     /// 注意：right的临界问题，while循环必须能遍历到所有元素。
     /// - Parameter nums: <#nums description#>
@@ -75,6 +58,20 @@ class YLAlgoArrayListRow_4: YLBaseTableViewController {
         nums.removeSubrange(fromIndex..<nums.count)
         print("end:\(nums)")
         return nums.count
+    }
+    
+    /// 时间复杂度：O(n)，空间复杂度：O(1)
+    /// 快慢指针
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+        var slow = 0
+        for fast in 0..<nums.count {
+            if nums[fast] != val {
+                nums[slow] = nums[fast];
+                slow += 1;
+            }
+        }
+        nums.removeLast(nums.count-slow)
+        return slow;
     }
     
     //    MARK: override

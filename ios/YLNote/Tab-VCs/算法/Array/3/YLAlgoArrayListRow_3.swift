@@ -28,34 +28,21 @@ class YLAlgoArrayListRow_3: YLBaseTableViewController {
     
     @objc func testMethod_1() {
         var array = [1]//[0,0,1,1,1,2,2,3,3,4]
-        let res = method_1(&array);
+        let res = removeDuplicates(&array);
         print("结果：\(res)")
-    }
-    
-    /// 利用游标，修改游标指向的元素将后置重复元素提前，最后删除游标后面的所有元素
-    /// - Parameter nums: 任意排序好的数组
-    /// - Returns: 有效数组长度
-    func method_1(_ nums: inout [Int]) -> Int {
-        guard nums.count > 1 else {
-            return nums.count;
-        }
-        var lenth = 0
-        for i in 1...nums.count-1 {
-            if nums[lenth] != nums[i] {
-                lenth += 1;
-                nums[lenth] = nums[i];
-            }
-            print("\(i):\(nums)");
-        }
-        nums.removeSubrange(lenth+1..<nums.count)
-        return nums.count
-    }
-    
+    }    
+    /// 时间复杂度：O(1)，空间复杂度：O(1)
     /// 快慢指针
-    /// - Parameter nums: <#nums description#>
-    /// - Returns: <#description#>
-    func method2(_ nums: inout [Int]) -> Int {
-        return 0
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
+        var slow = 0
+        for fast in 1..<nums.count {
+            if nums[slow] != nums[fast] {
+                slow += 1;
+                nums[slow] = nums[fast];
+            }
+        }
+        nums.removeLast(nums.count-slow-1);
+        return slow+1;
     }
     
     //    MARK: override

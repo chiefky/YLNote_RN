@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：过滤+半数遍历",
+        "q_title":"方法1：投票法",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",
@@ -10,16 +10,5 @@
             "artTitle":"",
             "fileName":""
         }
-  },
-  {
-        "q_title":"方法2：双指针",
-        "showArticle": false,
-        "showNextPage": false,
-        "function":"testMethod_2",
-        "demo": {},
-        "article": {
-            "artTitle":"",
-            "fileName":""
-        }
-    },
+  }
 ]   

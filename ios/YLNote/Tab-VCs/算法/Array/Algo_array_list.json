@@ -259,7 +259,7 @@
         },
     },{
         "q_id":"algo_array-11",
-        "q_title":"判断回文字符串",
+        "q_title":"多数元素",
         "q_subtitle":"",
         "showNextPage": true,
         "showArticle":false,

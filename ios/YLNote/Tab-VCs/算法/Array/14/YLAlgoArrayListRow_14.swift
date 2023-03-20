@@ -38,10 +38,32 @@ class YLAlgoArrayListRow_14: YLBaseTableViewController {
     
     @objc func testMethod_2() {
         var array = [1,2,3,4,5,6,7]
-         method_2(&array,3);
+         rotate(&array,3);
         print("🍎结果：\(array)")
     }
-
+    
+    /// 时间复杂度:O(3logn),空间复杂度：O(1)
+    /// 左右翻转
+    func rotate(_ nums: inout [Int], _ k: Int) {
+        let k = k%nums.count;
+        reverse(&nums, 0, nums.count-1)
+        reverse(&nums, 0, k-1)
+        reverse(&nums, k, nums.count-1)
+    }
+    
+    
+    /// 时间复杂度：O(n)，空间复杂度:O(1)
+    /// 双指针
+    func reverse(_ nums: inout [Int], _ start:Int,_ end:Int) {
+        guard start <= end,start >= 0,end <= nums.count-1 else { return };
+        var left = start, right = end;
+        while left < right {
+            nums.swapAt(left, right);
+            left += 1;
+            right -= 1;
+        }
+    }
+    
     /// 新建数组，时间复杂度：O(n),空间复杂度：O(n）
     /// - Parameters:
     ///   - nums: [1,2,3,4,5,6,7]
@@ -65,34 +87,6 @@ class YLAlgoArrayListRow_14: YLBaseTableViewController {
         nums = res
     }
     
-    /// 时间复杂度:O(logn),空间复杂度：O(1)
-    /// - Parameters:
-    ///   - nums:
-    ///   - k: 右移k位
-    func method_2(_ nums: inout [Int],_ k:Int) {
-        let n = nums.count
-        guard n > 0  else {
-            return
-        }
-        let k = k%n
-        reverse(&nums, 0, n-1)
-        reverse(&nums, 0, k-1)
-        reverse(&nums, k, n-1)
-    }
-    
-    /// 时间复杂度log(n）
-    /// - Parameters:
-    ///   - nums: n
-    ///   - start: 起始位置
-    ///   - end: 终点位置
-    func reverse(_ nums: inout [Int],_ start: Int,_ end: Int)  {
-        var l = start, r = end
-        while l < r {
-            nums.swapAt(l, r)
-            l += 1
-            r -= 1
-        }
-    }
     
     //    MARK: override
     override func fileName() -> String {

@@ -1,7 +1,7 @@
 
 [
   {
-        "q_title":"方法1：三指针",
+        "q_title":"方法1：排序+双指针",
         "showArticle": false,
         "showNextPage": false,
         "function":"testMethod_1",

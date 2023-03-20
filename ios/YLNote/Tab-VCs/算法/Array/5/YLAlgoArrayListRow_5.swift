@@ -24,33 +24,26 @@ class YLAlgoArrayListRow_5: YLBaseTableViewController {
     }
     
     @objc func testMethod_1() {
-        var array = [0,1,2,3,5,9]
-        let res = method_1(&array,6);
+        let array = [0,1,2,3,5,9]
+        let res = searchInsert(array,6);
         print("结果：\(res)")
     }
 
-    /// 双指针: 左右指针（完全利用二分查找的思想解题[题目要求时间复杂度为O(logn)]）
-    /// 注意：right的临界问题。
-    /// - Parameter nums: nums
-    /// - Returns: index
-    func method_1(_ nums: inout [Int],_ target:Int) -> Int {
-        if nums.isEmpty {
-            return 0;
-        }
+    /// 时间复杂度：O(lgn)，空间复杂度：O(1)
+    /// 二分查找
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
         var left = 0,right = nums.count-1;
-        
-        while left < right {
-            let mid = left + (right-left)/2
-            if nums[mid] == target {
-                return mid
-            } else if nums[mid] > target {
-                right = mid - 1;
-            } else {
+        while left <= right {
+            let mid = left + (right-left)/2;
+            if target == nums[mid] {
+                return mid;
+            } else if target > nums[mid] {
                 left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
-        
-        return target > nums[left] ? (left+1) : left;
+        return left;
     }
     
     //    MARK: override

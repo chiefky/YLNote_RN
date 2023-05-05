@@ -1,0 +1,49 @@
+[
+    {
+        "q_id":"algo_backTrack-1",
+        "q_title":"剑指 Offer 12. 矩阵中的路径",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+        "demo": {},
+    },
+    {
+        "q_id":"algo_backTrack-2",
+        "q_title":"剑指 Offer 34. 二叉树中和为某一值的路径",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"bt_pathSum",
+        "demo": {},
+    },
+    {
+        "q_id":"algo_backTrack-3",
+        "q_title":"3. 剑指 Offer 38. 字符串的排列",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"",
+        "demo": {},
+    },
+    {
+        "q_id":"algo_backTrack-4",
+        "q_title":"二叉树的最近公共祖先",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"bt_lowestCommonAncestor",
+        "demo": {},
+    },
+    {
+        "q_id":"algo_backTrack-0",
+        "q_title":"LeetCode22. 括号生成",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"bt_generateParenthesis",
+        "demo": {},
+    },
+    
+]
+ 

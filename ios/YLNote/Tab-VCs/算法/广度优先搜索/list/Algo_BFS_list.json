@@ -1,0 +1,22 @@
+[
+    {
+        "q_id":"algo_BFS-7",
+        "q_title":"剑指 Offer 37. 序列化二叉树(BFS)",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"bfs_serialize",
+        "demo": {},
+    },
+    {
+        "q_id":"algo_BFS-7",
+        "q_title":"剑指 Offer 37. 反序列化二叉树(BFS)",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"bfs_deserialize",
+        "demo": {},
+    },
+
+]
+ 

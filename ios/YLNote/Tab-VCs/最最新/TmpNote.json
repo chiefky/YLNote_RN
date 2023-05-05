@@ -1,4 +1,27 @@
-[
+[    {
+    "group_id":"group_JSPatch",
+    "unfoldStatus":false,
+    "group_title":"JSPatch",
+    "questions": [
+        {
+            "q_id":"",
+            "q_title":"实例",
+            "showNextPage": true,
+            "showArticle":true,
+            "function":"",
+            "demo": {
+                "className":"JSPatchDemoController",
+                "style": 0,
+                "useXib": 0
+            },
+            "article": {
+                "art_id":"",
+                "art_url":"/content/JSPatch/JSPatch_test.md",
+            }
+        }
+    ]
+},
+
     {
         "group_id":"group_NSNotificationCenter",
         "unfoldStatus":false,

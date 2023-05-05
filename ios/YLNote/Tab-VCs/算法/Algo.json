@@ -24,6 +24,197 @@
     ]
 },
     {
+        "group_id":"algo_DP",
+        "unfoldStatus":false,
+        "group_title":"动态规划",
+        "questions": [
+            {
+            "q_id":"algo_dp_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_dp_1",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoDPListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"algo_backTrack",
+        "unfoldStatus":false,
+        "group_title":"回溯",
+        "questions": [            {
+            "q_id":"algo_bt_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"DP_test",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_bt_1",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoBackTrackListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"algo_dfs",
+        "unfoldStatus":false,
+        "group_title":"深度优先",
+        "questions": [            {
+            "q_id":"algo_dfs_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"DP_test",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_dfs_1",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoRecurListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"algo_bfs",
+        "unfoldStatus":false,
+        "group_title":"广度优先",
+        "questions": [            {
+            "q_id":"algo_bfs_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_bfs_1",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLBFSListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+
+    {
+        "group_id":"algo_swap",
+        "unfoldStatus":false,
+        "group_title":"原地交换",
+        "questions": [            {
+            "q_id":"algo_swap_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"swap_test",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_swap_1",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoSwapListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
         "group_id":"algo_array",
         "unfoldStatus":false,
         "group_title":"数组",

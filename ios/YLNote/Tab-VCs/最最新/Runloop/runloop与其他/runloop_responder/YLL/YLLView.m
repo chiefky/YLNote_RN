@@ -19,26 +19,59 @@
 */
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"begin <%p>:  %s 🍀🍀🍀🍀",self,__FUNCTION__);
+    NSLog(@"<%p>:  %s 🍀🍀🍀🍀",self,__FUNCTION__);
     [super touchesBegan:touches withEvent:event];
-    NSLog(@"end <%p>:  %s 🍀🍀🍀🍀",self,__FUNCTION__);}
+}
 
 - (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"begin <%p>:  %s 🌺🌺🌺🌺",self,__FUNCTION__);
+    NSLog(@"<%p>:  %s 🌺🌺🌺🌺",self,__FUNCTION__);
     [super touchesMoved:touches withEvent:event];
-    NSLog(@"end <%p>:  %s 🌺🌺🌺🌺",self,__FUNCTION__);
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"begin <%p>:  %s 🌼🌼🌼🌼",self,__FUNCTION__);
+    NSLog(@"<%p>:  %s 🌼🌼🌼🌼",self,__FUNCTION__);
     [super touchesCancelled:touches withEvent:event];
-    NSLog(@"end <%p>:  %s 🌼🌼🌼🌼",self,__FUNCTION__);
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"begin <%p>:  %s 🌷🌷🌷🌷",self,__FUNCTION__);
+    NSLog(@"<%p>:  %s 🌷🌷🌷🌷",self,__FUNCTION__);
     [super touchesEnded:touches withEvent:event];
-    NSLog(@"end <%p>:  %s 🌷🌷🌷🌷",self,__FUNCTION__);
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"<%p>:  %s 🌻🌻🌻🌻",self,__FUNCTION__);
+    return  [super hitTest:point withEvent:event];
+}
+
+
+@end
+
+@implementation YLLabel
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"<%p>:  %s 🍀🍀🍀🍀🍀",self,__FUNCTION__);
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"<%p>:  %s 🌺🌺🌺🌺🌺",self,__FUNCTION__);
+    [super touchesMoved:touches withEvent:event];
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"<%p>:  %s 🌼🌼🌼🌼🌼",self,__FUNCTION__);
+    [super touchesCancelled:touches withEvent:event];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"<%p>:  %s 🌷🌷🌷🌷🌷",self,__FUNCTION__);
+    [super touchesEnded:touches withEvent:event];
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"<%p>:  %s 🌻🌻🌻🌻🌻",self,__FUNCTION__);
+    return  [super hitTest:point withEvent:event];
 }
 
 @end

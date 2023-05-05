@@ -1,0 +1,17 @@
+
+
+[
+    {
+        "q_title":"方法1：状态机",
+        "showArticle": false,
+        "showNextPage": false,
+        "function":"testMethod",
+        "demo": {},
+        "article": {
+            "artTitle":"",
+            "fileName":""
+        }
+        
+    },
+    
+]

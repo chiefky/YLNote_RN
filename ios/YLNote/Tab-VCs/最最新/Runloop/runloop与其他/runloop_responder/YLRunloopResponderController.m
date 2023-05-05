@@ -8,7 +8,7 @@
 
 #import "YLRunloopResponderController.h"
 #import "YLNote-Swift.h"
-#import "YLLTestViewController.h"
+#import "YLResponderMyDemoController.h"
 
 typedef NS_ENUM(NSUInteger, ResponderPageType) {
     ResponderPageTypeA = 65,
@@ -57,7 +57,7 @@ typedef NS_ENUM(NSUInteger, ResponderPageType) {
 }
 
 - (void)testResponder_diy {
-    YLLTestViewController *demo = [[YLLTestViewController alloc] init];
+    YLResponderMyDemoController *demo = [[YLResponderMyDemoController alloc] init];
     [self.navigationController pushViewController:demo animated:YES];
 
 }

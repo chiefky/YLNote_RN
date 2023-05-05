@@ -14,4 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface YLLabel : UILabel
+
+@end
+
 NS_ASSUME_NONNULL_END

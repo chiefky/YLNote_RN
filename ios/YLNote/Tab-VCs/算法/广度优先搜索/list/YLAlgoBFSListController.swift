@@ -1,5 +1,5 @@
 //
-//  YLBFSListController.swift
+//  YLAlgoBFSListController.swift
 //  YLNote
 //
 //  Created by tangh on 2022/5/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YLBFSListController: YLBaseTableViewController {
+class YLAlgoBFSListController: YLBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

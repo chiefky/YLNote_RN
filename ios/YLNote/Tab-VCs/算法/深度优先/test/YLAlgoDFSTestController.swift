@@ -1,5 +1,5 @@
 //
-//  YLAlgoRecursiveListTest.swift
+//  YLAlgoDFSTestController.swift
 //  YLNote
 //
 //  Created by tangh on 2022/2/17.
@@ -14,7 +14,7 @@ import UIKit
 
  https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/description/
  */
-class YLAlgoRecursiveListTest: YLBaseTableViewController {
+class YLAlgoDFSTestController: YLBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class YLAlgoRecursiveListTest: YLBaseTableViewController {
     
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_recursive_test"
+        return "Algo_dfs_test"
     }
     
 }

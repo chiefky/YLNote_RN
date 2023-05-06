@@ -1,28 +1,31 @@
 //
-//  YLEmptyController.swift
+//  YLAlgoRecurTestController.swift
 //  YLNote
 //
-//  Created by tangh on 2022/5/30.
+//  Created by tangh on 2022/2/17.
 //  Copyright © 2022 tangh. All rights reserved.
 //
 
 import UIKit
-
-class YLEmptyController: YLBaseTableViewController {
+/**
+ 
+ */
+class YLAlgoRecurTestController: YLBaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
+
+    @objc func recursive_robot() {
+     
+    }
     
-    // MARK: LeetCode
-   
     
     //    MARK: override
     override func fileName() -> String {
-        return "Algo_empty_list"
+        return "Algo_empty_test"
     }
-
     
 }

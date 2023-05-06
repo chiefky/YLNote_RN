@@ -125,7 +125,7 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLAlgoRecurListController",
+                    "className":"YLAlgoDFSListController",
                     "style": 1,
                     "useXib": 0
                 },
@@ -163,7 +163,45 @@
                 "showArticle": false,
                 "function":"",
                 "demo": {
-                    "className":"YLBFSListController",
+                    "className":"YLAlgoBFSListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"algo_recur",
+        "unfoldStatus":false,
+        "group_title":"递归",
+        "questions": [            {
+            "q_id":"algo_recur_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_recur_1",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoRecurListController",
                     "style": 1,
                     "useXib": 0
                 },

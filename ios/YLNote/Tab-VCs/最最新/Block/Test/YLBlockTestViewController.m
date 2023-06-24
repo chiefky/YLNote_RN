@@ -34,7 +34,7 @@
     weakBlock();
 }
 
-/// block作为API参数，是否自动copy到堆区
+/// block作为API参数，是否自动copy到堆区----不会
 - (void)testBlockCopy_as_apiPamater {
     
     int num = 8;
@@ -48,7 +48,7 @@
     [array enumerateObjectsUsingBlock: weakBlock];
     NSLog(@"weakBlock类型：%@",object_getClass(weakBlock));
 }
-/// block作为gcd API参数，是否自动copy到堆区
+/// block作为gcd API参数，是否自动copy到堆区---不会
 - (void)testBlockCopy_as_gcdPamater {
     int num = 8;
 
@@ -64,7 +64,7 @@
     NSLog(@"3.weakBlock类型：%@",object_getClass(weakBlock));
 
 }
-
+/// "block在修改NSMutableArray，需不需要添加__block" ---不需要
 - (void)testBlock_change_muArray {
     NSMutableArray *nums = [NSMutableArray arrayWithArray:@[@"1",@"2",@"3",@"4",@"5"]];
     void(^ myblock)(void) = ^{
@@ -75,6 +75,18 @@
     myblock();
     NSLog(@"out block: nums = %@",nums);
 }
+
+/// 在子线程block中修改外部变量，会怎样-- a>=5
+- (void)testBlock__block {
+    __block int a = 0;
+    while (a<5) {
+        dispatch_async(dispatch_get_global_queue(0,0),^{
+            a = a+1;
+        });
+    }
+    NSLog(@"a===%ld",a);
+}
+
 #pragma mark - override
 - (NSString *)fileName {
     return @"block_test";

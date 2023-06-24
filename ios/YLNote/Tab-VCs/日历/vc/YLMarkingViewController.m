@@ -9,7 +9,6 @@
 #import "YLMarkingViewController.h"
 #import <Masonry/Masonry.h>
 #import "YLNote-Swift.h"
-#import "WXApi.h"
 #import "YLCalendarView.h"
 #import "YLSetting.h"
 #import "YLCalendarDBManager.h"

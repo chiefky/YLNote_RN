@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+const scores = [{ name: "张三", value: "90分" }, { name: "李四", value: "93分" }]
 class Index extends Component {
     render() {
-        var contents = this.props['scores'].map((score) => (
+        var contents = scores.map((score) => (
             <Text key={score.name}>
                 {score.name}:{score.value}
                 {'\n'}
@@ -12,7 +13,7 @@ class Index extends Component {
             <View style={styles.container}>
                 <Text style={styles.highScoresTitle}>
                     2048 High Scores!
-        </Text>
+                </Text>
                 <Text style={styles.scores}>{contents}</Text>
             </View>
         );

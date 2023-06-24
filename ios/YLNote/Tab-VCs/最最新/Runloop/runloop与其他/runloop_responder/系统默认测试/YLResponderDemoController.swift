@@ -130,9 +130,9 @@ class YLResponderDemoController: UIViewController {
             make.height.equalTo(60);
         }
         
-        
-        let tap = UITapGestureRecognizer(target: self, action: #selector(gestureAction_C))
-        viewC.addGestureRecognizer(tap);
+        print("蓝：\(viewC)，粉：\(view_c)");
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(gestureAction_C))
+//        viewC.addGestureRecognizer(tap);
     }
 
     func setupUI_D() {

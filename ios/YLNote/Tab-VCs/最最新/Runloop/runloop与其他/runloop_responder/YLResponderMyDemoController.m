@@ -14,11 +14,11 @@
 
 @interface YLResponderMyDemoController ()
 @property(nonatomic,strong) YLLView *rootView;
-@property(nonatomic,strong) YLLView *yll_view;
-@property(nonatomic,strong) YLLabel *yll_label;
+@property(nonatomic,strong) YLLView *yellowView;
+@property(nonatomic,strong) YLLabel *blueLabel;
 
 @property(nonatomic,strong) YLLGestureRecognizer *yll_gesture;
-@property(nonatomic,strong) YLLButton *yll_button;
+@property(nonatomic,strong) YLLButton *pinkButton;
 
 @end
 
@@ -36,11 +36,11 @@
     self.yll_gesture = [[YLLGestureRecognizer alloc] initWithTarget:self action:@selector(gestureAction:)];
     
 
-    [self.rootView addSubview:self.yll_button];
     
-    [self.yll_button addSubview:self.yll_view];
+    [self.rootView addSubview:self.yellowView];
+    [self.rootView addSubview:self.pinkButton];
 
-    [self.rootView addGestureRecognizer:self.yll_gesture];
+//    [self.rootView addGestureRecognizer:self.yll_gesture];
 
     
     
@@ -65,33 +65,33 @@
     return _rootView;
 }
 
-- (YLLView *)yll_view {
-    if (!_yll_view) {
-        _yll_view = [[YLLView alloc] initWithFrame:CGRectMake(0, 0, 120, 40)];
-        _yll_view.backgroundColor = [UIColor yellowColor];
+- (YLLView *)yellowView {
+    if (!_yellowView) {
+        _yellowView = [[YLLView alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2-150,200, 300, 200)];
+        _yellowView.backgroundColor = [UIColor yellowColor];
 
     }
-    return _yll_view;
+    return _yellowView;
 }
 
-- (YLLabel *)yll_label {
-    if (!_yll_label) {
-        _yll_label = [[YLLabel alloc] initWithFrame:CGRectMake(0, 0, 120, 40)];
-        _yll_label.backgroundColor = [UIColor whiteColor];
-        _yll_label.text = @"这是一个Label";
-        _yll_label.textColor = [UIColor systemPinkColor];
+- (YLLabel *)blueLabel {
+    if (!_blueLabel) {
+        _blueLabel = [[YLLabel alloc] initWithFrame:CGRectMake(0, 0, 120, 40)];
+        _blueLabel.backgroundColor = [UIColor blueColor];
+        _blueLabel.text = @"这是一个Label";
+        _blueLabel.textColor = [UIColor systemPinkColor];
     }
-    return _yll_label;
+    return _blueLabel;
 }
 
 
-- (YLLButton *)yll_button {
-    if (!_yll_button) {
-        _yll_button = [[YLLButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2-150,200, 300, 200)];
-        _yll_button.backgroundColor = [UIColor systemPinkColor];
-        [_yll_button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+- (YLLButton *)pinkButton {
+    if (!_pinkButton) {
+        _pinkButton = [[YLLButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2-150,200, 100, 100)];
+        _pinkButton.backgroundColor = [UIColor systemPinkColor];
+        [_pinkButton addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _yll_button;
+    return _pinkButton;
 }
 
 - (void)buttonAction:(UIButton *)sender {

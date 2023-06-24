@@ -16,7 +16,7 @@
     },
     {
         "q_id":"block_test-1",
-        "q_title":"block作为系统函数参数,arc下是否会自动copy",
+        "q_title":"block作为系统函数参数,arc下`不会`自动copy",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
@@ -35,7 +35,7 @@
     },
     {
         "q_id":"block_test-2",
-        "q_title":"block作为gcd函数参数,arc下是否会自动copy",
+        "q_title":"block作为gcd函数参数,arc下`不会`自动copy",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
@@ -48,7 +48,7 @@
     },
     {
         "q_id":"block_test-3",
-        "q_title":"block在修改NSMutableArray，需不需要添加__block",
+        "q_title":"block在修改NSMutableArray，`不需要`添加__block",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
@@ -59,6 +59,21 @@
             "art_title":"",
         }
 
+    },
+    {
+        "q_id":"block_test-3",
+        "q_title":"在子线程block中修改外部变量，会怎样--",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testBlock__block",
+        "article": {
+            "art_id":"block_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+
     }
+
     
 ]

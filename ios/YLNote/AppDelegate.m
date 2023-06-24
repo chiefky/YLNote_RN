@@ -16,7 +16,6 @@
 #import "YLUserViewController.h"
 #import "YLNativeNewsViewController.h"
 #import "YLNote-Swift.h"
-#import "WXApi.h"
 
 /**
  * 设置图片
@@ -35,7 +34,7 @@ NSString *kTabBarItemKeyColorName             = @"kTabBarItemKeyColorName";
  */
 NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorName";
 
-@interface AppDelegate ()<WXApiDelegate>
+@interface AppDelegate ()
 
 @end
 
@@ -46,7 +45,6 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     //向微信注册
 //    [WXApi registerApp:@"wx53988d14632db7aa" universalLink:@"https://yurinote.com/app/"];
    
-    [WXApi registerApp:@"wx53988d14632db7aa" universalLink:@""];
     
     [[YLSkinMananger defaultManager] checkAndUpdateSkinSettingWithCompleteBlock:^(NSDictionary * _Nonnull dict) {
         //        NSLog(@"******+++= %@",dict);
@@ -156,25 +154,6 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
 //        completeBlock([mutDic copy]);
 //    }
 //}
-
--(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
-    
-    return [WXApi handleOpenURL:url delegate:self];
-}
-
--(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    
-    return [WXApi handleOpenURL:url delegate:self];
-}
-//是微信终端向第三方程序发起请求，要求第三方程序响应。第三方程序响应完后必须调用 sendRsp 返回。在调用 sendRsp 返回时，会切回到微信终端程序界面。
--(void) onReq:(BaseReq*)reqonReq {
-    
-}
-
-//如果第三方程序向微信发送了 sendReq 的请求，那么 onResp 会被回调。sendReq 请求调用后，会切到微信终端程序界面。
--(void) onResp:(BaseResp*)resp {
-    
-}
 
 - (void)rctConfig {
     

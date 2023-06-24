@@ -24,11 +24,22 @@ class YLSwiftTabQesDataManager: YLQuestionDataManagerBase {
 
 class YLSwiftViewController: UIViewController {
     
+    func when<T>(_ condition: @autoclosure() ->Bool,
+                 then:()->T,`else`:() -> T)
+    -> T {
+        condition() ? then():`else`()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.navigationItem.title = "Swift"
         setupUI()
+        
+        when(2<3){print("then")} else: {
+            print("else")
+        }
+        
     }
     
     func setupUI() {

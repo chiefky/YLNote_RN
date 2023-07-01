@@ -1,0 +1,16 @@
+<div style="margin-top: 100px">
+    <h1>Test how to use objectivec call js</h1>
+    <input type="button" value="Call ObjC system camera" onclick="testobject.callSystemCamera()">
+    <input type="button" value="Call ObjC system alert" onclick="testobject.showAlertMsg('js title', 'js message')">
+</div>
+
+<div>
+    <input type="button" value="Call ObjC func with JSON "
+        onclick="testobject.callWithDict({'name': 'testname', 'age': 10, 'height': 170})">
+    <input type="button" value="Call ObjC func with JSON and ObjC call js func to pass args."
+        onclick="testobject.jsCallObjcAndObjcCallJsWithDict({'name': 'testname', 'age': 10, 'height': 170})">
+</div>
+
+<div>
+    <span id="jsParamFuncSpan" style="color: red; font-size: 50px;"></span>
+</div>

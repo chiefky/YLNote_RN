@@ -1,27 +1,102 @@
-[    {
-    "group_id":"group_JSPatch",
-    "unfoldStatus":false,
-    "group_title":"JSPatch",
-    "questions": [
-        {
-            "q_id":"",
-            "q_title":"实例",
-            "showNextPage": true,
-            "showArticle":true,
-            "function":"",
-            "demo": {
-                "className":"JSPatchDemoController",
-                "style": 0,
-                "useXib": 0
-            },
-            "article": {
-                "art_id":"",
-                "art_url":"/content/JSPatch/JSPatch_test.md",
+[
+    {
+        "group_id":"group_the_basic",
+        "unfoldStatus":false,
+        "group_title":"基础知识",
+        "questions": [
+            {
+                "q_id":"",
+                "q_title":"实例",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLTheBasicListController",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                }
             }
-        }
-    ]
-},
-
+        ]
+    },
+    {
+        "group_id":"group_xingneng",
+        "unfoldStatus":false,
+        "group_title":"性能优化",
+        "questions": [
+            {
+                "q_id":"",
+                "q_title":"总卷",
+                "showNextPage": false,
+                "showArticle":true,
+                "function":"",
+                "article": {
+                    "art_id":"1005_001",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"",
+                "q_title":"面试题整理",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"1005_002",
+                    "art_url":"",
+                }
+            },
+            {
+                "q_id":"",
+                "q_title":"启动时长优化",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLOptimizeStartViewController",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"yn_2001",
+                    "art_url":"/content/Optimize/Optimize_start.md",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"group_JSPatch",
+        "unfoldStatus":false,
+        "group_title":"JSPatch",
+        "questions": [
+            {
+                "q_id":"",
+                "q_title":"实例",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"JSPatchDemoController",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"/content/JSPatch/JSPatch_test.md",
+                }
+            }
+        ]
+    },
+    
     {
         "group_id":"group_NSNotificationCenter",
         "unfoldStatus":false,
@@ -511,6 +586,40 @@
         "unfoldStatus":false,
         "group_title":"内存管理",
         "questions": [
+            {
+                "q_id":"",
+                "q_title":"深浅copy",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLDemoCopyViewController",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"yn_memory_copy",
+                    "art_title":"",
+                    "art_fileName":"Foundation-浅拷贝与深拷贝"
+                }
+            },
+            {
+                "q_id":"",
+                "q_title":"Weak实现原理",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"YLRuntimeWeakViewController",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"yn_memory_weak",
+                    "art_title":"",
+                    "art_fileName":"Foundation-浅拷贝与深拷贝"
+                }
+            },
             {
                 "q_id":"",
                 "q_title":"总卷",

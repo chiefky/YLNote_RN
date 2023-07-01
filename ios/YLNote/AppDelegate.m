@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import <JSPatch/JPEngine.h>
 #import "YLDefaultMacro.h"
-#import "YLNotesViewController.h"
 #import "YLGCDViewController.h"
 #import "YLOCSwiftViewController.h"
 #import "YLRctNatViewController.h"
@@ -42,10 +41,6 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //向微信注册
-//    [WXApi registerApp:@"wx53988d14632db7aa" universalLink:@"https://yurinote.com/app/"];
-   
-    
     [[YLSkinMananger defaultManager] checkAndUpdateSkinSettingWithCompleteBlock:^(NSDictionary * _Nonnull dict) {
         //        NSLog(@"******+++= %@",dict);
     }];
@@ -55,9 +50,9 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     //    NSLog(@"%s",__func__);
     self.window = [[UIWindow alloc] initWithFrame: YLSCREEN_BOUNDS];
     
-    YLPerNoteViewController *noteVC = [[YLPerNoteViewController alloc] init];
-    noteVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"笔记" image:[UIImage imageNamed:@"note"] tag:4];
-    UINavigationController *naviNote = [[UINavigationController alloc] initWithRootViewController:noteVC];
+    YLWebListViewController *webVC = [[YLWebListViewController alloc] init];
+    webVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Web交互" image:[UIImage imageNamed:@"web"] tag:3];
+    UINavigationController *naviWeb = [[UINavigationController alloc] initWithRootViewController:webVC];
     
     YLAlgoViewController *algoriVC = [[YLAlgoViewController alloc] init];
     algoriVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"算法" image:[UIImage imageNamed:@"algorithm"] tag:2];
@@ -65,28 +60,35 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     
     
     YLSwiftViewController *swiftVC = [[YLSwiftViewController alloc] init];
-    swiftVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Swift" image:[UIImage imageNamed:@"swift"] tag:3];
+    swiftVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Swift" image:[UIImage imageNamed:@"swift"] tag:4];
     UINavigationController *naviSwift = [[UINavigationController alloc] initWithRootViewController:swiftVC];
-    
-    YLRctNatViewController *reactVC = [[YLRctNatViewController alloc] init];
-    reactVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ReactNative" image:[UIImage imageNamed:@"react"] tag:4];
     
 //    YLFlutterViewController *flutterVC = [[YLFlutterViewController alloc] init];
 //    flutterVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Flutter" image:[UIImage imageNamed:@"flutter"] tag:4];
     
     YLNoteTmpViewController *tmpNodeVC = [[YLNoteTmpViewController alloc] init];
-    tmpNodeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"最新" image:[UIImage imageNamed:@"note"] tag:4];
+    tmpNodeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"最新" image:[UIImage imageNamed:@"note"] tag:1];
     UINavigationController *naviTmpNote = [[UINavigationController alloc] initWithRootViewController:tmpNodeVC];
 
 //    YLNativeNewsViewController *nativeVC = [[YLNativeNewsViewController alloc] initWithNibName:@"YLNativeNewsViewController" bundle:nil];
 //    nativeVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Native" image:[UIImage imageNamed:@"apple"] tag:5];
 //    UINavigationController *naviFlutter = [[UINavigationController alloc] initWithRootViewController:flutterVC];
     
+    YLReactHomeViewController *reactVC = [[YLReactHomeViewController alloc] init];
+    reactVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"ReactNative" image:[UIImage imageNamed:@"react"] tag:5];
+    UINavigationController *naviRN = [[UINavigationController alloc] initWithRootViewController:reactVC];
+
+
     UITabBarController *tab = [[UITabBarController alloc] init];
     tab.tabBar.translucent = NO;
-    tab.viewControllers = @[naviAlgori,naviTmpNote,naviNote,naviSwift,reactVC];
+    tab.viewControllers = @[naviTmpNote,naviAlgori,naviWeb,naviSwift,naviRN];
+    
     self.window.rootViewController = tab;
-    [self.window makeKeyAndVisible];
+    
+//    UINavigationController *nav =  [[UINavigationController alloc] initWithRootViewController:[YLRctNatViewController new]];
+//    self.window.rootViewController = nav;
+
+//    [self.window makeKeyAndVisible];
     
     return YES;
 }
@@ -95,16 +97,23 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
 - (void)appearanceSetting {
     if (@available(iOS 15.0, *)) {
         // UINavigationBar
-        UINavigationBarAppearance *appearance = [[UINavigationBarAppearance alloc] init];
-        appearance.backgroundColor =  [YLTheme main].themeColor; //背景色
-        appearance.shadowColor = UIColor.clearColor; //阴影
-        appearance.titleTextAttributes = @{NSFontAttributeName:[YLTheme main].mainFont,NSForegroundColorAttributeName:[YLTheme main].backColor}; // title 字体、颜色
-        appearance.backButtonAppearance.normal.titleTextAttributes = @{NSFontAttributeName:[YLTheme main].mainFont,NSForegroundColorAttributeName:[YLTheme main].backColor}; // back item 字体、颜色
+        UINavigationBarAppearance * appearance = [[UINavigationBarAppearance alloc] init];
+        appearance.backgroundColor = [YLTheme main].themeColor;
+        appearance.backgroundEffect = nil;
+        // 去除导航栏阴影（如果不设置clear，导航栏底下会有一条阴影线）
+        appearance.shadowColor = [UIColor clearColor];
+        // 字体颜色、尺寸等
+        appearance.titleTextAttributes = @{
+            NSFontAttributeName:[YLTheme main].mainFont,
+            NSForegroundColorAttributeName:[YLTheme main].backColor
+        };
         [UINavigationBar appearance].tintColor = [YLTheme main].naviTintColor; // bar上控件的颜色
         appearance.backButtonAppearance.normal.titlePositionAdjustment = UIOffsetMake(-200, 0);  // UINavigationBarAppearance 会覆盖原有的导航栏设置，这里需要重新设置返回按钮隐藏，不隐藏可注释或删掉
-        [[UINavigationBar appearance] setStandardAppearance:appearance];
+        // 带scroll滑动的页面
         [[UINavigationBar appearance] setScrollEdgeAppearance:appearance];
-        
+        // 常规页面
+        [[UINavigationBar appearance] setStandardAppearance:appearance];
+
         // UITabBar
         UITabBarAppearance *tabAppearance = [[UITabBarAppearance alloc] init];
         tabAppearance.stackedLayoutAppearance.selected.iconColor = [YLTheme main].themeColor;

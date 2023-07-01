@@ -1,0 +1,163 @@
+<html>
+    <header>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    *{
+                        margin:0;
+                    }
+                    .main {
+                        text-align: center; //让div内部文字居中
+                        background-color: #fdf;
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    
+                    
+                    .header {
+                        background-color: #fdf;
+                        padding-top:30px;
+                    }
+                    
+                    .bodyArea {
+                        padding-top:30px;
+                    }
+                    /*
+                     bodyArea.menuArea {
+                     margin: auto;
+                     border: 3px solid #73AD21;
+                     }
+                     
+                     bodyArea.contentArea {
+                     margin: auto;
+                     }*/
+                    
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        padding: 20px 0;
+                        
+                    }
+                    .button {
+                        width:80%,
+                        background-color: #ff6347; /* tomato */
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 10px 10px;
+                        font-size: 16px;
+                        display: inline-block;
+                        
+                        /*
+                         display: inline-block;
+                         */
+                        margin: 10px 15px;
+                        cursor: pointer;
+                    }
+                    
+                    p {
+                        font-size: 17px;
+                        background-color:#999999;
+                        color: white;
+                    }
+                    
+                    p.margin {
+                        padding: 10px 5px;
+                    }
+                    
+                    .button2 {width: 50%;}
+                </style>
+                <script type="text/javascript">
+                    
+                    /// native回调函数-> 更新用户信息标签
+                    let msgHandlers = window.webkit.messageHandlers
+                    
+                    /// 示例三的回调函数
+                    function showUserInfo(data) {
+                        var obj = JSON.parse(data);
+                        document.getElementById('userinfo').innerHTML = '示例三回调数据: <br> ' + obj.msg;
+                    }
+                    
+                    // 接受iOS端传过来的参数
+                    function testObject(data) {
+                        var obj = JSON.parse(data);
+                        document.getElementById('userinfo').innerHTML = '接收到了数据: <br> ' + obj.msg;
+                    }
+                    
+                    // 示例一
+                    // 需要回调更新图片（JS向native传字典....）
+                    function callNative() {
+                        if (msgHandlers && msgHandlers.sayHello) {
+                            msgHandlers.sayHello.postMessage(null);
+                        }
+                    }
+
+                    //示例二
+                    function callNativeWithParam() {
+                        alert("李四~");
+                        if (msgHandlers && msgHandlers.sayHello) {
+                            msgHandlers.sayHello.postMessage("张三");
+                        }
+                    }
+                    
+                    //示例三
+                    function callNativeThenCallBack() {
+                        // 向wkwebview发送消息获取用户信息回传给JS显示
+                        if (msgHandlers && msgHandlers.sayHello) {
+                            let obj = { userID:"abc1244", callBackFunc:"showUserInfo" }
+                            // callBackFunc传回调函数名即可，函数参数需要两端开发人员协商
+                            // 向wkwebview发送消息注册回调函数
+                            msgHandlers.sayHello.postMessage(obj);
+                        }
+                    }
+                    
+                    //示例四
+                    function callNativeWithReply() {
+                        // 向wkwebview发送消息获取用户信息回传给JS显示
+                        if (msgHandlers && msgHandlers.getUserInfo) {
+                            msgHandlers.requestData.postMessage({
+                                carId:"100x00w090"})
+                        }
+                        
+                    }
+                                
+                </script>
+            </header>
+    
+    <body class="main">
+        
+        <div id="container" style="width:100%">
+            
+            <div id="header">
+                <h4 style="margin-bottom:0;font-size: 22px;" align="left">1. JS call native: </h4>
+                <p style="margin-top:0;">let msgHandlers = window.webkit.messageHandlers </p>
+            </div>
+            
+<!--            <div id="menu" style="width:15%;float:left;">-->
+<!--                <img id="avatar" style="width:85%" src="https://reactnative.dev/docs/assets/p_cat2.png" alt="some_text">-->
+<!--            </div>-->
+            
+            <div id="content" style="background-color:#EEEEEE;width:100%;float:left;">
+                <button class="button"  onclick="callNative()">示例一: 不带参数  msgHandlers.sayHello.postMessage(null)</button>
+                <button class="button"  onclick="callNativeWithParam()">示例二: 带参数 msgHandlers.sayHello.postMessage("张三")</button>
+                <button class="button"  onclick="callNativeThenCallBack()">示例三: 带参数带回调 msgHandlers.sayHello.postMessage({
+                    userID:"abc1244",
+                    callBackFunc:"showUserInfo"})</button>
+                <button class="button"  onclick="callNativeWithReply()">示例四: 带参数自动应答 msgHandlers.requestData.postMessage({
+                    carId:"100x00w090"})</button>
+            </div>
+            
+            <div id="footer" style="background-color:#ffffff;clear:both;text-align:center;">
+                <p id="userinfo" class="margin" style="word-break:break-word" >此处显示回调获取的用户信息</p>
+            </div>
+        </div>
+    </body>
+</html>

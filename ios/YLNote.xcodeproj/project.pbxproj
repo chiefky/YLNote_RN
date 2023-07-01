@@ -13,12 +13,33 @@
 		5400B31925BAEA6600DC4C49 /* CAlayer+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5400B31825BAEA6600DC4C49 /* CAlayer+Tools.swift */; };
 		5400B31B25BAEB5C00DC4C49 /* YLAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5400B31A25BAEB5C00DC4C49 /* YLAnimationHelper.swift */; };
 		540261AC2965877300BAB784 /* kvo.json in Resources */ = {isa = PBXBuildFile; fileRef = 540261AB2965877300BAB784 /* kvo.json */; };
+		5405F9E22A4CA95200C0D24C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D22A4CA95100C0D24C /* Zocial.ttf */; };
+		5405F9E32A4CA95200C0D24C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D32A4CA95100C0D24C /* EvilIcons.ttf */; };
+		5405F9E42A4CA95200C0D24C /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D42A4CA95100C0D24C /* AntDesign.ttf */; };
+		5405F9E52A4CA95200C0D24C /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D52A4CA95100C0D24C /* Feather.ttf */; };
+		5405F9E62A4CA95200C0D24C /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D62A4CA95100C0D24C /* MaterialIcons.ttf */; };
+		5405F9E72A4CA95200C0D24C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D72A4CA95100C0D24C /* Ionicons.ttf */; };
+		5405F9E82A4CA95200C0D24C /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D82A4CA95100C0D24C /* MaterialCommunityIcons.ttf */; };
+		5405F9E92A4CA95200C0D24C /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9D92A4CA95100C0D24C /* Foundation.ttf */; };
+		5405F9EA2A4CA95200C0D24C /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9DA2A4CA95100C0D24C /* FontAwesome5_Solid.ttf */; };
+		5405F9EB2A4CA95200C0D24C /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9DB2A4CA95100C0D24C /* FontAwesome5_Regular.ttf */; };
+		5405F9EC2A4CA95200C0D24C /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9DC2A4CA95100C0D24C /* Fontisto.ttf */; };
+		5405F9ED2A4CA95200C0D24C /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9DD2A4CA95100C0D24C /* FontAwesome5_Brands.ttf */; };
+		5405F9EE2A4CA95200C0D24C /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9DE2A4CA95100C0D24C /* Entypo.ttf */; };
+		5405F9EF2A4CA95200C0D24C /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9DF2A4CA95200C0D24C /* Octicons.ttf */; };
+		5405F9F02A4CA95200C0D24C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9E02A4CA95200C0D24C /* SimpleLineIcons.ttf */; };
+		5405F9F12A4CA95200C0D24C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9E12A4CA95200C0D24C /* FontAwesome.ttf */; };
+		5405F9F32A4D5F1D00C0D24C /* MyWeb.html in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9F22A4D5F1D00C0D24C /* MyWeb.html */; };
+		5405F9FC2A4D696C00C0D24C /* YLTheBasicListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405F9FB2A4D696C00C0D24C /* YLTheBasicListController.swift */; };
+		5405F9FE2A4D69F300C0D24C /* BasicList.json in Resources */ = {isa = PBXBuildFile; fileRef = 5405F9FD2A4D69F300C0D24C /* BasicList.json */; };
+		5405FA002A4DF30A00C0D24C /* YLWKActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405F9FF2A4DF30A00C0D24C /* YLWKActionDelegate.swift */; };
+		5405FA042A4F1C9700C0D24C /* YLWebMsgHandleDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405FA032A4F1C9700C0D24C /* YLWebMsgHandleDemoController.swift */; };
+		5405FA062A4F1DAB00C0D24C /* MsgHandlerDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 5405FA052A4F1DAB00C0D24C /* MsgHandlerDemo.html */; };
+		5405FA082A4F49C300C0D24C /* StringTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405FA072A4F49C300C0D24C /* StringTools.swift */; };
+		5405FA0A2A4F4A4800C0D24C /* DicttionaryTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405FA092A4F4A4800C0D24C /* DicttionaryTools.swift */; };
+		5405FA0C2A4FE96800C0D24C /* YLWebUIDelegateDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405FA0B2A4FE96800C0D24C /* YLWebUIDelegateDemoController.swift */; };
+		5405FA102A4FEF2F00C0D24C /* UIDelegateDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 5405FA0F2A4FEF2F00C0D24C /* UIDelegateDemo.html */; };
 		540AC93C29D309EF00902331 /* UIWindow+OverWritte.m in Sources */ = {isa = PBXBuildFile; fileRef = 540AC93B29D309EF00902331 /* UIWindow+OverWritte.m */; };
-		540B8F5F260C755A00475BC5 /* YLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F5D260C755A00475BC5 /* YLHomeViewController.swift */; };
-		540B8F60260C755A00475BC5 /* YLHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540B8F5E260C755A00475BC5 /* YLHomeViewController.xib */; };
-		540B8F69260C757800475BC5 /* YLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F67260C757800475BC5 /* YLLoginViewController.swift */; };
-		540B8F6A260C757800475BC5 /* YLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540B8F68260C757800475BC5 /* YLLoginViewController.xib */; };
-		540B8F70260C81A600475BC5 /* YLNoteUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F6F260C81A600475BC5 /* YLNoteUserManager.swift */; };
 		540B8F84260CA26300475BC5 /* YLQuestionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F83260CA26300475BC5 /* YLQuestionDataManager.swift */; };
 		540B8F9D260CB6CD00475BC5 /* UIWindowTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540B8F9C260CB6CD00475BC5 /* UIWindowTool.swift */; };
 		541A9C2228390D5600C839A2 /* YLNoteBridgeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A9C2128390D5600C839A2 /* YLNoteBridgeAPI.m */; };
@@ -79,14 +100,13 @@
 		5426D71328854ECF00298D14 /* YLAlgoArrayListRow_18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426D71128854ECF00298D14 /* YLAlgoArrayListRow_18.swift */; };
 		5426D71728854F9B00298D14 /* YLAlgoLinkedlistListRow_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426D71528854F9B00298D14 /* YLAlgoLinkedlistListRow_5.swift */; };
 		5426D71828854F9B00298D14 /* Algo_linkedlist_list_row_5.json in Resources */ = {isa = PBXBuildFile; fileRef = 5426D71628854F9B00298D14 /* Algo_linkedlist_list_row_5.json */; };
-		5426D71D2885D13E00298D14 /* YLPerNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426D71C2885D13E00298D14 /* YLPerNoteViewController.swift */; };
+		5426D71D2885D13E00298D14 /* YLWebListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426D71C2885D13E00298D14 /* YLWebListViewController.swift */; };
 		5426D7242885D93300298D14 /* YLFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5426D7232885D93300298D14 /* YLFlutterViewController.swift */; };
 		542821A32611C5FF0066E070 /* YLQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542821A12611C5FF0066E070 /* YLQuestionTableViewCell.swift */; };
 		542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542821A22611C5FF0066E070 /* YLQuestionTableViewCell.xib */; };
 		542821C7261204950066E070 /* YLDemoSeparatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542821C5261204950066E070 /* YLDemoSeparatorViewController.swift */; };
 		542821C8261204950066E070 /* YLDemoSeparatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542821C6261204950066E070 /* YLDemoSeparatorViewController.xib */; };
 		543580F6259DBBEF00452D76 /* YLLogMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 543580F5259DBBEF00452D76 /* YLLogMessageManager.m */; };
-		5435811225A4D18900452D76 /* YLWebNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5435811125A4D18900452D76 /* YLWebNoteManager.m */; };
 		5435811725A4D4D600452D76 /* YLRuntimeNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5435811625A4D4D600452D76 /* YLRuntimeNoteManager.m */; };
 		5435811E25A4D8AC00452D76 /* YLAutoReleaseNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5435811D25A4D8AC00452D76 /* YLAutoReleaseNoteManager.m */; };
 		5435812125A4D96B00452D76 /* YLKVONoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5435812025A4D96B00452D76 /* YLKVONoteManager.m */; };
@@ -141,6 +161,12 @@
 		545F875A25B97336008BE6E2 /* YLThirdLibNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F875925B97336008BE6E2 /* YLThirdLibNoteManager.m */; };
 		545F876225BA8599008BE6E2 /* YLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F876125BA8599008BE6E2 /* YLCircleView.m */; };
 		545F876625BA8750008BE6E2 /* YLDemoDrawrectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F876525BA8750008BE6E2 /* YLDemoDrawrectViewController.m */; };
+		5462EE2E2A486C060027EDD8 /* PagesNote.json in Resources */ = {isa = PBXBuildFile; fileRef = 5462EE2C2A486C060027EDD8 /* PagesNote.json */; };
+		5462EE322A4B64FB0027EDD8 /* YLReactHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462EE312A4B64FB0027EDD8 /* YLReactHomeViewController.swift */; };
+		5462EE362A4C07870027EDD8 /* YLDataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462EE352A4C07870027EDD8 /* YLDataSourceManager.swift */; };
+		5462EE382A4C160A0027EDD8 /* YLReactTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462EE372A4C160A0027EDD8 /* YLReactTableViewProtocol.swift */; };
+		5462EE3C2A4C344A0027EDD8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462EE3B2A4C344A0027EDD8 /* Page.swift */; };
+		5462EE3E2A4C843F0027EDD8 /* YLReactContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5462EE3D2A4C843F0027EDD8 /* YLReactContainerController.swift */; };
 		54630DB727E72ECC0096888B /* YLObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 54630DB627E72ECC0096888B /* YLObject+Test.m */; };
 		54630DBD27E72F160096888B /* YLObject+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54630DBC27E72F160096888B /* YLObject+Test2.m */; };
 		546368AB27BA253D003CF22F /* YLRunloopDoggy.m in Sources */ = {isa = PBXBuildFile; fileRef = 546368AA27BA253D003CF22F /* YLRunloopDoggy.m */; };
@@ -171,7 +197,6 @@
 		5487BDBF25CB0FCD00C6AEAE /* YLCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDBD25CB0FCD00C6AEAE /* YLCollectionViewCell.swift */; };
 		5487BDC025CB0FCD00C6AEAE /* YLCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5487BDBE25CB0FCD00C6AEAE /* YLCollectionViewCell.xib */; };
 		5487BDC225D65AD000C6AEAE /* YLSwiftTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC125D65AD000C6AEAE /* YLSwiftTopicsViewController.swift */; };
-		5487BDC825D6F6C100C6AEAE /* YLDemoEmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDC725D6F6C100C6AEAE /* YLDemoEmptyViewController.swift */; };
 		5487BDDA25D943BE00C6AEAE /* YLPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDD925D943BE00C6AEAE /* YLPet.swift */; };
 		5487BDDC25DC727300C6AEAE /* UITabbarItem+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDDB25DC727300C6AEAE /* UITabbarItem+Theme.swift */; };
 		5487BDDF25DF9D9D00C6AEAE /* UIView+Skin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5487BDDE25DF9D9D00C6AEAE /* UIView+Skin.m */; };
@@ -312,6 +337,7 @@
 		54A35DAF24CED7A30076DFB6 /* YLGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A35DA924CED7A30076DFB6 /* YLGCDViewController.m */; };
 		54A35DB224CF216F0076DFB6 /* YLNotificationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A35DB124CF216F0076DFB6 /* YLNotificationTestViewController.m */; };
 		54A6517C24D4305C005FB5AD /* YLUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A6517B24D4305C005FB5AD /* YLUserViewController.m */; };
+		54A872102A471FD600DA78F2 /* ReactHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A8720F2A471FD600DA78F2 /* ReactHomeViewController.m */; };
 		54ABCB382885DFEC006C65D6 /* YLOC_in_SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB372885DFEC006C65D6 /* YLOC_in_SwiftViewController.swift */; };
 		54ABCB3C2885E03B006C65D6 /* PinkPigOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB3B2885E03B006C65D6 /* PinkPigOC.m */; };
 		54ABCB3E2885E057006C65D6 /* PinkPigSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB3D2885E057006C65D6 /* PinkPigSwift.swift */; };
@@ -375,12 +401,10 @@
 		54B850E0283E2CC900294D47 /* YLFilmTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850DF283E2CC900294D47 /* YLFilmTabView.m */; };
 		54B850E5283E2CE800294D47 /* YLFilmTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850E4283E2CE800294D47 /* YLFilmTabView.xib */; };
 		54BA46A02632C56400665C43 /* YLDemoARCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BA469F2632C56400665C43 /* YLDemoARCViewController.m */; };
-		54BB262E2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB262D2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift */; };
 		54BB26302601E095001A98B4 /* YLMessageHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB262F2601E095001A98B4 /* YLMessageHandlerViewController.swift */; };
 		54BB263F26033C8B001A98B4 /* YLScriptCoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB263E26033C8B001A98B4 /* YLScriptCoreViewController.swift */; };
 		54BB264326035E84001A98B4 /* YLSwiftJavaScriptTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB264226035E84001A98B4 /* YLSwiftJavaScriptTools.swift */; };
-		54BB2646260379E9001A98B4 /* WKWebViewJSTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 54BB2644260379E9001A98B4 /* WKWebViewJSTest.html */; };
-		54BB2647260379E9001A98B4 /* UIWebViewJSTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 54BB2645260379E9001A98B4 /* UIWebViewJSTest.html */; };
+		54BB2647260379E9001A98B4 /* JSTest.html in Resources */ = {isa = PBXBuildFile; fileRef = 54BB2645260379E9001A98B4 /* JSTest.html */; };
 		54BB264B2603AC3D001A98B4 /* YLWKCookieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BB264A2603AC3D001A98B4 /* YLWKCookieViewController.swift */; };
 		54C05D95268F0B07006FFAAE /* YLDemoCopyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C05D90268F0B07006FFAAE /* YLDemoCopyViewController.m */; };
 		54C44A9627D7661000688A7E /* YLAlgoStringListRow_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C44A9527D7661000688A7E /* YLAlgoStringListRow_1.swift */; };
@@ -392,11 +416,9 @@
 		54C4B500261437FA004BF897 /* YLWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B4FF261437FA004BF897 /* YLWallet.swift */; };
 		54C4B50F261483DE004BF897 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C4B50E261483DE004BF897 /* Security.framework */; };
 		54C4B514261495AD004BF897 /* YLKeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B513261495AD004BF897 /* YLKeyChainManager.swift */; };
-		54C4B519261498EA004BF897 /* YLUserDeafultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B518261498EA004BF897 /* YLUserDeafultsManager.swift */; };
 		54C4B52D261C7E99004BF897 /* YLDemoBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B52C261C7E99004BF897 /* YLDemoBlockViewController.m */; };
 		54C6F41327BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C6F41227BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift */; };
 		54C6F42327BD74B200756275 /* Algo_other_row_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C6F42227BD74B200756275 /* Algo_other_row_0.json */; };
-		54CAC36A2605BD73008A7BDF /* YLWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAC3692605BD73008A7BDF /* YLWKWebView.swift */; };
 		54CAC36C2605C05E008A7BDF /* YLWebCookieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAC36B2605C05E008A7BDF /* YLWebCookieViewController.swift */; };
 		54CAC36E2605DC6B008A7BDF /* cookie.js in Resources */ = {isa = PBXBuildFile; fileRef = 54CAC36D2605DC6B008A7BDF /* cookie.js */; };
 		54CAD84028D6658E00FF806F /* YLDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54CAD83F28D6658E00FF806F /* YLDate.m */; };
@@ -557,7 +579,6 @@
 		54E6E43327BD792E0019E03C /* YLAlgoTreeListRow_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6E43227BD792E0019E03C /* YLAlgoTreeListRow_1.swift */; };
 		54E6E43827BD79680019E03C /* Algo_tree_row_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E6E43727BD79680019E03C /* Algo_tree_row_1.json */; };
 		54E6E43D27BD79720019E03C /* Algo_tree_row_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E6E43C27BD79720019E03C /* Algo_tree_row_0.json */; };
-		54E97A5B27B106B2001CA669 /* YLNoteQesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E97A5A27B106B2001CA669 /* YLNoteQesDataManager.swift */; };
 		54E97A7D27B10884001CA669 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E97A6427B10884001CA669 /* Stack.swift */; };
 		54E97A8227B10884001CA669 /* Algo_array_row_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E97A6B27B10884001CA669 /* Algo_array_row_1.json */; };
 		54E97A8327B10884001CA669 /* DoublePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E97A6C27B10884001CA669 /* DoublePointer.swift */; };
@@ -574,7 +595,7 @@
 		54E97A8F27B10884001CA669 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E97A7927B10884001CA669 /* BinaryTree.swift */; };
 		54E97A9027B10884001CA669 /* Iteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E97A7A27B10884001CA669 /* Iteration.swift */; };
 		54E97A9127B10884001CA669 /* Algo.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E97A7B27B10884001CA669 /* Algo.json */; };
-		54E97A9927B1091B001CA669 /* PersonNote.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E97A9827B1091B001CA669 /* PersonNote.json */; };
+		54E97A9927B1091B001CA669 /* WebList.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E97A9827B1091B001CA669 /* WebList.json */; };
 		54E97AAC27B38004001CA669 /* runloop_other.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E97AAB27B38004001CA669 /* runloop_other.json */; };
 		54E97AB727B3F393001CA669 /* YLRunloopRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E97AB427B3F393001CA669 /* YLRunloopRunViewController.m */; };
 		54E97AB827B3F393001CA669 /* runloop_run.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E97AB627B3F393001CA669 /* runloop_run.json */; };
@@ -659,13 +680,34 @@
 		5400B31825BAEA6600DC4C49 /* CAlayer+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAlayer+Tools.swift"; sourceTree = "<group>"; };
 		5400B31A25BAEB5C00DC4C49 /* YLAnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAnimationHelper.swift; sourceTree = "<group>"; };
 		540261AB2965877300BAB784 /* kvo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kvo.json; sourceTree = "<group>"; };
+		5405F9D22A4CA95100C0D24C /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		5405F9D32A4CA95100C0D24C /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		5405F9D42A4CA95100C0D24C /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		5405F9D52A4CA95100C0D24C /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		5405F9D62A4CA95100C0D24C /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		5405F9D72A4CA95100C0D24C /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		5405F9D82A4CA95100C0D24C /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		5405F9D92A4CA95100C0D24C /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		5405F9DA2A4CA95100C0D24C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		5405F9DB2A4CA95100C0D24C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		5405F9DC2A4CA95100C0D24C /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		5405F9DD2A4CA95100C0D24C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		5405F9DE2A4CA95100C0D24C /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		5405F9DF2A4CA95200C0D24C /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		5405F9E02A4CA95200C0D24C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		5405F9E12A4CA95200C0D24C /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		5405F9F22A4D5F1D00C0D24C /* MyWeb.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MyWeb.html; sourceTree = "<group>"; };
+		5405F9FB2A4D696C00C0D24C /* YLTheBasicListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLTheBasicListController.swift; sourceTree = "<group>"; };
+		5405F9FD2A4D69F300C0D24C /* BasicList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BasicList.json; sourceTree = "<group>"; };
+		5405F9FF2A4DF30A00C0D24C /* YLWKActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKActionDelegate.swift; sourceTree = "<group>"; };
+		5405FA032A4F1C9700C0D24C /* YLWebMsgHandleDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebMsgHandleDemoController.swift; sourceTree = "<group>"; };
+		5405FA052A4F1DAB00C0D24C /* MsgHandlerDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MsgHandlerDemo.html; sourceTree = "<group>"; };
+		5405FA072A4F49C300C0D24C /* StringTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTools.swift; sourceTree = "<group>"; };
+		5405FA092A4F4A4800C0D24C /* DicttionaryTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicttionaryTools.swift; sourceTree = "<group>"; };
+		5405FA0B2A4FE96800C0D24C /* YLWebUIDelegateDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebUIDelegateDemoController.swift; sourceTree = "<group>"; };
+		5405FA0F2A4FEF2F00C0D24C /* UIDelegateDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIDelegateDemo.html; sourceTree = "<group>"; };
 		540AC93A29D309EF00902331 /* UIWindow+OverWritte.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+OverWritte.h"; sourceTree = "<group>"; };
 		540AC93B29D309EF00902331 /* UIWindow+OverWritte.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+OverWritte.m"; sourceTree = "<group>"; };
-		540B8F5D260C755A00475BC5 /* YLHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLHomeViewController.swift; sourceTree = "<group>"; };
-		540B8F5E260C755A00475BC5 /* YLHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeViewController.xib; sourceTree = "<group>"; };
-		540B8F67260C757800475BC5 /* YLLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoginViewController.swift; sourceTree = "<group>"; };
-		540B8F68260C757800475BC5 /* YLLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLLoginViewController.xib; sourceTree = "<group>"; };
-		540B8F6F260C81A600475BC5 /* YLNoteUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLNoteUserManager.swift; sourceTree = "<group>"; };
 		540B8F83260CA26300475BC5 /* YLQuestionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLQuestionDataManager.swift; sourceTree = "<group>"; };
 		540B8F9C260CB6CD00475BC5 /* UIWindowTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowTool.swift; sourceTree = "<group>"; };
 		541A9C2028390D5600C839A2 /* YLNoteBridgeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNoteBridgeAPI.h; sourceTree = "<group>"; };
@@ -729,7 +771,7 @@
 		5426D71128854ECF00298D14 /* YLAlgoArrayListRow_18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_18.swift; sourceTree = "<group>"; };
 		5426D71528854F9B00298D14 /* YLAlgoLinkedlistListRow_5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoLinkedlistListRow_5.swift; sourceTree = "<group>"; };
 		5426D71628854F9B00298D14 /* Algo_linkedlist_list_row_5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_linkedlist_list_row_5.json; sourceTree = "<group>"; };
-		5426D71C2885D13E00298D14 /* YLPerNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLPerNoteViewController.swift; sourceTree = "<group>"; };
+		5426D71C2885D13E00298D14 /* YLWebListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebListViewController.swift; sourceTree = "<group>"; };
 		5426D7232885D93300298D14 /* YLFlutterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLFlutterViewController.swift; sourceTree = "<group>"; };
 		542821A12611C5FF0066E070 /* YLQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLQuestionTableViewCell.swift; sourceTree = "<group>"; };
 		542821A22611C5FF0066E070 /* YLQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLQuestionTableViewCell.xib; sourceTree = "<group>"; };
@@ -737,8 +779,6 @@
 		542821C6261204950066E070 /* YLDemoSeparatorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLDemoSeparatorViewController.xib; sourceTree = "<group>"; };
 		543580F4259DBBEF00452D76 /* YLLogMessageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLogMessageManager.h; sourceTree = "<group>"; };
 		543580F5259DBBEF00452D76 /* YLLogMessageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLogMessageManager.m; sourceTree = "<group>"; };
-		5435811025A4D18900452D76 /* YLWebNoteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLWebNoteManager.h; sourceTree = "<group>"; };
-		5435811125A4D18900452D76 /* YLWebNoteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLWebNoteManager.m; sourceTree = "<group>"; };
 		5435811525A4D4D600452D76 /* YLRuntimeNoteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLRuntimeNoteManager.h; sourceTree = "<group>"; };
 		5435811625A4D4D600452D76 /* YLRuntimeNoteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLRuntimeNoteManager.m; sourceTree = "<group>"; };
 		5435811C25A4D8AC00452D76 /* YLAutoReleaseNoteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAutoReleaseNoteManager.h; sourceTree = "<group>"; };
@@ -846,6 +886,12 @@
 		545F876125BA8599008BE6E2 /* YLCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLCircleView.m; sourceTree = "<group>"; };
 		545F876425BA8750008BE6E2 /* YLDemoDrawrectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDemoDrawrectViewController.h; sourceTree = "<group>"; };
 		545F876525BA8750008BE6E2 /* YLDemoDrawrectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDemoDrawrectViewController.m; sourceTree = "<group>"; };
+		5462EE2C2A486C060027EDD8 /* PagesNote.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PagesNote.json; path = React/PagesNote.json; sourceTree = "<group>"; };
+		5462EE312A4B64FB0027EDD8 /* YLReactHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLReactHomeViewController.swift; sourceTree = "<group>"; };
+		5462EE352A4C07870027EDD8 /* YLDataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDataSourceManager.swift; sourceTree = "<group>"; };
+		5462EE372A4C160A0027EDD8 /* YLReactTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLReactTableViewProtocol.swift; sourceTree = "<group>"; };
+		5462EE3B2A4C344A0027EDD8 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		5462EE3D2A4C843F0027EDD8 /* YLReactContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLReactContainerController.swift; sourceTree = "<group>"; };
 		54630DB527E72ECC0096888B /* YLObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLObject+Test.h"; sourceTree = "<group>"; };
 		54630DB627E72ECC0096888B /* YLObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YLObject+Test.m"; sourceTree = "<group>"; };
 		54630DBB27E72F160096888B /* YLObject+Test2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLObject+Test2.h"; sourceTree = "<group>"; };
@@ -885,7 +931,6 @@
 		5487BDBD25CB0FCD00C6AEAE /* YLCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLCollectionViewCell.swift; sourceTree = "<group>"; };
 		5487BDBE25CB0FCD00C6AEAE /* YLCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLCollectionViewCell.xib; sourceTree = "<group>"; };
 		5487BDC125D65AD000C6AEAE /* YLSwiftTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLSwiftTopicsViewController.swift; sourceTree = "<group>"; };
-		5487BDC725D6F6C100C6AEAE /* YLDemoEmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDemoEmptyViewController.swift; sourceTree = "<group>"; };
 		5487BDD925D943BE00C6AEAE /* YLPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLPet.swift; sourceTree = "<group>"; };
 		5487BDDB25DC727300C6AEAE /* UITabbarItem+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabbarItem+Theme.swift"; sourceTree = "<group>"; };
 		5487BDDD25DF9D9D00C6AEAE /* UIView+Skin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Skin.h"; sourceTree = "<group>"; };
@@ -1065,6 +1110,8 @@
 		54A35DB124CF216F0076DFB6 /* YLNotificationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNotificationTestViewController.m; sourceTree = "<group>"; };
 		54A6517A24D4305C005FB5AD /* YLUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUserViewController.h; sourceTree = "<group>"; };
 		54A6517B24D4305C005FB5AD /* YLUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLUserViewController.m; sourceTree = "<group>"; };
+		54A8720E2A471FD600DA78F2 /* ReactHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactHomeViewController.h; sourceTree = "<group>"; };
+		54A8720F2A471FD600DA78F2 /* ReactHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactHomeViewController.m; sourceTree = "<group>"; };
 		54ABCB372885DFEC006C65D6 /* YLOC_in_SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLOC_in_SwiftViewController.swift; sourceTree = "<group>"; };
 		54ABCB3A2885E03B006C65D6 /* PinkPigOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinkPigOC.h; sourceTree = "<group>"; };
 		54ABCB3B2885E03B006C65D6 /* PinkPigOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinkPigOC.m; sourceTree = "<group>"; };
@@ -1159,12 +1206,10 @@
 		54B850E4283E2CE800294D47 /* YLFilmTabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLFilmTabView.xib; sourceTree = "<group>"; };
 		54BA469E2632C56400665C43 /* YLDemoARCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDemoARCViewController.h; sourceTree = "<group>"; };
 		54BA469F2632C56400665C43 /* YLDemoARCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDemoARCViewController.m; sourceTree = "<group>"; };
-		54BB262D2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKWebDemoListViewController.swift; sourceTree = "<group>"; };
 		54BB262F2601E095001A98B4 /* YLMessageHandlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLMessageHandlerViewController.swift; sourceTree = "<group>"; };
 		54BB263E26033C8B001A98B4 /* YLScriptCoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLScriptCoreViewController.swift; sourceTree = "<group>"; };
 		54BB264226035E84001A98B4 /* YLSwiftJavaScriptTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLSwiftJavaScriptTools.swift; sourceTree = "<group>"; };
-		54BB2644260379E9001A98B4 /* WKWebViewJSTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewJSTest.html; sourceTree = "<group>"; };
-		54BB2645260379E9001A98B4 /* UIWebViewJSTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIWebViewJSTest.html; sourceTree = "<group>"; };
+		54BB2645260379E9001A98B4 /* JSTest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSTest.html; sourceTree = "<group>"; };
 		54BB264A2603AC3D001A98B4 /* YLWKCookieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKCookieViewController.swift; sourceTree = "<group>"; };
 		54C05D8E268F0B07006FFAAE /* YLDemoCopyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDemoCopyViewController.h; sourceTree = "<group>"; };
 		54C05D90268F0B07006FFAAE /* YLDemoCopyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDemoCopyViewController.m; sourceTree = "<group>"; };
@@ -1179,12 +1224,10 @@
 		54C4B50A261478C7004BF897 /* YLNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YLNote.entitlements; sourceTree = "<group>"; };
 		54C4B50E261483DE004BF897 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		54C4B513261495AD004BF897 /* YLKeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLKeyChainManager.swift; sourceTree = "<group>"; };
-		54C4B518261498EA004BF897 /* YLUserDeafultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLUserDeafultsManager.swift; sourceTree = "<group>"; };
 		54C4B52B261C7E99004BF897 /* YLDemoBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDemoBlockViewController.h; sourceTree = "<group>"; };
 		54C4B52C261C7E99004BF897 /* YLDemoBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDemoBlockViewController.m; sourceTree = "<group>"; };
 		54C6F41227BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoOtherViewControllerRow0.swift; sourceTree = "<group>"; };
 		54C6F42227BD74B200756275 /* Algo_other_row_0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_other_row_0.json; sourceTree = "<group>"; };
-		54CAC3692605BD73008A7BDF /* YLWKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKWebView.swift; sourceTree = "<group>"; };
 		54CAC36B2605C05E008A7BDF /* YLWebCookieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebCookieViewController.swift; sourceTree = "<group>"; };
 		54CAC36D2605DC6B008A7BDF /* cookie.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = cookie.js; sourceTree = "<group>"; };
 		54CAD83E28D6658E00FF806F /* YLDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDate.h; sourceTree = "<group>"; };
@@ -1381,7 +1424,6 @@
 		54E6E43227BD792E0019E03C /* YLAlgoTreeListRow_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoTreeListRow_1.swift; sourceTree = "<group>"; };
 		54E6E43727BD79680019E03C /* Algo_tree_row_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_tree_row_1.json; sourceTree = "<group>"; };
 		54E6E43C27BD79720019E03C /* Algo_tree_row_0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_tree_row_0.json; sourceTree = "<group>"; };
-		54E97A5A27B106B2001CA669 /* YLNoteQesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLNoteQesDataManager.swift; sourceTree = "<group>"; };
 		54E97A6427B10884001CA669 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		54E97A6B27B10884001CA669 /* Algo_array_row_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_1.json; sourceTree = "<group>"; };
 		54E97A6C27B10884001CA669 /* DoublePointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublePointer.swift; sourceTree = "<group>"; };
@@ -1398,7 +1440,7 @@
 		54E97A7927B10884001CA669 /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		54E97A7A27B10884001CA669 /* Iteration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iteration.swift; sourceTree = "<group>"; };
 		54E97A7B27B10884001CA669 /* Algo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo.json; sourceTree = "<group>"; };
-		54E97A9827B1091B001CA669 /* PersonNote.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonNote.json; sourceTree = "<group>"; };
+		54E97A9827B1091B001CA669 /* WebList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WebList.json; sourceTree = "<group>"; };
 		54E97AAB27B38004001CA669 /* runloop_other.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = runloop_other.json; sourceTree = "<group>"; };
 		54E97AB427B3F393001CA669 /* YLRunloopRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRunloopRunViewController.m; sourceTree = "<group>"; };
 		54E97AB527B3F393001CA669 /* YLRunloopRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRunloopRunViewController.h; sourceTree = "<group>"; };
@@ -1534,48 +1576,43 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		540B8F59260C752300475BC5 /* Home */ = {
+		5405F9D12A4CA8E700C0D24C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				540B8F5C260C753B00475BC5 /* model */,
-				540B8F5B260C753300475BC5 /* controller */,
-				540B8F5A260C752A00475BC5 /* view */,
+				5405F9D42A4CA95100C0D24C /* AntDesign.ttf */,
+				5405F9DE2A4CA95100C0D24C /* Entypo.ttf */,
+				5405F9D32A4CA95100C0D24C /* EvilIcons.ttf */,
+				5405F9D52A4CA95100C0D24C /* Feather.ttf */,
+				5405F9E12A4CA95200C0D24C /* FontAwesome.ttf */,
+				5405F9DD2A4CA95100C0D24C /* FontAwesome5_Brands.ttf */,
+				5405F9DB2A4CA95100C0D24C /* FontAwesome5_Regular.ttf */,
+				5405F9DA2A4CA95100C0D24C /* FontAwesome5_Solid.ttf */,
+				5405F9DC2A4CA95100C0D24C /* Fontisto.ttf */,
+				5405F9D92A4CA95100C0D24C /* Foundation.ttf */,
+				5405F9D72A4CA95100C0D24C /* Ionicons.ttf */,
+				5405F9D82A4CA95100C0D24C /* MaterialCommunityIcons.ttf */,
+				5405F9D62A4CA95100C0D24C /* MaterialIcons.ttf */,
+				5405F9DF2A4CA95200C0D24C /* Octicons.ttf */,
+				5405F9E02A4CA95200C0D24C /* SimpleLineIcons.ttf */,
+				5405F9D22A4CA95100C0D24C /* Zocial.ttf */,
 			);
-			path = Home;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
-		540B8F5A260C752A00475BC5 /* view */ = {
+		5405F9FA2A4D68C900C0D24C /* TheBasic */ = {
 			isa = PBXGroup;
 			children = (
+				5405F9FB2A4D696C00C0D24C /* YLTheBasicListController.swift */,
+				5405F9FD2A4D69F300C0D24C /* BasicList.json */,
 			);
-			path = view;
+			path = TheBasic;
 			sourceTree = "<group>";
 		};
-		540B8F5B260C753300475BC5 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				540B8F5D260C755A00475BC5 /* YLHomeViewController.swift */,
-				540B8F5E260C755A00475BC5 /* YLHomeViewController.xib */,
-				540B8F67260C757800475BC5 /* YLLoginViewController.swift */,
-				540B8F68260C757800475BC5 /* YLLoginViewController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		540B8F5C260C753B00475BC5 /* model */ = {
+		5405FA112A5062E200C0D24C /* html */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		540B8F6E260C818D00475BC5 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				540B8F6F260C81A600475BC5 /* YLNoteUserManager.swift */,
-				54C4B518261498EA004BF897 /* YLUserDeafultsManager.swift */,
-			);
-			path = User;
+			path = html;
 			sourceTree = "<group>";
 		};
 		540B8FC4260CFC9D00475BC5 /* controller */ = {
@@ -1986,6 +2023,7 @@
 		5426D71E2885D5C900298D14 /* Tab-VCs */ = {
 			isa = PBXGroup;
 			children = (
+				54A35D7F24CED7290076DFB6 /* Web */,
 				54A0F1B428D64BE8007E3805 /* 日历 */,
 				54A0F1A528D39534007E3805 /* 分享 */,
 				54E5AECD28AA1C9500F18DCC /* 最最新 */,
@@ -1993,7 +2031,6 @@
 				541A9C1F28390CF400C839A2 /* ReactNative */,
 				548353DB27E0755C001D3726 /* Swift */,
 				54E97A6227B10884001CA669 /* 算法 */,
-				54EFAAE92689C9BB00A5BD4D /* 最新笔记 */,
 			);
 			path = "Tab-VCs";
 			sourceTree = "<group>";
@@ -2003,6 +2040,8 @@
 			children = (
 				54A35D4C24CED6FE0076DFB6 /* YLRctNatViewController.m */,
 				54A35D4D24CED6FE0076DFB6 /* YLRctNatViewController.h */,
+				54A8720E2A471FD600DA78F2 /* ReactHomeViewController.h */,
+				54A8720F2A471FD600DA78F2 /* ReactHomeViewController.m */,
 			);
 			path = "react-vc";
 			sourceTree = "<group>";
@@ -2092,16 +2131,6 @@
 				5487BD9C25C5664A00C6AEAE /* YLOffsetScreenViewController.swift */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		5435810F25A4D17300452D76 /* WebView */ = {
-			isa = PBXGroup;
-			children = (
-				5487BE902600AFFB00C6AEAE /* demos */,
-				5435811025A4D18900452D76 /* YLWebNoteManager.h */,
-				5435811125A4D18900452D76 /* YLWebNoteManager.m */,
-			);
-			path = WebView;
 			sourceTree = "<group>";
 		};
 		5435811B25A4D88000452D76 /* 内存管理 */ = {
@@ -2359,6 +2388,18 @@
 			path = demos;
 			sourceTree = "<group>";
 		};
+		5462EE302A4B64CF0027EDD8 /* ReactNative */ = {
+			isa = PBXGroup;
+			children = (
+				5462EE372A4C160A0027EDD8 /* YLReactTableViewProtocol.swift */,
+				5462EE312A4B64FB0027EDD8 /* YLReactHomeViewController.swift */,
+				5462EE3D2A4C843F0027EDD8 /* YLReactContainerController.swift */,
+				5462EE352A4C07870027EDD8 /* YLDataSourceManager.swift */,
+				5462EE3B2A4C344A0027EDD8 /* Page.swift */,
+			);
+			path = ReactNative;
+			sourceTree = "<group>";
+		};
 		546368B527BA67FE003CF22F /* runloop_urlconnection */ = {
 			isa = PBXGroup;
 			children = (
@@ -2428,6 +2469,8 @@
 				54FB59B025C4338100E3FCA4 /* UitilityTools.swift */,
 				5487BE5C25E36F7200C6AEAE /* UIColorTools.swift */,
 				5487BE6025E3A45900C6AEAE /* NSObjectTools.swift */,
+				5405FA072A4F49C300C0D24C /* StringTools.swift */,
+				5405FA092A4F4A4800C0D24C /* DicttionaryTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2435,8 +2478,9 @@
 		5487BE902600AFFB00C6AEAE /* demos */ = {
 			isa = PBXGroup;
 			children = (
-				54BB2645260379E9001A98B4 /* UIWebViewJSTest.html */,
-				54BB2644260379E9001A98B4 /* WKWebViewJSTest.html */,
+				54BB2645260379E9001A98B4 /* JSTest.html */,
+				5405FA052A4F1DAB00C0D24C /* MsgHandlerDemo.html */,
+				5405FA0F2A4FEF2F00C0D24C /* UIDelegateDemo.html */,
 				54BB264E2603AC5D001A98B4 /* view */,
 				54BB264D2603AC53001A98B4 /* model */,
 				54BB264C2603AC42001A98B4 /* controller */,
@@ -2748,6 +2792,9 @@
 		548FF88724A87F3200ECF7F0 /* YLNote */ = {
 			isa = PBXGroup;
 			children = (
+				5462EE2C2A486C060027EDD8 /* PagesNote.json */,
+				5405F9D12A4CA8E700C0D24C /* Fonts */,
+				5462EE302A4B64CF0027EDD8 /* ReactNative */,
 				5426D71E2885D5C900298D14 /* Tab-VCs */,
 				54B850A5283D355200294D47 /* LiftCycle */,
 				54B850A1283D2DA600294D47 /* Utils */,
@@ -2759,11 +2806,9 @@
 				54A35D4624CED6FE0076DFB6 /* Flutter */,
 				54AEB6E126AF4548004C8894 /* CrahHandler */,
 				54C4B50A261478C7004BF897 /* YLNote.entitlements */,
-				540B8F6E260C818D00475BC5 /* User */,
 				54FA550B2608914B00AE0A83 /* Base */,
-				540B8F59260C752300475BC5 /* Home */,
 				54A35D2F24CED6B10076DFB6 /* old Swift */,
-				54A35D5124CED7290076DFB6 /* Note */,
+				54A35D5124CED7290076DFB6 /* OldNote */,
 				5435814B25AC444000452D76 /* 生物 */,
 				5487BDCD25D7025F00C6AEAE /* Tools */,
 				5487BDC925D6FC1D00C6AEAE /* LocalFiles */,
@@ -2773,7 +2818,6 @@
 				543580FC25A305CB00452D76 /* 数据结构 */,
 				543580F3259DBBAB00452D76 /* Log */,
 				54A35D8324CED7290076DFB6 /* Theme */,
-				54A35D7F24CED7290076DFB6 /* Web */,
 				548FF88824A87F3200ECF7F0 /* AppDelegate.h */,
 				548FF88924A87F3200ECF7F0 /* AppDelegate.m */,
 				541CBD8029DACCD8003FED26 /* main.js */,
@@ -2966,20 +3010,17 @@
 			path = SD;
 			sourceTree = "<group>";
 		};
-		54A35D5124CED7290076DFB6 /* Note */ = {
+		54A35D5124CED7290076DFB6 /* OldNote */ = {
 			isa = PBXGroup;
 			children = (
 				54EFAACF267F04B900A5BD4D /* YLNTPerson.h */,
 				54EFAAD0267F04B900A5BD4D /* YLNTPerson.m */,
-				5487BDC725D6F6C100C6AEAE /* YLDemoEmptyViewController.swift */,
 				54A35D5224CED7290076DFB6 /* YLNotesViewController.h */,
 				54A35D7424CED7290076DFB6 /* YLNotesViewController.m */,
-				54E97A5A27B106B2001CA669 /* YLNoteQesDataManager.swift */,
 				5435814725AC3CFB00452D76 /* Uitility */,
 				545F875425B972B6008BE6E2 /* 三方库 */,
 				5435810225A4CF2600452D76 /* Foundation */,
 				5435810625A4D05C00452D76 /* UIKit */,
-				5435810F25A4D17300452D76 /* WebView */,
 				5435812925A4DB5200452D76 /* Runloop */,
 				54A35D6324CED7290076DFB6 /* Runtime */,
 				54A35D5324CED7290076DFB6 /* 消息传递 */,
@@ -2991,7 +3032,7 @@
 				54C4B4FE2614377C004BF897 /* 设计模式 */,
 				54A35D7524CED7290076DFB6 /* keywords */,
 			);
-			path = Note;
+			path = OldNote;
 			sourceTree = "<group>";
 		};
 		54A35D5324CED7290076DFB6 /* 消息传递 */ = {
@@ -3092,6 +3133,14 @@
 		54A35D7F24CED7290076DFB6 /* Web */ = {
 			isa = PBXGroup;
 			children = (
+				5405FA112A5062E200C0D24C /* html */,
+				5487BE902600AFFB00C6AEAE /* demos */,
+				5405F9F22A4D5F1D00C0D24C /* MyWeb.html */,
+				5405FA032A4F1C9700C0D24C /* YLWebMsgHandleDemoController.swift */,
+				5405FA0B2A4FE96800C0D24C /* YLWebUIDelegateDemoController.swift */,
+				54E97A9827B1091B001CA669 /* WebList.json */,
+				5426D71C2885D13E00298D14 /* YLWebListViewController.swift */,
+				54EFAAE92689C9BB00A5BD4D /* JSInteraction */,
 				54A35D8024CED7290076DFB6 /* YLJSProtocol.h */,
 				54A35D8124CED7290076DFB6 /* YLWebViewController.h */,
 				54A35D8224CED7290076DFB6 /* YLWebViewController.m */,
@@ -3487,7 +3536,6 @@
 		54BB264C2603AC42001A98B4 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				54BB262D2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift */,
 				5487BE8E2600AE9400C6AEAE /* YLWebSchemeController.swift */,
 				54BB262F2601E095001A98B4 /* YLMessageHandlerViewController.swift */,
 				54BB263E26033C8B001A98B4 /* YLScriptCoreViewController.swift */,
@@ -3512,7 +3560,7 @@
 		54BB264E2603AC5D001A98B4 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				54CAC3692605BD73008A7BDF /* YLWKWebView.swift */,
+				5405F9FF2A4DF30A00C0D24C /* YLWKActionDelegate.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4392,6 +4440,7 @@
 		54E5AECD28AA1C9500F18DCC /* 最最新 */ = {
 			isa = PBXGroup;
 			children = (
+				5405F9FA2A4D68C900C0D24C /* TheBasic */,
 				541CBD7C29DACAE0003FED26 /* JSPatchDemo */,
 				54E5AECF28AA1CDE00F18DCC /* YLNoteTmpViewController.swift */,
 				54E5AECE28AA1CDE00F18DCC /* TmpNote.json */,
@@ -4644,14 +4693,12 @@
 			path = runloop_port;
 			sourceTree = "<group>";
 		};
-		54EFAAE92689C9BB00A5BD4D /* 最新笔记 */ = {
+		54EFAAE92689C9BB00A5BD4D /* JSInteraction */ = {
 			isa = PBXGroup;
 			children = (
-				54E97A9827B1091B001CA669 /* PersonNote.json */,
-				5426D71C2885D13E00298D14 /* YLPerNoteViewController.swift */,
 				54C05D86268F0B07006FFAAE /* sections */,
 			);
-			path = "最新笔记";
+			path = JSInteraction;
 			sourceTree = "<group>";
 		};
 		54F16A80274268F100660DCC /* runloop与其他 */ = {
@@ -4990,8 +5037,10 @@
 				5435818A25AD8F1A00452D76 /* TRex.json in Resources */,
 				548CAF50285FB59F00F73E71 /* Algo_string_row_7.json in Resources */,
 				548CAF9D2860D05900F73E71 /* Algo_linkedlist_list_row_3.json in Resources */,
+				5405FA062A4F1DAB00C0D24C /* MsgHandlerDemo.html in Resources */,
 				54DB9B2F2843DA2800539AC5 /* Algo_linkedlist_list_row_1.json in Resources */,
 				54E97B3327B9873F001CA669 /* runloop_port.json in Resources */,
+				5405F9E22A4CA95200C0D24C /* Zocial.ttf in Resources */,
 				54E5AEC728A9000100F18DCC /* Algo_bit_row_5.json in Resources */,
 				548CAFF42865692500F73E71 /* Algo_string_row_9.json in Resources */,
 				54DB9C35284D30A800539AC5 /* Algo_array_row_12_1.json in Resources */,
@@ -5001,22 +5050,28 @@
 				54B2C74928E55D99005404BA /* runtime_msg_trans1.json in Resources */,
 				54D8FF482903D9F9006B169C /* thread_nshread.json in Resources */,
 				540261AC2965877300BAB784 /* kvo.json in Resources */,
+				5405F9F32A4D5F1D00C0D24C /* MyWeb.html in Resources */,
 				54B2C71C28E1F6E6005404BA /* memory_taggedpointer.json in Resources */,
 				54E97AE927B4006B001CA669 /* runloop_source.json in Resources */,
 				54B2C71828E1F6E6005404BA /* memory_autorelease.json in Resources */,
+				5405FA102A4FEF2F00C0D24C /* UIDelegateDemo.html in Resources */,
 				54ABCB68288C4FB7006C65D6 /* Algo_queue_list.json in Resources */,
 				54ABCB5F2889DF2E006C65D6 /* Algo_array_row_23.json in Resources */,
 				548CAF5B2860CCF700F73E71 /* Algo_string_row_8.json in Resources */,
 				54D8FF3A2903D9F9006B169C /* thread_gcd_barrier.json in Resources */,
+				5405F9E42A4CA95200C0D24C /* AntDesign.ttf in Resources */,
 				54DB9B8828461B5500539AC5 /* Algo_array_row_7.json in Resources */,
 				54DCC59627CE9609009F289D /* Algo_primary_row_1.json in Resources */,
 				542821A42611C5FF0066E070 /* YLQuestionTableViewCell.xib in Resources */,
 				54DB9B79284415E000539AC5 /* Algo_array_row_5.json in Resources */,
 				54DB9B8028441FAC00539AC5 /* Algo_array_row_6.json in Resources */,
+				5405F9E72A4CA95200C0D24C /* Ionicons.ttf in Resources */,
 				54E5AED828AA347200F18DCC /* timer_test.json in Resources */,
+				5405F9E62A4CA95200C0D24C /* MaterialIcons.ttf in Resources */,
 				548CB0732869B99A00F73E71 /* Algo_bit_row_3.json in Resources */,
 				54D8FEE128FE44F6006B169C /* Algo_tree_row_12.json in Resources */,
 				54E5AEBD28A505A500F18DCC /* Algo_stack_row_0.json in Resources */,
+				5405F9EB2A4CA95200C0D24C /* FontAwesome5_Regular.ttf in Resources */,
 				54B850E5283E2CE800294D47 /* YLFilmTabView.xib in Resources */,
 				541CBDC729F677D5003FED26 /* Algo_dfs_test.json in Resources */,
 				54E5AE96289B9C5000F18DCC /* Algo_array_row_24.json in Resources */,
@@ -5031,7 +5086,6 @@
 				541CBE0F2A00AC8B003FED26 /* Algo_backTrack_list.json in Resources */,
 				548CAF16285F4C7700F73E71 /* Algo_string_row_3.json in Resources */,
 				54F4E73629862CC200658A85 /* thread_multiToSync.json in Resources */,
-				54BB2646260379E9001A98B4 /* WKWebViewJSTest.html in Resources */,
 				54F4E749299501DC00658A85 /* runloop_responder.json in Resources */,
 				54E5AECB28A9CBBD00F18DCC /* Algo_array_row_27.json in Resources */,
 				54D8FF452903D9F9006B169C /* thread_gcd_IO.json in Resources */,
@@ -5045,13 +5099,13 @@
 				5422A099283ED7EE0019586F /* YLSearchBarBackView.xib in Resources */,
 				548CB04E2869AB6000F73E71 /* Algo_bit_list.json in Resources */,
 				548FF89824A87F3300ECF7F0 /* LaunchScreen.storyboard in Resources */,
+				5405F9E82A4CA95200C0D24C /* MaterialCommunityIcons.ttf in Resources */,
 				54FD6772260A438A00F7E113 /* YLGroupHeaderView.xib in Resources */,
 				54CAC36E2605DC6B008A7BDF /* cookie.js in Resources */,
 				541CBD8929EAC4A4003FED26 /* Algo_array_row_31.json in Resources */,
 				5426D71828854F9B00298D14 /* Algo_linkedlist_list_row_5.json in Resources */,
 				54E97A9127B10884001CA669 /* Algo.json in Resources */,
 				54E6E42327BD78170019E03C /* Algo_other_row_1.json in Resources */,
-				540B8F60260C755A00475BC5 /* YLHomeViewController.xib in Resources */,
 				541CBD9929ED9D41003FED26 /* Algo_string_row_10.json in Resources */,
 				54D19F97285528570016468E /* Algo_stirng_list.json in Resources */,
 				54DB9BDE28469EDB00539AC5 /* Algo_array_row_9.json in Resources */,
@@ -5078,7 +5132,6 @@
 				548CB0592869ABB100F73E71 /* Algo_bit_row_0.json in Resources */,
 				54B850DA283D605700294D47 /* YLNativeNewsViewController.xib in Resources */,
 				54D8FF5B2903D9F9006B169C /* thread_test.json in Resources */,
-				540B8F6A260C757800475BC5 /* YLLoginViewController.xib in Resources */,
 				54D8FF532903D9F9006B169C /* thread_operation_block.json in Resources */,
 				54E5AEA4289BD67400F18DCC /* Algo_linkedlist_list_row_6.json in Resources */,
 				548CAFE52864E85E00F73E71 /* Algo_array_row_2_2.json in Resources */,
@@ -5086,13 +5139,16 @@
 				54DDB5672871D74E000419E2 /* Algo_array_row_16.json in Resources */,
 				54E97B2427B66DB1001CA669 /* runloop_performSEL.json in Resources */,
 				54FB59AB25C2954100E3FCA4 /* YLTestView.xib in Resources */,
+				5405F9FE2A4D69F300C0D24C /* BasicList.json in Resources */,
 				54F23B62293F4F4E00D9F5B3 /* Algo_tree_row_15.json in Resources */,
+				5405F9E92A4CA95200C0D24C /* Foundation.ttf in Resources */,
 				5426D70D2884654300298D14 /* Algo_array_row_17.json in Resources */,
 				54D8FED828FA9346006B169C /* Algo_tree_row_10.json in Resources */,
 				54DDB59728769C2D000419E2 /* Algo_array_row_0_2.json in Resources */,
 				5487BDB425C9FC5100C6AEAE /* YLCornerViewController.xib in Resources */,
 				548FF89524A87F3300ECF7F0 /* Assets.xcassets in Resources */,
 				545F873F25B5B812008BE6E2 /* blockusage.json in Resources */,
+				5405F9ED2A4CA95200C0D24C /* FontAwesome5_Brands.ttf in Resources */,
 				541CBDA729EFCDE5003FED26 /* Algo_bit_row_6.json in Resources */,
 				54DB9BEF284CFC9800539AC5 /* Algo_array_row_11.json in Resources */,
 				54DCC61427D0F14D009F289D /* block_recycle.json in Resources */,
@@ -5102,8 +5158,10 @@
 				548CAF4F285FB59F00F73E71 /* Algo_string_row_6.json in Resources */,
 				548CAFFE28660D1E00F73E71 /* Algo_tree_row_2.json in Resources */,
 				541CBDED29FB0DBF003FED26 /* Algo_swap_list.json in Resources */,
+				5405F9F12A4CA95200C0D24C /* FontAwesome.ttf in Resources */,
 				54A0F17C28B78050007E3805 /* Algo_array_row_29.json in Resources */,
 				541CBE232A060DC7003FED26 /* Algo_recur_test.json in Resources */,
+				5405F9EE2A4CA95200C0D24C /* Entypo.ttf in Resources */,
 				541CBE1A2A041F2A003FED26 /* Algo_BFS_list.json in Resources */,
 				54E97ADF27B3FF92001CA669 /* YLNoteSwitchTableViewCell.xib in Resources */,
 				54FB59A625C2948D00E3FCA4 /* YLAnimationViewController.xib in Resources */,
@@ -5114,6 +5172,7 @@
 				54A0F19F28C8FA2D007E3805 /* Algo_tree_row_9_II.json in Resources */,
 				54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */,
 				54D8FF382903D9F9006B169C /* thread_gcd_queue.json in Resources */,
+				5405F9EA2A4CA95200C0D24C /* FontAwesome5_Solid.ttf in Resources */,
 				548CAF14285F4C7700F73E71 /* Algo_string_row_2.json in Resources */,
 				54DB9B652843F66200539AC5 /* Algo_array_row_3.json in Resources */,
 				54E5AEA9289C280800F18DCC /* Algo_linkedlist_list_row_7.json in Resources */,
@@ -5121,12 +5180,16 @@
 				54DCC5B727CF4F94009F289D /* Algo_primary_row_2.json in Resources */,
 				54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */,
 				541CBE022A00ABE5003FED26 /* Algo_empt_test.json in Resources */,
+				5405F9F02A4CA95200C0D24C /* SimpleLineIcons.ttf in Resources */,
 				54DCC5DB27D0C751009F289D /* block_test.json in Resources */,
 				54A0F19428C895C5007E3805 /* Algo_tree_row_8_III.json in Resources */,
+				5405F9E52A4CA95200C0D24C /* Feather.ttf in Resources */,
 				548CB0662869B34F00F73E71 /* Algo_bit_row_1.json in Resources */,
 				54D8FF592903D9F9006B169C /* thread_async_queue.json in Resources */,
 				54B2C74328E55D99005404BA /* runtime_msg_send.json in Resources */,
+				5405F9EF2A4CA95200C0D24C /* Octicons.ttf in Resources */,
 				548CAFAC286317CA00F73E71 /* Algo_array_row_13.json in Resources */,
+				5462EE2E2A486C060027EDD8 /* PagesNote.json in Resources */,
 				541CBE252A060DC7003FED26 /* Algo_recur_list.json in Resources */,
 				54D8FF4F2903D9F9006B169C /* thread_operation_invocation.json in Resources */,
 				5487BDC025CB0FCD00C6AEAE /* YLCollectionViewCell.xib in Resources */,
@@ -5135,7 +5198,7 @@
 				54D8FF4A2903D9F9006B169C /* thread_lock.json in Resources */,
 				548CB0712869B99A00F73E71 /* Algo_bit_row_2.json in Resources */,
 				54E6E43827BD79680019E03C /* Algo_tree_row_1.json in Resources */,
-				54E97A9927B1091B001CA669 /* PersonNote.json in Resources */,
+				54E97A9927B1091B001CA669 /* WebList.json in Resources */,
 				54ABCB50288933BB006C65D6 /* Algo_array_row_20.json in Resources */,
 				54DCC56627CD4128009F289D /* Algo_primary_row_0.json in Resources */,
 				548CAFC12863826700F73E71 /* Algo_array_row_15.json in Resources */,
@@ -5164,8 +5227,9 @@
 				54DB9C2C284D2C2600539AC5 /* Algo_array_row_12_0.json in Resources */,
 				54E6E43D27BD79720019E03C /* Algo_tree_row_0.json in Resources */,
 				54FB599E25BFFE5300E3FCA4 /* YLDemoAnimateViewController.xib in Resources */,
+				5405F9E32A4CA95200C0D24C /* EvilIcons.ttf in Resources */,
 				54D19F7C285243780016468E /* day_test.json in Resources */,
-				54BB2647260379E9001A98B4 /* UIWebViewJSTest.html in Resources */,
+				54BB2647260379E9001A98B4 /* JSTest.html in Resources */,
 				541CBD8E29ED6E2B003FED26 /* Algo_dp_list.json in Resources */,
 				54B2C71D28E1F6E6005404BA /* memory_struct.json in Resources */,
 				54E5AEBF28A505A500F18DCC /* Algo_stack_list.json in Resources */,
@@ -5175,6 +5239,7 @@
 				548CAFD32864879100F73E71 /* Algo_linkedlist_list_row_4.json in Resources */,
 				54C44A9B27D7667400688A7E /* Algo_string_row_1.json in Resources */,
 				54D8FEDC28FE3995006B169C /* Algo_tree_row_11.json in Resources */,
+				5405F9EC2A4CA95200C0D24C /* Fontisto.ttf in Resources */,
 				548CAF38285F547A00F73E71 /* Algo_string_row_5.json in Resources */,
 				54D8FEE628FE8C11006B169C /* Algo_tree_row_13.json in Resources */,
 				54ABCB462887C5A1006C65D6 /* Algo_array_row_19.json in Resources */,
@@ -5305,11 +5370,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5462EE3E2A4C843F0027EDD8 /* YLReactContainerController.swift in Sources */,
 				548CAFB32863643E00F73E71 /* YLAlgoArrayListRow_14.swift in Sources */,
-				540B8F5F260C755A00475BC5 /* YLHomeViewController.swift in Sources */,
 				54A35D8F24CED7290076DFB6 /* YLSon.m in Sources */,
 				54E5AEC128A5076D00F18DCC /* CStack.swift in Sources */,
-				5426D71D2885D13E00298D14 /* YLPerNoteViewController.swift in Sources */,
+				5426D71D2885D13E00298D14 /* YLWebListViewController.swift in Sources */,
 				54E97A8927B10884001CA669 /* YLAlgorithmViewController2.swift in Sources */,
 				54CAD84028D6658E00FF806F /* YLDate.m in Sources */,
 				548A0CF42612210800BC80D9 /* YLDemoNotificationViewController.swift in Sources */,
@@ -5328,12 +5393,12 @@
 				54D8FF512903D9F9006B169C /* YLThreadNSOperationViewController.m in Sources */,
 				548CAF04285F3F0300F73E71 /* day_test_string.swift in Sources */,
 				54FB59B125C4338100E3FCA4 /* UitilityTools.swift in Sources */,
+				5405FA042A4F1C9700C0D24C /* YLWebMsgHandleDemoController.swift in Sources */,
 				54C6F41327BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift in Sources */,
 				54DB9BDD28469EDB00539AC5 /* YLAlgoArrayListRow_9.swift in Sources */,
 				54FA55D42609CB5400AE0A83 /* YLDemoNonAutomicViewController.m in Sources */,
 				54B850E0283E2CC900294D47 /* YLFilmTabView.m in Sources */,
 				545F876625BA8750008BE6E2 /* YLDemoDrawrectViewController.m in Sources */,
-				540B8F70260C81A600475BC5 /* YLNoteUserManager.swift in Sources */,
 				54630DBD27E72F160096888B /* YLObject+Test2.m in Sources */,
 				54EFAAD1267F04B900A5BD4D /* YLNTPerson.m in Sources */,
 				5435817525AC716900452D76 /* YLClassificationLevelKingdom.m in Sources */,
@@ -5344,6 +5409,7 @@
 				54DB9B662843F66200539AC5 /* YLAlgoArrayListRow_3.swift in Sources */,
 				54D8FEE728FE8C11006B169C /* YLAlgoTreeListRow_13.swift in Sources */,
 				5400B31425BAE8E000DC4C49 /* YLMenuView.swift in Sources */,
+				5462EE3C2A4C344A0027EDD8 /* Page.swift in Sources */,
 				545A19BD26C3DD820089BECE /* YLGenus.m in Sources */,
 				54A0F19C28C8F9D0007E3805 /* YLAlgoTreeListRow_9_I.swift in Sources */,
 				548CAEF9285909DF00F73E71 /* YLAlgoStringListRow_0.swift in Sources */,
@@ -5360,13 +5426,11 @@
 				54D8FF432903D9F9006B169C /* YLThreadGCDDispatchGroupController.m in Sources */,
 				54E5AEAA289C280800F18DCC /* YLAlgoLinkedlistListRow_7.swift in Sources */,
 				5400B31925BAEA6600DC4C49 /* CAlayer+Tools.swift in Sources */,
-				5487BDC825D6F6C100C6AEAE /* YLDemoEmptyViewController.swift in Sources */,
 				54ABCB66288C4FB7006C65D6 /* YLAlgoQueueListRow_0.swift in Sources */,
 				548A0D2526122BA900BC80D9 /* YLDemoFuncTableViewController.swift in Sources */,
 				54A35DAF24CED7A30076DFB6 /* YLGCDViewController.m in Sources */,
 				54B2C76928E564F0005404BA /* YLKVCPerson.m in Sources */,
 				54D88639284F5410003DE4F0 /* YLNatiFilmDetailViewController.m in Sources */,
-				54CAC36A2605BD73008A7BDF /* YLWKWebView.swift in Sources */,
 				54FA55042608835C00AE0A83 /* YLNoteData.m in Sources */,
 				5487BDC225D65AD000C6AEAE /* YLSwiftTopicsViewController.swift in Sources */,
 				545A199F26C3DBA60089BECE /* YLKindom.m in Sources */,
@@ -5382,6 +5446,7 @@
 				5487BD9325C4404300C6AEAE /* YLDisplayLinkViewController.swift in Sources */,
 				54F23B68293F5C1D00D9F5B3 /* YLKVOViewController.m in Sources */,
 				54E97A9027B10884001CA669 /* Iteration.swift in Sources */,
+				5405FA002A4DF30A00C0D24C /* YLWKActionDelegate.swift in Sources */,
 				54A35D8724CED7290076DFB6 /* YLStudent.m in Sources */,
 				548CAFD22864879100F73E71 /* YLAlgoLinkedlistListRow_4.swift in Sources */,
 				54A35DB224CF216F0076DFB6 /* YLNotificationTestViewController.m in Sources */,
@@ -5411,7 +5476,6 @@
 				54D8FF3E2903D9F9006B169C /* YLThreadGCDViewController.m in Sources */,
 				545A19B726C3DD750089BECE /* YLFamily.m in Sources */,
 				548A0D2026122B9300BC80D9 /* YLDemoFuncDirectViewController.swift in Sources */,
-				540B8F69260C757800475BC5 /* YLLoginViewController.swift in Sources */,
 				547356D427E64B320096A008 /* YLOptimizeStartViewController.m in Sources */,
 				5435817B25AD6F0A00452D76 /* YLClassificationLevelSuperClass.m in Sources */,
 				54D8FF412903D9F9006B169C /* YLThreadGCDDispatchSeamphoreController.m in Sources */,
@@ -5424,6 +5488,7 @@
 				5435817825AD6E9F00452D76 /* YLClassificationLevelPhylum.m in Sources */,
 				54FA55C52609CA8A00AE0A83 /* YLDemoSafeArrayViewController.m in Sources */,
 				54F16A91274268F200660DCC /* YLRunloopWithOtherViewController.m in Sources */,
+				5462EE362A4C07870027EDD8 /* YLDataSourceManager.swift in Sources */,
 				54CAD84428D66C0000FF806F /* YLDateManager.m in Sources */,
 				5426D71728854F9B00298D14 /* YLAlgoLinkedlistListRow_5.swift in Sources */,
 				54D8FF402903D9F9006B169C /* YLThreadGCDDispatchSourceController.m in Sources */,
@@ -5440,7 +5505,6 @@
 				54ABCB3C2885E03B006C65D6 /* PinkPigOC.m in Sources */,
 				545A19AB26C3DD510089BECE /* YLClass.m in Sources */,
 				545A19B126C3DD640089BECE /* YLOrder.m in Sources */,
-				54E97A5B27B106B2001CA669 /* YLNoteQesDataManager.swift in Sources */,
 				548CAF44285F771100F73E71 /* day_test_array.swift in Sources */,
 				54F4E73429862C8B00658A85 /* YLThreadMultiToSyncController.m in Sources */,
 				54ABCB592889B8A2006C65D6 /* YLAlgoArrayListRow_22.swift in Sources */,
@@ -5510,7 +5574,6 @@
 				54ABCB412885E0EF006C65D6 /* YLSwift_in_OCViewController.m in Sources */,
 				543581BE25AEEBB800452D76 /* YLAlertManager.m in Sources */,
 				54F4E73D298A6A6400658A85 /* YLNotificationViewController.m in Sources */,
-				54C4B519261498EA004BF897 /* YLUserDeafultsManager.swift in Sources */,
 				54F4E7282984D36600658A85 /* YLThreadGCDDependcyController.m in Sources */,
 				54E97A8F27B10884001CA669 /* BinaryTree.swift in Sources */,
 				543581BD25AEEBB800452D76 /* YLFileManager.m in Sources */,
@@ -5551,6 +5614,7 @@
 				5487BDAB25C9EDDE00C6AEAE /* YLMemoryViewController.swift in Sources */,
 				54D8886A26B1BF440088D056 /* YLAnimal.m in Sources */,
 				54A0F17128B7522C007E3805 /* YLAlgoArrayListRow_28.swift in Sources */,
+				5405FA0C2A4FE96800C0D24C /* YLWebUIDelegateDemoController.swift in Sources */,
 				548CB0742869B99A00F73E71 /* YLAlgoBitListRow_3.swift in Sources */,
 				540AC93C29D309EF00902331 /* UIWindow+OverWritte.m in Sources */,
 				5487BDDA25D943BE00C6AEAE /* YLPet.swift in Sources */,
@@ -5559,9 +5623,9 @@
 				54ABCB69288C4FB7006C65D6 /* YLAlgoQueueListController.swift in Sources */,
 				54A35D8A24CED7290076DFB6 /* YLNotification.m in Sources */,
 				54DB9BF0284CFC9800539AC5 /* YLAlgoArrayListRow_11.swift in Sources */,
-				5435811225A4D18900452D76 /* YLWebNoteManager.m in Sources */,
 				545A19A526C3DD3F0089BECE /* YLPhylum.m in Sources */,
 				5473566527E5C4A10096A008 /* YLBaseTableViewController.m in Sources */,
+				5462EE382A4C160A0027EDD8 /* YLReactTableViewProtocol.swift in Sources */,
 				543581B825AEEBA800452D76 /* YLArticalViewController.m in Sources */,
 				54A35D9B24CED7290076DFB6 /* Test.swift in Sources */,
 				548A0CEA261220E900BC80D9 /* YLDemoFunctionViewController.swift in Sources */,
@@ -5606,6 +5670,8 @@
 				542821A32611C5FF0066E070 /* YLQuestionTableViewCell.swift in Sources */,
 				548CAF51285FB59F00F73E71 /* YLAlgoStringListRow_7.swift in Sources */,
 				54A0F1B228D3B766007E3805 /* YLMarkingViewController.m in Sources */,
+				5405F9FC2A4D696C00C0D24C /* YLTheBasicListController.swift in Sources */,
+				5405FA082A4F49C300C0D24C /* StringTools.swift in Sources */,
 				548CB00A2866F96300F73E71 /* YLAlgoTreeListRow_3.swift in Sources */,
 				54DCC62F27D1E2DD009F289D /* YLBlockCodeViewController.m in Sources */,
 				54A35DAD24CED7A30076DFB6 /* YLThreadSync.m in Sources */,
@@ -5614,6 +5680,7 @@
 				54A0F1BE28D651B3007E3805 /* YLCalendarViewCell.m in Sources */,
 				5400B31B25BAEB5C00DC4C49 /* YLAnimationHelper.swift in Sources */,
 				54C4B514261495AD004BF897 /* YLKeyChainManager.swift in Sources */,
+				5462EE322A4B64FB0027EDD8 /* YLReactHomeViewController.swift in Sources */,
 				54E97A8327B10884001CA669 /* DoublePointer.swift in Sources */,
 				5435812F25A4DC8C00452D76 /* YLMessageNoteManager.m in Sources */,
 				54E5AEE228AA4E8000F18DCC /* YLTimer.m in Sources */,
@@ -5633,14 +5700,15 @@
 				54B2C71A28E1F6E6005404BA /* YLMemeoryManageViewController.m in Sources */,
 				546368AB27BA253D003CF22F /* YLRunloopDoggy.m in Sources */,
 				541CBDB229F1AFE2003FED26 /* YLAlgoStringListRow_12.swift in Sources */,
-				54BB262E2601DD0B001A98B4 /* YLWKWebDemoListViewController.swift in Sources */,
 				54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */,
 				54DCC58F27CE95D1009F289D /* YLAlgoPrimaryViewControllerRow1.swift in Sources */,
 				54B850A8283D358200294D47 /* YLLifeCycleView.m in Sources */,
 				543580F6259DBBEF00452D76 /* YLLogMessageManager.m in Sources */,
+				54A872102A471FD600DA78F2 /* ReactHomeViewController.m in Sources */,
 				54E6E42B27BD79250019E03C /* YLAlgoTreeListRow_0.swift in Sources */,
 				548A0CD62612208A00BC80D9 /* YLDemoLazyViewController.swift in Sources */,
 				541CBE0E2A00AC8B003FED26 /* YLAlgoBackTrackListController.swift in Sources */,
+				5405FA0A2A4F4A4800C0D24C /* DicttionaryTools.swift in Sources */,
 				54D8FEDD28FE3995006B169C /* YLAlgoTreeListRow_11.swift in Sources */,
 				541CBDE329FAF60F003FED26 /* YLAlgoOtherTestController.swift in Sources */,
 				5422A094283ED7D70019586F /* YLSearchBarBackView.m in Sources */,

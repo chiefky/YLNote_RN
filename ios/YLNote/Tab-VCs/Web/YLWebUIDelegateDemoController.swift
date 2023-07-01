@@ -30,8 +30,10 @@ class YLWebUIDelegateDemoController: UIViewController, WKNavigationDelegate, WKU
         view.addSubview(label)
 
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = #colorLiteral(red: 1, green: 0.3882352941, blue: 0.2784313725, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         button.setTitle("evaluateJavaScript执行JS方法,带返回值", for: .normal)
+        button.layer.cornerRadius = 10;
+        button.layer.masksToBounds = true;
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         self.view.addSubview(button)
         

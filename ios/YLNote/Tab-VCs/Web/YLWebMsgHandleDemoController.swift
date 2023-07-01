@@ -50,7 +50,7 @@ class YLWebMsgHandleDemoController: UIViewController {
         butn.setTitle("evaluateJavaScript执行JS方法,不带返回值", for: .normal)
         butn.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         butn.addTarget(self, action: #selector(nativeCallJS), for: .touchUpInside)
-        butn.backgroundColor = #colorLiteral(red: 1, green: 0.3882352941, blue: 0.2784313725, alpha: 1)
+        butn.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         butn.layer.cornerRadius = 10;
         butn.layer.masksToBounds = true
         view.addSubview(butn)
@@ -90,42 +90,34 @@ extension YLWebMsgHandleDemoController: YLWKActionDelegate {
         switch name {
         case "sayHello":
             self.sayHello(param: arg)
-        case "getUserInfo":
-            if let arg = arg as? [String : Any] {
-                self.getUserInfo(param: arg)
-            }
         default:
             print("\(name) is undefined ,plese add an implementation!")
         }
-        
     }
     
     func sayHello<T>(param: T )  {
-        var name = "null"
+        var message = "null"
         if let param = param as? String {
-            name = param;
+            message = param;
         } else if let obj = param as? [String:Any] {
-            name = obj.jsonString
-        }
-        print("Hello , \(name)!")
-    }
-    
-    func getUserInfo(param: [String:Any])  {
-        print("参数解读：\(param)")
-        guard let userID = param["userID"] else { return }
-        // { "----- request userinfo with userID ------- "}
-        
-        let userInfo = [ "userID": userID, "msg":"姓名：张三，年龄：19，总成绩：785分" ]
-        if let function = param["callBackFunc"] as? String {
-            self.wkWebView.evaluateJavaScript("\(function)('\(userInfo.jsonString)')") { res, error in
-                if let res = res {
-                    print(res)
-                }
-                if let error = error {
-                    print(error)
+            message = obj.jsonString
+            // { "----- request userinfo with userID ------- "}
+            let userInfo = [ "userID": obj["userID"] ?? "null",
+                             "msg":"姓名：张三，年龄：19，总成绩：785分" ]
+            if let function = obj["callBackFunc"] as? String {
+                // 执行回调
+                self.wkWebView.evaluateJavaScript("\(function)('\(userInfo.jsonString)')") { res, error in
+                    if let res = res {
+                        print(res)
+                    }
+                    if let error = error {
+                        print(error)
+                    }
                 }
             }
+            
         }
+        print("Hello , \(message)!")
     }
-    
+        
 }

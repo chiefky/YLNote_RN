@@ -120,17 +120,7 @@
                             msgHandlers.sayHello.postMessage(obj);
                         }
                     }
-                    
-                    //示例四
-                    function callNativeWithReply() {
-                        // 向wkwebview发送消息获取用户信息回传给JS显示
-                        if (msgHandlers && msgHandlers.getUserInfo) {
-                            msgHandlers.requestData.postMessage({
-                                carId:"100x00w090"})
-                        }
-                        
-                    }
-                                
+                                                    
                 </script>
             </header>
     
@@ -143,18 +133,12 @@
                 <p style="margin-top:0;">let msgHandlers = window.webkit.messageHandlers </p>
             </div>
             
-<!--            <div id="menu" style="width:15%;float:left;">-->
-<!--                <img id="avatar" style="width:85%" src="https://reactnative.dev/docs/assets/p_cat2.png" alt="some_text">-->
-<!--            </div>-->
-            
             <div id="content" style="background-color:#EEEEEE;width:100%;float:left;">
                 <button class="button"  onclick="callNative()">示例一: 不带参数  msgHandlers.sayHello.postMessage(null)</button>
                 <button class="button"  onclick="callNativeWithParam()">示例二: 带参数 msgHandlers.sayHello.postMessage("张三")</button>
                 <button class="button"  onclick="callNativeThenCallBack()">示例三: 带参数带回调 msgHandlers.sayHello.postMessage({
                     userID:"abc1244",
                     callBackFunc:"showUserInfo"})</button>
-                <button class="button"  onclick="callNativeWithReply()">示例四: 带参数自动应答 msgHandlers.requestData.postMessage({
-                    carId:"100x00w090"})</button>
             </div>
             
             <div id="footer" style="background-color:#ffffff;clear:both;text-align:center;">

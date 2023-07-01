@@ -337,6 +337,11 @@
 		54A35DAF24CED7A30076DFB6 /* YLGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A35DA924CED7A30076DFB6 /* YLGCDViewController.m */; };
 		54A35DB224CF216F0076DFB6 /* YLNotificationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A35DB124CF216F0076DFB6 /* YLNotificationTestViewController.m */; };
 		54A6517C24D4305C005FB5AD /* YLUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A6517B24D4305C005FB5AD /* YLUserViewController.m */; };
+		54A831772A50928800CC4C8D /* YLWebMsgReplyDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A831762A50928800CC4C8D /* YLWebMsgReplyDemoController.swift */; };
+		54A831792A5092D000CC4C8D /* MsgReplyDemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 54A831782A5092D000CC4C8D /* MsgReplyDemo.html */; };
+		54A8317B2A50A39A00CC4C8D /* YLWKMessageReplyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8317A2A50A39A00CC4C8D /* YLWKMessageReplyHandler.swift */; };
+		54A8317D2A50B38600CC4C8D /* YLWKMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8317C2A50B38600CC4C8D /* YLWKMessageHandler.swift */; };
+		54A8317F2A50B42B00CC4C8D /* WKWebViewInteracExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A8317E2A50B42B00CC4C8D /* WKWebViewInteracExtension.swift */; };
 		54A872102A471FD600DA78F2 /* ReactHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A8720F2A471FD600DA78F2 /* ReactHomeViewController.m */; };
 		54ABCB382885DFEC006C65D6 /* YLOC_in_SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB372885DFEC006C65D6 /* YLOC_in_SwiftViewController.swift */; };
 		54ABCB3C2885E03B006C65D6 /* PinkPigOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54ABCB3B2885E03B006C65D6 /* PinkPigOC.m */; };
@@ -1110,6 +1115,11 @@
 		54A35DB124CF216F0076DFB6 /* YLNotificationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNotificationTestViewController.m; sourceTree = "<group>"; };
 		54A6517A24D4305C005FB5AD /* YLUserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLUserViewController.h; sourceTree = "<group>"; };
 		54A6517B24D4305C005FB5AD /* YLUserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLUserViewController.m; sourceTree = "<group>"; };
+		54A831762A50928800CC4C8D /* YLWebMsgReplyDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebMsgReplyDemoController.swift; sourceTree = "<group>"; };
+		54A831782A5092D000CC4C8D /* MsgReplyDemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MsgReplyDemo.html; sourceTree = "<group>"; };
+		54A8317A2A50A39A00CC4C8D /* YLWKMessageReplyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKMessageReplyHandler.swift; sourceTree = "<group>"; };
+		54A8317C2A50B38600CC4C8D /* YLWKMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWKMessageHandler.swift; sourceTree = "<group>"; };
+		54A8317E2A50B42B00CC4C8D /* WKWebViewInteracExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewInteracExtension.swift; sourceTree = "<group>"; };
 		54A8720E2A471FD600DA78F2 /* ReactHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactHomeViewController.h; sourceTree = "<group>"; };
 		54A8720F2A471FD600DA78F2 /* ReactHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactHomeViewController.m; sourceTree = "<group>"; };
 		54ABCB372885DFEC006C65D6 /* YLOC_in_SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLOC_in_SwiftViewController.swift; sourceTree = "<group>"; };
@@ -2481,6 +2491,7 @@
 				54BB2645260379E9001A98B4 /* JSTest.html */,
 				5405FA052A4F1DAB00C0D24C /* MsgHandlerDemo.html */,
 				5405FA0F2A4FEF2F00C0D24C /* UIDelegateDemo.html */,
+				54A831782A5092D000CC4C8D /* MsgReplyDemo.html */,
 				54BB264E2603AC5D001A98B4 /* view */,
 				54BB264D2603AC53001A98B4 /* model */,
 				54BB264C2603AC42001A98B4 /* controller */,
@@ -3137,6 +3148,7 @@
 				5487BE902600AFFB00C6AEAE /* demos */,
 				5405F9F22A4D5F1D00C0D24C /* MyWeb.html */,
 				5405FA032A4F1C9700C0D24C /* YLWebMsgHandleDemoController.swift */,
+				54A831762A50928800CC4C8D /* YLWebMsgReplyDemoController.swift */,
 				5405FA0B2A4FE96800C0D24C /* YLWebUIDelegateDemoController.swift */,
 				54E97A9827B1091B001CA669 /* WebList.json */,
 				5426D71C2885D13E00298D14 /* YLWebListViewController.swift */,
@@ -3561,6 +3573,9 @@
 			isa = PBXGroup;
 			children = (
 				5405F9FF2A4DF30A00C0D24C /* YLWKActionDelegate.swift */,
+				54A8317A2A50A39A00CC4C8D /* YLWKMessageReplyHandler.swift */,
+				54A8317C2A50B38600CC4C8D /* YLWKMessageHandler.swift */,
+				54A8317E2A50B42B00CC4C8D /* WKWebViewInteracExtension.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -5168,6 +5183,7 @@
 				54ABCB67288C4FB7006C65D6 /* Algo_queue_row_0.json in Resources */,
 				54DB9BE5284A6F9000539AC5 /* Algo_array_row_10.json in Resources */,
 				548CB092286C318000F73E71 /* Algo_tree_row_5.json in Resources */,
+				54A831792A5092D000CC4C8D /* MsgReplyDemo.html in Resources */,
 				548CAF30285F545D00F73E71 /* Algo_string_row_4.json in Resources */,
 				54A0F19F28C8FA2D007E3805 /* Algo_tree_row_9_II.json in Resources */,
 				54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */,
@@ -5371,6 +5387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5462EE3E2A4C843F0027EDD8 /* YLReactContainerController.swift in Sources */,
+				54A831772A50928800CC4C8D /* YLWebMsgReplyDemoController.swift in Sources */,
 				548CAFB32863643E00F73E71 /* YLAlgoArrayListRow_14.swift in Sources */,
 				54A35D8F24CED7290076DFB6 /* YLSon.m in Sources */,
 				54E5AEC128A5076D00F18DCC /* CStack.swift in Sources */,
@@ -5543,6 +5560,7 @@
 				54E97A7D27B10884001CA669 /* Stack.swift in Sources */,
 				54B2C74828E55D99005404BA /* YLRuntimeMsgFwd1TableController.m in Sources */,
 				54C44A9627D7661000688A7E /* YLAlgoStringListRow_1.swift in Sources */,
+				54A8317B2A50A39A00CC4C8D /* YLWKMessageReplyHandler.swift in Sources */,
 				548CB0722869B99A00F73E71 /* YLAlgoBitListRow_2.swift in Sources */,
 				54456293269C365C00A3BA4D /* YLRuntimeWeakViewController.m in Sources */,
 				54CAC36C2605C05E008A7BDF /* YLWebCookieViewController.swift in Sources */,
@@ -5661,6 +5679,7 @@
 				548CAFC22863826700F73E71 /* YLAlgoArrayListRow_15.swift in Sources */,
 				54FD6765260A0B5000F7E113 /* YLDemoResponderView.swift in Sources */,
 				543581B225ADBA4200452D76 /* YLSafeMutableArray.m in Sources */,
+				54A8317F2A50B42B00CC4C8D /* WKWebViewInteracExtension.swift in Sources */,
 				54F4E753299AB42600658A85 /* YLLButton.m in Sources */,
 				5435819B25AD952200452D76 /* YLPerson.m in Sources */,
 				54E97A8C27B10884001CA669 /* Fibonacci.swift in Sources */,
@@ -5691,6 +5710,7 @@
 				54E5AED128AA1CDE00F18DCC /* YLNoteTmpViewController.swift in Sources */,
 				54E5AEBC28A505A500F18DCC /* YLAlgoStackListRow_0.swift in Sources */,
 				5452D5802605E0CB0007FDDA /* TestCookieViewController.m in Sources */,
+				54A8317D2A50B38600CC4C8D /* YLWKMessageHandler.swift in Sources */,
 				54A0F1A728D3958C007E3805 /* YLShare.swift in Sources */,
 				54D8FF4D2903D9F9006B169C /* YLOperationSync.m in Sources */,
 				545F873025B5A4D9008BE6E2 /* YLIterator.m in Sources */,

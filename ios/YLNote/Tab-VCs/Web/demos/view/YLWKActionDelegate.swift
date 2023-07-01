@@ -79,72 +79,25 @@ import ObjectiveC.runtime
  
  */
 
-// iOS 14及更低版本
-protocol YLWKActionDelegate: AnyObject {
+
+
+// iOS 14以下
+protocol YLWKActionDelegate:AnyObject {
     func handleAllActions(func name:String,arg: Any)
-    
-    @available(iOS 14.0, *)
-    func handleAllActions(func name:String,arg: Any,replyHandler:  @escaping (Any?, String?) -> Void)
 }
 
 extension YLWKActionDelegate {
-
-    func handleAllActions(func name:String,arg: Any,replyHandler:  @escaping (Any?, String?) -> Void) {
-        handleAllActions(func: name, arg: arg)
+    func handleAllActions(func name: String, arg: Any) {
+        
     }
 }
 
 
-class YLWKMessageHandler: NSObject,WKScriptMessageHandler {
-    deinit {
-        print("YLWKMessageHandler deinit")
-    }
-    
-    weak var delegate: YLWKActionDelegate?
-    init(delegate: YLWKActionDelegate?) {
-        self.delegate = delegate
-    }
-    
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        guard let delegate = self.delegate else {
-            print("delegate is nil,can not hold any message!")
-            return
-        }
-        delegate.handleAllActions(func: message.name, arg: message.body)
-    }
-
+// iOS 14及更高版本
+@available(iOS 14.0, *)
+protocol YLWKActionDelegate14Plus:YLWKActionDelegate {
+    func handleAllActions(func name:String,arg: Any,replyHandler:  @escaping (Any?, String?) -> Void)
 }
 
-// 为WKWebView添加方法：注册响应事件
-extension WKWebView {
-    
-    /// 按方法名注册
-    /// - Parameters:
-    ///   - scriptMessageHandler: action响应者
-    ///   - names: 方法名数组
-    func registerActions(_ scriptMessageHandler: YLWKActionDelegate, func names: [String]) {
-        let target = YLWKMessageHandler(delegate: scriptMessageHandler)
-        for name in names {
-            self.configuration.userContentController.add(target, name: name)
-        }
-    }
-    
-//    @available(iOS 14.0,*)
-//    func registerActions(reply scriptMessageHandler: YLWKActionDelegate, func names: [String]) {
-//        let target = YLWKMessageHandler(delegate: scriptMessageHandler)
-//        for name in names {
-////            [userContentController addScriptMessageHandlerWithReply:self contentWorld:[WKContentWorld pageWorld] name:@"YYWK"];
-//            self.configuration.userContentController.addScriptMessageHandlerWithReply
-//            self.configuration.userContentController.add(target, contentWorld: .page, name: name)
-//        }
-//    }
 
-    /// 按脚本注册
-    /// - Parameter script: <#script description#>
-    func injectScript(_ script: String) {
-        let script = WKUserScript(source: script, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
-        self.configuration.userContentController.addUserScript(script)
-    }
-    
-}
 

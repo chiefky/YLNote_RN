@@ -1,0 +1,143 @@
+<html>
+    <header>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <style>
+                    *{
+                        margin:0;
+                    }
+                    .main {
+                        text-align: center; //让div内部文字居中
+                        background-color: #fdf;
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    
+                    
+                    .header {
+                        background-color: #fdf;
+                        padding-top:30px;
+                    }
+                    
+                    .bodyArea {
+                        padding-top:30px;
+                    }
+                    /*
+                     bodyArea.menuArea {
+                     margin: auto;
+                     border: 3px solid #73AD21;
+                     }
+                     
+                     bodyArea.contentArea {
+                     margin: auto;
+                     }*/
+                    
+                    button {
+                        width: 80%;
+                        font-size: 16px;
+                        background-color: #1A4766; /* tomato */
+                        border: none;
+                        color: white;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 10px 10px;
+                        display: inline-block;
+                        
+                        /*
+                         display: inline-block;
+                         */
+                        margin: 10px 2px;
+                        cursor: pointer;
+                        
+                    }
+                    
+                    p {
+                        font-size: 17px;
+                        background-color:#999999;
+                        color: white;
+                    }
+                    
+                    p.margin {
+                        padding: 10px 5px;
+                    }
+                    
+                    .button2 {width: 50%;}
+                </style>
+                <script type="text/javascript">
+                    
+                    let msgHandlers = window.webkit.messageHandlers
+                    
+                    function sampleMethodTheHTMLCanCall( inputInfo, successFunc, errorFunc ) {
+                        var promise = window.webkit.messageHandlers.namespaceWithinTheInjectedJSCode.postMessage( inputInfo );
+                        
+                        promise.then(
+                                     function(result) {
+                                         console.log(result); // "Stuff worked!"
+                                         successFunc( result )
+                                     },
+                                     function(err) {
+                                         console.log(err); // Error: "It broke"
+                                         errorFunc( err )
+                                     });
+                    }
+                    
+                    function handleInfoFromApp( fromApp ) {
+                        document.getElementById("valToWrite").innerHTML = fromApp;
+                    }
+                    function handleError( err ){
+                        
+                    }
+                    //示例四
+                    function callNativeWithReply( argument, successFunc, errorFunc ) {
+                        var promise = window.webkit.messageHandlers.requestData.postMessage( argument );
+                        promise.then(
+                                     function(result) {
+                                         console.log(result); // "Stuff worked!"
+                                         successFunc( result )
+                                     },
+                                     function(err) {
+                                         console.log(err); // Error: "It broke"
+                                         errorFunc( err )
+                                     });
+                    }
+                    
+                    function callNativeWithReply2( argument ) {
+                        window.webkit.messageHandlers.requestData.postMessage( argument );
+                    }
+
+
+                    
+                </script>
+            </header>
+    
+    <body class="main">
+        
+        <div id="container" style="width:100%">
+            
+            <div id="header">
+                <h1 id="valToWrite">Hello</h1>
+                <h4 style="margin-bottom:0;font-size: 22px;" align="left">1. JS call native: </h4>
+                <p style="margin-top:0;">let msgHandlers = window.webkit.messageHandlers </p>
+            </div>
+            
+            <div id="content" style="background-color:#EEEEEE;width:100%;float:left;">
+                <button onclick="sampleMethodTheHTMLCanCall( 'inputInfo', handleInfoFromApp, handleError )">Load Info from App</button>
+                
+                <button class="button"  onclick="callNativeWithReply('hello',handleInfoFromApp,handleError)">示例一: </button>
+                <button class="button"  onclick="callNativeWithReply2('hello 2')">示例二: </button>
+                
+            </div>
+            
+            <div id="footer" style="background-color:#ffffff;clear:both;text-align:center;">
+                <p id="userinfo" class="margin" style="word-break:break-word" >此处显示回调获取的用户信息</p>
+            </div>
+        </div>
+    </body>
+</html>

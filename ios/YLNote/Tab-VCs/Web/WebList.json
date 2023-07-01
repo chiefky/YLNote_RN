@@ -1,12 +1,12 @@
 [
     {
         "group_id":"weblist_wk",
-        "group_title":"WKWebView：JS与原生交互",
+        "group_title":"WKWebView：JS call原生方法",
         "unfoldStatus":false,
         "questions": [
             {
                 "q_id":"",
-                "q_title":"WKScriptMessageHandler: JS call原生方法",
+                "q_title":"WKScriptMessageHandler: ",
                 "showNextPage": true,
                 "showArticle":true,
                 "function":"",
@@ -39,12 +39,12 @@
 
             {
                 "q_id":"",
-                "q_title":"使用WebViewJavascriptBridge完成交互",
+                "q_title":"WKScriptMessageHandlerWithReply",
                 "showNextPage": true,
                 "showArticle":true,
                 "function":"",
                 "demo": {
-                    "className":"YLMessageHandlerViewController",
+                    "className":"YLWebMsgReplyDemoController",
                     "style": 1,
                     "useXib": 0
                 },

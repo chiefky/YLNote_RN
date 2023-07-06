@@ -54,7 +54,7 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
     webVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Web交互" image:[UIImage imageNamed:@"web"] tag:3];
     UINavigationController *naviWeb = [[UINavigationController alloc] initWithRootViewController:webVC];
     
-    YLAlgoViewController *algoriVC = [[YLAlgoViewController alloc] init];
+    YLAlgoRootViewController *algoriVC = [[YLAlgoRootViewController alloc] init];
     algoriVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"算法" image:[UIImage imageNamed:@"algorithm"] tag:2];
     UINavigationController *naviAlgori = [[UINavigationController alloc] initWithRootViewController:algoriVC];
     

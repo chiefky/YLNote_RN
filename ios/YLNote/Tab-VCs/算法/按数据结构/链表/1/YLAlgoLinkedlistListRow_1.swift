@@ -86,6 +86,12 @@ class YLAlgoLinkedlistListRow_1: YLBaseTableViewController {
         return new_head
     }
     
+    /// 递归实现
+    /// - Parameter head: <#head description#>
+    /// - Returns: <#description#>
+    func method_3(_ head: ListNode) -> ListNode? {
+        return nil
+    }
 
     //    MARK: override
     override func fileName() -> String {

@@ -1,0 +1,350 @@
+[    {
+    "group_id":"algo_day_test",
+    "unfoldStatus":false,
+    "group_title":"每日回顾",
+    "questions": [
+        {
+            "q_id":"algo_day_test_0",
+            "q_title":"所有",
+            "q_subtitle":"",
+            "showNextPage": true,
+            "showArticle":false,
+            "function":"",
+            "demo": {
+                "className":"YLAlgoTestViewController",
+                "style": 1,
+                "useXib": 0
+            },
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            },
+        }
+    ]
+},
+    {
+        "group_id":"algo_array",
+        "unfoldStatus":false,
+        "group_title":"数组",
+        "questions": [
+            {
+                "q_id":"algo_array_0",
+                "q_title":"测试",
+                "q_subtitle":"",
+                "showNextPage": false,
+                "showArticle": false,
+                "function":"array_test",
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            },
+            {
+                "q_id":"algo_array_1",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoArrayListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_linklist",
+        "unfoldStatus":false,
+        "group_title":"链表",
+        "questions": [            {
+            "q_id":"algo_linklist_0",
+            "q_title":"测试",
+            "q_subtitle":"",
+            "showNextPage": false,
+            "showArticle": false,
+            "function":"linklist_test",
+            "article": {
+                "art_id":"",
+                "art_url":"",
+                "art_title":"",
+            }
+        },
+            {
+                "q_id":"algo_linklist_1",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoLinkedlistListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+        
+    },
+    {
+        "group_id":"algo_string",
+        "unfoldStatus":false,
+        "group_title":"字符串",
+        "questions": [
+            {
+                "q_id":"algo_1_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoStringListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+
+    },
+    {
+        "group_id":"algo_tree",
+        "unfoldStatus":false,
+        "group_title":"二叉树",
+        "questions": [
+            {
+                "q_id":"algo_1_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoTreeListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_bit",
+        "unfoldStatus":false,
+        "group_title":"位运算",
+        "questions": [
+            {
+                "q_id":"algo_bit_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoBitListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_queue",
+        "unfoldStatus":false,
+        "group_title":"队列",
+        "questions": [
+            {
+                "q_id":"algo_queue_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoQueueListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_stack",
+        "unfoldStatus":false,
+        "group_title":"栈",
+        "questions": [
+            {
+                "q_id":"algo_stack_0",
+                "q_title":"all questions",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoStackListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_primary",
+        "unfoldStatus":false,
+        "group_title":"基础算法",
+        "questions": [
+            {
+                "q_id":"algo_sort_0",
+                "q_title":"二分查找",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoPrimaryViewControllerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"algo_sort_1",
+                "q_title":"快速排序",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoPrimaryViewControllerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"algo_sort_1",
+                "q_title":"归并排序",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoPrimaryViewControllerRow2",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            },
+            {
+                "q_id":"algo_sort_1",
+                "q_title":"堆排序（未完善）",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle":false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoPrimaryViewControllerRow3",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                },
+            }
+        ]
+    },
+    {
+        "group_id": "algo_other",
+        "unfoldStatus": false,
+        "group_title": "other",
+        "questions": [
+            {
+                "q_id":"algo_other_0",
+                "q_title":"斐波那契数列",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoOtherViewControllerRow0",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            },
+            {
+                "q_id":"algo_other_1",
+                "q_title":"数字交换",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoOtherViewControllerRow1",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+]

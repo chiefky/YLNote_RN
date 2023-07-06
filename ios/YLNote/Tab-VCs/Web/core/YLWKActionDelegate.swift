@@ -8,7 +8,6 @@
 
 import Foundation
 import WebKit
-import ObjectiveC.runtime
 
 
 //class YLWKScriptMessageHandler: NSObject,WKScriptMessageHandler,YLWKActionDelegate {
@@ -70,17 +69,6 @@ import ObjectiveC.runtime
 //}
 //
 
-
-/**
- 使用方法：
- 1. 使用WKWebView注册方法名，传入self作为函数的消息接收者；内部函数弱持有self
- wkWebView.registerAllActions(scriptMessageHandler: self, func: [method_name])
- 2. 给self类遵循协议 YLWKActionDelegate，并实现’ func handleAllActions(func name:String,arg: Any)‘方法；此方法用于接收JS方的调用，根据name和arg分发函数完成native调用
- 
- */
-
-
-
 // iOS 14以下
 protocol YLWKActionDelegate:AnyObject {
     func handleAllActions(func name:String,arg: Any)
@@ -91,7 +79,6 @@ extension YLWKActionDelegate {
         
     }
 }
-
 
 // iOS 14及更高版本
 @available(iOS 14.0, *)

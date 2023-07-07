@@ -82,8 +82,6 @@
 		541CBE042A00ABE5003FED26 /* Algo_empty_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 541CBE002A00ABE5003FED26 /* Algo_empty_list.json */; };
 		541CBE0E2A00AC8B003FED26 /* YLAlgoBackTrackListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CBE0A2A00AC8B003FED26 /* YLAlgoBackTrackListController.swift */; };
 		541CBE0F2A00AC8B003FED26 /* Algo_backTrack_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 541CBE0B2A00AC8B003FED26 /* Algo_backTrack_list.json */; };
-		541CBE172A041F2A003FED26 /* Algo_BFS_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 541CBE122A041F2A003FED26 /* Algo_BFS_test.json */; };
-		541CBE182A041F2A003FED26 /* YLBFSControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CBE132A041F2A003FED26 /* YLBFSControllerTest.swift */; };
 		541CBE192A041F2A003FED26 /* YLAlgoBFSListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CBE152A041F2A003FED26 /* YLAlgoBFSListController.swift */; };
 		541CBE1A2A041F2A003FED26 /* Algo_BFS_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 541CBE162A041F2A003FED26 /* Algo_BFS_list.json */; };
 		541CBE242A060DC7003FED26 /* YLAlgoRecurListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CBE202A060DC7003FED26 /* YLAlgoRecurListController.swift */; };
@@ -758,8 +756,6 @@
 		541CBE002A00ABE5003FED26 /* Algo_empty_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_empty_list.json; sourceTree = "<group>"; };
 		541CBE0A2A00AC8B003FED26 /* YLAlgoBackTrackListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoBackTrackListController.swift; sourceTree = "<group>"; };
 		541CBE0B2A00AC8B003FED26 /* Algo_backTrack_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_backTrack_list.json; sourceTree = "<group>"; };
-		541CBE122A041F2A003FED26 /* Algo_BFS_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_BFS_test.json; sourceTree = "<group>"; };
-		541CBE132A041F2A003FED26 /* YLBFSControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLBFSControllerTest.swift; sourceTree = "<group>"; };
 		541CBE152A041F2A003FED26 /* YLAlgoBFSListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoBFSListController.swift; sourceTree = "<group>"; };
 		541CBE162A041F2A003FED26 /* Algo_BFS_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_BFS_list.json; sourceTree = "<group>"; };
 		541CBE202A060DC7003FED26 /* YLAlgoRecurListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoRecurListController.swift; sourceTree = "<group>"; };
@@ -1718,7 +1714,8 @@
 		541CBD8B29ED6D4B003FED26 /* 动态规划 */ = {
 			isa = PBXGroup;
 			children = (
-				541CBDE729FAFC45003FED26 /* list */,
+				541CBD8C29ED6E2B003FED26 /* Algo_dp_list.json */,
+				541CBD8D29ED6E2B003FED26 /* YLAlgoDPListController.swift */,
 			);
 			path = "动态规划";
 			sourceTree = "<group>";
@@ -1859,38 +1856,13 @@
 			path = list;
 			sourceTree = "<group>";
 		};
-		541CBDE729FAFC45003FED26 /* list */ = {
-			isa = PBXGroup;
-			children = (
-				541CBD8C29ED6E2B003FED26 /* Algo_dp_list.json */,
-				541CBD8D29ED6E2B003FED26 /* YLAlgoDPListController.swift */,
-			);
-			path = list;
-			sourceTree = "<group>";
-		};
 		541CBDE829FB0DBF003FED26 /* 原地交换 */ = {
-			isa = PBXGroup;
-			children = (
-				541CBDE929FB0DBF003FED26 /* test */,
-				541CBDEA29FB0DBF003FED26 /* list */,
-			);
-			path = "原地交换";
-			sourceTree = "<group>";
-		};
-		541CBDE929FB0DBF003FED26 /* test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		541CBDEA29FB0DBF003FED26 /* list */ = {
 			isa = PBXGroup;
 			children = (
 				541CBDEB29FB0DBF003FED26 /* Algo_swap_list.json */,
 				541CBDEC29FB0DBF003FED26 /* YLAlgoSwapListController.swift */,
 			);
-			path = list;
+			path = "原地交换";
 			sourceTree = "<group>";
 		};
 		541CBDFA2A00ABE5003FED26 /* Empty */ = {
@@ -1923,62 +1895,28 @@
 		541CBE052A00AC8A003FED26 /* 回溯 */ = {
 			isa = PBXGroup;
 			children = (
-				541CBE092A00AC8B003FED26 /* list */,
-			);
-			path = "回溯";
-			sourceTree = "<group>";
-		};
-		541CBE092A00AC8B003FED26 /* list */ = {
-			isa = PBXGroup;
-			children = (
 				541CBE0A2A00AC8B003FED26 /* YLAlgoBackTrackListController.swift */,
 				541CBE0B2A00AC8B003FED26 /* Algo_backTrack_list.json */,
 			);
-			path = list;
+			path = "回溯";
 			sourceTree = "<group>";
 		};
 		541CBE102A041F2A003FED26 /* 广度优先搜索 */ = {
 			isa = PBXGroup;
 			children = (
-				541CBE112A041F2A003FED26 /* test */,
-				541CBE142A041F2A003FED26 /* list */,
-			);
-			path = "广度优先搜索";
-			sourceTree = "<group>";
-		};
-		541CBE112A041F2A003FED26 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				541CBE122A041F2A003FED26 /* Algo_BFS_test.json */,
-				541CBE132A041F2A003FED26 /* YLBFSControllerTest.swift */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		541CBE142A041F2A003FED26 /* list */ = {
-			isa = PBXGroup;
-			children = (
 				541CBE152A041F2A003FED26 /* YLAlgoBFSListController.swift */,
 				541CBE162A041F2A003FED26 /* Algo_BFS_list.json */,
 			);
-			path = list;
+			path = "广度优先搜索";
 			sourceTree = "<group>";
 		};
 		541CBE1B2A060DC7003FED26 /* 递归 */ = {
 			isa = PBXGroup;
 			children = (
-				541CBE1F2A060DC7003FED26 /* list */,
-			);
-			path = "递归";
-			sourceTree = "<group>";
-		};
-		541CBE1F2A060DC7003FED26 /* list */ = {
-			isa = PBXGroup;
-			children = (
 				541CBE202A060DC7003FED26 /* YLAlgoRecurListController.swift */,
 				541CBE212A060DC7003FED26 /* Algo_recur_list.json */,
 			);
-			path = list;
+			path = "递归";
 			sourceTree = "<group>";
 		};
 		5426D70A2884654300298D14 /* 17 */ = {
@@ -5095,7 +5033,6 @@
 				541CBDC729F677D5003FED26 /* Algo_dfs_test.json in Resources */,
 				54E5AE96289B9C5000F18DCC /* Algo_array_row_24.json in Resources */,
 				54DCC5ED27D0C930009F289D /* block_types.json in Resources */,
-				541CBE172A041F2A003FED26 /* Algo_BFS_test.json in Resources */,
 				547356D927E64B720096A008 /* optimize_start.json in Resources */,
 				541CBD8129DACCD8003FED26 /* main.js in Resources */,
 				54A0F18128C62F24007E3805 /* Algo_array_row_30.json in Resources */,
@@ -5406,7 +5343,6 @@
 				54B3FD752A56C2CD006E6142 /* YLAlgoSubControllerLeft.swift in Sources */,
 				54BB264326035E84001A98B4 /* YLSwiftJavaScriptTools.swift in Sources */,
 				54A35D5024CED6FE0076DFB6 /* YLRctNatViewController.m in Sources */,
-				541CBE182A041F2A003FED26 /* YLBFSControllerTest.swift in Sources */,
 				541CBDA829EFCDE5003FED26 /* YLAlgoBitListRow_6.swift in Sources */,
 				54FA55DA2609CBDA00AE0A83 /* YLDemoHashEqualViewController.m in Sources */,
 				54AEB60E26AED748004C8894 /* YLCrashHandler.m in Sources */,

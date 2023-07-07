@@ -34,7 +34,7 @@
             "q_subtitle":"",
             "showNextPage": false,
             "showArticle": false,
-            "function":"",
+            "function":"DP_test",
             "article": {
                 "art_id":"",
                 "art_url":"",
@@ -72,7 +72,7 @@
             "q_subtitle":"",
             "showNextPage": false,
             "showArticle": false,
-            "function":"DP_test",
+            "function":"backTrack_test",
             "article": {
                 "art_id":"",
                 "art_url":"",
@@ -110,7 +110,7 @@
             "q_subtitle":"",
             "showNextPage": false,
             "showArticle": false,
-            "function":"DP_test",
+            "function":"dfs_test",
             "article": {
                 "art_id":"",
                 "art_url":"",
@@ -148,7 +148,7 @@
             "q_subtitle":"",
             "showNextPage": false,
             "showArticle": false,
-            "function":"",
+            "function":"bfs_test",
             "article": {
                 "art_id":"",
                 "art_url":"",
@@ -186,7 +186,7 @@
             "q_subtitle":"",
             "showNextPage": false,
             "showArticle": false,
-            "function":"",
+            "function":"recur_test",
             "article": {
                 "art_id":"",
                 "art_url":"",
@@ -214,7 +214,6 @@
         ]
         
     },
-
     {
         "group_id":"algo_swap",
         "unfoldStatus":false,

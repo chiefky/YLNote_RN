@@ -48,8 +48,7 @@ class YLAlgoSubControllerLeft: UIViewController {
     
 
     
-    // MARK: - funcs
-    
+    // MARK: - UI funcs
     func setupUI() {
         view.addSubview(self.table)
         table.snp.makeConstraints {
@@ -82,14 +81,30 @@ class YLAlgoSubControllerLeft: UIViewController {
     }
     
     //MARK: 每日抽查测试:
-    @objc func array_test() {
-        testArray()
+    @objc func DP_test() {
+        print("当前函数名：\(#function)")
     }
     
-    @objc func linklist_test(){
-        testLinkList()
+    @objc func backTrack_test(){
+        print("当前函数名：\(#function)")
     }
-    
+
+    @objc func dfs_test(){
+        print("当前函数名：\(#function)")
+    }
+
+    @objc func bfs_test(){
+        print("当前函数名：\(#function)")
+    }
+
+    @objc func recur_test(){
+        print("当前函数名：\(#function)")
+    }
+
+    @objc func swap_test(){
+        print("当前函数名：\(#function)")
+    }
+
     //MARK: lazy method
     lazy var table: UITableView = {
         let t = UITableView(frame:.zero, style: .grouped )

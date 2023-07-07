@@ -1,5 +1,19 @@
 [
     {
+        "q_id":"algo_linkedlist-10",
+        "q_title":"剑指 Offer II 027. 回文链表",
+        "q_subtitle":"",
+        "showNextPage": true,
+        "showArticle": false,
+        "function":"",
+        "demo": {
+            "className":"YLAlgoLinkedlistListRow_10",
+            "style": 1,
+            "useXib": 0
+        },
+    },
+    
+    {
         "q_id":"algo_linkedlist-9",
         "q_title":"141. 环形链表",
         "q_subtitle":"",

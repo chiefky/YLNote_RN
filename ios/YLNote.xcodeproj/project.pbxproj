@@ -404,8 +404,6 @@
 		54B84FFD283CDF1A00294D47 /* YLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B84FFC283CDF1A00294D47 /* YLScrollView.m */; };
 		54B85002283CDF2C00294D47 /* YLScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B85001283CDF2C00294D47 /* YLScrollView.xib */; };
 		54B850A8283D358200294D47 /* YLLifeCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850A7283D358200294D47 /* YLLifeCycleView.m */; };
-		54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */; };
-		54B850B6283D35F800294D47 /* YLLifeCycleViewX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */; };
 		54B850C2283D5FB500294D47 /* YLFimlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */; };
 		54B850C3283D5FB500294D47 /* YLNatiFilmListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B850BF283D5FB500294D47 /* YLNatiFilmListViewController.m */; };
 		54B850C4283D5FB500294D47 /* YLFimlTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54B850C0283D5FB500294D47 /* YLFimlTableViewCell.xib */; };
@@ -1220,9 +1218,6 @@
 		54B85001283CDF2C00294D47 /* YLScrollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLScrollView.xib; sourceTree = "<group>"; };
 		54B850A6283D358200294D47 /* YLLifeCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLifeCycleView.h; sourceTree = "<group>"; };
 		54B850A7283D358200294D47 /* YLLifeCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLifeCycleView.m; sourceTree = "<group>"; };
-		54B850AF283D35DB00294D47 /* YLLifeCycleViewX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLLifeCycleViewX.h; sourceTree = "<group>"; };
-		54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLLifeCycleViewX.m; sourceTree = "<group>"; };
-		54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLLifeCycleViewX.xib; sourceTree = "<group>"; };
 		54B850BC283D5FB500294D47 /* YLFimlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLFimlTableViewCell.h; sourceTree = "<group>"; };
 		54B850BD283D5FB500294D47 /* YLNatiFilmListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNatiFilmListViewController.h; sourceTree = "<group>"; };
 		54B850BE283D5FB500294D47 /* YLFimlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLFimlTableViewCell.m; sourceTree = "<group>"; };
@@ -3525,16 +3520,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		54B850A5283D355200294D47 /* LiftCycle */ = {
-			isa = PBXGroup;
-			children = (
-				54B850AF283D35DB00294D47 /* YLLifeCycleViewX.h */,
-				54B850B0283D35DB00294D47 /* YLLifeCycleViewX.m */,
-				54B850B5283D35F800294D47 /* YLLifeCycleViewX.xib */,
-			);
-			path = LiftCycle;
-			sourceTree = "<group>";
-		};
 		54B850C9283D5FC200294D47 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -4507,7 +4492,6 @@
 				541CBD7C29DACAE0003FED26 /* JSPatchDemo */,
 				54E5AECF28AA1CDE00F18DCC /* YLNoteTmpViewController.swift */,
 				54E5AECE28AA1CDE00F18DCC /* TmpNote.json */,
-				54B850A5283D355200294D47 /* LiftCycle */,
 				54C5471A2A6A3076006572D7 /* UIKit */,
 				54F4E738298A6A4100658A85 /* NotificationCenter */,
 				54D8FEED2903D979006B169C /* Thread */,
@@ -5165,7 +5149,6 @@
 				541CBD9929ED9D41003FED26 /* Algo_string_row_10.json in Resources */,
 				54D19F97285528570016468E /* Algo_stirng_list.json in Resources */,
 				54DB9BDE28469EDB00539AC5 /* Algo_array_row_9.json in Resources */,
-				54B850B6283D35F800294D47 /* YLLifeCycleViewX.xib in Resources */,
 				54E97AB827B3F393001CA669 /* runloop_run.json in Resources */,
 				54D8FF3F2903D9F9006B169C /* thread_gcd_source.json in Resources */,
 				541CBDE429FAF60F003FED26 /* Algo_other_test.json in Resources */,
@@ -5771,7 +5754,6 @@
 				54B2C71A28E1F6E6005404BA /* YLMemeoryManageViewController.m in Sources */,
 				546368AB27BA253D003CF22F /* YLRunloopDoggy.m in Sources */,
 				541CBDB229F1AFE2003FED26 /* YLAlgoStringListRow_12.swift in Sources */,
-				54B850B1283D35DB00294D47 /* YLLifeCycleViewX.m in Sources */,
 				54DCC58F27CE95D1009F289D /* YLAlgoPrimaryViewControllerRow1.swift in Sources */,
 				54B850A8283D358200294D47 /* YLLifeCycleView.m in Sources */,
 				543580F6259DBBEF00452D76 /* YLLogMessageManager.m in Sources */,

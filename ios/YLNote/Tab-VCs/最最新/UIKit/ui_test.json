@@ -2,11 +2,11 @@
 [
     {
         "q_id":"ui_test-0",
-        "q_title":"UIView生命周期",
+        "q_title":"UIViewController生命周期",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"testLifeCycleView",
+        "function":"testLifeCycleVC",
         "article": {
             "art_id":"ui_test",
             "art_url":"",
@@ -16,11 +16,11 @@
     },
     {
         "q_id":"ui_test-1",
-        "q_title":"VC生命周期",
+        "q_title":"UIView生命周期",
         "q_subtitle":"",
         "showNextPage": false,
         "showArticle":true,
-        "function":"testLifeCycleVC",
+        "function":"testLifeCycleView",
         "article": {
             "art_id":"ui_test",
             "art_url":"",
@@ -53,7 +53,7 @@
             "art_url":"/content/Block/Block_test.md",
             "art_title":"",
         }
-
+        
     },
     {
         "q_id":"ui_test-3",
@@ -67,8 +67,8 @@
             "art_url":"/content/Block/Block_test.md",
             "art_title":"",
         }
-
+        
     }
-
+    
     
 ]

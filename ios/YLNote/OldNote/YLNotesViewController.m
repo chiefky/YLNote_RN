@@ -53,6 +53,9 @@
 
 @implementation YLNotesViewController
 
++ (void)initialize {
+    
+}
 - (void)setupUI {
 }
 
@@ -66,6 +69,9 @@
     
 }
 
+- (void)loadViewIfNeeded {
+    
+}
 #pragma mark - runtime
 
 /// 测试子类(caregory)+load方法

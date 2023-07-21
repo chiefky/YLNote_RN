@@ -20,6 +20,8 @@
 #import "YLBaseTableViewController.h"
 #import "PinkPigOC.h"
 #import "NSDate+Tool.h"
+#import "YLVCLifeCycleController.h"
+#import "YLLifeCycleView.h"
 // ===============
 #import "YLFather.h"
 #import "YLFather+Job.h"

@@ -1,0 +1,74 @@
+
+[
+    {
+        "q_id":"ui_test-0",
+        "q_title":"UIView生命周期",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testLifeCycleView",
+        "article": {
+            "art_id":"ui_test",
+            "art_url":"",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"ui_test-1",
+        "q_title":"VC生命周期",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testLifeCycleVC",
+        "article": {
+            "art_id":"ui_test",
+            "art_url":"",
+            "art_title":"",
+        }
+        
+    },
+    {
+        "q_id":"ui_test-2",
+        "q_title":"block作为gcd函数参数,arc下`不会`自动copy",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testBlockCopy_as_gcdPamater",
+        "article": {
+            "art_id":"ui_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+    },
+    {
+        "q_id":"ui_test-3",
+        "q_title":"block在修改NSMutableArray，`不需要`添加__block",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testBlock_change_muArray",
+        "article": {
+            "art_id":"ui_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+
+    },
+    {
+        "q_id":"ui_test-3",
+        "q_title":"在子线程block中修改外部变量，会怎样--",
+        "q_subtitle":"",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testBlock__block",
+        "article": {
+            "art_id":"ui_test",
+            "art_url":"/content/Block/Block_test.md",
+            "art_title":"",
+        }
+
+    }
+
+    
+]

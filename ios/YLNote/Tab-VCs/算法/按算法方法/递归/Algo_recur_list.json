@@ -26,5 +26,15 @@
         "function":"recur_sortedArrayToBST",
         "demo": {},
     },
+   {
+       "q_id":"algo_BFS-12",
+       "q_title":"剑指 Offer 28. 对称的二叉树",
+       "q_subtitle":"",
+       "showNextPage": false,
+       "showArticle": false,
+       "function":"bfs_isSymmetric",
+       "demo": {},
+   },
+
 ]
  

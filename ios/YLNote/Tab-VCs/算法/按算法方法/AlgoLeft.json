@@ -11,7 +11,7 @@
             "showArticle":false,
             "function":"",
             "demo": {
-                "className":"YLAlgoTestViewController",
+                "className":"YLAlgoSubTestControllerLeft",
                 "style": 1,
                 "useXib": 0
             },
@@ -250,5 +250,56 @@
                 }
             }
         ]
+    },
+    {
+        "group_id":"algo_binary_search",
+        "unfoldStatus":false,
+        "group_title":"二分查找",
+        "questions": [
+            {
+                "q_id":"algo_binary_search_0",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoBinarySearchListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
+    },
+    {
+        "group_id":"algo_quick_sort",
+        "unfoldStatus":false,
+        "group_title":"快速排序",
+        "questions": [
+            {
+                "q_id":"algo_quick_sort_0",
+                "q_title":"demos",
+                "q_subtitle":"",
+                "showNextPage": true,
+                "showArticle": false,
+                "function":"",
+                "demo": {
+                    "className":"YLAlgoQuickSortListController",
+                    "style": 1,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            }
+        ]
     }
+
 ]

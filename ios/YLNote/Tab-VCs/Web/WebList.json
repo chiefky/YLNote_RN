@@ -64,11 +64,11 @@
     {
         "group_id":7,
         "unfoldStatus":false,
-        "group_title":"数据库",
+        "group_title":"广告SDK技术点",
         "questions": [
             {
                 "q_id":"",
-                "q_title":"FMDB相关",
+                "q_title":"判断一个View是否显示",
                 "showNextPage": true,
                 "showArticle":true,
                 "function":"",

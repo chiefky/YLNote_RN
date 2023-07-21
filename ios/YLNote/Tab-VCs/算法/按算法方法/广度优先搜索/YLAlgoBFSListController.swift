@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// <#Description#>
 class YLAlgoBFSListController: YLBaseTableViewController {
     
     override func viewDidLoad() {
@@ -15,26 +16,27 @@ class YLAlgoBFSListController: YLBaseTableViewController {
         
         // Do any additional setup after loading the view.
     }
+    
     // MARK: LeetCode
     // MARK: LeetCode
-    // MARK: LeetCode
+    
+    
     // MARK: LeetCode
     // MARK: LeetCode
     // MARK: LeetCode
     // MARK: LeetCode 7. 剑指 Offer 37. 序列化二叉树(BFS)
-
     @objc func bfs_serialize() {
         let A = [1,2,3,nil,nil,4,5]
         let root = TreeNode.from(A, 0)
-        let res = serialize(root)
-        print("\(root?.val)序列化后：\(res)")
+        let res = bfs_serialize(root)
+        print("\(String(describing: root?.val))序列化后：\(res)")
     }
     
     @objc func bfs_deserialize() {
         let A = [1,2,3,nil,nil,4,5]
         let root = TreeNode.from(A, 0)
-        let str = serialize(root)
-        let res = deserialize(str)
+        let str = bfs_serialize(root)
+        let res = bfs_deserialize(str)
         print("\(str)反序列化后：\(res)")
     }
     
@@ -45,7 +47,7 @@ class YLAlgoBFSListController: YLBaseTableViewController {
     /// N 代表二叉树的节点数，则有 N = 2^(x) - 1
     ///  ====> 2^(x) = N + 1
     ///  ====> 2^(x-1) = (N+1)/2
-    func serialize(_ root: TreeNode?) -> String {
+    func bfs_serialize(_ root: TreeNode?) -> String {
         guard let root = root else {
             return "[]"
         }
@@ -75,7 +77,7 @@ class YLAlgoBFSListController: YLBaseTableViewController {
         return result
     }
 
-    func deserialize(_ data: String) -> TreeNode? {
+    func bfs_deserialize(_ data: String) -> TreeNode? {
         var tmp = data;
         tmp.removeFirst();
         tmp.removeLast();
@@ -109,8 +111,42 @@ class YLAlgoBFSListController: YLBaseTableViewController {
         return root
     }
 
+    
+    /// 102. 二叉树的层序遍历
+    @objc func bfs_levelOrder() {
+        let A = [1,2,3,nil,nil,4,5]
+        let root = TreeNode.from(A, 0)
+        let res = bfs_levelOrder(root)
+        print("\(root?.val)序列化后：\(res)")
+    }
+    
+    /// bfs
+    /// 时间复杂度O(n)，空间复杂度：
+    /// - Parameter root: 根节点
+    /// - Returns: 层次遍历结果
+    func bfs_levelOrder(_ root:TreeNode?) -> [[Int]] {
+        guard let root = root else { return [] }
+        var res:[[Int]] = []
+        var leveNodes:[TreeNode] = [root]
+        while leveNodes.count > 0 {
+            let leveCount = leveNodes.count
+            var levelVals:[Int] = []
+            for _ in 0..<leveCount {
+                let node = leveNodes.removeFirst()
+                levelVals.append(node.val)
+                if let left = node.left {
+                    leveNodes.append(left)
+                }
+                if let right = node.right {
+                    leveNodes.append(right)
+                }
+            }
+            res.append(levelVals)
+        }
+        return res
+    }
 
-    //    MARK: override
+    // MARK: override
     override func fileName() -> String {
         return "Algo_BFS_list"
     }

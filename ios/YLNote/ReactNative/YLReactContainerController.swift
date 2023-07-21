@@ -8,7 +8,7 @@
 
 import UIKit
 import React
-
+import CodePush
 class YLReactContainerController: UIViewController {
 
 
@@ -26,9 +26,13 @@ class YLReactContainerController: UIViewController {
     
     func preloadUI() {
         self.title = moduleName
-        guard let jsCodeLocation = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackExtension: nil) else { return }
-        let rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: moduleName, initialProperties: nil)
-        self.view = rootView
+        #if DEBUG
+            guard let jsCodeLocation = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackExtension: nil) else { return }
+        #else
+        guard let jsCodeLocation = CodePush.bundleURL() else {return}
+        #endif
+            let rootView = RCTRootView(bundleURL: jsCodeLocation, moduleName: moduleName, initialProperties: nil)
+            self.view = rootView
     }
     
     /*

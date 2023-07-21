@@ -1,0 +1,19 @@
+[
+    {
+    "q_id":"Algo_quick_sort-1",
+    "q_title":"剑指 Offer 40. 最小的k个数",
+    "q_subtitle":"",
+    "showNextPage": false,
+    "showArticle":false,
+    "function":"qs_getLeastNumbers",
+},
+    {
+    "q_id":"Algo_quick_sort-1",
+    "q_title":"215. 数组中的第K个最大元素",
+    "q_subtitle":"",
+    "showNextPage": false,
+    "showArticle":false,
+    "function":"bs_findKthLargest",
+},
+
+]

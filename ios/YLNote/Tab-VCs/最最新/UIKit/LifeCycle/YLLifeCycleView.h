@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLLifeCycleView : UIView
 
++ (instancetype)loadviewFromNib;
+
 @end
 
 NS_ASSUME_NONNULL_END

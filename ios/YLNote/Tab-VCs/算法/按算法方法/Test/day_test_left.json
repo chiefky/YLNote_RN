@@ -1,0 +1,59 @@
+[
+    {
+        "q_id":"day_test_left-1",
+        "q_title":"动态规划测试",
+        "q_subtitle":"题目描述",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"DP_test",
+        "demo": {},
+    }, {
+        "q_id":"day_test_left-2",
+        "q_title":"回溯测试",
+        "q_subtitle":"题目",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"backTrack_test",
+        "demo": {},
+    },
+    {
+        "q_id":"day_test_left-3",
+        "q_title":"深度优先测试",
+        "q_subtitle":"题目",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"dfs_test",
+        "demo": {},
+    },
+    {
+        "q_id":"day_test_left-4",
+        "q_title":"广度优先测试",
+        "q_subtitle":"题目",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"bfs_test",
+        "demo": {},
+    },
+    {
+        "q_id":"day_test_left-6",
+        "q_title":"递归测试",
+        "q_subtitle":"题目",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"recur_test",
+        "demo": {},
+    },
+
+    {
+        "q_id":"day_test_left-7",
+        "q_title":"测试",
+        "q_subtitle":"原地交换题目",
+        "showNextPage": false,
+        "showArticle": false,
+        "function":"swap_test",
+        "demo": {},
+    },
+
+]
+ 
+

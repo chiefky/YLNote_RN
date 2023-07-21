@@ -15,6 +15,7 @@
 #import "YLUserViewController.h"
 #import "YLNativeNewsViewController.h"
 #import "YLNote-Swift.h"
+#import <CodePush/CodePush.h>
 
 /**
  * 设置图片

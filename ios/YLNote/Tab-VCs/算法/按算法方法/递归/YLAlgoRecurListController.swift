@@ -82,7 +82,7 @@ class YLAlgoRecurListController: YLBaseTableViewController {
         return head
     }
     // MARK: LeetCode
-    // MARK: LeetCode108. 将有序数组转换为二叉搜索树
+    // MARK: 10. LeetCode108. 将有序数组转换为二叉搜索树
     @objc func recur_sortedArrayToBST() {
         let nums = [-10,-3,0,5,9]
         let root = sortedArrayToBST(nums)
@@ -102,7 +102,33 @@ class YLAlgoRecurListController: YLBaseTableViewController {
            return root;
     }
     
+    // MARK: 12. 剑指 Offer 28. 对称的二叉树
+    @objc func recur_isSymmetric() {
+        let A =  [1,2,2,3,4,4,3]
+        let root = TreeNode.from(A, 0)
+        let res = recur_isSymmetric(root)
+        print("🌲\(A) 是对称二叉树: \(res)")
+    }
     
+    /// 递归
+    /// 时间复杂度：O(n)；空间复杂度：O(h),最差退化成链表O(n)
+    /// - Parameter root:
+    /// - Returns: 是否对象
+    func recur_isSymmetric(_ root: TreeNode?) -> Bool {
+        guard let root = root else { return true }
+        return recur_check(left: root.left, right: root.right)
+    }
+    
+    func recur_check(left:TreeNode?,right: TreeNode? ) -> Bool {
+        guard let left = left,let right = right else {
+            return left === right
+        }
+
+        if left.val != right.val {return false}
+        let res_l = recur_check(left: left.right, right: right.left)
+        let res_r = recur_check(left: left.left, right: right.right)
+        return res_l && res_r
+    }
     //    MARK: override
     override func fileName() -> String {
         return "Algo_recur_list"

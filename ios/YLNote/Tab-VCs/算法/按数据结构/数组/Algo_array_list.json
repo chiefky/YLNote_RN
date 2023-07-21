@@ -1,5 +1,18 @@
 [
     {
+    "q_id":"algo_array-32",
+    "q_title":"最接近目标的三数之和",
+    "q_subtitle":"",
+    "showNextPage": true,
+    "showArticle":false,
+    "function":"",
+    "demo": {
+        "className":"YLAlgoArrayListRow_32",
+        "style": 1,
+        "useXib": 0
+    },
+},
+    {
     "q_id":"algo_array-31",
     "q_title":"丑数",
     "q_subtitle":"",

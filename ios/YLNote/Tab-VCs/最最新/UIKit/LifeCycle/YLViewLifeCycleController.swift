@@ -1,5 +1,5 @@
 //
-//  YLLifeCycleViewController.swift
+//  YLViewLifeCycleController.swift
 //  YLNote
 //
 //  Created by tangh on 2021/1/25.
@@ -8,79 +8,48 @@
 
 import UIKit
 
-class YLDemoLifeCycleViewController: UIViewController {
+class YLViewLifeCycleController: UIViewController {
 
-    deinit {
-        print("\(self)：\(#function)");
-    }
-    convenience init(name: String) {
-        print("\(#function)");
-        self.init(nibName:nil, bundle:nil)
-    }
-    
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        print("\(#function)");
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func loadView() {
-        super.loadView()
-        print("\(self)：\(#function)");
-    }
-    
-    override func loadViewIfNeeded() {
-        super.loadViewIfNeeded()
-        print("\(self)：\(#function)");
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "生命周期+布局扩展区域"
-        print("\(self)：\(#function)");
-        view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
         setupUI()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("\(self)：\(#function)");
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("\(self)：\(#function)");
-    }
-    
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        print("\(self)：\(#function)");
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        print("\(self)：\(#function)");
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("\(self)：\(#function)");
+        print("销毁：")
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("\(self)：\(#function)");
-    }
-    
     //MARK: function
     func setupUI() {
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-//        testLayout(type: 4)
+        addCustomView()
+    }
+    
+    func addXibView() {
+        let views = Bundle.main.loadNibNamed("YLLifeCycleView", owner:self, options:nil)
+        if let view = views?.first as? YLLifeCycleView {
+            view.backgroundColor = .systemPink
+            view.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+            self.view.addSubview(view)
+            
+            let subView = UIView()
+            subView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+            subView.backgroundColor = .yellow
+            view.addSubview(subView)
+        }
+    }
+    
+    func addCustomView() {
+        print("初始化：")
+        let lcView = YLLifeCycleView.init()
+        print("载入：")
+        lcView.backgroundColor = .systemPink
+        lcView.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        self.view.addSubview(lcView)
+        let subView = UIView()
+        subView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        subView.backgroundColor = .yellow
+        lcView.addSubview(subView)
     }
     
     /// 使原点从navigationbar下面开始(不四周扩展)的几种方式

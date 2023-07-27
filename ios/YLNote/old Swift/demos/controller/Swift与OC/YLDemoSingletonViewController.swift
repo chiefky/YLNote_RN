@@ -15,7 +15,7 @@ class YLDemoSingletonViewController: YLDemoBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        test_singleton()
+//        test_singleton()
     }
     
 

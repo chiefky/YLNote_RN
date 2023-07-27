@@ -1,0 +1,38 @@
+
+[
+    {
+    "q_id":"Protocol_list_0",
+    "q_title":"协议继承",
+    "showNextPage": false,
+    "showArticle":true,
+    "function":"testProtocolInherit",
+    "demo": {
+        "className":"",
+        "style": 0,
+        "useXib": 0
+    },
+    "article": {
+        "art_id":"yn_7001",
+        "art_url":"",
+        "art_title":"",
+    }
+},
+    {
+        "q_id":"Protocol_list_1",
+        "q_title":"协议扩展",
+        "showNextPage": false,
+        "showArticle":true,
+        "function":"testProtocolExtension",
+        "demo": {
+            "className":"",
+            "style": 0,
+            "useXib": 0
+        },
+        "article": {
+            "art_id":"yn_7001",
+            "art_url":"",
+            "art_title":"",
+        }
+    }
+    
+]

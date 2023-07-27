@@ -15,9 +15,8 @@
 
 /// 通过纯代码实例化Vc会调用，其最终会调用initWithNibName:bundle:方法
 - (instancetype)init {
-    self = [super init];
-    
     NSLog(@"%s",__FUNCTION__);
+    self = [super init];
     return self;
 }
 
@@ -51,8 +50,20 @@
 /// 这是进行进一步的视图初始化、数据加载或其他一次性设置的好时机。
 /// 注意，该方法只会在第一次加载视图时调用，之后再次显示时不会再次调用。
 - (void)viewDidLoad {
-    [super viewDidLoad];
     NSLog(@"%s",__FUNCTION__);
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor systemPinkColor];
+    UIButton *butn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:butn];
+    butn.frame = CGRectMake(100, 100, 100, 50);
+    [butn setTitle:@"下一页" forState:UIControlStateNormal];
+    [butn addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)clickAction {
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor systemCyanColor];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /// 视图即将显示在屏幕上，但尚未完全可见。

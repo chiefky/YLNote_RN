@@ -81,7 +81,6 @@ NSString *kTabBarItemKeySelectedColorName     = @"kTabBarItemKeySelectedColorNam
 
 
     UITabBarController *tab = [[UITabBarController alloc] init];
-    tab.tabBar.translucent = NO;
     tab.viewControllers = @[naviTmpNote,naviAlgori,naviWeb,naviSwift,naviRN];
     
     self.window.rootViewController = tab;

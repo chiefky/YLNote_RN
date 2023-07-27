@@ -429,7 +429,7 @@
 		54C4B50F261483DE004BF897 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C4B50E261483DE004BF897 /* Security.framework */; };
 		54C4B514261495AD004BF897 /* YLKeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B513261495AD004BF897 /* YLKeyChainManager.swift */; };
 		54C4B52D261C7E99004BF897 /* YLDemoBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4B52C261C7E99004BF897 /* YLDemoBlockViewController.m */; };
-		54C547192A6A2C97006572D7 /* YLSDKTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C547182A6A2C97006572D7 /* YLSDKTestController.swift */; };
+		54C547192A6A2C97006572D7 /* YLAdSDKDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C547182A6A2C97006572D7 /* YLAdSDKDemoController.swift */; };
 		54C5471C2A6A309A006572D7 /* YLUITestListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C5471B2A6A309A006572D7 /* YLUITestListController.swift */; };
 		54C5471E2A6A30EF006572D7 /* ui_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C5471D2A6A30EF006572D7 /* ui_test.json */; };
 		54C547222A6A481B006572D7 /* YLVCLifeCycleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C547212A6A481B006572D7 /* YLVCLifeCycleController.m */; };
@@ -1263,7 +1263,7 @@
 		54C4B513261495AD004BF897 /* YLKeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLKeyChainManager.swift; sourceTree = "<group>"; };
 		54C4B52B261C7E99004BF897 /* YLDemoBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLDemoBlockViewController.h; sourceTree = "<group>"; };
 		54C4B52C261C7E99004BF897 /* YLDemoBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLDemoBlockViewController.m; sourceTree = "<group>"; };
-		54C547182A6A2C97006572D7 /* YLSDKTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLSDKTestController.swift; sourceTree = "<group>"; };
+		54C547182A6A2C97006572D7 /* YLAdSDKDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAdSDKDemoController.swift; sourceTree = "<group>"; };
 		54C5471B2A6A309A006572D7 /* YLUITestListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLUITestListController.swift; sourceTree = "<group>"; };
 		54C5471D2A6A30EF006572D7 /* ui_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ui_test.json; sourceTree = "<group>"; };
 		54C547202A6A481B006572D7 /* YLVCLifeCycleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YLVCLifeCycleController.h; path = "/Users/tangh/yuki/react_all/MixApps/YLNote_RN/ios/YLNote/Tab-VCs/最最新/UIKit/LifeCycle/YLVCLifeCycleController.h"; sourceTree = "<absolute>"; };
@@ -2400,7 +2400,7 @@
 			children = (
 				54C547282A6BEA61006572D7 /* Protocol */,
 				548353DF27E075C1001D3726 /* LateSwift.json */,
-				54C547182A6A2C97006572D7 /* YLSDKTestController.swift */,
+				54C547182A6A2C97006572D7 /* YLAdSDKDemoController.swift */,
 				54C547422A704631006572D7 /* 广告SDK列表 */,
 				54ABCB362885DFC7006C65D6 /* OC-Swift混编 */,
 				548353E727E07BD5001D3726 /* YLSwiftViewController.swift */,
@@ -5744,7 +5744,7 @@
 				54A35D8A24CED7290076DFB6 /* YLNotification.m in Sources */,
 				54DB9BF0284CFC9800539AC5 /* YLAlgoArrayListRow_11.swift in Sources */,
 				545A19A526C3DD3F0089BECE /* YLPhylum.m in Sources */,
-				54C547192A6A2C97006572D7 /* YLSDKTestController.swift in Sources */,
+				54C547192A6A2C97006572D7 /* YLAdSDKDemoController.swift in Sources */,
 				5473566527E5C4A10096A008 /* YLBaseTableViewController.m in Sources */,
 				5462EE382A4C160A0027EDD8 /* YLReactTableViewProtocol.swift in Sources */,
 				543581B825AEEBA800452D76 /* YLArticalViewController.m in Sources */,

@@ -6,12 +6,12 @@
         "questions": [
             {
                 "q_id":"",
-                "q_title":"实现广告自动曝光监测",
+                "q_title":"实现自动曝光监测",
                 "showNextPage": true,
                 "showArticle":false,
                 "function":"",
                 "demo": {
-                    "className":"YLSDKTestController",
+                    "className":"YLAdSDKDemoController",
                     "style": 1,
                     "useXib": 0
                 },
@@ -23,7 +23,24 @@
             },
             {
                 "q_id":"",
-                "q_title":"自动曝光检测时机",
+                "q_title":"实现行为监测",
+                "showNextPage": true,
+                "showArticle":true,
+                "function":"",
+                "demo": {
+                    "className":"",
+                    "style": 0,
+                    "useXib": 0
+                },
+                "article": {
+                    "art_id":"yn_7001",
+                    "art_url":"",
+                    "art_title":"",
+                }
+            },
+            {
+                "q_id":"",
+                "q_title":"打点，不满足条件寻找合适时机上传统计数据",
                 "showNextPage": true,
                 "showArticle":true,
                 "function":"",
@@ -38,55 +55,8 @@
                     "art_title":"",
                 }
             }
+
             
-        ]
-    },
-    {
-        "group_id":8,
-        "unfoldStatus":false,
-        "group_title":"行为检测",
-        "questions": [
-            {
-                "q_id":"",
-                "q_title":"点击检测原理",
-                "showNextPage": true,
-                "showArticle":true,
-                "function":"",
-                "demo": {
-                    "className":"",
-                    "style": 0,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"yn_7001",
-                    "art_url":"",
-                    "art_title":"",
-                }
-            }
-        ]
-    },
-    {
-        "group_id":9,
-        "unfoldStatus":false,
-        "group_title":"数据采集",
-        "questions": [
-            {
-                "q_id":"",
-                "q_title":"满足条件曝光，不满足条件寻找合适时机上传统计数据",
-                "showNextPage": true,
-                "showArticle":true,
-                "function":"",
-                "demo": {
-                    "className":"",
-                    "style": 0,
-                    "useXib": 0
-                },
-                "article": {
-                    "art_id":"yn_7001",
-                    "art_url":"",
-                    "art_title":"",
-                }
-            }
         ]
     },
     {

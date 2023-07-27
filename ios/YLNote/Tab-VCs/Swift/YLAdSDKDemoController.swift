@@ -17,7 +17,7 @@ struct Actor:Codable {
     //        self.id = id
     //    }
 }
-class YLSDKTestController: UIViewController {
+class YLAdSDKDemoController: UIViewController {
     
     let cellIdentifier = "kYLSDKTableViewCell"
     
@@ -111,7 +111,7 @@ class YLSDKTestController: UIViewController {
     }()
 }
 
-extension YLSDKTestController:UITableViewDelegate,UITableViewDataSource {
+extension YLAdSDKDemoController:UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let viewModel = self.viewModel,let data = viewModel.allCellModels[safe: indexPath.row] else { return UITableViewCell() }
         if let adData = data as? YLAdCellModelProtocol {
@@ -176,7 +176,7 @@ extension YLSDKTestController:UITableViewDelegate,UITableViewDataSource {
     
 }
 
-extension YLSDKTestController {
+extension YLAdSDKDemoController {
     // 监听滚动事件
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         // 获取 tableView 的可见区域高度

@@ -57,7 +57,7 @@ class YLAdSmallCell: UITableViewCell,YLAdCellProtocol {
     }
     
     func setupUI()  {
-        imgView.backgroundColor = .blue
+        imgView.backgroundColor = .lightGray
         self.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.width.equalTo(100)
@@ -67,10 +67,12 @@ class YLAdSmallCell: UITableViewCell,YLAdCellProtocol {
         }
         
         self.addSubview(label)
+//        label.backgroundColor = .systemGray
+        label.font = UIFont.systemFont(ofSize: UIFont.labelFontSize)
+        label.numberOfLines = 0
         label.snp.makeConstraints { make in
-            make.left.equalTo(imgView.snp_rightMargin).offset(10)
-            make.height.equalTo(imgView)
-            make.centerY.equalToSuperview()
+            make.left.equalTo(imgView.snp.right).offset(8)
+            make.top.equalTo(10)
             make.right.equalTo(-10)
         }
     }
@@ -98,7 +100,7 @@ class YLAdBigCell: UITableViewCell,YLAdCellProtocol {
     }
     
     func setupUI()  {
-        imgView.backgroundColor = .systemPink
+        imgView.backgroundColor = .lightGray
         self.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
@@ -154,7 +156,7 @@ class YLAdThreeCell: UITableViewCell,YLAdCellProtocol {
         }
         for imageView in imgViews {
             containerView.addArrangedSubview(imageView)
-            imageView.backgroundColor = .systemPink
+            imageView.backgroundColor = .lightGray
         }
     }
 
@@ -182,7 +184,7 @@ class YLAdGifCell: UITableViewCell,YLAdCellProtocol {
     }
     
     func setupUI()  {
-        imgView.backgroundColor = .systemPink
+        imgView.backgroundColor = .lightGray
         self.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
@@ -214,7 +216,7 @@ class YLAdVideoBigCell: UITableViewCell,YLAdCellProtocol {
     }
     
     func setupUI()  {
-        imgView.backgroundColor = .systemPink
+        imgView.backgroundColor = .lightGray
         self.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
@@ -260,9 +262,8 @@ class YLAdVideoSmallCell: UITableViewCell,YLAdCellProtocol {
         self.addSubview(label)
         label.snp.makeConstraints { make in
             make.left.equalTo(imgView.snp_rightMargin).offset(10)
-            make.height.equalTo(imgView)
-            make.centerY.equalToSuperview()
-            make.right.equalTo(-10)
+            make.top.equalTo(10)
+            make.right.bottom.equalTo(-10)
         }
     }
     
@@ -290,7 +291,7 @@ class YLAdFullScreenView: UIView {
     }
     
     func setupUI()  {
-        imgView.backgroundColor = .systemPink
+        imgView.backgroundColor = .lightGray
         self.addSubview(imgView)
         imgView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()

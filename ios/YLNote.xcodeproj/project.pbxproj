@@ -567,6 +567,7 @@
 		54DDB59728769C2D000419E2 /* Algo_array_row_0_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DDB59528769C2D000419E2 /* Algo_array_row_0_2.json */; };
 		54DDB59828769C2D000419E2 /* YLAlgoArrayListRow_0_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DDB59628769C2D000419E2 /* YLAlgoArrayListRow_0_2.swift */; };
 		54DE85EE25BEC2D400EB8CE0 /* YLViewLifeCycleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE85ED25BEC2D400EB8CE0 /* YLViewLifeCycleController.swift */; };
+		54DFE0742A72F21500151CE1 /* Actors.json in Resources */ = {isa = PBXBuildFile; fileRef = 54DFE0732A72F21500151CE1 /* Actors.json */; };
 		54E138362733AEAA002FEEA3 /* NSDate+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E138352733AEAA002FEEA3 /* NSDate+Tool.m */; };
 		54E5AE95289B9C5000F18DCC /* YLAlgoArrayListRow_24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5AE93289B9C5000F18DCC /* YLAlgoArrayListRow_24.swift */; };
 		54E5AE96289B9C5000F18DCC /* Algo_array_row_24.json in Resources */ = {isa = PBXBuildFile; fileRef = 54E5AE94289B9C5000F18DCC /* Algo_array_row_24.json */; };
@@ -1280,7 +1281,6 @@
 		54C5473A2A6EE69D006572D7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		54C5473C2A6EEADE006572D7 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		54C547402A6F8FC6006572D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		54C547432A7046F9006572D7 /* Actors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Actors.json; sourceTree = "<group>"; };
 		54C6F41227BD73A300756275 /* YLAlgoOtherViewControllerRow0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAlgoOtherViewControllerRow0.swift; sourceTree = "<group>"; };
 		54C6F42227BD74B200756275 /* Algo_other_row_0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Algo_other_row_0.json; sourceTree = "<group>"; };
 		54CAC36B2605C05E008A7BDF /* YLWebCookieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLWebCookieViewController.swift; sourceTree = "<group>"; };
@@ -1434,6 +1434,7 @@
 		54DDB59528769C2D000419E2 /* Algo_array_row_0_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Algo_array_row_0_2.json; sourceTree = "<group>"; };
 		54DDB59628769C2D000419E2 /* YLAlgoArrayListRow_0_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_0_2.swift; sourceTree = "<group>"; };
 		54DE85ED25BEC2D400EB8CE0 /* YLViewLifeCycleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLViewLifeCycleController.swift; sourceTree = "<group>"; };
+		54DFE0732A72F21500151CE1 /* Actors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Actors.json; sourceTree = "<group>"; };
 		54E138342733AEA9002FEEA3 /* NSDate+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Tool.h"; sourceTree = "<group>"; };
 		54E138352733AEAA002FEEA3 /* NSDate+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Tool.m"; sourceTree = "<group>"; };
 		54E5AE93289B9C5000F18DCC /* YLAlgoArrayListRow_24.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLAlgoArrayListRow_24.swift; sourceTree = "<group>"; };
@@ -3740,11 +3741,11 @@
 		54C547422A704631006572D7 /* 广告SDK列表 */ = {
 			isa = PBXGroup;
 			children = (
+				54DFE0732A72F21500151CE1 /* Actors.json */,
 				54C547352A6E413C006572D7 /* YLAdViewExposureDetector.swift */,
 				54C5474D2A72EBC2006572D7 /* MVVM设计模式 */,
 				54C547312A6D9209006572D7 /* YLActorTableViewCell.swift */,
 				54C547322A6D9209006572D7 /* YLActorTableViewCell.xib */,
-				54C547432A7046F9006572D7 /* Actors.json */,
 			);
 			path = "广告SDK列表";
 			sourceTree = "<group>";
@@ -5266,6 +5267,7 @@
 				548CAF4F285FB59F00F73E71 /* Algo_string_row_6.json in Resources */,
 				548CAFFE28660D1E00F73E71 /* Algo_tree_row_2.json in Resources */,
 				541CBDED29FB0DBF003FED26 /* Algo_swap_list.json in Resources */,
+				54DFE0742A72F21500151CE1 /* Actors.json in Resources */,
 				5405F9F12A4CA95200C0D24C /* FontAwesome.ttf in Resources */,
 				54A0F17C28B78050007E3805 /* Algo_array_row_29.json in Resources */,
 				5405F9EE2A4CA95200C0D24C /* Entypo.ttf in Resources */,
